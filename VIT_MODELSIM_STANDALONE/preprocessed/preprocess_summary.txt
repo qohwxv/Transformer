@@ -1,0 +1,7 @@
+source_image=/home/qh/Downloads/vit_modelsim_standalone/inputs/test1.png
+source_size=500x359
+resized_size=224x224
+tensor_shape=[1,196,768]
+fp32_words=150528
+layout=patch_y,patch_x,channel,kernel_y,kernel_x
+output_hex=/home/qh/Downloads/vit_modelsim_standalone/preprocessed/embedding_input_patch_A_f32.hex

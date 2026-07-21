@@ -1,0 +1,37 @@
+# Loading project ViT_NPU
+# Compile of tb_vit_phase_e.sv failed with 43 errors.
+# Compile of vit_fp32_math_ref_pkg.sv was successful.
+# Compile of vit_phase_e_behavioral_engine_top.sv failed with 3 errors.
+# Compile of vit_phase_e_npu.sv failed with 11 errors.
+# Compile of vit_phase_e_pkg.sv was successful.
+# Compile of vit_phase_e_sequencer.sv was successful with warnings.
+# 6 compiles, 3 failed with 57 errors.
+ls
+# inputs
+# parameters
+# preprocessed
+# preprocessing
+# README.md
+# results
+# run_modelsim.do
+# tb_vit_phase_e.sv
+# transcript
+# vit_fp32_math_ref_pkg.sv
+# ViT_NPU.mpf
+# vit_phase_e_behavioral_engine_top.sv
+# vit_phase_e_npu.sv
+# vit_phase_e_pkg.sv
+# vit_phase_e_pure_sv.f
+# vit_phase_e_sequencer.sv
+# work
+tree
+# wrong # args:  should be "tree treeName ?args?"
+do ./run_modelsim.do
+# /home/qh/Downloads/vit_modelsim_standalone
+# /home/qh/Downloads/vit_modelsim_standalone/preprocessed/embedding_input_patch_A_f32.hex
+# /home/qh/Downloads/vit_modelsim_standalone/results
+# reading /home/qh/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work build/modelsim/work 
+# Copying /home/qh/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini

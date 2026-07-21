@@ -1,0 +1,95 @@
+/home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_sequencer.sv {2 {vlog -work work -sv -stats=none /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_sequencer.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module vit_phase_e_sequencer
+-- Importing package vit_phase_e_pkg
+** Warning: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_sequencer.sv(22): (vlog-13314) Defaulting port 'job' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_sequencer.sv(23): (vlog-13314) Defaulting port 'global_params' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_sequencer.sv(30): (vlog-13314) Defaulting port 'layer_param_data' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	vit_phase_e_sequencer
+
+} {} {}} /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv {0 {vlog -work work -sv -stats=none /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module vit_phase_e_npu
+** Error: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv(20): (vlog-2164) Class or package 'vit_phase_e_pkg' not found.
+** Error: (vlog-13069) /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv(20): near "::": syntax error, unexpected ::, expecting ')'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv(21): (vlog-2164) Class or package 'vit_phase_e_pkg' not found.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv(26): (vlog-2164) Class or package 'vit_phase_e_pkg' not found.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv(32): (vlog-2164) Class or package 'vit_phase_e_pkg' not found.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv(36): (vlog-2164) Class or package 'vit_phase_e_pkg' not found.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv(37): (vlog-2164) Class or package 'vit_phase_e_pkg' not found.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv(41): (vlog-2164) Class or package 'vit_phase_e_pkg' not found.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv(42): (vlog-2164) Class or package 'vit_phase_e_pkg' not found.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv(47): (vlog-2164) Class or package 'vit_phase_e_pkg' not found.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_npu.sv(48): (vlog-2164) Class or package 'vit_phase_e_pkg' not found.
+
+} {4.0 15.0} {}} /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_behavioral_engine_top.sv {0 {vlog -work work -sv -stats=none /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_behavioral_engine_top.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module vit_phase_e_behavioral_engine_top
+** Error: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_behavioral_engine_top.sv(29): (vlog-2164) Class or package 'vit_phase_e_pkg' not found.
+** Error: (vlog-13069) /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_behavioral_engine_top.sv(29): near "::": syntax error, unexpected ::, expecting ')'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_behavioral_engine_top.sv(36): (vlog-2164) Class or package 'vit_phase_e_pkg' not found.
+
+} {4.0 7.0} {}} /home/qh/Downloads/vit_modelsim_standalone/vit_fp32_math_ref_pkg.sv {1 {vlog -work work -sv -stats=none /home/qh/Downloads/vit_modelsim_standalone/vit_fp32_math_ref_pkg.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling package vit_fp32_math_ref_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_pkg.sv {1 {vlog -work work -sv -stats=none /home/qh/Downloads/vit_modelsim_standalone/vit_phase_e_pkg.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling package vit_phase_e_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv {0 {vlog -work work -sv -stats=none /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_vit_phase_e
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(18): (vlog-13006) Could not find the package (vit_phase_e_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(19): (vlog-13006) Could not find the package (vit_fp32_math_ref_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+** Error: (vlog-13069) /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(471): near "load_cmd": syntax error, unexpected IDENTIFIER, expecting ')'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(626): (vlog-2730) Undefined variable: 'VIT_HIDDEN_WORDS'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(628): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_HIDDEN_B'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(629): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_LINEAR_TMP'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(630): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_Q_HEAD'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(631): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_LINEAR_TMP'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(632): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_K_HEAD'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(633): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_LINEAR_TMP'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(634): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_V_HEAD'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(635): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_LINEAR_TMP'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(636): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_SCORE_PROB'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(636): (vlog-2730) Undefined variable: 'VIT_SCORE_WORDS'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(637): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_SCORE_PROB'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(637): (vlog-2730) Undefined variable: 'VIT_SCORE_WORDS'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(638): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_SCORE_PROB'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(638): (vlog-2730) Undefined variable: 'VIT_SCORE_WORDS'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(639): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_Q_HEAD'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(640): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_LINEAR_TMP'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(641): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_HIDDEN_B'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(642): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_HIDDEN_B'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(643): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_HIDDEN_A'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(644): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_FC1'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(644): (vlog-2730) Undefined variable: 'VIT_FC1_WORDS'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(645): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_FC1'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(645): (vlog-2730) Undefined variable: 'VIT_FC1_WORDS'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(646): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_LINEAR_TMP'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(647): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_HIDDEN_A'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(757): (vlog-2730) Undefined variable: 'VIT_CLASS_COUNT'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(759): (vlog-2730) Undefined variable: 'PHASE_E_ADDR_CLASS_PROB'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(855): (vlog-2730) Undefined variable: 'PHASE_E_SECTION_EMBEDDING'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(857): (vlog-2730) Undefined variable: 'PHASE_E_SECTION_ENCODER'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(859): (vlog-2730) Undefined variable: 'PHASE_E_SECTION_FINAL'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(873): (vlog-2730) Undefined variable: 'PHASE_E_PARAM_MAIN_BASE'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(874): (vlog-2730) Undefined variable: 'PHASE_E_PARAM_AUX_BASE'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(994): (vlog-2730) Undefined variable: 'PHASE_E_E01'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(1003): (vlog-2730) Undefined variable: 'PHASE_E_E02'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(1024): (vlog-2730) Undefined variable: 'PHASE_E_E03'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(1037): (vlog-2730) Undefined variable: 'PHASE_E_E04'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(1054): (vlog-2730) Undefined variable: 'PHASE_E_E05'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(1075): (vlog-2730) Undefined variable: 'PHASE_E_PARAM_MAIN_BASE'.
+** Error: /home/qh/Downloads/vit_modelsim_standalone/tb_vit_phase_e.sv(1076): (vlog-2730) Undefined variable: 'PHASE_E_PARAM_AUX_BASE'.
+
+} {4.0 47.0} {}}

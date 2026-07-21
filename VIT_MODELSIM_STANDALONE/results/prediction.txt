@@ -1,0 +1,4 @@
+class_index=879
+max_logit=12.533133507
+confidence=0.898436189
+confidence_percent=89.843619%
