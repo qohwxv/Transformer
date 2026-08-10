@@ -1,0 +1,1 @@
+M7_MODE3_E04_M6_CLASSIFIER_ORACLE_COMPARE_PASS logits=1000 exact_mismatch=0 tolerance_failures=0 abs_tolerance=0.000000000e+00 rel_tolerance=0.000000000e+00 max_abs=0.000000000e+00 mean_abs=0.000000000e+00 top1_actual=879 top1_oracle=879 report_sha256=96c5bb2462d607664f7fc1a570646eaf3fc99f47721b505b24cd73325b43c9a3

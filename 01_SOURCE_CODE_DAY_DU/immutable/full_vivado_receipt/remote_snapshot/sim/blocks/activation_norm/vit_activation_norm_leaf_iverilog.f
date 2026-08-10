@@ -1,0 +1,16 @@
+rtl/pkg/vit_fp32_pkg.sv
+rtl/leaf/fp32/vit_fp32_add_comb.sv
+rtl/leaf/fp32/vit_fp32_sub_comb.sv
+rtl/leaf/fp32/vit_fp32_mul_comb_nodsp.sv
+rtl/leaf/fp32/vit_fp32_from_u32_comb.sv
+rtl/leaf/fp32/vit_fp32_to_u32_floor_comb.sv
+rtl/leaf/fp32/vit_fp32_scale_pow2_down_comb.sv
+rtl/leaf/fp32/vit_fp32_recip_u32_comb.sv
+rtl/leaf/fp32/vit_fp32_recip_comb.sv
+rtl/leaf/fp32/vit_fp32_rsqrt_step_comb.sv
+rtl/leaf/fp32/vit_fp32_exp_neg_comb.sv
+rtl/leaf/fp32/vit_fp32_gelu_comb.sv
+rtl/blocks/softmax/vit_softmax_exp_datapath.sv
+rtl/blocks/softmax/vit_softmax_reciprocal_step.sv
+rtl/blocks/layernorm/vit_layernorm_statistics_datapath.sv
+rtl/blocks/layernorm/vit_layernorm_affine_datapath.sv

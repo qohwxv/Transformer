@@ -1,0 +1,13 @@
+REMOTE_TO_LOCAL_TRANSFER VERIFIED
+method=rsync archive checksum dry-run after copy
+remote_host=192.168.4.85
+remote_workspace=/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace
+raw_run_20260808T173100Z_files=3 checksum_differences=0
+raw_run_20260808T174200Z_files=20 checksum_differences=0
+raw_run_20260808T175500Z_files=20 checksum_differences=0
+explicit_workspace_input_paths=20 checksum_differences=0
+production_workspace_paths=80 checksum_differences=0
+workspace_snapshot_unique_files=100
+rsync_checksum_dry_run_stdout_lines=0
+remote_mutation=NONE
+note=The observation runner state was reconstructed locally to its recorded exact SHA-256; the current exact-repeat runner and all raw/workspace files were copied and checksum-compared to the remote workspace.

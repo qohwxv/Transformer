@@ -1,0 +1,11 @@
+M8_LN_RESET_ABORT_PASS implementation=M8_LN_BUFFERED
+M8_LN_CASE_PASS implementation=M8_LN_BUFFERED name=h1_t2 tokens=2 hidden=1 cycles=152 packets=2/0/1 word_reads=5 in_place=0 backpressure=0
+M8_LN_CASE_PASS implementation=M8_LN_BUFFERED name=h16_t2_special tokens=2 hidden=16 cycles=888 packets=32/0/16 word_reads=80 in_place=0 backpressure=1
+M8_LN_CASE_PASS implementation=M8_LN_BUFFERED name=h16_t2_in_place_alias tokens=2 hidden=16 cycles=903 packets=32/0/16 word_reads=80 in_place=1 backpressure=1
+M8_LN_CASE_PASS implementation=M8_LN_BUFFERED name=h768_t2 tokens=2 hidden=768 cycles=38383 packets=1536/0/768 word_reads=3840 in_place=0 backpressure=1
+M8_LN_CASE_PASS implementation=M8_LN_BUFFERED name=h1024_t2_boundary tokens=2 hidden=1024 cycles=51140 packets=2048/0/1024 word_reads=5120 in_place=0 backpressure=1
+M8_LN_CASE_PASS implementation=M8_LN_BUFFERED name=h1025_t2_fallback tokens=2 hidden=1025 cycles=70830 packets=2050/2050/2050 word_reads=10250 in_place=0 backpressure=1
+M8_LN_CASE_PASS implementation=M8_LN_BUFFERED name=h3072_t1_fallback tokens=1 hidden=3072 cycles=106080 packets=3072/3072/3072 word_reads=15360 in_place=0 backpressure=1
+M8_LN_CASE_PASS implementation=M8_LN_BUFFERED name=production_h768_t197 tokens=197 hidden=768 cycles=3087143 packets=151296/0/768 word_reads=153600 in_place=0 backpressure=1
+M8_LAYERNORM_AB_SIM_PASS implementation=M8_LN_BUFFERED
+/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/layernorm/tb_vit_layernorm_engine_fp32_m8_ab.sv:517: $finish called at 33556980000 (1ps)

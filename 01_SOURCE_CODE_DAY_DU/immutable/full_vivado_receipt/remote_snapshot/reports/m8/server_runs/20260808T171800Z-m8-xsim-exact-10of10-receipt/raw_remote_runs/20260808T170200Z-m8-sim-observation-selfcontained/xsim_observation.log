@@ -1,0 +1,182 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/pkg/vit_phase_e_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/pkg/vit_fp32_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/common/vit_counter.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/common/vit_lane_mask.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_lane_mask
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/common/vit_stream_buffer.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_stream_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/common/vit_u32_mul_iterative_nodsp.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_u32_mul_iterative_nodsp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_add_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_add_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_sub_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_sub_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_compare.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_compare
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_mul_comb_nodsp.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_mul_comb_nodsp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_accumulator.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_accumulator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_from_u32_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_from_u32_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_to_u32_floor_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_to_u32_floor_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_scale_pow2_down_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_scale_pow2_down_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_recip_u32_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_recip_u32_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_recip_u32_serial.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_recip_u32_serial
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_recip_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_recip_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_rsqrt_step_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_rsqrt_step_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_exp_neg_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_exp_neg_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_gelu_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_gelu_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp32_to_fp16_rne_gradual.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_to_fp16_rne_gradual
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp16_mul_to_fp32_comb_nodsp.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp16_mul_to_fp32_comb_nodsp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp32_product_to_fixed_exact.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_product_to_fixed_exact
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fixed_analyze.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fixed_analyze
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fixed_normalized_to_fp32_rne.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fixed_normalized_to_fp32_rne
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fixed_to_fp32_rne.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fixed_to_fp32_rne
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp16_dot_stream_csa_nodsp.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp16_dot_stream_csa_nodsp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_controller.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_operand_router.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_operand_router
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_result_path.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_result_path
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_fp32_reduce16.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_reduce16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_dot16.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_dot16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_dot16_serial.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_dot16_serial
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_accumulator.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_accumulator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_accumulator_bank.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_accumulator_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_pe.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_pe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_pe_array.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_pe_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_tree_pe_fp32.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_tree_pe_fp32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_tree_array.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_tree_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_activation_panel_cache.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_activation_panel_cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_bias_cache.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_bias_cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_fp16_stream_array.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_fp16_stream_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_result_fifo.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_result_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_fp16_parallel_scheduler.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_fp16_parallel_scheduler
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_dual_mode_array.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_dual_mode_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/vector/vit_vector_lane_alu.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_vector_lane_alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/vector/vit_vector_datapath.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_vector_datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/vector/vit_vector_engine_fp32.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_vector_engine_fp32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layout/vit_layout_address_generator.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layout_address_generator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layout/vit_layout_descriptor_validator.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layout_descriptor_validator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layout/vit_layout_engine.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layout_engine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layernorm/vit_layernorm_statistics_datapath.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layernorm_statistics_datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layernorm/vit_layernorm_affine_datapath.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layernorm_affine_datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layernorm/vit_layernorm_engine_fp32.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layernorm_engine_fp32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/softmax/vit_softmax_exp_datapath.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_softmax_exp_datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/softmax/vit_softmax_reciprocal_step.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_softmax_reciprocal_step
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/softmax/vit_softmax_engine_fp32.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_softmax_engine_fp32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gelu/vit_gelu_lane_datapath.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gelu_lane_datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gelu/vit_fp32_gelu_serial.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_gelu_serial
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gelu/vit_gelu_engine_fp32.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gelu_engine_fp32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/argmax/vit_argmax_engine_fp32.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_argmax_engine_fp32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/control/vit_phase_e_sequencer.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_sequencer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_gemm_memory_address_context.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_memory_address_context
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_read_address_router.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_read_address_router
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_write_address_router.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_write_address_router
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_memory_frontend.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_memory_frontend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_command_controller.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_command_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_engine_dispatch.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_engine_dispatch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_engine_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_engine_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_npu.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_npu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_layer_param_table.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layer_param_table
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_layer_param_loader.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layer_param_loader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_perf_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_perf_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_profile_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_profile_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_m5_axi_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_m5_axi_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_m7_overlap_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_m7_overlap_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_axi_lite_control_regs.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_axi_lite_control_regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/memory/vit_phase_e_axi_mem_adapter.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_axi_mem_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/vit_phase_e_axi_wrapper.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_axi_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/top/vit_phase_e_axi_bd_wrapper.v" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_axi_bd_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_axi_mem_adapter.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_axi_mem_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_axi_wrapper.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_axi_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_engine_memory.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_engine_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_engine_axi.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_engine_axi
+INFO: [VRFC 10-311] analyzing module axi_stall_ram_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/control/tb_vit_phase_e_perf_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_perf_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/control/tb_vit_phase_e_profile_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_profile_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/m7/tb_vit_phase_e_m7_overlap_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_m7_overlap_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/vit_axi_ddr_model_128.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_axi_ddr_model_128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/tb_vit_phase_e_axi_e05_compact_rtl.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_axi_e05_compact_rtl
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 1 tb_vit_phase_e_axi_mem_adapter -s tb_vit_phase_e_axi_mem_adapter_snapshot 
+ERROR: [XSIM 43-3260] Illegal value "1" passed to "-mt" switch. Legal values are: auto, off or an integer greater than 1.

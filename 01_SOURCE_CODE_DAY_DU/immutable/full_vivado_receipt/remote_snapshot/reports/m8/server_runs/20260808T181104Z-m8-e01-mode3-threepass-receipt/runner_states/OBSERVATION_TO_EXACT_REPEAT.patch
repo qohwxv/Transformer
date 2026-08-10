@@ -1,0 +1,17 @@
+--- observation_runner_1a12cdc9ad05.sh
++++ exact_repeat_runner_5a4c39e58a80.sh
+@@ -362,11 +362,11 @@
+ patterns = [
+     r"M7_MODE3_E01_BIAS_CACHE lookups=38400 hits=36866 misses=1534 two_pass_refetch=766",
+     r"M7_MODE3_E01_TRAFFIC external_u32=15351550 model_reads=14899198 input_reads=150528 scratch_reads=301824 ar=1243870 r_beats=4065406 full_r_beats=3762048 narrow_r_beats=303358 linefills=940512 line_hits=14107680 writes=453120 maxout=1",
+-    r"M7_MODE3_E01_M7_STATUS raw=[0-9a-fA-F]{8} running=0 snapshot=1 overflow=0 error=0 lc=[01] cs=[01] three=[01] both_claimed=1 claim_mask=3 bank_max=[12] fifo_max=[12] feeder_wait=[01] result_bp=[01] empty_wait=[01] full_wait=[01]",
+-    r"M7_MODE3_E01_M7_COUNTERS terms=117964800 disabled=2359296 enabled=115605504 dots=19200 results=19200 commits=921600 claims=921600 releases=921600 bank_max=[12] fifo_enqueue=19200 fifo_dequeue=19200 fifo_max=[12] load=[1-9][0-9]* compute=[1-9][0-9]* store=[1-9][0-9]* union=[1-9][0-9]* load_compute=[0-9]+ compute_store=[0-9]+ load_store=[0-9]+ three_way=[0-9]+",
++    r"M7_MODE3_E01_M7_STATUS raw=00071bf2 running=0 snapshot=1 overflow=0 error=0 lc=1 cs=1 three=1 both_claimed=1 claim_mask=3 bank_max=2 fifo_max=1 feeder_wait=1 result_bp=1 empty_wait=1 full_wait=0",
++    r"M7_MODE3_E01_M7_COUNTERS terms=117964800 disabled=2359296 enabled=115605504 dots=19200 results=19200 commits=921600 claims=921600 releases=921600 bank_max=2 fifo_enqueue=19200 fifo_dequeue=19200 fifo_max=1 load=75268889 compute=15033600 store=1380096 union=75864134 load_compute=14438400 compute_store=307184 load_store=1380051 three_way=307184",
+     r"M7_MODE3_E01_OUTPUT_STRUCTURE embedding_words=151296 embedding_nonfinite=0 embedding_sentinel=0 hidden_b_modified=0",
+     r"M7_MODE3_E01_OUTPUT_DUMP embedding_words=151296 embedding=.+ numerical_status=PENDING_EXTERNAL_M6_CURRENT_ADDER_AND_BEHAVIORAL_ORACLES",
+-    r"VIT_PHASE_E_AXI_E01_MODE3_REAL_RTL_STRUCTURAL_PASS checks=[1-9][0-9]* cycles=[1-9][0-9]* commands=4 external_u32=15351550 writes=453120 model_reads=14899198 input_reads=150528 scratch_reads=301824 numerical_status=PENDING_EXTERNAL_M6_CURRENT_ADDER_AND_BEHAVIORAL_ORACLES",
++    r"VIT_PHASE_E_AXI_E01_MODE3_REAL_RTL_STRUCTURAL_PASS checks=266 cycles=82215315 commands=4 external_u32=15351550 writes=453120 model_reads=14899198 input_reads=150528 scratch_reads=301824 numerical_status=PENDING_EXTERNAL_M6_CURRENT_ADDER_AND_BEHAVIORAL_ORACLES",
+ ]
+ positions = []
+ for text in patterns:

@@ -1,0 +1,11 @@
+rtl/leaf/fp32/vit_fp32_add_comb.sv
+rtl/leaf/fp32/vit_fp32_sub_comb.sv
+rtl/leaf/fp32/vit_fp32_mul_comb_nodsp.sv
+rtl/leaf/fp32/vit_fp32_from_u32_comb.sv
+rtl/leaf/fp32/vit_fp32_to_u32_floor_comb.sv
+rtl/leaf/fp32/vit_fp32_scale_pow2_down_comb.sv
+rtl/leaf/fp32/vit_fp32_recip_comb.sv
+rtl/leaf/fp32/vit_fp32_exp_neg_comb.sv
+rtl/leaf/fp32/vit_fp32_gelu_comb.sv
+rtl/blocks/gelu/vit_fp32_gelu_serial.sv
+sim/gelu/tb_vit_fp32_gelu_serial.sv

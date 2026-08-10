@@ -1,0 +1,3 @@
+rtl/pkg/vit_phase_e_pkg.sv
+rtl/core/vit_phase_e_read_address_router.sv
+sim/gemm/tb_vit_phase_e_read_address_router_blocked_b.sv

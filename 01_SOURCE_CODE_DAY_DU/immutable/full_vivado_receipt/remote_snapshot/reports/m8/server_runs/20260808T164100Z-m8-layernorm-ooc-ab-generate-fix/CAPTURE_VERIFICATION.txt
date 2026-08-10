@@ -1,0 +1,14 @@
+M8_LAYERNORM_CAPTURE_VERIFY_PASS
+remote_initial_before_after_equal=1
+remote_initial_local_equal=1
+remote_corrected_before_after_equal=1
+remote_corrected_local_equal=1
+initial_input_snapshot_manifest_pass=1
+corrected_input_snapshot_manifest_pass=1
+corrected_remote_source_equals_local_final_capture=1
+remote_initial_file_count=4
+remote_corrected_file_count=35
+initial_failure_reports_or_dcps=0
+corrected_reports_and_dcps_copied=1
+remote_mutation=false
+

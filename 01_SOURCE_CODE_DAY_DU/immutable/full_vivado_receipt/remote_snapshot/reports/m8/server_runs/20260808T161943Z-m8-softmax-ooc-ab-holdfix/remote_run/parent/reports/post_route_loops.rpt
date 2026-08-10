@@ -1,0 +1,26 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date              : Sat Aug  8 16:22:44 2026
+| Host              : ubuntu running 64-bit Ubuntu 24.04.4 LTS
+| Command           : check_timing -verbose -return_string -override_defaults loops
+| Design            : vit_softmax_engine_fp32
+| Device            : xczu5ev-sfvc784
+| Speed File        : -1  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking loops (0)
+
+1. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+

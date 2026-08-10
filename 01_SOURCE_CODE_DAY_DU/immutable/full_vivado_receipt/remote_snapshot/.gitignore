@@ -1,0 +1,10 @@
+/server_logs/
+/vivado*.log
+/vivado*.jou
+/.Xil/
+/xsim.dir/
+/VIT_googlebase_rtl/ViT_googlebase/
+/VIT_googlebase_rtl/reports/*
+/VIT_googlebase_rtl/artifacts/*
+!/VIT_googlebase_rtl/reports/.keep
+!/VIT_googlebase_rtl/artifacts/.keep

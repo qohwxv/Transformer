@@ -1,0 +1,11 @@
+rtl/leaf/common/vit_u32_mul_iterative_nodsp.sv
+rtl/leaf/fp32/vit_fp32_add_comb.sv
+rtl/leaf/fp32/vit_fp32_mul_comb_nodsp.sv
+rtl/leaf/fp32/vit_fp32_recip_u32_serial.sv
+rtl/leaf/fp32/vit_fp32_compare.sv
+rtl/leaf/fp32/vit_fp32_from_u32_comb.sv
+rtl/leaf/fp32/vit_fp32_to_u32_floor_comb.sv
+rtl/leaf/fp32/vit_fp32_scale_pow2_down_comb.sv
+rtl/blocks/layernorm/vit_layernorm_engine_fp32.sv
+rtl/blocks/softmax/vit_softmax_engine_fp32.sv
+sim/config/tb_vit_total_words_config_bounds.sv

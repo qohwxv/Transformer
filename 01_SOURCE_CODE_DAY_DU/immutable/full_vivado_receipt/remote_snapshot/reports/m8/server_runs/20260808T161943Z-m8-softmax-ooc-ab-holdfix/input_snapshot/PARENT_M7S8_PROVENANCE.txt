@@ -1,0 +1,12 @@
+Parent: M7-S8 FP16-only v1.12 final non-board qualification checkpoint
+Checkpoint date: 2026-08-08
+Checkpoint directory: reports/m7/checkpoints/20260808T135953Z-m7s8_final_nonboard_qualification
+SOURCE_SNAPSHOT.tar.gz SHA256: fde39bfb9fa8549e3ad3b61ce37bce50056416ea7283cca44e076a705d5646f9
+Checkpoint SHA256SUMS.txt SHA256: bf29ff0b8d9d73be9a7528d7bd7f2151bd91746c3ae227210fb9eea6a7ec86ee
+Parent M7_DEVELOPMENT_SHA256SUMS.txt SHA256: 0fd289058fbcfb2eff5a63664d14232f39b2b9e30e3023c890e8f6ddc901f838
+Parent ordered 80-source stream SHA256: 1ffe0295790435ba762659aee2cac1e1d8f7bace7317ee4715ef4f33474e5888
+Parent filelists/full_axi.f SHA256: 88166c76fac96e7f4b59f486a3d5867a94001e6d72014ad7187b5e4de40f3524
+
+The M8 child was materialized by extracting that exact 361-entry source
+snapshot.  Historical M7 BIT/XSA and server receipts are parent evidence only;
+they are not M8 artifacts and must never be relabelled as M8 results.

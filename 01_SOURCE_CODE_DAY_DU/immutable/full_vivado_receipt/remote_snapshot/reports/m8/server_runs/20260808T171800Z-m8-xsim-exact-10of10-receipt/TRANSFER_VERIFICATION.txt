@@ -1,0 +1,7 @@
+Date: 2026-08-08 UTC
+Method: rsync checksum-only dry-run after local copy; server side read-only
+REMOTE_LOCAL_CHECKSUM_PARITY_PASS raw_runs=6 production_sources=80 xsim_inputs=11
+
+The six remote run directories produced no checksum, size, path, or deletion
+difference. The 80 production sources and all 11 filelist/runner/test/model
+input paths also produced no checksum difference.

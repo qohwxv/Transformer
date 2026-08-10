@@ -1,0 +1,2 @@
+VIT_PHASE_E_AXI_WRAPPER_TEST_PASS checks=95
+sim/axi/tb_vit_phase_e_axi_wrapper.sv:508: $finish called at 3100000 (1ps)

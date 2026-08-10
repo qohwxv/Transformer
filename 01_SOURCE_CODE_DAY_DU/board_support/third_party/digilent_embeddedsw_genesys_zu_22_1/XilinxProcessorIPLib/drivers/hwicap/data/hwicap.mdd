@@ -1,0 +1,22 @@
+###############################################################################
+# Copyright (C) 2003 - 2020 Xilinx, Inc.  All rights reserved.
+# SPDX-License-Identifier: MIT
+#
+# MODIFICATION HISTORY
+#
+# 10.0 6/30/14 Removed support for EDK cores.
+# 11.2 02/01/19 Updated the Number of words per frame as mention in the
+#               ug570
+#
+##############################################################################
+OPTION psf_version = 2.1;
+
+BEGIN driver hwicap
+
+OPTION supported_peripherals = axi_hwicap_v[0-9]_[0-9]; 
+OPTION driver_state = ACTIVE;
+OPTION copyfiles = all;
+OPTION VERSION = 11.4;
+OPTION NAME = hwicap;
+
+END DRIVER

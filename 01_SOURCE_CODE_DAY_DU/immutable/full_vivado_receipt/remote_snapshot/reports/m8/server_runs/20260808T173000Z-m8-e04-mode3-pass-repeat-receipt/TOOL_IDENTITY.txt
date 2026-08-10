@@ -1,0 +1,14 @@
+REMOTE_TOOL_IDENTITY captured_utc=2026-08-08T17:33:45Z host=ubuntu
+verilator_path=/usr/bin/verilator
+verilator_version=Verilator 5.020 2024-01-01 rev (Debian 5.020-1)
+verilator_sha256=4c6292ab82e57b7f34ab26dbae86ba9c494bacfb088b6ff34be93c553d1301b1
+python_path=/usr/bin/python3
+python_version=Python 3.12.3
+python_sha256=1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118
+gxx_path=/usr/bin/g++
+gxx_version=g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+gxx_sha256=1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769
+make_path=/usr/bin/make
+make_version=GNU Make 4.3
+make_sha256=d78b8f1d099fbcfb6f2f49ab87223b9b68fb3956642f92d6ec6de812e8afa965
+scope=E04 runs used Verilator; Vivado/XSim is not an input to these two E04 runs

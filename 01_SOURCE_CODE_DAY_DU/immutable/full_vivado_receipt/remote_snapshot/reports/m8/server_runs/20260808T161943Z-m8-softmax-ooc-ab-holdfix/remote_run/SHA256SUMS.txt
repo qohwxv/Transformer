@@ -1,0 +1,4 @@
+076c944288adfe809a925383c8aaea6415ba71a5dc9f61b54a7dddbaeeeb6901  /home/s23520579/Vivado_project/vit_m8_softmax_leaf_9ddbb13b65f5/evidence/20260808T161943Z-m8-softmax-ooc-ab-holdfix/parent/SUMMARY.txt
+0e80b6d9b9cea3fe1b38f471c6d2c8e3be79d1089018722f881c97d8d53df9de  /home/s23520579/Vivado_project/vit_m8_softmax_leaf_9ddbb13b65f5/evidence/20260808T161943Z-m8-softmax-ooc-ab-holdfix/candidate/SUMMARY.txt
+b0d0595cbb2e0b32afe78d07b67d0f60364a6f6dd37e307e4cfe3a73ce6d0bfd  /home/s23520579/Vivado_project/vit_m8_softmax_leaf_9ddbb13b65f5/evidence/20260808T161943Z-m8-softmax-ooc-ab-holdfix/parent/artifacts/post_route.dcp
+2f35c5e15bb9d83bd334e689960323b8b4000e8d0e93cc498378ef272818cb71  /home/s23520579/Vivado_project/vit_m8_softmax_leaf_9ddbb13b65f5/evidence/20260808T161943Z-m8-softmax-ooc-ab-holdfix/candidate/artifacts/post_route.dcp

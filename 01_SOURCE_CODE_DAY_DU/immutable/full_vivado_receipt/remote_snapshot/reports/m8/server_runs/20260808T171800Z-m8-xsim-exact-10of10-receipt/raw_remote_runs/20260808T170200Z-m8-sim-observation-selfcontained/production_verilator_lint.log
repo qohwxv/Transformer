@@ -1,0 +1,443 @@
+%Warning-PINCONNECTEMPTY: rtl/blocks/layout/vit_layout_descriptor_validator.sv:113:10: Cell pin connected by name with empty reference: 'busy'
+  113 |         .busy     (),
+      |          ^~~~
+                          ... For warning description see https://verilator.org/warn/PINCONNECTEMPTY?v=5.020
+                          ... Use "/* verilator lint_off PINCONNECTEMPTY */" and lint_on around source to disable this message.
+%Warning-PINCONNECTEMPTY: rtl/blocks/layout/vit_layout_engine.sv:117:10: Cell pin connected by name with empty reference: 'busy'
+  117 |         .busy            (),
+      |          ^~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/layernorm/vit_layernorm_engine_fp32.sv:272:10: Cell pin connected by name with empty reference: 'busy'
+  272 |         .busy      (),
+      |          ^~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/layernorm/vit_layernorm_engine_fp32.sv:282:10: Cell pin connected by name with empty reference: 'busy'
+  282 |         .busy   (),
+      |          ^~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/softmax/vit_softmax_engine_fp32.sv:235:10: Cell pin connected by name with empty reference: 'busy'
+  235 |         .busy      (),
+      |          ^~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/softmax/vit_softmax_engine_fp32.sv:272:10: Cell pin connected by name with empty reference: 'a_is_nan'
+  272 |         .a_is_nan          (),
+      |          ^~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/softmax/vit_softmax_engine_fp32.sv:273:10: Cell pin connected by name with empty reference: 'a_is_inf'
+  273 |         .a_is_inf          (),
+      |          ^~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/softmax/vit_softmax_engine_fp32.sv:274:10: Cell pin connected by name with empty reference: 'a_is_zero'
+  274 |         .a_is_zero         (),
+      |          ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/softmax/vit_softmax_engine_fp32.sv:275:10: Cell pin connected by name with empty reference: 'b_is_nan'
+  275 |         .b_is_nan          (),
+      |          ^~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/softmax/vit_softmax_engine_fp32.sv:276:10: Cell pin connected by name with empty reference: 'b_is_inf'
+  276 |         .b_is_inf          (),
+      |          ^~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/softmax/vit_softmax_engine_fp32.sv:277:10: Cell pin connected by name with empty reference: 'b_is_zero'
+  277 |         .b_is_zero         (),
+      |          ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/softmax/vit_softmax_engine_fp32.sv:278:10: Cell pin connected by name with empty reference: 'unordered'
+  278 |         .unordered         (),
+      |          ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/softmax/vit_softmax_engine_fp32.sv:279:10: Cell pin connected by name with empty reference: 'equal'
+  279 |         .equal             (),
+      |          ^~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/softmax/vit_softmax_engine_fp32.sv:280:10: Cell pin connected by name with empty reference: 'a_greater'
+  280 |         .a_greater         (),
+      |          ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/softmax/vit_softmax_engine_fp32.sv:281:10: Cell pin connected by name with empty reference: 'a_greater_equal'
+  281 |         .a_greater_equal   (),
+      |          ^~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/gelu/vit_gelu_engine_fp32.sv:89:10: Cell pin connected by name with empty reference: 'busy'
+   89 |         .busy               (),
+      |          ^~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/argmax/vit_argmax_engine_fp32.sv:56:10: Cell pin connected by name with empty reference: 'a_is_nan'
+   56 |         .a_is_nan        (),
+      |          ^~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/argmax/vit_argmax_engine_fp32.sv:57:10: Cell pin connected by name with empty reference: 'a_is_inf'
+   57 |         .a_is_inf        (),
+      |          ^~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/argmax/vit_argmax_engine_fp32.sv:58:10: Cell pin connected by name with empty reference: 'a_is_zero'
+   58 |         .a_is_zero       (),
+      |          ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/argmax/vit_argmax_engine_fp32.sv:59:10: Cell pin connected by name with empty reference: 'b_is_nan'
+   59 |         .b_is_nan        (),
+      |          ^~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/argmax/vit_argmax_engine_fp32.sv:60:10: Cell pin connected by name with empty reference: 'b_is_inf'
+   60 |         .b_is_inf        (),
+      |          ^~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/argmax/vit_argmax_engine_fp32.sv:61:10: Cell pin connected by name with empty reference: 'b_is_zero'
+   61 |         .b_is_zero       (),
+      |          ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/argmax/vit_argmax_engine_fp32.sv:62:10: Cell pin connected by name with empty reference: 'unordered'
+   62 |         .unordered       (),
+      |          ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/argmax/vit_argmax_engine_fp32.sv:63:10: Cell pin connected by name with empty reference: 'equal'
+   63 |         .equal           (),
+      |          ^~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/argmax/vit_argmax_engine_fp32.sv:65:10: Cell pin connected by name with empty reference: 'a_greater_equal'
+   65 |         .a_greater_equal (),
+      |          ^~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/blocks/argmax/vit_argmax_engine_fp32.sv:66:10: Cell pin connected by name with empty reference: 'maximum'
+   66 |         .maximum         ()
+      |          ^~~~~~~
+%Warning-PINCONNECTEMPTY: rtl/axi/vit_phase_e_axi_wrapper.sv:910:10: Cell pin connected by name with empty reference: 'scratch_read_data'
+  910 |         .scratch_read_data(),
+      |          ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/pkg/vit_fp32_pkg.sv:281:67: Bits of signal are not used: 'value'[31]
+                                                     : ... note: In instance 'vit_phase_e_axi_bd_wrapper'
+  281 |     function automatic logic fp32_is_nan_synth(input logic [31:0] value);
+      |                                                                   ^~~~~
+%Warning-UNUSEDSIGNAL: rtl/pkg/vit_fp32_pkg.sv:288:67: Bits of signal are not used: 'value'[31]
+                                                     : ... note: In instance 'vit_phase_e_axi_bd_wrapper'
+  288 |     function automatic logic fp32_is_inf_synth(input logic [31:0] value);
+      |                                                                   ^~~~~
+%Warning-UNUSEDSIGNAL: rtl/pkg/vit_fp32_pkg.sv:295:68: Bits of signal are not used: 'value'[31]
+                                                     : ... note: In instance 'vit_phase_e_axi_bd_wrapper'
+  295 |     function automatic logic fp32_is_zero_synth(input logic [31:0] value);
+      |                                                                    ^~~~~
+%Warning-UNUSEDSIGNAL: rtl/pkg/vit_fp32_pkg.sv:342:22: Bits of signal are not used: 'shifted_value'[63:24]
+                                                     : ... note: In instance 'vit_phase_e_axi_bd_wrapper'
+  342 |         logic [63:0] shifted_value;
+      |                      ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/pkg/vit_fp32_pkg.sv:435:17: Bits of signal are not used: 'result_exponent'[31:8]
+                                                     : ... note: In instance 'vit_phase_e_axi_bd_wrapper'
+  435 |         integer result_exponent;
+      |                 ^~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/pkg/vit_fp32_pkg.sv:618:22: Bits of signal are not used: 'squared_value'[31]
+                                                     : ... note: In instance 'vit_phase_e_axi_bd_wrapper'
+  618 |         logic [31:0] squared_value;
+      |                      ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:211:18: Bits of signal are not used: 'irq_enable'[31:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  211 |     logic [31:0] irq_enable;
+      |                  ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:212:18: Bits of signal are not used: 'irq_status'[31:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  212 |     logic [31:0] irq_status;
+      |                  ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:224:18: Bits of signal are not used: 'job_config'[31:21]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  224 |     logic [31:0] job_config;
+      |                  ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:277:21: Bits of signal are not used: 'checkpoint_phase'[2:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  277 |     phase_e_phase_t checkpoint_phase;
+      |                     ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:278:23: Bits of signal are not used: 'checkpoint_section'[1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  278 |     phase_e_section_t checkpoint_section;
+      |                       ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:279:17: Bits of signal are not used: 'checkpoint_layer'[3:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  279 |     logic [3:0] checkpoint_layer;
+      |                 ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:280:17: Bits of signal are not used: 'checkpoint_step'[4:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  280 |     logic [4:0] checkpoint_step;
+      |                 ^~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:281:17: Bits of signal are not used: 'checkpoint_tag'[7:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  281 |     logic [7:0] checkpoint_tag;
+      |                 ^~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:282:22: Bits of signal are not used: 'checkpoint_opcode'[3:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  282 |     phase_e_opcode_t checkpoint_opcode;
+      |                      ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:283:25: Bits of signal are not used: 'checkpoint_dst_tensor'[3:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  283 |     phase_e_tensor_id_t checkpoint_dst_tensor;
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:285:19: Bits of signal are not used: 'operand_load_command'[511:32]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  285 |     phase_e_cmd_t operand_load_command;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:315:11: Signal is not used: 'm5_axi_running'
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  315 |     logic m5_axi_running;
+      |           ^~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/vit_phase_e_axi_wrapper.sv:316:11: Signal is not used: 'm5_axi_snapshot_valid'
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core'
+  316 |     logic m5_axi_snapshot_valid;
+      |           ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/memory/vit_phase_e_axi_mem_adapter.sv:207:18: Bits of signal are not used: 'planned_second_address_wide'[64:40]
+                                                                           : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_mem_adapter'
+  207 |     logic [64:0] planned_second_address_wide;
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/memory/vit_phase_e_axi_mem_adapter.sv:222:18: Bits of signal are not used: 'line_hit_delta'[31:5]
+                                                                           : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_mem_adapter'
+  222 |     logic [31:0] line_hit_delta;
+      |                  ^~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/axi/control/vit_phase_e_m7_overlap_counters.sv:22:57: Bits of signal are not used: 'events_i'[75:72,58,55:36]
+                                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_m7_overlap_counters'
+   22 |     input  vit_phase_e_pkg::phase_e_m7_profile_events_t events_i,
+      |                                                         ^~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/control/vit_phase_e_sequencer.sv:125:19: Bits of signal are not used: 'active_job'[52:49]
+                                                                  : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_sequencer'
+  125 |     phase_e_job_t active_job;
+      |                   ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/control/vit_phase_e_sequencer.sv:143:18: Signal is not used: 'flow_head_words'
+                                                                  : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_sequencer'
+  143 |     logic [31:0] flow_head_words;
+      |                  ^~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/control/vit_phase_e_sequencer.sv:161:22: Bits of signal are not used: 'rounded_reduction'[3:0]
+                                                                  : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_sequencer'
+  161 |         logic [32:0] rounded_reduction;
+      |                      ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/control/vit_phase_e_sequencer.sv:176:22: Bits of signal are not used: 'rounded_reduction'[3:0]
+                                                                  : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_sequencer'
+  176 |         logic [32:0] rounded_reduction;
+      |                      ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:58:44: Bits of signal are not used: 'input_write_address'[31:1]
+                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+   58 |     input  logic [31:0]                    input_write_address,
+      |                                            ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:59:44: Bits of signal are not used: 'input_write_data'[31:1]
+                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+   59 |     input  logic [31:0]                    input_write_data,
+      |                                            ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:61:44: Bits of signal are not used: 'parameter_write_address'[31:1]
+                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+   61 |     input  logic [31:0]                    parameter_write_address,
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:62:44: Bits of signal are not used: 'parameter_write_data'[31:1]
+                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+   62 |     input  logic [31:0]                    parameter_write_data,
+      |                                            ^~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:64:44: Bits of signal are not used: 'scratch_write_address'[31:1]
+                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+   64 |     input  logic [31:0]                    scratch_write_address,
+      |                                            ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:65:44: Bits of signal are not used: 'scratch_write_data'[31:1]
+                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+   65 |     input  logic [31:0]                    scratch_write_data,
+      |                                            ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:66:44: Bits of signal are not used: 'scratch_read_address'[31:1]
+                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+   66 |     input  logic [31:0]                    scratch_read_address,
+      |                                            ^~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:89:17: Signal is not used: 'state'
+                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+   89 |     logic [2:0] state;
+      |                 ^~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:90:17: Signal is not used: 'mem_state'
+                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+   90 |     logic [3:0] mem_state;
+      |                 ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:97:19: Bits of signal are not used: 'profile_command'[511:64]
+                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+   97 |     phase_e_cmd_t profile_command;
+      |                   ^~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:229:18: Bits of signal are not used: 'ln_debug_mean'[31:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+  229 |     logic [31:0] ln_debug_mean;
+      |                  ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:230:18: Bits of signal are not used: 'ln_debug_variance'[31:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+  230 |     logic [31:0] ln_debug_variance;
+      |                  ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:231:18: Bits of signal are not used: 'ln_debug_inv_std'[31:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+  231 |     logic [31:0] ln_debug_inv_std;
+      |                  ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:244:17: Bits of signal are not used: 'softmax_data_pass'[1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+  244 |     logic [1:0] softmax_data_pass;
+      |                 ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:251:18: Bits of signal are not used: 'softmax_debug_row_max'[31:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+  251 |     logic [31:0] softmax_debug_row_max;
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_top.sv:252:18: Bits of signal are not used: 'softmax_debug_exp_sum'[31:1]
+                                                                : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine'
+  252 |     logic [31:0] softmax_debug_exp_sum;
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_command_controller.sv:63:29: Bits of signal are not used: 'value'[511:64,31:0]
+                                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_command_controller'
+   63 |         input phase_e_cmd_t value
+      |                             ^~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_engine_dispatch.sv:15:43: Bits of signal are not used: 'active_cmd'[511:32]
+                                                                    : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_engine_dispatch'
+   15 |     input  vit_phase_e_pkg::phase_e_cmd_t active_cmd,
+      |                                           ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/blocks/gemm/vit_gemm_dual_mode_array.sv:60:53: Signal is not used: 'external_mul_result'
+                                                                        : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gemm'
+   60 |     input  logic [31:0]                             external_mul_result,
+      |                                                     ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/blocks/gemm/vit_gemm_dual_mode_array.sv:63:53: Signal is not used: 'external_add_result'
+                                                                        : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gemm'
+   63 |     input  logic [31:0]                             external_add_result,
+      |                                                     ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/blocks/layernorm/vit_layernorm_engine_fp32.sv:199:18: Bits of signal are not used: 'total_words_product'[31:0]
+                                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_layernorm'
+  199 |     logic [63:0] total_words_product;
+      |                  ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/blocks/softmax/vit_softmax_engine_fp32.sv:186:18: Bits of signal are not used: 'total_words_product'[31:0]
+                                                                           : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_softmax'
+  186 |     logic [63:0] total_words_product;
+      |                  ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/leaf/fp32/vit_fp32_recip_u32_serial.sv:42:18: Bits of signal are not used: 'normalized_quotient'[63:23]
+                                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_layernorm.u_reciprocal_hidden_size'
+   42 |     logic [63:0] normalized_quotient;
+      |                  ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/blocks/gemm/vit_gemm_bias_cache.sv:17:25: Bits of signal are not used: 'write_index'[31:12]
+                                                                   : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_memory_frontend.u_gemm_bias_cache'
+   17 |     input  logic [31:0] write_index,
+      |                         ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/blocks/gemm/vit_gemm_bias_cache.sv:21:25: Bits of signal are not used: 'read_index'[31:12]
+                                                                   : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_memory_frontend.u_gemm_bias_cache'
+   21 |     input  logic [31:0] read_index,
+      |                         ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/blocks/gemm/vit_gemm_fp16_parallel_scheduler.sv:170:18: Signal is not used: 'selected_batch_index'
+                                                                                 : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gemm.gen_fp16.u_fp16'
+  170 |     logic [31:0] selected_batch_index;
+      |                  ^~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/blocks/layout/vit_layout_descriptor_validator.sv:57:18: Bits of signal are not used: 'last_destination_address'[31:0]
+                                                                                 : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_layout.u_descriptor_validator'
+   57 |     logic [63:0] last_destination_address;
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/blocks/gemm/vit_gemm_activation_panel_cache.sv:23:25: Bits of signal are not used: 'write_k_index'[31:12]
+                                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_memory_frontend.u_gemm_activation_panel_cache'
+   23 |     input  logic [31:0] write_k_index,
+      |                         ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/blocks/gemm/vit_gemm_activation_panel_cache.sv:29:25: Bits of signal are not used: 'read_k_index'[31:12]
+                                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_memory_frontend.u_gemm_activation_panel_cache'
+   29 |     input  logic [31:0] read_k_index,
+      |                         ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/blocks/gemm/vit_gemm_activation_panel_cache.sv:37:25: Bits of signal are not used: 'vector_read_k_index'[31:12]
+                                                                               : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_memory_frontend.u_gemm_activation_panel_cache'
+   37 |     input  logic [31:0] vector_read_k_index,
+      |                         ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_gemm_memory_address_context.sv:20:43: Bits of signal are not used: 'active_cmd'[319:192,63:32]
+                                                                        : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_memory_frontend.u_gemm_address_context'
+   20 |     input  vit_phase_e_pkg::phase_e_cmd_t active_cmd,
+      |                                           ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_read_address_router.sv:14:43: Bits of signal are not used: 'active_cmd'[511:448,415:384,351:320,191:160]
+                                                                        : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_memory_frontend.u_read_address_router'
+   14 |     input  vit_phase_e_pkg::phase_e_cmd_t active_cmd,
+      |                                           ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/core/vit_phase_e_write_address_router.sv:12:43: Bits of signal are not used: 'active_cmd'[479:192,159:64]
+                                                                         : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_memory_frontend.u_write_address_router'
+   12 |     input  vit_phase_e_pkg::phase_e_cmd_t active_cmd,
+      |                                           ^~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:41:29: Parameter is not used: 'PHASE_E_SCRATCH_WORDS'
+                                                      : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+   41 |     localparam logic [31:0] PHASE_E_SCRATCH_WORDS   = 32'h001e_6000;
+      |                             ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:46:29: Parameter is not used: 'PHASE_E_PARAM_MAIN_BASE'
+                                                      : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+   46 |     localparam logic [31:0] PHASE_E_PARAM_MAIN_BASE = 32'h0000_0000;
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:47:29: Parameter is not used: 'PHASE_E_PARAM_AUX_BASE'
+                                                      : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+   47 |     localparam logic [31:0] PHASE_E_PARAM_AUX_BASE  = 32'h0024_0000;
+      |                             ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:48:29: Parameter is not used: 'PHASE_E_PARAM_WORDS'
+                                                      : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+   48 |     localparam logic [31:0] PHASE_E_PARAM_WORDS     = 32'h0024_1000;
+      |                             ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:115:28: Parameter is not used: 'PHASE_E_FLAG_MASK_ENABLE'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  115 |     localparam logic [7:0] PHASE_E_FLAG_MASK_ENABLE = 8'h02;
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:259:24: Parameter is not used: 'PHASE_E_CMD_WORDS'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  259 |     localparam integer PHASE_E_CMD_WORDS = 16;
+      |                        ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:260:24: Parameter is not used: 'PHASE_E_CMD_BITS'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  260 |     localparam integer PHASE_E_CMD_BITS = 512;
+      |                        ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:261:24: Parameter is not used: 'PHASE_E_CMD_W_HEADER'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  261 |     localparam integer PHASE_E_CMD_W_HEADER = 0;
+      |                        ^~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:262:24: Parameter is not used: 'PHASE_E_CMD_W_ROUTE'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  262 |     localparam integer PHASE_E_CMD_W_ROUTE = 1;
+      |                        ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:263:24: Parameter is not used: 'PHASE_E_CMD_W_SRC0_BASE'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  263 |     localparam integer PHASE_E_CMD_W_SRC0_BASE = 2;
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:264:24: Parameter is not used: 'PHASE_E_CMD_W_SRC1_BASE'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  264 |     localparam integer PHASE_E_CMD_W_SRC1_BASE = 3;
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:265:24: Parameter is not used: 'PHASE_E_CMD_W_SRC2_BASE'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  265 |     localparam integer PHASE_E_CMD_W_SRC2_BASE = 4;
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:266:24: Parameter is not used: 'PHASE_E_CMD_W_DST_BASE'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  266 |     localparam integer PHASE_E_CMD_W_DST_BASE = 5;
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:267:24: Parameter is not used: 'PHASE_E_CMD_W_DIM0'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  267 |     localparam integer PHASE_E_CMD_W_DIM0 = 6;
+      |                        ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:268:24: Parameter is not used: 'PHASE_E_CMD_W_DIM1'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  268 |     localparam integer PHASE_E_CMD_W_DIM1 = 7;
+      |                        ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:269:24: Parameter is not used: 'PHASE_E_CMD_W_DIM2'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  269 |     localparam integer PHASE_E_CMD_W_DIM2 = 8;
+      |                        ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:270:24: Parameter is not used: 'PHASE_E_CMD_W_DIM3'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  270 |     localparam integer PHASE_E_CMD_W_DIM3 = 9;
+      |                        ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:271:24: Parameter is not used: 'PHASE_E_CMD_W_STRIDE0'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  271 |     localparam integer PHASE_E_CMD_W_STRIDE0 = 10;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:272:24: Parameter is not used: 'PHASE_E_CMD_W_STRIDE1'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  272 |     localparam integer PHASE_E_CMD_W_STRIDE1 = 11;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:273:24: Parameter is not used: 'PHASE_E_CMD_W_STRIDE2'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  273 |     localparam integer PHASE_E_CMD_W_STRIDE2 = 12;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:274:24: Parameter is not used: 'PHASE_E_CMD_W_STRIDE3'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  274 |     localparam integer PHASE_E_CMD_W_STRIDE3 = 13;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:275:24: Parameter is not used: 'PHASE_E_CMD_W_STRIDE4'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  275 |     localparam integer PHASE_E_CMD_W_STRIDE4 = 14;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:276:24: Parameter is not used: 'PHASE_E_CMD_W_IMMEDIATE'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  276 |     localparam integer PHASE_E_CMD_W_IMMEDIATE = 15;
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:333:28: Parameter is not used: 'PHASE_E_FINAL_COMMANDS'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  333 |     localparam logic [5:0] PHASE_E_FINAL_COMMANDS = 6'd4;
+      |                            ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl/pkg/vit_phase_e_pkg.sv:334:28: Parameter is not used: 'PHASE_E_FINAL_SOFTMAX_COMMANDS'
+                                                       : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core'
+  334 |     localparam logic [5:0] PHASE_E_FINAL_SOFTMAX_COMMANDS = 6'd5;
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/leaf/fp32/vit_fp32_from_u32_comb.sv:10:18: Bits of signal are not used: 'shifted_value'[63:24]
+                                                                    : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core.u_exp_from_integer'
+   10 |     logic [63:0] shifted_value;
+      |                  ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/leaf/fp32/vit_fp32_scale_pow2_down_comb.sv:13:13: Bits of signal are not used: 'result_exponent'[31:8]
+                                                                           : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gelu.u_serial_core.u_exp_scale_down'
+   13 |     integer result_exponent;
+      |             ^~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/leaf/fp16/vit_fp32_to_fp16_rne_gradual.sv:22:18: Bits of signal are not used: 'normal_rounded'[10]
+                                                                          : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gemm.gen_fp16.u_fp16.u_stream_array.gen_b_convert[1].u_b_convert'
+   22 |     logic [11:0] normal_rounded;
+      |                  ^~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/leaf/fp16/vit_fp16_mul_to_fp32_comb_nodsp.sv:53:18: Bits of signal are not used: 'normalized_product'[23]
+                                                                             : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gemm.gen_fp16.u_fp16.u_stream_array.gen_stream[0].u_stream.u_multiplier'
+   53 |     logic [23:0] normalized_product;
+      |                  ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/leaf/fp16/vit_fp16_mul_to_fp32_comb_nodsp.sv:58:18: Bits of signal are not used: 'result_exponent_integer'[31:8]
+                                                                             : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gemm.gen_fp16.u_fp16.u_stream_array.gen_stream[0].u_stream.u_multiplier'
+   58 |     integer      result_exponent_integer;
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl/leaf/fp16/vit_fixed_normalized_to_fp32_rne.sv:28:27: Bits of signal are not used: 'shifted_magnitude'[92:24]
+                                                                              : ... note: In instance 'vit_phase_e_axi_bd_wrapper.u_core.u_npu.u_engine.u_gemm.gen_fp16.u_fp16.u_stream_array.gen_stream[0].u_stream.u_final_round'
+   28 |     logic [ACC_WIDTH-1:0] shifted_magnitude;
+      |                           ^~~~~~~~~~~~~~~~~

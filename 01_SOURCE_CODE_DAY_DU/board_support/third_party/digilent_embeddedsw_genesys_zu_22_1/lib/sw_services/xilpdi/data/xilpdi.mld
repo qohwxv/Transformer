@@ -1,0 +1,24 @@
+###############################################################################
+# Copyright (c) 2017 - 2021 Xilinx, Inc.  All rights reserved.
+# SPDX-License-Identifier: MIT
+#
+# Modification History
+#
+# Ver   Who  Date     Changes
+# ----- ---- -------- -----------------------------------------------
+# 1.00  kc  11/16/17  Initial Release
+#
+##############################################################################
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY xilpdi
+  OPTION drc = pdi_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (standalone);
+  OPTION SUPPORTED_PERIPHERALS = (psv_cortexa72 psv_cortexr5 psu_cortexa72 psu_cortexr5 psu_pmc psv_pmc);
+  OPTION APP_LINKER_FLAGS = "-Wl,--start-group,-lxilpdi,-lxil,-lgcc,-lc,--end-group";
+  OPTION desc = "Xilinx Programmable Device Image (PDI) Library ";
+  OPTION VERSION = 1.5;
+  OPTION NAME = xilpdi;
+END LIBRARY

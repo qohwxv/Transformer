@@ -1,0 +1,114 @@
+{
+  "schema": "vit-phase-e-profile-abi-v1.12-m7-s8-fp16-only",
+  "ip_version": "0x0001000C",
+  "profile": "m7s8_fp16_only_board_development",
+  "axi_lite_address_width": 12,
+  "compatibility": {
+    "base_schema": "vit-phase-e-profile-abi-v1.11-m7-s8-two-pass",
+    "base_document": "PERF_PROFILE_ABI_V1_11.json",
+    "base_ip_version": "0x0001000B",
+    "policy": "append-only register-map identity plus an explicit board-profile specialization: every v1.11 register address, access rule, capability bit, counter index and counter meaning is retained, while clean-idle START admission is narrowed to FP16-compute modes 3 and 5",
+    "immutable_range": "0x000..0x8E4",
+    "new_range": "none",
+    "first_unsupported_word_after_new_range": "0x8E8"
+  },
+  "execution_mode_contract": {
+    "register_offset": "0x044",
+    "register_access": "RW; every 32-bit value can be written and read back, but legality is checked atomically at START",
+    "reset_value": "0x00000000",
+    "reset_value_policy": "mode 0 is deliberately not executable; software must write exact mode 3 or mode 5 before START",
+    "legal_clean_idle_start_modes": [3, 5],
+    "mode_3_job_snapshot": {
+      "model_b_blocked_k16_n2": 1,
+      "model_b_fp16_packed2": 1,
+      "fp16_gemm_compat_enable": 1,
+      "model_contract": "package-v3 persistent GEMM-B packed as two FP16 values per u32",
+      "model_base_alignment_bytes": 128
+    },
+    "mode_5_job_snapshot": {
+      "model_b_blocked_k16_n2": 1,
+      "model_b_fp16_packed2": 0,
+      "fp16_gemm_compat_enable": 1,
+      "model_contract": "package-v2 blocked-K16/N2 persistent GEMM-B stored as FP32 and converted for FP16 GEMM compute"
+    },
+    "rejected_modes": "0, 1, 2, and every 32-bit encoding other than exact 3 or exact 5",
+    "rejected_start_error_code": "0x80000003",
+    "rejected_start_error_name": "WRAPPER_ERROR_EXECUTION_MODE",
+    "rejected_start_error_info": "the exact rejected 32-bit EXECUTION_MODE value",
+    "rejected_start_side_effect_contract": "when idle and outside reset-required recovery, no job snapshot, NPU job, performance epoch or AXI DDR request is accepted",
+    "priority_boundary": "BUSY and RESET_REQUIRED retain their existing higher-priority START-rejection codes; execution-mode rejection applies to an otherwise clean idle START"
+  },
+  "m7_overlap": {
+    "capability_offset": "0x810",
+    "capability_value": "0x01FF0817",
+    "status_offset": "0x814",
+    "overflow_low_offset": "0x818",
+    "overflow_high_offset": "0x81C",
+    "error_status_offset": "0x820",
+    "geometry_offset": "0x824",
+    "geometry_value_for_production_r8_c2_l16_s8": "0x08100208",
+    "buffer_config_offset": "0x828",
+    "buffer_config_value_for_current_production": "0x00080202",
+    "numeric_config_offset": "0x82C",
+    "numeric_config_value": "0x07C0D05D",
+    "counter_base": "0x830",
+    "counter_last_low_offset": "0x8E0",
+    "last_offset": "0x8E4",
+    "counter_stride_bytes": 8,
+    "counter_count": 23,
+    "counter_width_bits": 64,
+    "counter_map_document": "PERF_PROFILE_ABI_V1_10.json",
+    "counter_map_policy": "indices 0..22 and their low/high offsets are byte-for-byte ABI compatible with v1.10 and v1.11",
+    "current_production_contract": "FP16_STREAMS=8 evaluates one selected output column per physical R8/C1 pass. Legal modes 3 and 5 execute column zero then, when valid, rewind K and execute column one with the same logical R8/C2 output base and generation. Packed mode 3 enqueues each partial mask independently into the existing depth-two FIFO. FP32-compute modes 0 and 1 are absent from this board specialization and reject at START. This is source and simulation evidence only until Vivado and board gates pass."
+  },
+  "geometry_bits": {
+    "7:0": "ARRAY_ROWS; current value 8",
+    "15:8": "ARRAY_COLS; logical tile width remains 2",
+    "23:16": "PE_LANES; current value 16",
+    "31:24": "physical FP16 stream count; current value 8"
+  },
+  "s8_schedule": {
+    "logical_tile": "R8xC2",
+    "physical_pass": "R8xC1",
+    "pass_order": [0, 1],
+    "odd_n_policy": "skip column-one pass when output_base+1 is outside N",
+    "k_rewind_policy": "restore activation_token_base and weight_output_base before the first request of column one",
+    "result_mask_policy": "column-zero entry uses 0b01; column-one entry uses 0b10",
+    "result_identity_policy": "both partial entries retain the same absolute logical-tile base, token/output/batch coordinates and command generation",
+    "activation_cache_policy": "same-tag output-zero K-zero replay preserves a valid A cache",
+    "counter_policy": "valid/tail MAC capacity is 8*16=128 slots per accepted physical chunk; term/result/FIFO counters count physical pass activity",
+    "fp32_mode_policy": "mode 0 and mode 1 remain readable register encodings for ABI continuity but never enter the removed FP32 GEMM datapath"
+  },
+  "unchanged_v1_11_sections": [
+    "capability_bits",
+    "status_bits",
+    "overflow_bits",
+    "error_status_bits",
+    "geometry_bits",
+    "buffer_config_bits",
+    "numeric_config_bits",
+    "counters",
+    "register_access_contract_except_start_admission"
+  ],
+  "implementation_sources": [
+    "rtl/top/vit_phase_e_axi_bd_wrapper.v",
+    "rtl/axi/vit_phase_e_axi_wrapper.sv",
+    "rtl/core/vit_phase_e_npu.sv",
+    "rtl/core/vit_phase_e_engine_top.sv",
+    "rtl/blocks/gemm/vit_gemm_dual_mode_array.sv",
+    "rtl/blocks/gemm/vit_gemm_fp16_parallel_scheduler.sv",
+    "rtl/blocks/gemm/vit_gemm_fp16_stream_array.sv",
+    "rtl/core/vit_gemm_memory_address_context.sv",
+    "rtl/core/vit_phase_e_memory_frontend.sv",
+    "rtl/axi/control/vit_phase_e_m7_overlap_counters.sv",
+    "rtl/axi/control/vit_axi_lite_control_regs.sv"
+  ],
+  "evidence_status": {
+    "date": "2026-08-08",
+    "class": "SIM-MEASURED",
+    "manifest_status": "DEVELOPMENT_UNSEALED",
+    "vivado": "PENDING",
+    "full_board": "PENDING",
+    "physical_board": "PENDING"
+  }
+}

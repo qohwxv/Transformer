@@ -1,0 +1,7 @@
+               total        used        free      shared  buff/cache   available
+Mem:           251Gi       9.4Gi       231Gi        18Mi        13Gi       242Gi
+Swap:             0B          0B          0B
+ 16:53:36 up 6 days,  7:58,  5 users,  load average: 0.27, 0.31, 0.41
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv   98G   57G   37G  62% /
+/dev/mapper/ubuntu--vg-ubuntu--lv   98G   57G   37G  62% /

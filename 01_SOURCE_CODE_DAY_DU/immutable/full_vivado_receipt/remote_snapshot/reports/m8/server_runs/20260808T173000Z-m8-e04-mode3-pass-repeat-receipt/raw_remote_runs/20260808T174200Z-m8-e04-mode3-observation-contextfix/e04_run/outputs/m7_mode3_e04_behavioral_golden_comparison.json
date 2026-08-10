@@ -1,0 +1,118 @@
+{
+  "criteria": {
+    "expected_top1_and_class": 879,
+    "final_ln_abs_tolerance": 0.0001,
+    "mode3_ideal_softmax_envelope_anchor_max_abs": 5.804002285e-06,
+    "mode3_logit_envelope_anchor_max_abs": 0.0008324980736,
+    "mode3_logit_quality_abs_tolerance": 0.001,
+    "probability_abs_tolerance": 1e-05,
+    "raw_word_delta": "DIAGNOSTIC_ONLY_NOT_A_MODE3_CRITERION"
+  },
+  "decision": "PASS",
+  "execution_mode": 3,
+  "final_layernorm": {
+    "abs_tolerance": 0.0001,
+    "actual_nonfinite": 0,
+    "exact_mismatches": 128217,
+    "finite_pairs": 151296,
+    "first_exact_mismatch": 0,
+    "first_tolerance_failure": null,
+    "golden_nonfinite": 0,
+    "max_abs": 5.7220458984375e-06,
+    "max_abs_index": 20155,
+    "mean_abs": 1.158572237207585e-07,
+    "tolerance_failures": 0,
+    "words": 151296
+  },
+  "inputs": {
+    "asset_evidence_sha256": "d629372977edcf7fa40f7dff5c53fccc46f256bc22e3ea1d1db6795b1f011e7f",
+    "canonical_goldens": {
+      "final_layernorm": {
+        "relative_path": "results/post_encoder_step_30_final_layernorm_f32.hex",
+        "sha256": "d8ac11b3b8c244c4c525da8f2a56352595256290f0673c607944d5581835167d",
+        "size_bytes": 1361664,
+        "words": 151296
+      },
+      "logits": {
+        "relative_path": "results/post_encoder_step_32_logits_f32.hex",
+        "sha256": "fef8118492356377612d95f0b02120d6fde728ff47bef9b4b8c87cf52c4c7143",
+        "size_bytes": 9000,
+        "words": 1000
+      },
+      "probabilities": {
+        "relative_path": "results/post_encoder_step_33p_probabilities_f32.hex",
+        "sha256": "870497897b0b0453c8dc1335c3db8881e9ffdbf81bf66eba3d40c8c1b169491b",
+        "size_bytes": 9000,
+        "words": 1000
+      }
+    },
+    "class_result_dump_sha256": "0293ab3b01eea3a765830189863ac64106f96c2e8813a56b70df13d0fb966cbf",
+    "final_ln_dump_sha256": "feb2c6ef3875d3ad9ed80bd9b7b0e562c21d70fc5af5d900ee5d436ea1e82987",
+    "logits_dump_sha256": "df2782e9e35df6756b809385243f15fd18af0260d7c1bf842d6156852eebd37d",
+    "probabilities_dump_sha256": "9fa4108026f8bd3c5e6defb0bafe6a86543c2e9d74aad782b43d90127c906db2",
+    "recorded_behavioral_goldens": {
+      "final_layernorm": {
+        "relative_path": "results/post_encoder_step_30_final_layernorm_f32.hex",
+        "sha256": "d8ac11b3b8c244c4c525da8f2a56352595256290f0673c607944d5581835167d",
+        "size_bytes": 1361664,
+        "words": 151296
+      },
+      "logits": {
+        "relative_path": "results/post_encoder_step_32_logits_f32.hex",
+        "sha256": "fef8118492356377612d95f0b02120d6fde728ff47bef9b4b8c87cf52c4c7143",
+        "size_bytes": 9000,
+        "words": 1000
+      },
+      "probabilities": {
+        "relative_path": "results/post_encoder_step_33p_probabilities_f32.hex",
+        "sha256": "870497897b0b0453c8dc1335c3db8881e9ffdbf81bf66eba3d40c8c1b169491b",
+        "size_bytes": 9000,
+        "words": 1000
+      }
+    }
+  },
+  "logits": {
+    "abs_tolerance": 0.001,
+    "actual_nonfinite": 0,
+    "exact_mismatches": 1000,
+    "finite_pairs": 1000,
+    "first_exact_mismatch": 0,
+    "first_tolerance_failure": null,
+    "golden_nonfinite": 0,
+    "max_abs": 0.0008324980735778809,
+    "max_abs_index": 612,
+    "mean_abs": 0.00018346533176372758,
+    "tolerance_failures": 0,
+    "words": 1000
+  },
+  "probabilities": {
+    "abs_tolerance": 1e-05,
+    "actual_nonfinite": 0,
+    "exact_mismatches": 1000,
+    "finite_pairs": 1000,
+    "first_exact_mismatch": 0,
+    "first_tolerance_failure": null,
+    "golden_nonfinite": 0,
+    "max_abs": 5.863606929779053e-06,
+    "max_abs_index": 600,
+    "mean_abs": 1.1250183504785128e-08,
+    "tolerance_failures": 0,
+    "words": 1000
+  },
+  "schema": "vit-m7-mode3-e04-behavioral-golden-comparison-v1",
+  "top1_and_class": {
+    "actual_logits": 879,
+    "actual_probabilities": 879,
+    "actual_selected_logit_word": "0x414886A0",
+    "class_result": 879,
+    "class_result_logit_matches_dump": true,
+    "class_result_logit_word": "0x414886A0",
+    "expected": 879,
+    "golden_logits": 879,
+    "golden_probabilities": 879,
+    "golden_selected_logit_word": "0x414887B7",
+    "pass": true,
+    "selected_logit_abs_error": 0.00026607513427734375,
+    "selected_logit_raw_word_delta_diagnostic": 279
+  }
+}

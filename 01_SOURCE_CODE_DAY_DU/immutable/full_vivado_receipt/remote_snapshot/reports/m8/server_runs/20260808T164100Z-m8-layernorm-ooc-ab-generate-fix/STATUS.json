@@ -1,0 +1,46 @@
+{
+  "status": "SAFE",
+  "result": "PASS",
+  "date_utc": "2026-08-08",
+  "evidence_class": "MEASURED",
+  "scope": "standalone_m8_layernorm_buffer_ooc",
+  "tool": "Vivado 2023.2",
+  "part": "xczu5ev-sfvc784-1-e",
+  "clock_mhz": 50,
+  "initial_failure": {
+    "source_sha256": "c1f1342722104584e41ae753208f6295d3bae219927eae768ccff41d4c8a71b3",
+    "buffer_enable": 0,
+    "expected_ramb36": 0,
+    "observed_post_synth_ramb36": 3,
+    "dsp": 0,
+    "reports_or_dcps_surviving": false
+  },
+  "corrected_source_sha256": "f3a88811ee2f992eaadf808d1c1bc34f9624addd7e44a53b905ffe784ad83b4f",
+  "local_final_source_sha256": "f3a88811ee2f992eaadf808d1c1bc34f9624addd7e44a53b905ffe784ad83b4f",
+  "disabled": {
+    "wns_ns": 10.037,
+    "whs_ns": 0.012,
+    "lut": 1391,
+    "ff": 1247,
+    "ramb36": 0,
+    "dsp": 0,
+    "routed_nets": 1951,
+    "fully_routed_nets": 1951
+  },
+  "candidate": {
+    "wns_ns": 10.964,
+    "whs_ns": 0.019,
+    "lut": 1345,
+    "ff": 1245,
+    "ramb36": 3,
+    "dsp": 0,
+    "routed_nets": 1983,
+    "fully_routed_nets": 1983
+  },
+  "explicit_ooc_gaps_per_case": 1,
+  "remote_mutation": false,
+  "full_design_verified": false,
+  "bit_xsa_generated": false,
+  "board_verified": false
+}
+

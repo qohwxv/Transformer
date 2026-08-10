@@ -1,0 +1,56 @@
+--- exact_repeat_runner_5a4c39e58a80.sh
++++ hash_exact_final_runner_0f376c03632d.sh
+@@ -354,6 +354,7 @@
+ python3 - \
+     "${vit_m7_e01_run_log}" \
+     "${vit_m7_e01_embedding_dump}" <<'PY'
++import hashlib
+ import re
+ import sys
+ from pathlib import Path
+@@ -391,9 +392,18 @@
+     not re.fullmatch(r"[0-9a-fA-F]{8}", word) for word in words
+ ):
+     raise SystemExit(f"FAIL: malformed E01 RTL embedding dump: {path}")
++embedding_sha256 = hashlib.sha256(path.read_bytes()).hexdigest()
++if embedding_sha256 != (
++    "e06079ecc3bcd16678fafeec44c52535ac955876569bd96449b15f01978b7df9"
++):
++    raise SystemExit(
++        "FAIL: E01 RTL embedding dump differs from the exact observed/M6 "
++        f"oracle output: {embedding_sha256}"
++    )
+ print(
+     "M7_MODE3_E01_RAW_OUTPUT_GATE_PASS embedding_words=151296 "
+     "commands=4 external_u32=15351550 writes=453120 "
++    f"embedding_sha256={embedding_sha256} "
+     "numerical_status=PENDING_EXTERNAL_M6_CURRENT_ADDER_AND_BEHAVIORAL_ORACLES"
+ )
+ PY
+@@ -469,18 +479,20 @@
+ m6_report = Path(sys.argv[2])
+ behavioral_log = Path(sys.argv[3])
+ behavioral_report = Path(sys.argv[4])
+-float_re = r"[-+]?[0-9]+\.[0-9]+[eE][-+][0-9]+"
+ m6_pattern = re.compile(
+     r"M7_MODE3_E01_M6_CURRENT_ADDER_ORACLE_COMPARE_PASS "
+     r"embedding=151296 exact_mismatch=0 actual_nonfinite=0 "
+-    r"oracle_nonfinite=0 oracle_sha256=([0-9a-f]{64}) "
+-    r"report_sha256=([0-9a-f]{64})"
++    r"oracle_nonfinite=0 oracle_sha256="
++    r"(e06079ecc3bcd16678fafeec44c52535ac955876569bd96449b15f01978b7df9) "
++    r"report_sha256="
++    r"(dfe799398f72578c6135d5b5e573bd75d060bcd0bff18f52e3419b79f5e27dfb)"
+ )
+ behavioral_pattern = re.compile(
+     r"M7_MODE3_E01_BEHAVIORAL_GOLDEN_COMPARE_PASS "
+-    r"embedding=151296 exact_mismatch=[0-9]+ tolerance_failures=0 "
+-    r"abs_tolerance=5\.000000000e-03 max_abs=" + float_re +
+-    r" mean_abs=" + float_re + r" report_sha256=([0-9a-f]{64})"
++    r"embedding=151296 exact_mismatch=150515 tolerance_failures=0 "
++    r"abs_tolerance=5\.000000000e-03 max_abs=3\.846675158e-03 "
++    r"mean_abs=2\.339259978e-04 report_sha256="
++    r"(3807e2f88c188a5ac7dab8001aa455c0f7fa1bf942628898551060f609c46b3d)"
+ )
+ 
+ def unique(pattern: re.Pattern[str], path: Path, description: str):

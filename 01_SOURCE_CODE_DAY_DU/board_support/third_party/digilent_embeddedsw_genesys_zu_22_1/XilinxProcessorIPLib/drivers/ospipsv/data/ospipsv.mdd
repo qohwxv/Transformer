@@ -1,0 +1,16 @@
+###############################################################################
+# Copyright (C) 2018 - 2022 Xilinx, Inc.  All rights reserved.
+# SPDX-License-Identifier: MIT
+#
+###############################################################################
+OPTION psf_version = 2.1;
+
+BEGIN driver ospipsv
+
+  OPTION supported_peripherals = (psv_pmc_ospi);
+  OPTION driver_state = ACTIVE;
+  OPTION copyfiles = all;
+  OPTION VERSION = 1.6;
+  OPTION NAME = ospipsv;
+
+END driver

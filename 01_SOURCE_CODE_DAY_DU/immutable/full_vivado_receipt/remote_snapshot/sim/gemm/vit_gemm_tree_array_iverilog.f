@@ -1,0 +1,16 @@
+rtl/leaf/fp32/vit_fp32_add_comb.sv
+rtl/leaf/fp32/vit_fp32_mul_comb_nodsp.sv
+rtl/leaf/fp32/vit_fp32_accumulator.sv
+rtl/blocks/gemm/vit_fp32_reduce16.sv
+rtl/blocks/gemm/vit_gemm_dot16.sv
+rtl/blocks/gemm/vit_gemm_dot16_serial.sv
+rtl/blocks/gemm/vit_gemm_accumulator.sv
+rtl/blocks/gemm/vit_gemm_accumulator_bank.sv
+rtl/blocks/gemm/vit_gemm_pe.sv
+rtl/blocks/gemm/vit_tree_pe_fp32.sv
+rtl/blocks/gemm/vit_gemm_pe_array.sv
+rtl/blocks/gemm/vit_gemm_controller.sv
+rtl/blocks/gemm/vit_gemm_operand_router.sv
+rtl/blocks/gemm/vit_gemm_result_path.sv
+rtl/blocks/gemm/vit_gemm_tree_array.sv
+sim/gemm/tb_vit_gemm_tree_array.sv

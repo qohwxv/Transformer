@@ -1,0 +1,45 @@
+{
+  "criteria": {
+    "embedding_abs_tolerance": 0.005,
+    "gate": "INDEPENDENT_FP32_MODEL_QUALITY_NOT_M6_ARITHMETIC",
+    "mode3_envelope_anchor_max_abs": 0.003846675157547
+  },
+  "decision": "PASS",
+  "embedding": {
+    "abs_tolerance": 0.005,
+    "actual_nonfinite": 0,
+    "exact_mismatches": 150515,
+    "finite_pairs": 151296,
+    "first_exact_mismatch": 768,
+    "first_tolerance_failure": null,
+    "golden_nonfinite": 0,
+    "max_abs": 0.003846675157546997,
+    "max_abs_index": 23763,
+    "mean_abs": 0.0002339259977672367,
+    "tolerance_failures": 0,
+    "words": 151296
+  },
+  "execution_mode": 3,
+  "inputs": {
+    "asset_evidence_sha256": "8853f0aadb80665f2a0dba7ea0b65c5566133d42fe6d5f9eea33017fda1c7db6",
+    "canonical_goldens": {
+      "embedding": {
+        "relative_path": "results/embedding_step_06_hidden_states_f32.hex",
+        "sha256": "47255d48149ead6a0c74625475e5f3e931c25f1f4c3e41dcc4b2941077d16e18",
+        "size_bytes": 1361664,
+        "words": 151296
+      }
+    },
+    "embedding_dump_sha256": "e06079ecc3bcd16678fafeec44c52535ac955876569bd96449b15f01978b7df9",
+    "embedding_golden_sha256": "47255d48149ead6a0c74625475e5f3e931c25f1f4c3e41dcc4b2941077d16e18",
+    "recorded_behavioral_goldens": {
+      "embedding": {
+        "relative_path": "results/embedding_step_06_hidden_states_f32.hex",
+        "sha256": "47255d48149ead6a0c74625475e5f3e931c25f1f4c3e41dcc4b2941077d16e18",
+        "size_bytes": 1361664,
+        "words": 151296
+      }
+    }
+  },
+  "schema": "vit-m7-mode3-e01-behavioral-golden-comparison-v1"
+}

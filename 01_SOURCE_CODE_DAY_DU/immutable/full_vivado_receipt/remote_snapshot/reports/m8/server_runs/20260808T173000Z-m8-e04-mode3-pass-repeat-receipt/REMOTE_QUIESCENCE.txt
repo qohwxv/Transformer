@@ -1,0 +1,13 @@
+REMOTE_QUIESCENCE VERIFIED
+captured_utc=2026-08-08T17:33:45Z
+host=ubuntu
+account_owned_relevant_process_query=verilator|verilator_bin|vivado|xvlog|xelab|xsim|make|g++|Vtb_vit|run_e04_mode3_real_axi_rtl_verilator
+matching_process_lines=0
+terminal_run_pid_files=3
+memory_total=251Gi
+memory_used=9.4Gi
+memory_available=242Gi
+swap_total=0B
+workspace_filesystem_available=36G
+workspace_filesystem_use=62_percent
+interpretation=no relevant account-owned simulation/build process was active at collection time

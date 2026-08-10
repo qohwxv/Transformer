@@ -1,0 +1,446 @@
+/******************************************************************************
+* Copyright (c) 2018 - 2022 Xilinx, Inc.  All rights reserved.
+* SPDX-License-Identifier: MIT
+******************************************************************************/
+
+/*****************************************************************************/
+/**
+*
+* @file xloader.h
+* @addtogroup xloader_apis XilLoader Versal APIs
+* @{
+* @cond xloader_internal
+* This file contains declarations for image store functions.
+*
+* <pre>
+* MODIFICATION HISTORY:
+*
+* Ver   Who  Date        Changes
+* ----- ---- -------- -------------------------------------------------------
+* 1.00  kc   07/25/2018 Initial release
+*       tp   04/05/2019 Added API to reload a particular image
+*       kc   04/09/2019 Added support for PCIe secondary boot mode and
+*						partial PDI load
+*       bsv  06/11/2019 Added TCM power up code to Xilloader to fix issue in
+*						R5-1 split mode functionality
+*       bsv  06/17/2019 Added support for CFI and CFU error handling
+*       bsv  06/26/2019 Added secondary boot support
+*       kc   07/16/2019 Added code to print execution time
+*       rv   07/29/2019 Added code to request boot source before subsystem restart
+*       vnsl 07/30/2019 Added APIs to load secure headers
+*       scs  08/29/2019 Added API to validate extended ID Code
+*       bsv  08/30/2019 Added fallback and multiboot support in PLM
+*       kc   09/05/2019 Added code to use PMCDMA0 and PMCDMA1 in parallel
+*       kc   09/13/2019 SBI reset is removed for SMAP boot mode to ensure smap
+*						bus width value remains unchanged
+* 1.01  bsv  10/31/2019 Added USB secondary boot mode support
+*       kc   12/02/2019 Added performance time stamps
+*       ma   12/12/2019 Added support for passing hand off parameters to ATF
+*       bsv  12/30/2019 Added SMAP secondary boot mode support
+*       ma   02/03/2020 Change XPlmi_MeasurePerfTime to retrieve Performance
+*                       time and print
+*       bsv  02/12/2020 Added support for SD/eMMC raw boot mode
+*       bsv  02/23/2020 Added multi partition support for SD/eMMC FS boot modes
+*       bsv  02/25/2020 Added macros to handle u32 return values from drivers
+*       vnsl 02/26/2020 Added boot header reading call during partial PDI
+*       kc   02/27/2020 Added SEM support for partial reconfiguration
+*       bsv  02/28/2020 Added support for delay handoff
+*       har  02/28/2020 Removed code to return error codes for security related
+*                       errors
+*       vnsl 03/01/2020 Added PUF KEK decrypt support
+*       bsv  03/14/2020 Added eMMC0 FS and raw boot mode support
+*       bsv  04/09/2020 Code clean up
+* 1.02	ana  06/04/2020 Updated PlmkatStatus and Kekstatus variables from
+*						initial boot pdi to partial pdi structure variables
+*       bsv  06/22/2020 Cfi error handler should only be called for PL image
+*       bsv  07/01/2020 Added DevRelease to DevOps
+*       skd  07/14/2020 Function pointers Copy and DeviceCopy prototypes changed
+*       kal  07/20/2020 Added macro XLOADER_SECURE_CHUNK_SIZE for security
+*       bsv  07/29/2020 Added CopyToMem address and delay load fields in XilPdi
+*                       structure
+*       skd  07/29/2020 Removed device copy macros
+*       bsv  08/06/2020 Code clean up
+*       bsv  08/10/2020 Added subsystem restart support from DDR
+*       har  08/11/2020 Added XLOADER_AUTH_JTAG_INT_STATUS_POLL_INTERVAL
+*       kal  08/12/2020 Added param ImageId for XLoader_CframeErrorHandler
+*                       to identify Full PL partition and perform PL house
+*                       cleaning.
+*       bsv  08/17/2020 Added redundancy in XLoader_IsAuthEnabled
+*       td   08/19/2020 Fixed MISRA C violations Rule 10.3
+*       bm   08/19/2020 Added minor error codes
+*       skd  08/21/2020 Added flash size macros
+*       bm   09/21/2020 Added ImageInfo related code and added compatibility
+*                       check required for DFx
+*       bm   09/24/2020 Added FuncID argument to RestartImage and ReloadImage
+*       bsv  10/13/2020 Code clean up
+*       ana  10/19/2020 Added doxygen comments
+* 1.03  bm   12/15/2020 Added XLOADER_SD_MAX_BOOT_FILES_LIMIT macro
+*       ma   01/12/2021 Added macro for invalid boot mode
+*                       Added macro for invalid SLR Type
+*                       Added function for PMC State clear
+*       bm   03/16/2021 Added Image Upgrade support
+*       bm   05/10/2021 Added additional macro for PDI version
+* 1.04  bm   07/16/2021 Updated XLoader_PdiInit prototype
+*       bsv  07/19/2021 Disable UART prints when invalid header is encountered
+*                       in slave boot modes
+*       bsv  08/02/2021 Updated function return type as part of code clean up
+*       bm   08/09/2021 Removed obsolete XLoader_PMCStateClear API prototype
+*       bm   08/24/2021 Added Extract Metaheader support
+*       bm   08/26/2021 Added XLOADER_PDI_TYPE_PARTIAL_METAHEADER macro
+*       bsv  08/31/2021 Code clean up
+*       ma   09/01/2021 Use SSIT defines from XilPlmi
+*       kpt  09/06/2021 Added macro XLOADER_TOTAL_CHUNK_SIZE
+*       bsv  10/26/2021 Code clean up
+*       bsv  03/17/2022 Add support for A72 elfs to run from TCM
+*
+* </pre>
+*
+* @note
+* @endcond
+*
+******************************************************************************/
+
+#ifndef XLOADER_H
+#define XLOADER_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/***************************** Include Files *********************************/
+#include "xilpdi.h"
+#include "xplmi_status.h"
+#include "xplmi_debug.h"
+#include "xplmi_dma.h"
+#include "xcfupmc.h"
+
+/**
+ * @{
+ * @cond xloader_internal
+ */
+/************************** Constant Definitions *****************************/
+#define XLOADER_SUCCESS		(u32)XST_SUCCESS
+#define XLOADER_FAILURE		(u32)XST_FAILURE
+#define XLoader_Printf		XPlmi_Printf
+#define XLOADER_DDR_TEMP_BUFFER_ADDRESS	(0x50000000U)
+#define XLOADER_CHUNK_SIZE		(0x10000U) /* 64K */
+#define XLOADER_TOTAL_CHUNK_SIZE    (XLOADER_CHUNK_SIZE + 0x100U)
+#define XLOADER_SECURE_CHUNK_SIZE	(0x8000U) /* 32K */
+#define XLOADER_DMA_LEN_ALIGN		(0x10U)
+#define XLOADER_DMA_LEN_ALIGN_MASK	(0xFU)
+#define XLOADER_IMAGE_SEARCH_OFFSET	(0x8000U) /* 32K */
+
+#define XLOADER_R5_0_TCMA_BASE_ADDR	(0xFFE00000U)
+#define XLOADER_R5_1_TCMA_BASE_ADDR	(0xFFE90000U)
+
+/*
+ * TCM address for R5
+ */
+#define XLOADER_R5_TCMA_LOAD_ADDRESS	(0x0U)
+#define XLOADER_R5_TCMB_LOAD_ADDRESS	(0x20000U)
+#define XLOADER_R5_TCM_BANK_LENGTH	(0x10000U)
+#define XLOADER_R5_TCM_TOTAL_LENGTH	(XLOADER_R5_TCM_BANK_LENGTH * 4U)
+#define XLOADER_R5_0_TCM_A_BASE_ADDR	(0xFFE00000U)
+#define XLOADER_R5_0_TCM_A_END_ADDR	(0xFFE0FFFFU)
+#define XLOADER_R5_0_TCM_B_BASE_ADDR	(0xFFE20000U)
+#define XLOADER_R5_0_TCM_B_END_ADDR	(0xFFE2FFFFU)
+#define XLOADER_R5_LS_TCM_END_ADDR	(0xFFE3FFFFU)
+#define XLOADER_R5_1_TCM_A_BASE_ADDR	(0xFFE90000U)
+#define XLOADER_R5_1_TCM_A_END_ADDR	(0xFFE9FFFFU)
+#define XLOADER_R5_1_TCM_B_BASE_ADDR	(0xFFEB0000U)
+#define XLOADER_R5_1_TCM_B_END_ADDR	(0xFFEBFFFFU)
+
+/*
+ * APU related macros
+ */
+#define XLOADER_FPD_APU_CONFIG_0	(0xFD5C0020U)
+#define XLOADER_FPD_APU_CONFIG_0_AA64N32_MASK_CPU0	(0x1U)
+#define XLOADER_FPD_APU_CONFIG_0_AA64N32_MASK_CPU1	(0x2U)
+#define XLOADER_FPD_APU_CONFIG_0_VINITHI_MASK_CPU0	(0x100U)
+#define XLOADER_FPD_APU_CONFIG_0_VINITHI_MASK_CPU1	(0x200U)
+
+/*
+ * Subsystem related macros
+ */
+#define XLOADER_MAX_HANDOFF_CPUS	(10U)
+
+/*
+ * PDI type macros
+ */
+#define XLOADER_PDI_TYPE_FULL		(0x1U)
+#define XLOADER_PDI_TYPE_PARTIAL	(0x2U)
+#define XLOADER_PDI_TYPE_RESTORE	(0x3U)
+#define XLOADER_PDI_TYPE_FULL_METAHEADER 	(0x4U)
+#define XLOADER_PDI_TYPE_PARTIAL_METAHEADER 	(0x5U)
+
+/*
+ * SD boot mode related macros
+ */
+#define XLOADER_PDISRC_FLAGS_MASK	(0xFU)
+#define XLOADER_PDISRC_FLAGS_SHIFT	(0x4U)
+
+/*
+ * PDI Loading status
+ */
+#define XLOADER_PDI_LOAD_COMPLETE	(0x1U)
+#define XLOADER_PDI_LOAD_STARTED	(0x0U)
+
+/*
+ * SLR Types
+ */
+#define XLOADER_SSIT_MONOLITIC		XPLMI_SSIT_MONOLITIC
+#define XLOADER_SSIT_MASTER_SLR		XPLMI_SSIT_MASTER_SLR
+#define XLOADER_SSIT_INVALID_SLR	XPLMI_SSIT_INVALID_SLR
+
+/*
+ * Flash Size macros
+ */
+#if defined(XLOADER_QSPI) || defined(XLOADER_OSPI)
+#define XLOADER_FLASH_SIZE_ID_64M		(0x17U)
+#define XLOADER_FLASH_SIZE_ID_128M		(0x18U)
+#define XLOADER_FLASH_SIZE_ID_256M		(0x19U)
+#define XLOADER_FLASH_SIZE_ID_512M		(0x20U)
+#define XLOADER_FLASH_SIZE_ID_1G		(0x21U)
+#define XLOADER_FLASH_SIZE_ID_2G		(0x22U)
+#define XLOADER_FLASH_SIZE_64M          (0x0800000U)
+#define XLOADER_FLASH_SIZE_128M         (0x1000000U)
+#define XLOADER_FLASH_SIZE_256M         (0x2000000U)
+#define XLOADER_FLASH_SIZE_512M         (0x4000000U)
+#define XLOADER_FLASH_SIZE_1G           (0x8000000U)
+#define XLOADER_FLASH_SIZE_2G           (0x10000000U)
+#endif
+
+/*
+ * PDI Version macros
+ */
+#define XLOADER_PDI_VERSION_1			(0x01030000U)
+#define XLOADER_PDI_VERSION_2			(0x00020000U)
+#define XLOADER_PDI_VERSION_4			(0x00040000U)
+
+/* Invalid Img ID */
+#define XLOADER_INVALID_IMG_ID			(0x0U)
+
+/* Invalid UID */
+#define XLOADER_INVALID_UID			(0x0U)
+
+/* Macro for Image Index Not found */
+#define XLOADER_IMG_INDEX_NOT_FOUND		(0xFFFFFFFFU)
+
+/* Boot Modes */
+#define XLOADER_PDI_SRC_JTAG		(0x0U)
+#define XLOADER_PDI_SRC_QSPI24		(0x1U)
+#define XLOADER_PDI_SRC_QSPI32		(0x2U)
+#define XLOADER_PDI_SRC_SD0		(0x3U)
+#define XLOADER_PDI_SRC_EMMC0		(0x4U)
+#define XLOADER_PDI_SRC_SD1		(0x5U)
+#define XLOADER_PDI_SRC_EMMC1		(0x6U)
+#define XLOADER_PDI_SRC_USB		(0x7U)
+#define XLOADER_PDI_SRC_OSPI		(0x8U)
+#define XLOADER_PDI_SRC_SBI		(0x9U)
+#define XLOADER_PDI_SRC_SMAP		(0xAU)
+#define XLOADER_PDI_SRC_PCIE		(0xBU)
+#define XLOADER_PDI_SRC_SD1_LS		(0xEU)
+#define XLOADER_PDI_SRC_DDR		(0xFU)
+#define XLOADER_PDI_SRC_INVALID		(0xFFU)
+
+#define XLOADER_SBI_INDEX		(0U)
+#define XLOADER_QSPI_INDEX		(1U)
+#define XLOADER_SD_INDEX		(2U)
+#define XLOADER_SD_RAW_INDEX		(3U)
+#define XLOADER_DDR_INDEX		(4U)
+#define XLOADER_OSPI_INDEX		(5U)
+#define XLOADER_USB_INDEX		(6U)
+#define XLOADER_INVALID_INDEX		(7U)
+#define PdiSrc_t			u32
+
+typedef struct {
+	const char* Name;
+	u8 Index;
+} PdiSrcMap;
+
+/* Minor Error Codes */
+#define XLOADER_ERR_INVALID_IMGID		(0x2U) /**< Invalid ImgID passed in Command */
+#define XLOADER_ERR_NO_VALID_IMG_FOUND		(0x3U) /**< No Valid Image Found in the Image Info Table */
+#define XLOADER_ERR_IMAGE_INFO_TBL_FULL		(0x4U) /**< Image Info Table is Full */
+#define XLOADER_ERR_PARENT_QUERY_RELATION_CHECK	(0x5U) /**< Error on Parent Query while checking for Child Relation */
+#define XLOADER_ERR_MEMSET_BOOT_HDR_FW_RSVD	(0x6U) /**< Error during memset on XilPdi_BootHdrFwRsvd */
+#define XLOADER_ERR_MEMSET_PDIPTR		(0x7U) /**< Error during memset on PdiPtr */
+#define XLOADER_ERR_MEMSET_QSPI_PSU_INST	(0x8U) /**< Error during memset on QspiPsuInstance */
+#define XLOADER_ERR_MEMSET_SD_BOOT_FILE		(0x9U) /**< Error during memset on SD BootFile */
+#define XLOADER_ERR_MEMSET_SD_INSTANCE		(0xAU) /**< Error during memset on SdInstance */
+#define XLOADER_ERR_MEMSET_USB_INSTANCE		(0xBU) /**< Error during memset on UsbInstance */
+#define XLOADER_ERR_MEMSET_USB_PRIVATE_DATA	(0xCU) /**< Error during memset on UsbPrivateData */
+#define XLOADER_ERR_MEMSET_DFU_OBJ		(0xDU) /**< Error during memset on DfuObj */
+#define XLOADER_ERR_INVALID_METAHDR_BUFF_SIZE	(0xEU) /**< Error when buffer size given by user
+							is less than the metaheader length */
+#define XLOADER_ERR_INVALID_PDI_INPUT	(0xFU) /**< Error when PDI given is not a full PDI
+							or partial PDI */
+#define XLOADER_ERR_INVALID_DEST_IMGINFOTBL_SIZE	(0x10U) /**< Error when the destination
+							buffer provided to store image info
+							table is less than the current length
+							of image info table */
+#define XLOADER_ERR_INVALID_METAHEADER_SRC_ADDR		(0x11U) /**< Error when invalid source address
+							is passed as a input to extract metaheader
+							command */
+#define XLOADER_ERR_INVALID_METAHEADER_DEST_ADDR	(0x12U) /**< Error when invalid destination address
+							is passed as a input to extract metaheader
+							command */
+#define XLOADER_ERR_INVALID_METAHEADER_OFFSET	(0x13U) /**< Error when the metaheader offset provided
+							in full PDI is not present in DDR */
+
+/* Multiboot register offset mask */
+#define XLOADER_MULTIBOOT_OFFSET_MASK		(0x001FFFFFU)
+
+/* SD RAW BOOT related macros */
+#define XLOADER_SD_RAWBOOT_MASK			(0xF0000000U)
+#define XLOADER_SD_RAWBOOT_VAL			(0x70000000U)
+#define XLOADER_EMMC_BP1_RAW_VAL		(0x10000000U)
+#define XLOADER_EMMC_BP2_RAW_VAL		(0x20000000U)
+
+/* SD File System Boot related macros */
+#define XLOADER_SD_MAX_BOOT_FILES_LIMIT		(8192U)
+
+/* Minor Error codes for Major Error code: XLOADER_ERR_GEN_IDCODE */
+#define XLOADER_ERR_IDCODE		(0x1) /* IDCODE mismatch */
+#define XLOADER_ERR_EXT_IDCODE		(0x2) /* EXTENDED IDCODE mismatch */
+#define XLOADER_ERR_EXT_ID_SI		(0x3) /* Invalid combination of
+						* EXTENDED IDCODE - Device
+						*/
+
+#define XLOADER_AUTH_JTAG_INT_STATUS_POLL_INTERVAL	(1000U)
+#define XLOADER_SHA3_LEN				(48U)
+
+#define XLOADER_MAX_PDI_LIST		(32U)
+
+#if defined(XLOADER_SD_0) || defined(XLOADER_SD_1)
+#define XLOADER_SD_ADDR_MASK		(0xFFFFU)
+#define XLOADER_SD_ADDR_SHIFT		(0x4U)
+#endif
+
+/* DDR related macro */
+#define XLOADER_HOLD_DDR		(2U)
+
+/**************************** Type Definitions *******************************/
+/*
+ * This stores the handoff Address of the different cpu's
+ */
+typedef struct {
+	u32 CpuSettings;
+	u64 HandoffAddr;
+} XLoader_HandoffParam;
+
+typedef struct {
+	int (*Init) (u32 DeviceFlags); /**< Function pointer for Device
+				initialization code */
+	/**< Function pointer for device copy */
+	int (*Copy) (u64 SrcAddr, u64 DestAddress, u32 Length, u32 Flags);
+	/**< Function pointer for device release */
+	int (*Release) (void);
+} XLoader_DeviceOps;
+
+/*
+ * This is PDI instance pointer. This stores all the information
+ * required for PDI
+ */
+typedef struct {
+	u8 PdiType; /**< Indicates PDI Type, full PDI, partial PDI */
+	u8 ValidHeader; /**< Indicates if Image header table is valid or not */
+	u8 PdiIndex; /**< Index in DeviceOps array */
+	u8 SlrType; /**< SLR Type */
+	u32 PdiSrc;
+	XilPdi_MetaHdr MetaHdr; /**< Metaheader of the PDI */
+	XLoader_HandoffParam HandoffParam[XLOADER_MAX_HANDOFF_CPUS];
+	u32 IpiMask; /**< Info about which master has sent the request*/
+	u8 NoOfHandoffCpus; /**< Number of CPU's loader will handoff to */
+	u8 ImageNum; /**< Image number in the PDI */
+	u8 PrtnNum; /**< Partition number in the PDI */
+	u8 CopyToMem; /**< Copy to Memory is enabled if set */
+	u8 DelayHandoff; /**< Delay handoff is enabled if set */
+	u8 DelayLoad; /**< Delay Load is enabled if set */
+	u64 CopyToMemAddr; /**< Address to which image is copied */
+#ifndef PLM_SECURE_EXCLUDE
+	u32 PlmKatStatus; /**< PLM Known Answer Test Status */
+	u32 KekStatus; /**< KEK status flag */
+#endif
+} XilPdi;
+
+/* Structure to store various parameters for Device Copy */
+typedef struct {
+	u64 SrcAddr;	/**< Source Address */
+	u64 DestAddr;	/**< Desrination Address */
+	u32 Len;	/**< Number of bytes to be copied */
+	u32 Flags;	/**< Flags indicate mode of copying */
+} XLoader_DeviceCopy;
+
+/* Structure to store various parameters for processing partitions */
+typedef struct {
+	XLoader_DeviceCopy DeviceCopy; /**< Device Copy instance */
+	u32 DstnCpu;	/** < Destination Cpu */
+} XLoader_PrtnParams;
+
+typedef struct {
+	u32 ImgID; /**< Image ID */
+	u32 UID; /**< Unique ID */
+	u32 PUID; /**< Parent UID */
+	u32 FuncID; /**< Function ID */
+} XLoader_ImageInfo;
+
+typedef struct {
+	u32 Count:31;
+	u32 IsBufferFull:1;
+} XLoader_ImageInfoTbl;
+
+typedef struct {
+	u64 PdiAddr[XLOADER_MAX_PDI_LIST];
+	u8 Count;
+} XLoader_ImageStore;
+
+/***************** Macros (Inline Functions) Definitions *********************/
+
+/************************** Function Prototypes ******************************/
+int XLoader_Init(void);
+/**
+ * @}
+ * @endcond
+ */
+int XLoader_LoadPdi(XilPdi* PdiPtr, PdiSrc_t PdiSrc, u64 PdiAddr);
+/**
+ * @{
+ * @cond xloader_internal
+ */
+int XLoader_RestartImage(u32 ImageId, u32 *FuncID);
+void XLoader_CframeErrorHandler(u32 ImageId);
+int XLoader_CframeInit(void);
+void XLoader_SetATFHandoffParameters(const XilPdi_PrtnHdr *PrtnHdr);
+XLoader_ImageInfo* XLoader_GetImageInfoEntry(u32 ImgID);
+int XLoader_LoadImageInfoTbl(u64 DestAddr, u32 MaxSize, u32 *NumEntries);
+XLoader_ImageStore* XLoader_GetPdiList(void);
+int XLoader_PdiInit(XilPdi* PdiPtr, PdiSrc_t PdiSrc, u64 PdiAddr);
+
+/* Functions defined in xloader_prtn_load.c */
+int XLoader_LoadImagePrtns(XilPdi* PdiPtr);
+int XLoader_UpdateHandoffParam(XilPdi* PdiPtr);
+
+/* Functions defined in xloader_cmds.c */
+void XLoader_CmdsInit(void);
+
+/* Functions defined in xloader_intr.c */
+int XLoader_IntrInit(void);
+void XLoader_ClearIntrSbiDataRdy(void);
+
+/************************** Variable Definitions *****************************/
+extern XilPdi* BootPdiPtr;
+extern XilPdi SubsystemPdiIns;
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  /* XLOADER_H */
+
+/**
+ * @}
+ * @endcond
+ */
+
+/** @} */

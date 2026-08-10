@@ -1,0 +1,11 @@
+sim/m8/reference/vit_vector_engine_fp32_parent_v1_12.sv:147: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'lane_mask_shift[15:0]').
+sim/vector/tb_vit_vector_engine_fp32.sv:76: warning: Instantiating module vit_vector_engine_fp32 with dangling input port 23 (external_mul_result) floating.
+sim/vector/tb_vit_vector_engine_fp32.sv:76: warning: Instantiating module vit_vector_engine_fp32 with dangling input port 26 (external_add_result) floating.
+VECTOR_ENGINE_PASS implementation=M7_PARENT add_cycles=72 scale_mask_cycles=37 scale_nomask_cycles=37
+sim/vector/tb_vit_vector_engine_fp32.sv:334: $finish called at 4145000 (1ps)
+rtl/blocks/vector/vit_vector_engine_fp32.sv:150: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'lane_mask_shift[15:0]').
+sim/vector/tb_vit_vector_engine_fp32.sv:76: warning: Instantiating module vit_vector_engine_fp32 with dangling input port 23 (external_mul_result) floating.
+sim/vector/tb_vit_vector_engine_fp32.sv:76: warning: Instantiating module vit_vector_engine_fp32 with dangling input port 26 (external_add_result) floating.
+VECTOR_ENGINE_PASS implementation=M8_FASTPATH add_cycles=40 scale_mask_cycles=37 scale_nomask_cycles=21
+sim/vector/tb_vit_vector_engine_fp32.sv:334: $finish called at 2705000 (1ps)
+M8_VECTOR_FASTPATH_AB_PASS add_parent=72 add_m8=40 add_speedup=1.800000000x add_reduction_pct=44.444444444 scale_nomask_parent=37 scale_nomask_m8=21 scale_nomask_speedup=1.761904762x scale_nomask_reduction_pct=43.243243243 masked_cycles_unchanged=37

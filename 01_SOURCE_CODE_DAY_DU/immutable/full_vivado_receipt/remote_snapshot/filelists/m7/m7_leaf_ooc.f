@@ -1,0 +1,9 @@
+rtl/leaf/fp32/vit_fp32_add_comb.sv
+rtl/leaf/fp16/vit_fp16_mul_to_fp32_comb_nodsp.sv
+rtl/leaf/fp16/vit_fp32_product_to_fixed_exact.sv
+rtl/leaf/fp16/vit_fixed_analyze.sv
+rtl/leaf/fp16/vit_fixed_normalized_to_fp32_rne.sv
+rtl/leaf/fp16/vit_fixed_to_fp32_rne.sv
+rtl/leaf/fp16/vit_fp16_dot_stream_csa_nodsp.sv
+rtl/leaf/fp16/vit_fp32_to_fp16_rne_gradual.sv
+rtl/blocks/gemm/vit_gemm_fp16_stream_array.sv

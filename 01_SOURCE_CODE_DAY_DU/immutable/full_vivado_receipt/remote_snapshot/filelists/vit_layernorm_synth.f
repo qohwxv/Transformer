@@ -1,0 +1,11 @@
+rtl/pkg/vit_fp32_pkg.sv
+rtl/leaf/common/vit_u32_mul_iterative_nodsp.sv
+rtl/leaf/fp32/vit_fp32_add_comb.sv
+rtl/leaf/fp32/vit_fp32_sub_comb.sv
+rtl/leaf/fp32/vit_fp32_mul_comb_nodsp.sv
+rtl/leaf/fp32/vit_fp32_recip_u32_comb.sv
+rtl/leaf/fp32/vit_fp32_recip_u32_serial.sv
+rtl/leaf/fp32/vit_fp32_rsqrt_step_comb.sv
+rtl/blocks/layernorm/vit_layernorm_statistics_datapath.sv
+rtl/blocks/layernorm/vit_layernorm_affine_datapath.sv
+rtl/blocks/layernorm/vit_layernorm_engine_fp32.sv

@@ -1,0 +1,177 @@
+{
+  "schema": "vit-phase-e-profile-abi-v1.13-m8-nongemm-nodsp",
+  "ip_version": "0x0001000D",
+  "profile": "m8_nongemm_nodsp_board_development",
+  "axi_lite_address_width": 12,
+  "compatibility": {
+    "base_schema": "vit-phase-e-profile-abi-v1.12-m7-s8-fp16-only",
+    "base_document": "PERF_PROFILE_ABI_V1_12.json",
+    "base_ip_version": "0x0001000C",
+    "policy": "strict append-only identity: every v1.12 register address, access rule, capability bit, status bit, counter index, counter meaning, execution-mode rule and geometry value is retained; v1.13 changes reachable non-GEMM implementation only",
+    "immutable_range": "0x000..0x8E4",
+    "new_range": "none",
+    "first_unsupported_word_after_new_range": "0x8E8"
+  },
+  "execution_mode_contract": {
+    "register_offset": "0x044",
+    "register_access": "RW; every 32-bit value can be written and read back, but legality is checked atomically at START",
+    "reset_value": "0x00000000",
+    "reset_value_policy": "mode 0 is deliberately not executable; software must write exact mode 3 or mode 5 before START",
+    "legal_clean_idle_start_modes": [3, 5],
+    "mode_3_job_snapshot": {
+      "model_b_blocked_k16_n2": 1,
+      "model_b_fp16_packed2": 1,
+      "fp16_gemm_compat_enable": 1,
+      "model_contract": "package-v3 persistent GEMM-B packed as two FP16 values per u32",
+      "model_base_alignment_bytes": 128
+    },
+    "mode_5_job_snapshot": {
+      "model_b_blocked_k16_n2": 1,
+      "model_b_fp16_packed2": 0,
+      "fp16_gemm_compat_enable": 1,
+      "model_contract": "package-v2 blocked-K16/N2 persistent GEMM-B stored as FP32 and converted for FP16 GEMM compute"
+    },
+    "rejected_modes": "0, 1, 2, and every 32-bit encoding other than exact 3 or exact 5",
+    "rejected_start_error_code": "0x80000003",
+    "rejected_start_error_name": "WRAPPER_ERROR_EXECUTION_MODE",
+    "rejected_start_error_info": "the exact rejected 32-bit EXECUTION_MODE value",
+    "rejected_start_side_effect_contract": "when idle and outside reset-required recovery, no job snapshot, NPU job, performance epoch or AXI DDR request is accepted",
+    "priority_boundary": "BUSY and RESET_REQUIRED retain their existing higher-priority START-rejection codes; execution-mode rejection applies to an otherwise clean idle START"
+  },
+  "m7_overlap": {
+    "capability_offset": "0x810",
+    "capability_value": "0x01FF0817",
+    "status_offset": "0x814",
+    "overflow_low_offset": "0x818",
+    "overflow_high_offset": "0x81C",
+    "error_status_offset": "0x820",
+    "geometry_offset": "0x824",
+    "geometry_value_for_production_r8_c2_l16_s8": "0x08100208",
+    "buffer_config_offset": "0x828",
+    "buffer_config_value_for_current_production": "0x00080202",
+    "numeric_config_offset": "0x82C",
+    "numeric_config_value": "0x07C0D05D",
+    "counter_base": "0x830",
+    "counter_last_low_offset": "0x8E0",
+    "last_offset": "0x8E4",
+    "counter_stride_bytes": 8,
+    "counter_count": 23,
+    "counter_width_bits": 64,
+    "counter_map_document": "PERF_PROFILE_ABI_V1_10.json",
+    "counter_map_policy": "indices 0..22 and their low/high offsets are byte-for-byte ABI compatible with v1.10, v1.11 and v1.12",
+    "current_production_contract": "M8 preserves the exact FP16-only R8/C2 logical and R8/C1 two-pass physical GEMM hierarchy from v1.12. Modes 3 and 5 remain the only legal clean-idle START values. No M8 non-GEMM optimization changes the counter map or its snapshot semantics."
+  },
+  "geometry_bits": {
+    "7:0": "ARRAY_ROWS; current value 8",
+    "15:8": "ARRAY_COLS; logical tile width remains 2",
+    "23:16": "PE_LANES; current value 16",
+    "31:24": "physical FP16 stream count; current value 8"
+  },
+  "s8_schedule": {
+    "logical_tile": "R8xC2",
+    "physical_pass": "R8xC1",
+    "pass_order": [0, 1],
+    "odd_n_policy": "skip column-one pass when output_base+1 is outside N",
+    "k_rewind_policy": "restore activation_token_base and weight_output_base before the first request of column one",
+    "result_mask_policy": "column-zero entry uses 0b01; column-one entry uses 0b10",
+    "result_identity_policy": "both partial entries retain the same absolute logical-tile base, token/output/batch coordinates and command generation",
+    "activation_cache_policy": "same-tag output-zero K-zero replay preserves a valid A cache",
+    "counter_policy": "valid/tail MAC capacity is 8*16=128 slots per accepted physical chunk; term/result/FIFO counters count physical pass activity",
+    "fp32_mode_policy": "mode 0 and mode 1 remain readable register encodings for ABI continuity but never enter a removed FP32 GEMM datapath"
+  },
+  "m8_non_gemm_acceleration": {
+    "vector_fast_paths": "MODE_ADD bypasses the provably unused multiplier; unmasked MODE_SCALE_MASK bypasses the provably unused adder; architectural FP32 rounding points are preserved",
+    "vector_gelu_read_ahead": "bounded gather read-ahead is permitted only through a complete input gather before any result is published; tail and mask bounds remain fail closed",
+    "layernorm_row_affine_buffer": {
+      "production_enable": 1,
+      "production_depth_words": 1024,
+      "fit_rule": "cfg_total_words <= 1024",
+      "oversize_rule": "fall back to the v1.12 external-memory schedule",
+      "expected_ramb36": 3,
+      "forbidden_lutram": true
+    },
+    "softmax_row_exp_buffer": {
+      "production_enable": 1,
+      "production_depth_words": 1024,
+      "fit_rule": "cfg_row_length <= 1024",
+      "oversize_rule": "fall back to the v1.12 external-memory schedule",
+      "expected_ramb36": 1,
+      "forbidden_lutram": true
+    },
+    "full_design_ram_gate": {
+      "total_ramb36": 41,
+      "activation_cache_ramb36": 32,
+      "bias_cache_ramb36": 4,
+      "layernorm_ramb36": 3,
+      "softmax_ramb36": 1,
+      "layer_param_table_ramb36": 1,
+      "ramb18": 0,
+      "uram": 0,
+      "new_layernorm_softmax_buffer_lutram": 0,
+      "scope_note": "inherited distributed RAM elsewhere in the design is not relabelled as an M8 buffer and is not required to be globally zero"
+    }
+  },
+  "unchanged_v1_12_sections": [
+    "register_addresses",
+    "register_access_contract",
+    "execution_mode_contract",
+    "capability_bits",
+    "status_bits",
+    "overflow_bits",
+    "error_status_bits",
+    "geometry_bits",
+    "buffer_config_bits",
+    "numeric_config_bits",
+    "counters",
+    "snapshot_semantics",
+    "native_axi128_contract"
+  ],
+  "changed_production_sources": [
+    {
+      "path": "rtl/blocks/vector/vit_vector_engine_fp32.sv",
+      "sha256": "c71542773318964a538384d81bf9b842361678e81132986d5a31ad0b1ec96df2"
+    },
+    {
+      "path": "rtl/blocks/layernorm/vit_layernorm_engine_fp32.sv",
+      "sha256": "f3a88811ee2f992eaadf808d1c1bc34f9624addd7e44a53b905ffe784ad83b4f"
+    },
+    {
+      "path": "rtl/blocks/softmax/vit_softmax_engine_fp32.sv",
+      "sha256": "9ddbb13b65f53be82a3bde83f572e1124fe9333b557582b7f60d2d8b8d7b1ec9"
+    },
+    {
+      "path": "rtl/core/vit_phase_e_read_address_router.sv",
+      "sha256": "4dcd75977601711b9324e431f7582b9791b69dd17720f4fd5e7184df8bb12219"
+    },
+    {
+      "path": "rtl/core/vit_phase_e_engine_top.sv",
+      "sha256": "0056ebc96dfd23a0de2fd2ad25d3acd53ad2985ee69bebdab5253946609fe512"
+    },
+    {
+      "path": "rtl/axi/control/vit_axi_lite_control_regs.sv",
+      "sha256": "00eceb2222ea89eb1d4d0149baf4185047be8c72047a0958e0a18dbdc54426b6"
+    }
+  ],
+  "implementation_sources": [
+    "rtl/top/vit_phase_e_axi_bd_wrapper.v",
+    "rtl/axi/vit_phase_e_axi_wrapper.sv",
+    "rtl/core/vit_phase_e_npu.sv",
+    "rtl/core/vit_phase_e_engine_top.sv",
+    "rtl/core/vit_phase_e_read_address_router.sv",
+    "rtl/blocks/vector/vit_vector_engine_fp32.sv",
+    "rtl/blocks/layernorm/vit_layernorm_engine_fp32.sv",
+    "rtl/blocks/softmax/vit_softmax_engine_fp32.sv",
+    "rtl/axi/control/vit_axi_lite_control_regs.sv"
+  ],
+  "evidence_status": {
+    "date": "2026-08-09",
+    "class": "SIM-MEASURED_AND_STANDALONE_LEAF_OOC_AS_SCOPED",
+    "manifest_status": "DEVELOPMENT_UNSEALED",
+    "simulation_checkpoint": "reports/m8/checkpoints/20260808T182708Z-m8_simulation_qualification",
+    "full_design_vivado": "PENDING",
+    "full_design_wns_whs": "UNVERIFIED",
+    "full_design_post_route_dsp": "UNVERIFIED",
+    "m8_bit_xsa": "NOT_GENERATED",
+    "physical_board": "PENDING_BOARD_UNAVAILABLE"
+  }
+}

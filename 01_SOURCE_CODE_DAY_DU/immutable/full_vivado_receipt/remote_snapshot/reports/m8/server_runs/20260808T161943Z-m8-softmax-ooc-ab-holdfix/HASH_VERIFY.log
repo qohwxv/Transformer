@@ -1,0 +1,49 @@
+REMOTE_RUN_FILE_COUNT=38
+LOCAL_RUN_FILE_COUNT=38
+REMOTE_LOCAL_RUN_HASH_SET_MATCH=PASS
+REMOTE_INITIAL_FAILURE_FILE_COUNT=31
+LOCAL_INITIAL_FAILURE_FILE_COUNT=31
+REMOTE_LOCAL_INITIAL_FAILURE_HASH_SET_MATCH=PASS
+PASS_INPUT_SHA256_CHECK_BEGIN
+PARENT_M7S8_PROVENANCE.txt: OK
+rtl/pkg/vit_fp32_pkg.sv: OK
+rtl/leaf/common/vit_u32_mul_iterative_nodsp.sv: OK
+rtl/leaf/fp32/vit_fp32_add_comb.sv: OK
+rtl/leaf/fp32/vit_fp32_compare.sv: OK
+rtl/leaf/fp32/vit_fp32_mul_comb_nodsp.sv: OK
+rtl/leaf/fp32/vit_fp32_from_u32_comb.sv: OK
+rtl/leaf/fp32/vit_fp32_to_u32_floor_comb.sv: OK
+rtl/leaf/fp32/vit_fp32_scale_pow2_down_comb.sv: OK
+rtl/blocks/softmax/vit_softmax_engine_fp32.sv: OK
+sim/m8/reference/vit_softmax_engine_fp32_parent_v1_12.sv: OK
+sim/softmax/run_softmax_buffer_ooc.tcl: OK
+sim/m8/run_softmax_ooc_ab.sh: OK
+PASS_INPUT_SHA256_CHECK_END
+INITIAL_FAILURE_PAYLOAD_SHA256_CHECK_BEGIN
+input_snapshot/PARENT_M7S8_PROVENANCE.txt: OK
+input_snapshot/rtl/blocks/softmax/vit_softmax_engine_fp32.sv: OK
+input_snapshot/rtl/leaf/common/vit_u32_mul_iterative_nodsp.sv: OK
+input_snapshot/rtl/leaf/fp32/vit_fp32_add_comb.sv: OK
+input_snapshot/rtl/leaf/fp32/vit_fp32_compare.sv: OK
+input_snapshot/rtl/leaf/fp32/vit_fp32_from_u32_comb.sv: OK
+input_snapshot/rtl/leaf/fp32/vit_fp32_mul_comb_nodsp.sv: OK
+input_snapshot/rtl/leaf/fp32/vit_fp32_scale_pow2_down_comb.sv: OK
+input_snapshot/rtl/leaf/fp32/vit_fp32_to_u32_floor_comb.sv: OK
+input_snapshot/rtl/pkg/vit_fp32_pkg.sv: OK
+input_snapshot/sim/m8/reference/vit_softmax_engine_fp32_parent_v1_12.sv: OK
+input_snapshot/sim/m8/run_softmax_ooc_ab.sh: OK
+input_snapshot/sim/softmax/run_softmax_buffer_ooc.tcl: OK
+parent/artifacts/post_synth.dcp: OK
+parent/reports/post_route_loops.rpt: OK
+parent/reports/post_route_status.rpt: OK
+parent/reports/post_route_structure.rpt: OK
+parent/reports/post_route_timing_gate.rpt: OK
+parent/reports/post_route_timing_summary.rpt: OK
+parent/reports/post_route_utilization.rpt: OK
+parent/reports/post_synth_loops.rpt: OK
+parent/reports/post_synth_structure.rpt: OK
+parent/reports/post_synth_timing_summary.rpt: OK
+parent/reports/post_synth_utilization.rpt: OK
+parent/source.sha256: OK
+INITIAL_FAILURE_PAYLOAD_SHA256_CHECK_END
+HASH_VERIFY_PASS

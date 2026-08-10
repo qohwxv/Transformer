@@ -1,0 +1,13 @@
+PASS M7 packed read router: checks=175 R8/A=128 Bv3=16 Bv2=32
+sim/m7/tb_m7_packed_read_address_router.sv:254: $finish called at 56000 (1ps)
+PASS M7 packed address context: checks=45
+sim/m7/tb_m7_packed_address_context.sv:283: $finish called at 2636000 (1ps)
+PASS M7 packed engine dispatch: checks=8
+sim/m7/tb_m7_packed_engine_dispatch.sv:115: $finish called at 4000 (1ps)
+PASS M7 packed memory frontend: checks=350 packed=146 legacy=162 tail=10 queued_store=16 arb_load_then_store=146+16 stale_gen=1
+sim/m7/tb_m7_packed_memory_frontend.sv:522: $finish called at 16050000 (1ps)
+PASS M7 vector activation cache frontend: checks=1263 fill_phys=112+23 hit_phys=16+4 hit_words=96+18 malformed_fallback=2 tag_miss=1 mutation_stages=4 K3073_fallback=1
+sim/m7/tb_m7_vector_activation_cache_frontend.sv:786: $finish called at 48006000 (1ps)
+PASS M7 activation cache leaf pipeline: checks=64 vector_ii=1 responses=5 concurrent_writes=4 clear_flush=1
+sim/m7/tb_m7_activation_cache_leaf_pipeline.sv:203: $finish called at 520000 (1ps)
+PASS M7 packed memory seams: 6/6 cases

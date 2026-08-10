@@ -1,0 +1,32 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Sat Aug  8 16:41:54 2026
+| Host         : ubuntu running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_utilization -hierarchical -file /home/s23520579/Vivado_project/vit_m8_layernorm_leaf_f3a88811ee2f/evidence/20260808T164100Z-m8-layernorm-ooc-ab-generate-fix/disabled/reports/post_route_utilization.rpt
+| Design       : vit_layernorm_engine_fp32
+| Device       : xczu5ev-sfvc784-1-e
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------+-----------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+|            Instance           |            Module           | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++-------------------------------+-----------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+| vit_layernorm_engine_fp32     |                       (top) |       1391 |       1391 |       0 |    0 | 1247 |      0 |      0 |    0 |          0 |
+|   (vit_layernorm_engine_fp32) |                       (top) |        845 |        845 |       0 |    0 |  881 |      0 |      0 |    0 |          0 |
+|   u_reciprocal_hidden_size    |   vit_fp32_recip_u32_serial |        394 |        394 |       0 |    0 |  198 |      0 |      0 |    0 |          0 |
+|   u_total_words_multiplier    | vit_u32_mul_iterative_nodsp |        152 |        152 |       0 |    0 |  168 |      0 |      0 |    0 |          0 |
++-------------------------------+-----------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

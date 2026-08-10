@@ -1,0 +1,84 @@
+{
+  "entries": [
+    {
+      "bytes": 88316,
+      "path": "vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/tb_vit_phase_e_axi_e05_mode3_real_rtl.sv",
+      "role": "e05_testbench",
+      "sha256": "fa652b3c6d77f09222950a7f5889eb6c333160e432eb61fc606e2bd75bb0e48b"
+    },
+    {
+      "bytes": 113,
+      "path": "vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/vit_phase_e_axi_e05_mode3_real_rtl_verilator.f",
+      "role": "e05_simulation_filelist",
+      "sha256": "d633263b9c95a5b81d2b19e204747e7e90d28c96ef9e5ad3ebc4c5f36f00dc56"
+    },
+    {
+      "bytes": 35283,
+      "path": "vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/m8_mode3_e05_real_assets.py",
+      "role": "e05_asset_module",
+      "sha256": "f5b69c492e2377da2f0d501d1857c6987607f2442a951faac8b31d9153334690"
+    },
+    {
+      "bytes": 7217,
+      "path": "vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/stage_m8_mode3_e05_real_assets.py",
+      "role": "e05_stager",
+      "sha256": "86bf3cffdca2a44195ff8e1ad6fc4995bcae7c7c27292ed8e138a4f01ed11131"
+    },
+    {
+      "bytes": 30953,
+      "path": "vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/run_e05_mode3_real_axi_rtl_verilator.sh",
+      "role": "e05_runner",
+      "sha256": "4a7aca9f4b98d1a5c8ecfd4c9a96a217cdee53dbe19c199dbf9ecbca8517f8f0"
+    },
+    {
+      "bytes": 24365,
+      "path": "vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/tests/test_m8_mode3_e05_real_assets.py",
+      "role": "e05_asset_tests",
+      "sha256": "baa8841b874a49204dcf37df75cb5f7187a08f7b8ac9e29958ecaca18a6d679d"
+    },
+    {
+      "bytes": 4863,
+      "path": "vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/M8_REAL_E05_HARNESS.md",
+      "role": "e05_harness_document",
+      "sha256": "92c1b904019a02d3c2f80ff8698c06853522a4d05c5b2b8a7e5f79288834ac6c"
+    },
+    {
+      "bytes": 98769,
+      "path": "vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/m7_mode3_real_assets.py",
+      "role": "qualified_common_helper",
+      "sha256": "f064c2f5cc25fc836848b69d140119de0c2e9a22c256421c4eb371f17efa4aed"
+    },
+    {
+      "bytes": 44024,
+      "path": "vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/vit_axi_ddr_model_128.sv",
+      "role": "ddr_model",
+      "sha256": "40803b5e7e0407173859e4aad82f1563896fbe9c4f50c477e9607fe2f9f03613"
+    },
+    {
+      "bytes": 15979,
+      "path": "experimental/m6_fp16_nodsp_ooc/reference/m6_fp16_reference.py",
+      "role": "m6_reference",
+      "sha256": "075d737a2ed94c17ecb37f7a507919d4be5c48c30de3a3c8403b72cd2550ad35"
+    },
+    {
+      "bytes": 8493,
+      "path": "vivado_server_307_perf_v1_m7s8_fp16_parallel_overlap_2023_2/rtl/leaf/fp32/vit_fp32_add_comb.sv",
+      "role": "current_fp32_adder_oracle_rtl",
+      "sha256": "3721a6d130e655c524c642513bf5920d32c0a75a3abb88e0378ed7b5c2352141"
+    },
+    {
+      "bytes": 8307,
+      "path": "vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/verify_m8_e05_launch_manifest.py",
+      "role": "launch_manifest_verifier",
+      "sha256": "1c52ca82b7058a8eb6978d0269ba5321250a769e470e23916b0e8f0d803d6b41"
+    },
+    {
+      "bytes": 12575,
+      "path": "vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/m8_e05_run_evidence.py",
+      "role": "run_evidence_helper",
+      "sha256": "e6cf772a7e4aa792b828a86157b4844bfb25ba34694aabc091c3323e1a48cc29"
+    }
+  ],
+  "revision": "vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2",
+  "schema": "vit-m8-mode3-e05-launch-manifest-v1"
+}

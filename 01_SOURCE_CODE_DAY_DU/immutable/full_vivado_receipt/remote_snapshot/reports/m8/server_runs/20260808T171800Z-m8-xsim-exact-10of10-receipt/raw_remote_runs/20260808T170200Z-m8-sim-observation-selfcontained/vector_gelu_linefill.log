@@ -1,0 +1,14 @@
+TRAFFIC_SUMMARY logical_reads=472 logical_writes=320 physical_words=472 ar=472 r_beats=472 linefills=0 hits=0 full=0 narrow=472 discarded=0
+M8_LINEFILL_INTEGRATION_PASS implementation=M7_PARENT seed=1 negative=0 checks=480 req_traces=792 result_traces=320
+TRAFFIC_SUMMARY logical_reads=472 logical_writes=320 physical_words=456 ar=166 r_beats=210 linefills=38 hits=306 full=82 narrow=128 discarded=0
+M8_LINEFILL_INTEGRATION_PASS implementation=M8 seed=1 negative=0 checks=480 req_traces=792 result_traces=320
+TRAFFIC_SUMMARY logical_reads=472 logical_writes=320 physical_words=456 ar=166 r_beats=210 linefills=38 hits=306 full=82 narrow=128 discarded=0
+M8_LINEFILL_INTEGRATION_PASS implementation=M8 seed=7 negative=0 checks=480 req_traces=792 result_traces=320
+TRAFFIC_SUMMARY logical_reads=472 logical_writes=320 physical_words=456 ar=166 r_beats=210 linefills=38 hits=306 full=82 narrow=128 discarded=0
+M8_LINEFILL_INTEGRATION_PASS implementation=M8 seed=305419896 negative=0 checks=480 req_traces=792 result_traces=320
+M8_LINEFILL_INTEGRATION_PASS implementation=M7_PARENT seed=17 negative=1 checks=22 req_traces=1 result_traces=0
+M8_LINEFILL_INTEGRATION_PASS implementation=M7_PARENT seed=23 negative=2 checks=22 req_traces=1 result_traces=0
+M8_LINEFILL_INTEGRATION_PASS implementation=M8 seed=17 negative=1 checks=22 req_traces=1 result_traces=0
+M8_LINEFILL_INTEGRATION_PASS implementation=M8 seed=23 negative=2 checks=22 req_traces=1 result_traces=0
+M8_LINEFILL_INTEGRATION_PASS implementation=M8 seed=29 negative=3 checks=23 req_traces=1 result_traces=0
+M8_VECTOR_GELU_LINEFILL_AB_PASS parent_router_sha=5e2a44ed50a48a16dfd428d4c9fe36669b11052a5aadc94d23027d22f21a5319 req_trace_sha=60aaefd9ea262d5e3d4d15d1dc6540f5b5da728d72d624ec23bb6571cd75d5be result_trace_sha=739e0fd6099cf0f92fcee41ae07bd3722b785d4b6c3523c21fb24b5979c1915b positive_seeds=3 negative_cases=5

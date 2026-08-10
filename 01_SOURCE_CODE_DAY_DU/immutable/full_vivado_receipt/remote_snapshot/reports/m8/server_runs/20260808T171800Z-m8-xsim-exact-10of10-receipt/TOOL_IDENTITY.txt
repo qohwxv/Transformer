@@ -1,0 +1,36 @@
+M8 XSim tool identity
+Date captured: 2026-08-08 UTC
+Server host: ubuntu
+
+Version output:
+vivado v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+xvlog: Vivado Simulator v2023.2
+xelab: Vivado Simulator v2023.2
+xsim: Vivado Simulator v2023.2
+
+Installation path:
+/tools/Xilinx/Vivado/2023.2 -> /data/tools/Xilinx/Vivado/2023.2
+
+Launch scripts:
+06008d6f7a24bbc5044ea7d29f94fcd01953cac7667d3461f6a246493d8ea417  /tools/Xilinx/Vivado/2023.2/bin/vivado
+4e18f3de7b54c68699e7cb94c53942b6f9eae9556302b4f05b693008cb64556f  /tools/Xilinx/Vivado/2023.2/bin/xvlog
+4e18f3de7b54c68699e7cb94c53942b6f9eae9556302b4f05b693008cb64556f  /tools/Xilinx/Vivado/2023.2/bin/xelab
+da8d6fac33f3657c2457043b57ab7fafc9622607171f57bac55c0e033d2f85de  /tools/Xilinx/Vivado/2023.2/bin/xsim
+
+Executed binaries resolved by the launch scripts:
+207605c630c1b1bc0f8274c5cbd16bf65df5d121fd1a8185e7443bcd8754c932  /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/vivado
+ea0e70d0171cf4cdc69966a575ced819f9c423c311e39326e53cee20a89c5014  /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xvlog
+5ec4cf46a364dd55f127c6b5e772f7757dfb7a5202e9372402b398dbda5abf7e  /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab
+8b550cdbcda9af582c372d6b83c1e4e448960b82e0ecd7d9f759bdddb7b860ad  /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xsim
+
+Environment/loader files:
+284dd5fbb3531af03eae82b7626f86e33a98d57a2b8e672e0e22b4e3fb1f2568  /data/tools/Xilinx/Vivado/2023.2/settings64.sh
+815abf70adacee6190d6993b712018bfa339e6e37653ed1e08002ca52bfa96df  /data/tools/Xilinx/Vivado/2023.2/bin/loader
+bb939b746ae0b258b1cf5c66a0bede1339555b244c523312dc8223597c265baa  /data/tools/Xilinx/Vivado/2023.2/bin/setupEnv.sh
+
+The raw logs independently print the XSim 2023.2 build banner and the
+canonical /data/tools/.../unwrapped/lnx64.o/xelab execution path.

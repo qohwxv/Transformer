@@ -1,0 +1,330 @@
+{
+  "schema": "vit-phase-e-profile-abi-v1.10-m7-result-fifo-generation",
+  "ip_version": "0x0001000A",
+  "profile": "m7_fp16_parallel_overlap_development",
+  "axi_lite_address_width": 12,
+  "compatibility": {
+    "base_schema": "vit-phase-e-profile-abi-v1.9-m7-overlap",
+    "base_document": "PERF_PROFILE_ABI_V1_9.json",
+    "base_ip_version": "0x00010009",
+    "policy": "mapping-compatible activation; every v1.9 address, value encoding, and counter index is retained, while the previously reserved result-FIFO fields become active",
+    "immutable_range": "0x000..0x8E4",
+    "new_range": "none; v1.10 changes identity, capability/configuration values, and the reachability of existing result-FIFO fields",
+    "first_unsupported_word_after_new_range": "0x8E8"
+  },
+  "m7_overlap": {
+    "capability_offset": "0x810",
+    "capability_value": "0x01FF0817",
+    "status_offset": "0x814",
+    "overflow_low_offset": "0x818",
+    "overflow_high_offset": "0x81C",
+    "error_status_offset": "0x820",
+    "geometry_offset": "0x824",
+    "geometry_value_for_production_r8_c2_l16_s16": "0x10100208",
+    "buffer_config_offset": "0x828",
+    "buffer_config_value_for_current_production": "0x00080202",
+    "numeric_config_offset": "0x82C",
+    "numeric_config_value": "0x07C0D05D",
+    "counter_base": "0x830",
+    "counter_last_low_offset": "0x8E0",
+    "last_offset": "0x8E4",
+    "counter_stride_bytes": 8,
+    "counter_count": 23,
+    "counter_width_bits": 64,
+    "word_order": "low 32 bits at counter offset, high 32 bits at counter offset + 4",
+    "access": "read-only; every write in 0x810..0x8E4 returns AXI-Lite SLVERR",
+    "snapshot_policy": "Only the published bank is readable. Reset clears live and published state. An accepted START clears live counters, the prior published snapshot, overflow, typed errors, and claim history, sets running, and clears snapshot-valid. While running, live updates are not exposed. DONE while running atomically publishes terminal-cycle-inclusive counters, overflow, typed errors, and claim history, clears running, and sets snapshot-valid.",
+    "read_consistency": "Published 64-bit counters remain stable between DONE and the next accepted START or reset, so low/high reads cannot tear within that interval. Software should require STATUS.snapshot_valid=1 and STATUS.running=0 before consuming a snapshot.",
+    "overflow_policy": "Additive counters wrap modulo 2^64 and set a sticky per-counter overflow bit. Overflow bits are published atomically on DONE and clear on reset or the next accepted START. Maximum gauges retain the largest observed value and do not add event deltas.",
+    "typed_error_policy": "Typed error events are sticky within the live epoch, publish atomically on DONE, and clear on reset or the next accepted START. Additional consistency checks are generated internally on the terminal cycle.",
+    "current_production_contract": "The production wrapper instantiates two operand banks, RESULT_FIFO_DEPTH=2, and GENERATION_BITS=8. The result-FIFO enqueue/dequeue/occupancy events and generation-tag mismatch path are reachable in packed execution mode 3. Modes 0, 1, and 5 retain their legacy direct-result path. This ABI description is static/source-verified; it is not a board-runtime claim."
+  },
+  "capability_bits": {
+    "7:0": "counter count; 0x17 means 23 counters",
+    "15:8": "counter width in bytes; 0x08 means 64-bit counters",
+    "16": "atomic published snapshot present",
+    "17": "sticky per-counter overflow present",
+    "18": "typed error status present",
+    "19": "exact load/compute/store stage accounting present",
+    "20": "accepted and disabled FP16 term deltas present",
+    "21": "two-bank operand ownership observability present",
+    "22": "result-FIFO observability implemented; set for current production depth 2",
+    "23": "generation-tag observability implemented; set for current production width 8",
+    "31:24": "M7 profile schema version; 0x01"
+  },
+  "status_bits": {
+    "0": "counter bank running; live state",
+    "1": "published snapshot valid",
+    "2": "one or more published counter-overflow bits set",
+    "3": "one or more published typed-error bits set",
+    "4": "published load/compute overlap counter is nonzero",
+    "5": "published compute/store overlap counter is nonzero",
+    "6": "published three-way overlap counter is nonzero",
+    "7": "both operand-bank claim bits were observed in the published epoch",
+    "9:8": "published operand-bank claim-seen mask; bit 8 is bank 0 and bit 9 is bank 1",
+    "11:10": "low two bits of published maximum operand-bank occupancy",
+    "15:12": "low four bits of published maximum result-FIFO occupancy; bounded by configured depth 2 in current production",
+    "16": "published feeder-stall counter is nonzero",
+    "17": "published result-backpressure counter is nonzero",
+    "18": "published operand-bank-empty-wait counter is nonzero",
+    "19": "published operand-bank-full-wait counter is nonzero",
+    "20": "published numerical-error summary: error bits 10..13 or bit 19 are set",
+    "21": "published control/ownership/consistency-error summary: error bits 0..9 or 14..18 are set",
+    "31:22": "reserved zero"
+  },
+  "overflow_bits": {
+    "22:0": "bits 0..22 correspond one-for-one to M7 counter indices 0..22",
+    "63:23": "reserved zero"
+  },
+  "error_status_bits": {
+    "2:0": "reserved typed ownership/protocol error slots; no production driver in v1.10",
+    "3": "ownership/tag/protocol mismatch class; current production drivers include stale result generation/address metadata and A-vector-cache response/coordinate protocol violations",
+    "9:4": "reserved typed ownership/protocol error slots; no production driver in v1.10",
+    "10": "one or more FP16 invalid-result events observed",
+    "11": "one or more FP16 overflow-result events observed",
+    "12": "one or more FP16 length-error events observed",
+    "13": "one or more FP16 subnormal-flushed events observed",
+    "14": "DONE observed with nonzero operand-bank occupancy; generated internally",
+    "15": "DONE observed with nonzero result-FIFO occupancy; generated internally",
+    "16": "DONE observed while load, compute, or store stage-active was asserted; generated internally",
+    "17": "reserved consistency-error slot; no production driver in v1.10",
+    "18": "disabled-term delta exceeded accepted-term delta in a cycle; generated internally",
+    "19": "aggregate fatal numerical event from invalid, overflow, or length error",
+    "31:20": "reserved zero"
+  },
+  "geometry_bits": {
+    "7:0": "ARRAY_ROWS",
+    "15:8": "ARRAY_COLS",
+    "23:16": "PE_LANES",
+    "31:24": "STREAMS"
+  },
+  "buffer_config_bits": {
+    "7:0": "operand-bank count; current production value 2",
+    "15:8": "result-FIFO depth; current production value 2",
+    "23:16": "generation-tag width in bits; current production value 8",
+    "31:24": "reserved zero"
+  },
+  "numeric_config_bits": {
+    "7:0": "accumulator width in bits; current value 93",
+    "15:8": "signed accumulator least-significant binary exponent in two's-complement; current value -48",
+    "23:16": "maximum K divided by 16; current value 192 for Kmax=3072",
+    "24": "gradual FP16 subnormal handling enabled",
+    "25": "FP32 output enabled",
+    "26": "single final round-to-nearest-even enabled",
+    "31:27": "reserved zero"
+  },
+  "counters": [
+    {
+      "index": 0,
+      "name": "fp16_term_accepts",
+      "low_offset": "0x830",
+      "high_offset": "0x834",
+      "kind": "delta sum",
+      "meaning": "Sum of m7_fp16_term_accept_delta, including enabled and disabled accepted stream slots."
+    },
+    {
+      "index": 1,
+      "name": "fp16_disabled_term_accepts",
+      "low_offset": "0x838",
+      "high_offset": "0x83C",
+      "kind": "delta sum",
+      "meaning": "Sum of accepted stream slots disabled by tail or padding; useful accepted terms equal counter 0 minus counter 1 when no consistency error is present."
+    },
+    {
+      "index": 2,
+      "name": "fp16_dot_start_cycles",
+      "low_offset": "0x840",
+      "high_offset": "0x844",
+      "kind": "event-cycle count",
+      "meaning": "Cycles in which m7_fp16_dot_start is asserted."
+    },
+    {
+      "index": 3,
+      "name": "fp16_result_vector_cycles",
+      "low_offset": "0x848",
+      "high_offset": "0x84C",
+      "kind": "event-cycle count",
+      "meaning": "Cycles in which m7_fp16_result_vector is asserted."
+    },
+    {
+      "index": 4,
+      "name": "fp16_feeder_stall_cycles",
+      "low_offset": "0x850",
+      "high_offset": "0x854",
+      "kind": "cycle count",
+      "meaning": "Cycles in which m7_fp16_input_wait or m7_fp16_term_stall is asserted; simultaneous causes count once."
+    },
+    {
+      "index": 5,
+      "name": "fp16_result_backpressure_cycles",
+      "low_offset": "0x858",
+      "high_offset": "0x85C",
+      "kind": "cycle count",
+      "meaning": "Cycles in which m7_fp16_result_backpressure is asserted."
+    },
+    {
+      "index": 6,
+      "name": "panel_load_active_cycles",
+      "low_offset": "0x860",
+      "high_offset": "0x864",
+      "kind": "cycle count",
+      "meaning": "Cycles with M7 panel-load stage active."
+    },
+    {
+      "index": 7,
+      "name": "panel_compute_active_cycles",
+      "low_offset": "0x868",
+      "high_offset": "0x86C",
+      "kind": "cycle count",
+      "meaning": "Cycles with M7 panel-compute stage active."
+    },
+    {
+      "index": 8,
+      "name": "panel_store_active_cycles",
+      "low_offset": "0x870",
+      "high_offset": "0x874",
+      "kind": "cycle count",
+      "meaning": "Cycles with M7 panel-store stage active."
+    },
+    {
+      "index": 9,
+      "name": "panel_stage_union_cycles",
+      "low_offset": "0x878",
+      "high_offset": "0x87C",
+      "kind": "cycle count",
+      "meaning": "Cycles with at least one of panel load, compute, or store active."
+    },
+    {
+      "index": 10,
+      "name": "panel_load_compute_overlap_cycles",
+      "low_offset": "0x880",
+      "high_offset": "0x884",
+      "kind": "cycle count",
+      "meaning": "Cycles with panel load and compute simultaneously active."
+    },
+    {
+      "index": 11,
+      "name": "panel_compute_store_overlap_cycles",
+      "low_offset": "0x888",
+      "high_offset": "0x88C",
+      "kind": "cycle count",
+      "meaning": "Cycles with panel compute and store simultaneously active."
+    },
+    {
+      "index": 12,
+      "name": "panel_load_store_overlap_cycles",
+      "low_offset": "0x890",
+      "high_offset": "0x894",
+      "kind": "cycle count",
+      "meaning": "Cycles with panel load and store simultaneously active."
+    },
+    {
+      "index": 13,
+      "name": "panel_three_way_overlap_cycles",
+      "low_offset": "0x898",
+      "high_offset": "0x89C",
+      "kind": "cycle count",
+      "meaning": "Cycles with panel load, compute, and store all simultaneously active."
+    },
+    {
+      "index": 14,
+      "name": "operand_bank_commits",
+      "low_offset": "0x8A0",
+      "high_offset": "0x8A4",
+      "kind": "event-cycle count",
+      "meaning": "Cycles in which a packed-panel load commit is reported."
+    },
+    {
+      "index": 15,
+      "name": "operand_bank_claims",
+      "low_offset": "0x8A8",
+      "high_offset": "0x8AC",
+      "kind": "event-cycle count",
+      "meaning": "Cycles in which compute claims a committed packed-panel bank."
+    },
+    {
+      "index": 16,
+      "name": "operand_bank_releases",
+      "low_offset": "0x8B0",
+      "high_offset": "0x8B4",
+      "kind": "event-cycle count",
+      "meaning": "Cycles in which compute releases a packed-panel bank."
+    },
+    {
+      "index": 17,
+      "name": "operand_bank_empty_wait_cycles",
+      "low_offset": "0x8B8",
+      "high_offset": "0x8BC",
+      "kind": "cycle count",
+      "meaning": "Cycles in which packed compute waits because no committed operand bank is ready."
+    },
+    {
+      "index": 18,
+      "name": "operand_bank_full_wait_cycles",
+      "low_offset": "0x8C0",
+      "high_offset": "0x8C4",
+      "kind": "cycle count",
+      "meaning": "Cycles in which packed load waits because no operand bank is free."
+    },
+    {
+      "index": 19,
+      "name": "operand_bank_max_occupancy",
+      "low_offset": "0x8C8",
+      "high_offset": "0x8CC",
+      "kind": "maximum gauge",
+      "meaning": "Maximum observed two-bit m7_panel_occupancy value in the epoch."
+    },
+    {
+      "index": 20,
+      "name": "result_fifo_enqueues",
+      "low_offset": "0x8D0",
+      "high_offset": "0x8D4",
+      "kind": "event-cycle count",
+      "meaning": "Count of cycles with an accepted result-FIFO enqueue in packed execution mode 3."
+    },
+    {
+      "index": 21,
+      "name": "result_fifo_dequeues",
+      "low_offset": "0x8D8",
+      "high_offset": "0x8DC",
+      "kind": "event-cycle count",
+      "meaning": "Count of cycles with an accepted result-FIFO dequeue after the corresponding store response in packed execution mode 3."
+    },
+    {
+      "index": 22,
+      "name": "result_fifo_max_occupancy",
+      "low_offset": "0x8E0",
+      "high_offset": "0x8E4",
+      "kind": "maximum gauge",
+      "meaning": "Maximum observed result-FIFO occupancy in the epoch; current production is bounded by depth 2."
+    }
+  ],
+  "derived_invariants": {
+    "useful_fp16_terms": "counter[0] - counter[1], valid only when ERROR_STATUS bit 18 is clear",
+    "stage_inclusion_exclusion": "counter[9] = counter[6] + counter[7] + counter[8] - counter[10] - counter[11] - counter[12] + counter[13]",
+    "clean_done_fifo_balance": "counter[20] = counter[21] at clean command completion after final drain",
+    "current_production_fifo_occupancy_bound": "counter[22] <= 2 and STATUS[15:12] = low_four_bits(counter[22])",
+    "current_production_buffer_config": "BUFFER_CONFIG = 0x00080202"
+  },
+  "protected_windows": [
+    {
+      "name": "v1_6_and_earlier",
+      "range": "0x000..0x80F",
+      "compatibility": "immutable; defined by PERF_PROFILE_ABI_V1_6.json and its base schema"
+    },
+    {
+      "name": "m7_overlap_profile",
+      "range": "0x810..0x8E4",
+      "compatibility": "v1.10 append-only, read-only; v1.9 addresses and counter indices are unchanged"
+    }
+  ],
+  "implementation_sources": [
+    "rtl/axi/control/vit_phase_e_m7_overlap_counters.sv",
+    "rtl/axi/control/vit_axi_lite_control_regs.sv",
+    "rtl/axi/vit_phase_e_axi_wrapper.sv",
+    "rtl/core/vit_phase_e_engine_top.sv",
+    "rtl/core/vit_phase_e_memory_frontend.sv",
+    "rtl/blocks/gemm/vit_gemm_fp16_stream_scheduler.sv",
+    "rtl/pkg/vit_phase_e_pkg.sv"
+  ]
+}

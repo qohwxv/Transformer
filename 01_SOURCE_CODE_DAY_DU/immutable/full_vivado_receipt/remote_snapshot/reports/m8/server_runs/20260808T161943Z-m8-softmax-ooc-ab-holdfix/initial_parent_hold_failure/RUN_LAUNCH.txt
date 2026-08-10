@@ -1,0 +1,3 @@
+RUN_ID=20260808T161254Z-m8-softmax-ooc-ab
+OUTPUT_ROOT=/home/s23520579/Vivado_project/vit_m8_softmax_leaf_9ddbb13b65f5/evidence/20260808T161254Z-m8-softmax-ooc-ab
+PID=1753652

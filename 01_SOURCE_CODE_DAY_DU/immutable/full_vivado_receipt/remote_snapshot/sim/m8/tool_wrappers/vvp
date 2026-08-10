@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+tool_root="${M8_IVERILOG_ROOT:?M8_IVERILOG_ROOT is required}"
+export IVERILOG_VPI_MODULE_PATH="${tool_root}/lib/ivl"
+exec "${tool_root}/bin/vvp.real" \
+    -M "${tool_root}/lib/ivl" "$@"

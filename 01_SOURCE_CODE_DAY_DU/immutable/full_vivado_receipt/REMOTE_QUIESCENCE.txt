@@ -1,0 +1,8 @@
+AUDIT_UTC=2026-08-09T04:36:01Z
+REMOTE_ROOT=/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2
+REMOTE_ACCESS_MODE=READ_ONLY
+REMOTE_REVISION_PROCESS_MATCHES=0
+MemAvailable:251069344kB
+SwapFree:0kB
+/dev/mapper/ubuntu--vg-ubuntu--lv   102626232 62802996  34563972      65% /
+1.29 1.51 2.19 2/1112 1939171

@@ -1,0 +1,759 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/pkg/vit_phase_e_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/pkg/vit_fp32_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/common/vit_counter.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/common/vit_lane_mask.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_lane_mask
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/common/vit_stream_buffer.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_stream_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/common/vit_u32_mul_iterative_nodsp.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_u32_mul_iterative_nodsp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_add_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_add_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_sub_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_sub_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_compare.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_compare
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_mul_comb_nodsp.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_mul_comb_nodsp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_accumulator.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_accumulator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_from_u32_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_from_u32_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_to_u32_floor_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_to_u32_floor_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_scale_pow2_down_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_scale_pow2_down_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_recip_u32_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_recip_u32_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_recip_u32_serial.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_recip_u32_serial
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_recip_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_recip_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_rsqrt_step_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_rsqrt_step_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_exp_neg_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_exp_neg_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_gelu_comb.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_gelu_comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp32_to_fp16_rne_gradual.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_to_fp16_rne_gradual
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp16_mul_to_fp32_comb_nodsp.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp16_mul_to_fp32_comb_nodsp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp32_product_to_fixed_exact.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_product_to_fixed_exact
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fixed_analyze.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fixed_analyze
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fixed_normalized_to_fp32_rne.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fixed_normalized_to_fp32_rne
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fixed_to_fp32_rne.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fixed_to_fp32_rne
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp16_dot_stream_csa_nodsp.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp16_dot_stream_csa_nodsp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_controller.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_operand_router.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_operand_router
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_result_path.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_result_path
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_fp32_reduce16.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_reduce16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_dot16.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_dot16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_dot16_serial.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_dot16_serial
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_accumulator.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_accumulator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_accumulator_bank.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_accumulator_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_pe.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_pe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_pe_array.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_pe_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_tree_pe_fp32.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_tree_pe_fp32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_tree_array.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_tree_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_activation_panel_cache.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_activation_panel_cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_bias_cache.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_bias_cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_fp16_stream_array.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_fp16_stream_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_result_fifo.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_result_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_fp16_parallel_scheduler.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_fp16_parallel_scheduler
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_dual_mode_array.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_dual_mode_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/vector/vit_vector_lane_alu.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_vector_lane_alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/vector/vit_vector_datapath.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_vector_datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/vector/vit_vector_engine_fp32.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_vector_engine_fp32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layout/vit_layout_address_generator.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layout_address_generator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layout/vit_layout_descriptor_validator.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layout_descriptor_validator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layout/vit_layout_engine.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layout_engine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layernorm/vit_layernorm_statistics_datapath.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layernorm_statistics_datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layernorm/vit_layernorm_affine_datapath.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layernorm_affine_datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layernorm/vit_layernorm_engine_fp32.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layernorm_engine_fp32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/softmax/vit_softmax_exp_datapath.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_softmax_exp_datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/softmax/vit_softmax_reciprocal_step.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_softmax_reciprocal_step
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/softmax/vit_softmax_engine_fp32.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_softmax_engine_fp32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gelu/vit_gelu_lane_datapath.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gelu_lane_datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gelu/vit_fp32_gelu_serial.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_fp32_gelu_serial
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gelu/vit_gelu_engine_fp32.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gelu_engine_fp32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/argmax/vit_argmax_engine_fp32.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_argmax_engine_fp32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/control/vit_phase_e_sequencer.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_sequencer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_gemm_memory_address_context.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_gemm_memory_address_context
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_read_address_router.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_read_address_router
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_write_address_router.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_write_address_router
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_memory_frontend.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_memory_frontend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_command_controller.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_command_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_engine_dispatch.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_engine_dispatch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_engine_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_engine_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_npu.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_npu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_layer_param_table.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layer_param_table
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_layer_param_loader.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_layer_param_loader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_perf_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_perf_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_profile_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_profile_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_m5_axi_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_m5_axi_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_m7_overlap_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_m7_overlap_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_axi_lite_control_regs.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_axi_lite_control_regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/memory/vit_phase_e_axi_mem_adapter.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_axi_mem_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/vit_phase_e_axi_wrapper.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_axi_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/top/vit_phase_e_axi_bd_wrapper.v" into library work
+INFO: [VRFC 10-311] analyzing module vit_phase_e_axi_bd_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_axi_mem_adapter.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_axi_mem_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_axi_wrapper.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_axi_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_engine_memory.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_engine_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_engine_axi.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_engine_axi
+INFO: [VRFC 10-311] analyzing module axi_stall_ram_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/control/tb_vit_phase_e_perf_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_perf_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/control/tb_vit_phase_e_profile_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_profile_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/m7/tb_vit_phase_e_m7_overlap_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_m7_overlap_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/vit_axi_ddr_model_128.sv" into library work
+INFO: [VRFC 10-311] analyzing module vit_axi_ddr_model_128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/tb_vit_phase_e_axi_e05_compact_rtl.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vit_phase_e_axi_e05_compact_rtl
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 2 tb_vit_phase_e_axi_mem_adapter -s tb_vit_phase_e_axi_mem_adapter_snapshot 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.vit_phase_e_axi_mem_adapter_defa...
+Compiling module work.tb_vit_phase_e_axi_mem_adapter
+Built simulation snapshot tb_vit_phase_e_axi_mem_adapter_snapshot
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_vit_phase_e_axi_mem_adapter_snapshot/xsim_script.tcl
+# xsim {tb_vit_phase_e_axi_mem_adapter_snapshot} -autoloadwcfg -tclbatch {/data/tmp/vit_server_xsim.ItXpz1/run_all.tcl}
+Time resolution is 1 ps
+source /data/tmp/vit_server_xsim.ItXpz1/run_all.tcl
+## run all
+VIT_PHASE_E_AXI_MEM_ADAPTER_TEST_PASS checks=173
+$finish called at time : 1106 ns : File "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_axi_mem_adapter.sv" Line 712
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Aug  8 17:01:50 2026...
+PASS XSim: tb_vit_phase_e_axi_mem_adapter
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 2 tb_vit_phase_e_axi_wrapper -s tb_vit_phase_e_axi_wrapper_snapshot 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.vit_phase_e_pkg
+Compiling module work.vit_phase_e_perf_counters
+Compiling module work.vit_phase_e_profile_counters_def...
+Compiling module work.vit_phase_e_m5_axi_counters
+Compiling module work.vit_phase_e_m7_overlap_counters(...
+Compiling module work.vit_axi_lite_control_regs
+Compiling module work.vit_layer_param_table
+Compiling module work.vit_layer_param_loader
+Compiling module work.vit_phase_e_sequencer(E04_TOKEN_...
+Compiling module work.vit_fp32_mul_comb_nodsp
+Compiling module work.vit_fp32_add_comb
+Compiling module work.vit_phase_e_command_controller
+Compiling module work.vit_phase_e_engine_dispatch_defa...
+Compiling module work.vit_gemm_activation_panel_cache_...
+Compiling module work.vit_gemm_bias_cache_default
+Compiling module work.vit_gemm_memory_address_context_...
+Compiling module work.vit_phase_e_read_address_router_...
+Compiling module work.vit_phase_e_write_address_router...
+Compiling module work.vit_phase_e_memory_frontend_defa...
+Compiling module work.vit_gemm_dual_mode_array(ARRAY_R...
+Compiling module work.vit_lane_mask
+Compiling module work.vit_vector_engine_fp32(USE_EXTER...
+Compiling module work.vit_u32_mul_iterative_nodsp
+Compiling module work.vit_layout_descriptor_validator
+Compiling module work.vit_layout_address_generator
+Compiling module work.vit_layout_engine
+Compiling module work.vit_fp32_recip_u32_serial
+Compiling module work.vit_layernorm_engine_fp32(USE_EX...
+Compiling module work.vit_fp32_compare
+Compiling module work.vit_fp32_to_u32_floor_comb
+Compiling module work.vit_fp32_from_u32_comb
+Compiling module work.vit_fp32_scale_pow2_down_comb
+Compiling module work.vit_softmax_engine_fp32(USE_EXTE...
+Compiling module work.vit_fp32_gelu_serial(USE_EXTERNA...
+Compiling module work.vit_gelu_engine_fp32(USE_EXTERNA...
+Compiling module work.vit_argmax_engine_fp32
+Compiling module work.vit_phase_e_engine_top(SCRATCH_W...
+Compiling module work.vit_phase_e_npu(E05_PATCH_COUNT=...
+Compiling module work.vit_phase_e_axi_mem_adapter_defa...
+Compiling module work.vit_phase_e_axi_wrapper_default
+Compiling module work.tb_vit_phase_e_axi_wrapper
+Built simulation snapshot tb_vit_phase_e_axi_wrapper_snapshot
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_vit_phase_e_axi_wrapper_snapshot/xsim_script.tcl
+# xsim {tb_vit_phase_e_axi_wrapper_snapshot} -autoloadwcfg -tclbatch {/data/tmp/vit_server_xsim.ItXpz1/run_all.tcl}
+Time resolution is 1 ps
+source /data/tmp/vit_server_xsim.ItXpz1/run_all.tcl
+## run all
+VIT_PHASE_E_AXI_WRAPPER_TEST_PASS checks=178
+$finish called at time : 5280 ns : File "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_axi_wrapper.sv" Line 571
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Aug  8 17:02:02 2026...
+PASS XSim: tb_vit_phase_e_axi_wrapper
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 2 tb_vit_phase_e_engine_memory -s tb_vit_phase_e_engine_memory_snapshot 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'mem_req_read_ahead_safe' remains unconnected for this instance [/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_engine_memory.sv:119]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.vit_phase_e_pkg
+Compiling module work.vit_fp32_mul_comb_nodsp
+Compiling module work.vit_fp32_add_comb
+Compiling module work.vit_phase_e_command_controller
+Compiling module work.vit_phase_e_engine_dispatch_defa...
+Compiling module work.vit_gemm_activation_panel_cache_...
+Compiling module work.vit_gemm_bias_cache_default
+Compiling module work.vit_gemm_memory_address_context_...
+Compiling module work.vit_phase_e_read_address_router_...
+Compiling module work.vit_phase_e_write_address_router...
+Compiling module work.vit_phase_e_memory_frontend_defa...
+Compiling module work.vit_gemm_dual_mode_array(ARRAY_R...
+Compiling module work.vit_lane_mask
+Compiling module work.vit_vector_engine_fp32(USE_EXTER...
+Compiling module work.vit_u32_mul_iterative_nodsp
+Compiling module work.vit_layout_descriptor_validator
+Compiling module work.vit_layout_address_generator
+Compiling module work.vit_layout_engine
+Compiling module work.vit_fp32_recip_u32_serial
+Compiling module work.vit_layernorm_engine_fp32(USE_EX...
+Compiling module work.vit_fp32_compare
+Compiling module work.vit_fp32_to_u32_floor_comb
+Compiling module work.vit_fp32_from_u32_comb
+Compiling module work.vit_fp32_scale_pow2_down_comb
+Compiling module work.vit_softmax_engine_fp32(USE_EXTE...
+Compiling module work.vit_fp32_gelu_serial(USE_EXTERNA...
+Compiling module work.vit_gelu_engine_fp32(USE_EXTERNA...
+Compiling module work.vit_argmax_engine_fp32
+Compiling module work.vit_phase_e_engine_top(SCRATCH_W...
+Compiling module work.tb_vit_phase_e_engine_memory
+Built simulation snapshot tb_vit_phase_e_engine_memory_snapshot
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_vit_phase_e_engine_memory_snapshot/xsim_script.tcl
+# xsim {tb_vit_phase_e_engine_memory_snapshot} -autoloadwcfg -tclbatch {/data/tmp/vit_server_xsim.ItXpz1/run_all.tcl}
+Time resolution is 1 ps
+source /data/tmp/vit_server_xsim.ItXpz1/run_all.tcl
+## run all
+PASS engine logical-memory test: checks=1671 transactions=66
+$finish called at time : 6726 ns : File "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_engine_memory.sv" Line 789
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Aug  8 17:02:12 2026...
+PASS XSim: tb_vit_phase_e_engine_memory
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 2 tb_vit_phase_e_engine_axi -s tb_vit_phase_e_engine_axi_snapshot 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'profile_events' remains unconnected for this instance [/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_engine_axi.sv:180]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.vit_phase_e_pkg
+Compiling package work.vit_fp32_pkg
+Compiling module work.vit_fp32_mul_comb_nodsp
+Compiling module work.vit_fp32_add_comb
+Compiling module work.vit_phase_e_command_controller
+Compiling module work.vit_phase_e_engine_dispatch_defa...
+Compiling module work.vit_gemm_activation_panel_cache_...
+Compiling module work.vit_gemm_bias_cache_default
+Compiling module work.vit_gemm_memory_address_context_...
+Compiling module work.vit_phase_e_read_address_router_...
+Compiling module work.vit_phase_e_write_address_router...
+Compiling module work.vit_phase_e_memory_frontend_defa...
+Compiling module work.vit_gemm_dual_mode_array(ARRAY_R...
+Compiling module work.vit_lane_mask
+Compiling module work.vit_vector_engine_fp32(USE_EXTER...
+Compiling module work.vit_u32_mul_iterative_nodsp
+Compiling module work.vit_layout_descriptor_validator
+Compiling module work.vit_layout_address_generator
+Compiling module work.vit_layout_engine
+Compiling module work.vit_fp32_recip_u32_serial
+Compiling module work.vit_layernorm_engine_fp32(USE_EX...
+Compiling module work.vit_fp32_compare
+Compiling module work.vit_fp32_to_u32_floor_comb
+Compiling module work.vit_fp32_from_u32_comb
+Compiling module work.vit_fp32_scale_pow2_down_comb
+Compiling module work.vit_softmax_engine_fp32(USE_EXTE...
+Compiling module work.vit_fp32_gelu_serial(USE_EXTERNA...
+Compiling module work.vit_gelu_engine_fp32(USE_EXTERNA...
+Compiling module work.vit_argmax_engine_fp32
+Compiling module work.vit_phase_e_engine_top(SCRATCH_W...
+Compiling module work.vit_phase_e_axi_mem_adapter_defa...
+Compiling module work.vit_axi_ddr_model_128(MODEL_WORD...
+Compiling module work.tb_vit_phase_e_engine_axi
+Built simulation snapshot tb_vit_phase_e_engine_axi_snapshot
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_vit_phase_e_engine_axi_snapshot/xsim_script.tcl
+# xsim {tb_vit_phase_e_engine_axi_snapshot} -autoloadwcfg -tclbatch {/data/tmp/vit_server_xsim.ItXpz1/run_all.tcl}
+Time resolution is 1 ps
+source /data/tmp/vit_server_xsim.ItXpz1/run_all.tcl
+## run all
+VIT_PHASE_E_ENGINE_AXI_TEST_PASS checks=34 reads=34 writes=17
+$finish called at time : 3736 ns : File "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_engine_axi.sv" Line 508
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Aug  8 17:02:23 2026...
+PASS XSim: tb_vit_phase_e_engine_axi
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 2 tb_vit_phase_e_perf_counters -s tb_vit_phase_e_perf_counters_snapshot 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.vit_phase_e_perf_counters
+Compiling module work.tb_vit_phase_e_perf_counters
+Built simulation snapshot tb_vit_phase_e_perf_counters_snapshot
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_vit_phase_e_perf_counters_snapshot/xsim_script.tcl
+# xsim {tb_vit_phase_e_perf_counters_snapshot} -autoloadwcfg -tclbatch {/data/tmp/vit_server_xsim.ItXpz1/run_all.tcl}
+Time resolution is 1 ps
+source /data/tmp/vit_server_xsim.ItXpz1/run_all.tcl
+## run all
+VIT_PHASE_E_PERF_COUNTERS_TEST_PASS checks=16
+$finish called at time : 146 ns : File "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/control/tb_vit_phase_e_perf_counters.sv" Line 157
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Aug  8 17:02:30 2026...
+PASS XSim: tb_vit_phase_e_perf_counters
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 2 tb_vit_phase_e_profile_counters -s tb_vit_phase_e_profile_counters_snapshot 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.vit_phase_e_pkg
+Compiling module work.vit_phase_e_profile_counters_def...
+Compiling module work.tb_vit_phase_e_profile_counters
+Built simulation snapshot tb_vit_phase_e_profile_counters_snapshot
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_vit_phase_e_profile_counters_snapshot/xsim_script.tcl
+# xsim {tb_vit_phase_e_profile_counters_snapshot} -autoloadwcfg -tclbatch {/data/tmp/vit_server_xsim.ItXpz1/run_all.tcl}
+Time resolution is 1 ps
+source /data/tmp/vit_server_xsim.ItXpz1/run_all.tcl
+## run all
+VIT_PHASE_E_PROFILE_COUNTERS_TEST_PASS checks=170
+$finish called at time : 5666 ns : File "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/control/tb_vit_phase_e_profile_counters.sv" Line 773
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Aug  8 17:02:38 2026...
+PASS XSim: tb_vit_phase_e_profile_counters
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 2 tb_vit_phase_e_m7_overlap_counters -s tb_vit_phase_e_m7_overlap_counters_snapshot 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.vit_phase_e_pkg
+Compiling module work.vit_phase_e_m7_overlap_counters(...
+Compiling module work.vit_axi_lite_control_regs
+Compiling module work.tb_vit_phase_e_m7_overlap_counte...
+Built simulation snapshot tb_vit_phase_e_m7_overlap_counters_snapshot
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_vit_phase_e_m7_overlap_counters_snapshot/xsim_script.tcl
+# xsim {tb_vit_phase_e_m7_overlap_counters_snapshot} -autoloadwcfg -tclbatch {/data/tmp/vit_server_xsim.ItXpz1/run_all.tcl}
+Time resolution is 1 ps
+source /data/tmp/vit_server_xsim.ItXpz1/run_all.tcl
+## run all
+M7_OVERLAP_COUNTER_BANK_PASS checks=246
+$finish called at time : 1536 ns : File "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/m7/tb_vit_phase_e_m7_overlap_counters.sv" Line 503
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Aug  8 17:02:46 2026...
+PASS XSim: tb_vit_phase_e_m7_overlap_counters
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 2 --generic_top DUT_EXECUTION_MODE=0 tb_vit_phase_e_axi_e05_compact_rtl -s tb_vit_phase_e_axi_e05_compact_rtl_mode0_snapshot 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.vit_phase_e_pkg
+Compiling module work.vit_phase_e_perf_counters
+Compiling module work.vit_phase_e_profile_counters_def...
+Compiling module work.vit_phase_e_m5_axi_counters
+Compiling module work.vit_phase_e_m7_overlap_counters(...
+Compiling module work.vit_axi_lite_control_regs
+Compiling module work.vit_layer_param_table
+Compiling module work.vit_layer_param_loader
+Compiling module work.vit_phase_e_sequencer(E04_TOKEN_...
+Compiling module work.vit_fp32_mul_comb_nodsp
+Compiling module work.vit_fp32_add_comb
+Compiling module work.vit_phase_e_command_controller
+Compiling module work.vit_phase_e_engine_dispatch(ARRA...
+Compiling module work.vit_gemm_activation_panel_cache(...
+Compiling module work.vit_gemm_bias_cache_default
+Compiling module work.vit_gemm_memory_address_context(...
+Compiling module work.vit_phase_e_read_address_router(...
+Compiling module work.vit_phase_e_write_address_router...
+Compiling module work.vit_phase_e_memory_frontend(ARRA...
+Compiling module work.vit_gemm_result_fifo_default
+Compiling module work.vit_gemm_operand_router(ARRAY_RO...
+Compiling module work.vit_fp32_to_fp16_rne_gradual
+Compiling module work.vit_fp16_mul_to_fp32_comb_nodsp
+Compiling module work.vit_fp32_product_to_fixed_exact(...
+Compiling module work.vit_fixed_analyze(INDEX_WIDTH=7)
+Compiling module work.vit_fixed_normalized_to_fp32_rne...
+Compiling module work.vit_fp16_dot_stream_csa_nodsp_de...
+Compiling module work.vit_gemm_fp16_stream_array(STREA...
+Compiling module work.vit_gemm_fp16_parallel_scheduler...
+Compiling module work.vit_gemm_dual_mode_array(USE_EXT...
+Compiling module work.vit_lane_mask
+Compiling module work.vit_vector_engine_fp32(USE_EXTER...
+Compiling module work.vit_u32_mul_iterative_nodsp
+Compiling module work.vit_layout_descriptor_validator
+Compiling module work.vit_layout_address_generator
+Compiling module work.vit_layout_engine
+Compiling module work.vit_fp32_recip_u32_serial
+Compiling module work.vit_layernorm_engine_fp32(USE_EX...
+Compiling module work.vit_fp32_compare
+Compiling module work.vit_fp32_to_u32_floor_comb
+Compiling module work.vit_fp32_from_u32_comb
+Compiling module work.vit_fp32_scale_pow2_down_comb
+Compiling module work.vit_softmax_engine_fp32(USE_EXTE...
+Compiling module work.vit_fp32_gelu_serial(USE_EXTERNA...
+Compiling module work.vit_gelu_engine_fp32(USE_EXTERNA...
+Compiling module work.vit_argmax_engine_fp32
+Compiling module work.vit_phase_e_engine_top(ARRAY_ROW...
+Compiling module work.vit_phase_e_npu(ARRAY_ROWS=8,E05...
+Compiling module work.vit_phase_e_axi_mem_adapter_defa...
+Compiling module work.vit_phase_e_axi_wrapper(ARRAY_RO...
+Compiling module work.vit_phase_e_axi_bd_wrapper(E05_P...
+Compiling module work.vit_axi_ddr_model_128(SCRATCH_WO...
+Compiling module work.tb_vit_phase_e_axi_e05_compact_r...
+Built simulation snapshot tb_vit_phase_e_axi_e05_compact_rtl_mode0_snapshot
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_vit_phase_e_axi_e05_compact_rtl_mode0_snapshot/xsim_script.tcl
+# xsim {tb_vit_phase_e_axi_e05_compact_rtl_mode0_snapshot} -autoloadwcfg -tclbatch {/data/tmp/vit_server_xsim.ItXpz1/run_all.tcl}
+Time resolution is 1 ps
+source /data/tmp/vit_server_xsim.ItXpz1/run_all.tcl
+## run all
+VIT_PHASE_E_AXI_E05_COMPACT_RTL_MODE_REJECT_PASS mode=0 checks=36 error=80000003 info=00000000
+$finish called at time : 206 ns : File "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/tb_vit_phase_e_axi_e05_compact_rtl.sv" Line 1182
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Aug  8 17:03:00 2026...
+PASS XSim compact E05: mode=0
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 2 --generic_top DUT_EXECUTION_MODE=1 tb_vit_phase_e_axi_e05_compact_rtl -s tb_vit_phase_e_axi_e05_compact_rtl_mode1_snapshot 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.vit_phase_e_pkg
+Compiling module work.vit_phase_e_perf_counters
+Compiling module work.vit_phase_e_profile_counters_def...
+Compiling module work.vit_phase_e_m5_axi_counters
+Compiling module work.vit_phase_e_m7_overlap_counters(...
+Compiling module work.vit_axi_lite_control_regs
+Compiling module work.vit_layer_param_table
+Compiling module work.vit_layer_param_loader
+Compiling module work.vit_phase_e_sequencer(E04_TOKEN_...
+Compiling module work.vit_fp32_mul_comb_nodsp
+Compiling module work.vit_fp32_add_comb
+Compiling module work.vit_phase_e_command_controller
+Compiling module work.vit_phase_e_engine_dispatch(ARRA...
+Compiling module work.vit_gemm_activation_panel_cache(...
+Compiling module work.vit_gemm_bias_cache_default
+Compiling module work.vit_gemm_memory_address_context(...
+Compiling module work.vit_phase_e_read_address_router(...
+Compiling module work.vit_phase_e_write_address_router...
+Compiling module work.vit_phase_e_memory_frontend(ARRA...
+Compiling module work.vit_gemm_result_fifo_default
+Compiling module work.vit_gemm_operand_router(ARRAY_RO...
+Compiling module work.vit_fp32_to_fp16_rne_gradual
+Compiling module work.vit_fp16_mul_to_fp32_comb_nodsp
+Compiling module work.vit_fp32_product_to_fixed_exact(...
+Compiling module work.vit_fixed_analyze(INDEX_WIDTH=7)
+Compiling module work.vit_fixed_normalized_to_fp32_rne...
+Compiling module work.vit_fp16_dot_stream_csa_nodsp_de...
+Compiling module work.vit_gemm_fp16_stream_array(STREA...
+Compiling module work.vit_gemm_fp16_parallel_scheduler...
+Compiling module work.vit_gemm_dual_mode_array(USE_EXT...
+Compiling module work.vit_lane_mask
+Compiling module work.vit_vector_engine_fp32(USE_EXTER...
+Compiling module work.vit_u32_mul_iterative_nodsp
+Compiling module work.vit_layout_descriptor_validator
+Compiling module work.vit_layout_address_generator
+Compiling module work.vit_layout_engine
+Compiling module work.vit_fp32_recip_u32_serial
+Compiling module work.vit_layernorm_engine_fp32(USE_EX...
+Compiling module work.vit_fp32_compare
+Compiling module work.vit_fp32_to_u32_floor_comb
+Compiling module work.vit_fp32_from_u32_comb
+Compiling module work.vit_fp32_scale_pow2_down_comb
+Compiling module work.vit_softmax_engine_fp32(USE_EXTE...
+Compiling module work.vit_fp32_gelu_serial(USE_EXTERNA...
+Compiling module work.vit_gelu_engine_fp32(USE_EXTERNA...
+Compiling module work.vit_argmax_engine_fp32
+Compiling module work.vit_phase_e_engine_top(ARRAY_ROW...
+Compiling module work.vit_phase_e_npu(ARRAY_ROWS=8,E05...
+Compiling module work.vit_phase_e_axi_mem_adapter_defa...
+Compiling module work.vit_phase_e_axi_wrapper(ARRAY_RO...
+Compiling module work.vit_phase_e_axi_bd_wrapper(E05_P...
+Compiling module work.vit_axi_ddr_model_128(SCRATCH_WO...
+Compiling module work.tb_vit_phase_e_axi_e05_compact_r...
+Built simulation snapshot tb_vit_phase_e_axi_e05_compact_rtl_mode1_snapshot
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_vit_phase_e_axi_e05_compact_rtl_mode1_snapshot/xsim_script.tcl
+# xsim {tb_vit_phase_e_axi_e05_compact_rtl_mode1_snapshot} -autoloadwcfg -tclbatch {/data/tmp/vit_server_xsim.ItXpz1/run_all.tcl}
+Time resolution is 1 ps
+source /data/tmp/vit_server_xsim.ItXpz1/run_all.tcl
+## run all
+VIT_PHASE_E_AXI_E05_COMPACT_RTL_MODE_REJECT_PASS mode=1 checks=36 error=80000003 info=00000001
+$finish called at time : 206 ns : File "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/tb_vit_phase_e_axi_e05_compact_rtl.sv" Line 1182
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Aug  8 17:03:15 2026...
+PASS XSim compact E05: mode=1
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 2 --generic_top DUT_EXECUTION_MODE=3 tb_vit_phase_e_axi_e05_compact_rtl -s tb_vit_phase_e_axi_e05_compact_rtl_mode3_snapshot 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.vit_phase_e_pkg
+Compiling module work.vit_phase_e_perf_counters
+Compiling module work.vit_phase_e_profile_counters_def...
+Compiling module work.vit_phase_e_m5_axi_counters
+Compiling module work.vit_phase_e_m7_overlap_counters(...
+Compiling module work.vit_axi_lite_control_regs
+Compiling module work.vit_layer_param_table
+Compiling module work.vit_layer_param_loader
+Compiling module work.vit_phase_e_sequencer(E04_TOKEN_...
+Compiling module work.vit_fp32_mul_comb_nodsp
+Compiling module work.vit_fp32_add_comb
+Compiling module work.vit_phase_e_command_controller
+Compiling module work.vit_phase_e_engine_dispatch(ARRA...
+Compiling module work.vit_gemm_activation_panel_cache(...
+Compiling module work.vit_gemm_bias_cache_default
+Compiling module work.vit_gemm_memory_address_context(...
+Compiling module work.vit_phase_e_read_address_router(...
+Compiling module work.vit_phase_e_write_address_router...
+Compiling module work.vit_phase_e_memory_frontend(ARRA...
+Compiling module work.vit_gemm_result_fifo_default
+Compiling module work.vit_gemm_operand_router(ARRAY_RO...
+Compiling module work.vit_fp32_to_fp16_rne_gradual
+Compiling module work.vit_fp16_mul_to_fp32_comb_nodsp
+Compiling module work.vit_fp32_product_to_fixed_exact(...
+Compiling module work.vit_fixed_analyze(INDEX_WIDTH=7)
+Compiling module work.vit_fixed_normalized_to_fp32_rne...
+Compiling module work.vit_fp16_dot_stream_csa_nodsp_de...
+Compiling module work.vit_gemm_fp16_stream_array(STREA...
+Compiling module work.vit_gemm_fp16_parallel_scheduler...
+Compiling module work.vit_gemm_dual_mode_array(USE_EXT...
+Compiling module work.vit_lane_mask
+Compiling module work.vit_vector_engine_fp32(USE_EXTER...
+Compiling module work.vit_u32_mul_iterative_nodsp
+Compiling module work.vit_layout_descriptor_validator
+Compiling module work.vit_layout_address_generator
+Compiling module work.vit_layout_engine
+Compiling module work.vit_fp32_recip_u32_serial
+Compiling module work.vit_layernorm_engine_fp32(USE_EX...
+Compiling module work.vit_fp32_compare
+Compiling module work.vit_fp32_to_u32_floor_comb
+Compiling module work.vit_fp32_from_u32_comb
+Compiling module work.vit_fp32_scale_pow2_down_comb
+Compiling module work.vit_softmax_engine_fp32(USE_EXTE...
+Compiling module work.vit_fp32_gelu_serial(USE_EXTERNA...
+Compiling module work.vit_gelu_engine_fp32(USE_EXTERNA...
+Compiling module work.vit_argmax_engine_fp32
+Compiling module work.vit_phase_e_engine_top(ARRAY_ROW...
+Compiling module work.vit_phase_e_npu(ARRAY_ROWS=8,E05...
+Compiling module work.vit_phase_e_axi_mem_adapter_defa...
+Compiling module work.vit_phase_e_axi_wrapper(ARRAY_RO...
+Compiling module work.vit_phase_e_axi_bd_wrapper(E05_P...
+Compiling module work.vit_axi_ddr_model_128(SCRATCH_WO...
+Compiling module work.tb_vit_phase_e_axi_e05_compact_r...
+Built simulation snapshot tb_vit_phase_e_axi_e05_compact_rtl_mode3_snapshot
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_vit_phase_e_axi_e05_compact_rtl_mode3_snapshot/xsim_script.tcl
+# xsim {tb_vit_phase_e_axi_e05_compact_rtl_mode3_snapshot} -autoloadwcfg -tclbatch {/data/tmp/vit_server_xsim.ItXpz1/run_all.tcl}
+Time resolution is 1 ps
+source /data/tmp/vit_server_xsim.ItXpz1/run_all.tcl
+## run all
+M5_COMPACT_COUNTERS logical=91403 core_hits=55080 payload_words=35139 ar=15654 rbeats=19551 full=5196 narrow=14355 starts=1299 line_hits=20669 split=0 max_out=1 errors=0 discarded=0
+M7_COMPACT_COUNTERS mode=3 terms=184192 disabled=124816 dots=1439 results=1439 feeder_stall=207646 result_bp=156536 load=208821 compute=44609 store=55675 union=271026 lc=0 cs=34047 ls=4032 three=0 commits=1175 claims=1175 releases=1175 empty_wait=145256 full_wait=0 max_panel=1 fifo_enq=1175 fifo_deq=1175 max_fifo=2
+M7_COMPACT_ARBITRATION conflict=104726 idle_conflict=1101 queued_compute=34047 deliver_queued=1101
+VIT_PHASE_E_AXI_E05_COMPACT_RTL_E2E_PASS mode=3 rows=8 cols=2 checks=2081 cycles=444212 job_cycles=436680 commands=249 blocked_gemm=74 packed_gemm=74 fp16_gemm=98 row_major_gemm=24 packed_tiles=1175 nonpacked_tiles=264 reads=35139 writes=10646 axi_stalls=2886 model_reads=20829 input_reads=32 scratch_reads=14278 cmd_active=435703 logical_reads=91403 cache_hits=55080 valid_mac=59376 tail_mac=124816 class=3 logit=40e00000
+$finish called at time : 888424 ns : File "/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/end_to_end/tb_vit_phase_e_axi_e05_compact_rtl.sv" Line 1953
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:23 . Memory (MB): peak = 1234.336 ; gain = 0.000 ; free physical = 236481 ; free virtual = 249607
+## quit
+INFO: xsimkernel Simulation Memory Usage: 108104 KB (Peak: 164668 KB), Simulation CPU Usage: 23170 ms
+INFO: [Common 17-206] Exiting xsim at Sat Aug  8 17:03:52 2026...
+PASS XSim compact E05: mode=3
+PASS: production AXI/engine/profile/M7 smoke plus compact mode0/mode1 rejection and exact mode3 E05 XSim completed

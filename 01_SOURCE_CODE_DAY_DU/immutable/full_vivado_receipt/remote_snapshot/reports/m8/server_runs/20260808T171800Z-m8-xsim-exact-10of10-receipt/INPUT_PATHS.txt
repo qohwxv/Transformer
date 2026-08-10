@@ -1,0 +1,11 @@
+filelists/full_axi.f
+run/10_xsim_axi_smoke.sh
+sim/axi/tb_vit_phase_e_axi_mem_adapter.sv
+sim/axi/tb_vit_phase_e_axi_wrapper.sv
+sim/axi/tb_vit_phase_e_engine_memory.sv
+sim/axi/tb_vit_phase_e_engine_axi.sv
+sim/control/tb_vit_phase_e_perf_counters.sv
+sim/control/tb_vit_phase_e_profile_counters.sv
+sim/m7/tb_vit_phase_e_m7_overlap_counters.sv
+sim/axi/vit_axi_ddr_model_128.sv
+sim/end_to_end/tb_vit_phase_e_axi_e05_compact_rtl.sv

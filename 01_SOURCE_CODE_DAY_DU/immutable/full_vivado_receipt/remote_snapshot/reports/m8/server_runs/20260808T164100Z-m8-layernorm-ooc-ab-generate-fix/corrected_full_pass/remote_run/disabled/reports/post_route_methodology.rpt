@@ -1,0 +1,40 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Sat Aug  8 16:41:57 2026
+| Host         : ubuntu running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_methodology -file /home/s23520579/Vivado_project/vit_m8_layernorm_leaf_f3a88811ee2f/evidence/20260808T164100Z-m8-layernorm-ooc-ab-generate-fix/disabled/reports/post_route_methodology.rpt
+| Design       : vit_layernorm_engine_fp32
+| Device       : xczu5ev-sfvc784-1-e
+| Speed File   : -1
+| Design State : Partially Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: vit_layernorm_engine_fp32
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 1
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay | 1          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on rst relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+

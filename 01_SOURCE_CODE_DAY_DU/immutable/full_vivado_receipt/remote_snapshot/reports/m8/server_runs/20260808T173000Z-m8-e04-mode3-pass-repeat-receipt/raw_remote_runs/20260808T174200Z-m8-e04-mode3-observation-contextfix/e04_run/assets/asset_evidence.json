@@ -1,0 +1,144 @@
+{
+  "behavioral_goldens": {
+    "final_layernorm": {
+      "relative_path": "results/post_encoder_step_30_final_layernorm_f32.hex",
+      "sha256": "d8ac11b3b8c244c4c525da8f2a56352595256290f0673c607944d5581835167d",
+      "size_bytes": 1361664,
+      "words": 151296
+    },
+    "logits": {
+      "relative_path": "results/post_encoder_step_32_logits_f32.hex",
+      "sha256": "fef8118492356377612d95f0b02120d6fde728ff47bef9b4b8c87cf52c4c7143",
+      "size_bytes": 9000,
+      "words": 1000
+    },
+    "probabilities": {
+      "relative_path": "results/post_encoder_step_33p_probabilities_f32.hex",
+      "sha256": "870497897b0b0453c8dc1335c3db8881e9ffdbf81bf66eba3d40c8c1b169491b",
+      "size_bytes": 9000,
+      "words": 1000
+    }
+  },
+  "execution_mode": 3,
+  "numerical_contract": {
+    "activation_conversion": "M6_FP32_TO_FP16_RNE_GRADUAL",
+    "bias_and_position_add": "CURRENT_VIT_FP32_ADD_COMB_FTZ_RNE",
+    "dot": "M6_EXACT_FP16_PRODUCTS_KULISCH_2^-48_ROUND_ONCE_FP32",
+    "fp32_add_rtl_path": "vivado_server_307_perf_v1_m7s8_fp16_parallel_overlap_2023_2/rtl/leaf/fp32/vit_fp32_add_comb.sv",
+    "fp32_add_rtl_sha256": "3721a6d130e655c524c642513bf5920d32c0a75a3abb88e0378ed7b5c2352141",
+    "m6_reference_path": "experimental/m6_fp16_nodsp_ooc/reference/m6_fp16_reference.py",
+    "m6_reference_sha256": "075d737a2ed94c17ecb37f7a507919d4be5c48c30de3a3c8403b72cd2550ad35"
+  },
+  "package": {
+    "files": {
+      "hash_manifest.json": {
+        "crc32": "0xD78E0CEA",
+        "sha256": "74cdd537ba765e1ce9f64f3afc6a5c037dce6d67e47c6b9587e6a8acd82b3324",
+        "size_bytes": 1136
+      },
+      "prepared_input.bin": {
+        "crc32": "0xA22E4176",
+        "sha256": "3e13bd9bf60b07eb967a0c67aff1087954a316a403f70d220a6713cf8999ec54",
+        "size_bytes": 602112
+      },
+      "verification_report.json": {
+        "crc32": "0x311F6748",
+        "sha256": "1654962e01b45e47939cc4b9144865c30de9a5adfd424993824941bf0ed178d7",
+        "size_bytes": 232013
+      },
+      "vit_model.bin": {
+        "crc32": "0xB4B92D00",
+        "sha256": "d29d85553b9ec339b27cdd3a3aecb45ffb6ea78a7d2449f51e97c14bd70e28b5",
+        "size_bytes": 173685760
+      },
+      "vit_model_table.bin": {
+        "crc32": "0xB08553CB",
+        "sha256": "10eaacba3be3f3ff18caa1e1612e25118a5730714fd3f7802c25849e2857ea0a",
+        "size_bytes": 12928
+      },
+      "vit_model_table.json": {
+        "crc32": "0xC6EFD251",
+        "sha256": "22933d5b10e78253f45625384a1ad191051b8965d05ac09b84e23f4e2381b9bb",
+        "size_bytes": 236235
+      },
+      "vit_runtime_config.json": {
+        "crc32": "0x650D8001",
+        "sha256": "20ee65ab28d8aa32cbd3a0f5f04f99975fe29aae2d4ae66d1c790e94b7ca704d",
+        "size_bytes": 7854
+      }
+    },
+    "relative_directory": "build/model_package/v3_blocked_b_fp16_mixed",
+    "table_header": {
+      "alignment_bytes": 128,
+      "dtype_code": 2,
+      "entries_crc32": "0xA85B8462",
+      "entry_bytes": 64,
+      "header_crc32": "0xF88FB4C4",
+      "layout5_tensors": 74,
+      "magic_ascii": "VITMTBL\\0",
+      "model_bytes": 173685760,
+      "model_crc32": "0xB4B92D00",
+      "model_sha256": "d29d85553b9ec339b27cdd3a3aecb45ffb6ea78a7d2449f51e97c14bd70e28b5",
+      "source_words": 86567656,
+      "storage_words": 43421440,
+      "tensor_count": 200,
+      "version": "3.0"
+    }
+  },
+  "phase": "e04",
+  "schema": "vit-m7-mode3-real-assets-v2",
+  "staged": [
+    {
+      "filename": "final_ln_gamma_f32.hex",
+      "format": "U32_HEX_LOWERCASE_8DIGIT_LF",
+      "role": "final_ln_gamma_base",
+      "source_binary_sha256": "624c6566246c3ae0676711367c3f304ae8583a5cf40a549f7ced0cabea1bb518",
+      "source_byte_offset": 1790976,
+      "source_tensor_id": 4,
+      "source_word_offset": 447744,
+      "staged_sha256": "322dd25569a93fa05242a06998192cd4559051c0dc9489d0330aa947f5808b26",
+      "stored_bytes": 3072,
+      "stored_words": 768,
+      "text_bytes": 6912
+    },
+    {
+      "filename": "final_ln_beta_f32.hex",
+      "format": "U32_HEX_LOWERCASE_8DIGIT_LF",
+      "role": "final_ln_beta_base",
+      "source_binary_sha256": "415da79956cc393ebcb9d1e91bd9793d663094ebc38e1c2f7788846232f22a44",
+      "source_byte_offset": 1794048,
+      "source_tensor_id": 5,
+      "source_word_offset": 448512,
+      "staged_sha256": "b610675e2677f09f19c021644e6e77353450a0a43c363aefddb8ea20ace59120",
+      "stored_bytes": 3072,
+      "stored_words": 768,
+      "text_bytes": 6912
+    },
+    {
+      "filename": "classifier_weight_packed_fp16_u32.hex",
+      "format": "U32_HEX_LOWERCASE_8DIGIT_LF",
+      "role": "classifier_weight_base",
+      "source_binary_sha256": "78a69321b2c121e1a8d578e8a46ad03213d1113b73e8d08bfdae2cbcd3b5e382",
+      "source_byte_offset": 1797120,
+      "source_tensor_id": 6,
+      "source_word_offset": 449280,
+      "staged_sha256": "6a6b9947bd1864378a457f702ac0e2adfbd344290096f6fc6ed7d588d10e232b",
+      "stored_bytes": 1536000,
+      "stored_words": 384000,
+      "text_bytes": 3456000
+    },
+    {
+      "filename": "classifier_bias_f32.hex",
+      "format": "U32_HEX_LOWERCASE_8DIGIT_LF",
+      "role": "classifier_bias_base",
+      "source_binary_sha256": "06cd62ccbe4cf0fa05de4d203eb70299129eaa5d2d52fe326debf7078da9e963",
+      "source_byte_offset": 3333120,
+      "source_tensor_id": 7,
+      "source_word_offset": 833280,
+      "staged_sha256": "6dc606157b660fd40a0d276a599fe132c1a1ba3b574c20d70eefc87a8ecc5f52",
+      "stored_bytes": 4000,
+      "stored_words": 1000,
+      "text_bytes": 9000
+    }
+  ]
+}

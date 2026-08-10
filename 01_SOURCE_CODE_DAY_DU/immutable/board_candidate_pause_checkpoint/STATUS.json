@@ -1,0 +1,91 @@
+{
+  "schema": "vit-m8-board-candidate-pause-checkpoint-v1",
+  "created_utc": "2026-08-09T05:00:53Z",
+  "status": "M8_BOARD_CANDIDATE_PAUSE_SAFE_NOT_BOARD_TESTED",
+  "evidence_class": "VERIFIED_AND_VIVADO_MEASURED_WITH_SIM_SCOPES",
+  "immutable_scope": true,
+  "promoted": false,
+  "m8_safe_nonboard_complete": false,
+  "physical_board_tested": false,
+  "user_pause_decision": {
+    "confidence_scope": "next_board_bringup_not_full_numerical_signoff",
+    "confidence_class": "ESTIMATED",
+    "confidence_greater_than_0_80": true,
+    "stop_long_software_simulations": true
+  },
+  "production": {
+    "source_count": 80,
+    "ordered_source_sha256": "db4e84bbe7b28dcccf4d5e574027be06b5162ae9789e0f2ef0ab2dcfb0fffb7e",
+    "filelist_sha256": "88166c76fac96e7f4b59f486a3d5867a94001e6d72014ad7187b5e4de40f3524",
+    "ip_version": "0x0001000D",
+    "execution_mode": 3,
+    "job_config": "0x00001D85"
+  },
+  "vivado_board_candidate": {
+    "tool": "Vivado 2023.2",
+    "target_clock_mhz": 50,
+    "wns_ns": 0.045,
+    "whs_ns": 0.010,
+    "fully_routed": true,
+    "route_errors": 0,
+    "drc_violations": 0,
+    "methodology_violations": 0,
+    "dsp48": 0,
+    "dsp58": 0,
+    "ramb36": 41,
+    "ramb18": 0,
+    "uram": 0,
+    "new_buffer_lutram_fallback": 0,
+    "bit_sha256": "462d78a91d9fb35b2cb5832ab222c39952a1052d3ff6766d94e37405f887a275",
+    "xsa_sha256": "47e764324d9eaedcc343b3cdf66190dbb90635cf8e51b4f6e65b4746c43680ee",
+    "routed_dcp_sha256": "73c5ee9861774e3dc9fb09d44b72953ca9e05b5bbc1d47f0f8bbc2f14f44c409",
+    "receipt_anchor_sha256": "060bea427080f8fb8cfb9321f2d95b39a9442de0256051869e33949b1468f437"
+  },
+  "portable_package": {
+    "path": "M8_BOARD_CANDIDATE_PACKAGE.tar",
+    "sha256": "898cfee0e08769f203dbb299b4d250eed0adfdb5afb3c60683d8cc5763fdf8c1",
+    "regular_files": 78,
+    "internal_manifest_records": 77,
+    "contains_bit_xsa_model_input_source_tools_reports": true,
+    "contains_boot_elf_or_boot_receipt": false
+  },
+  "simulation": {
+    "scoped_qualification_checkpoint_anchor_sha256": "a73adcf2e6597ef81e733dcdccbf9e6d95938b5edad0581617412133c446da3f",
+    "e02_layer0": "INTERRUPTED_PARTIAL_NOT_PASS",
+    "e02_last_complete_cycle": 850000000,
+    "e02_commands": 17,
+    "e02_checkpoints": 16,
+    "e02_outer_exit": 1,
+    "e02_pipeline_status": "143,0,0",
+    "e02_output_bytes": 0,
+    "e02_structural_pass_markers": 0,
+    "e02_numerical_pass_markers": 0,
+    "e02_layer_pass_markers": 0,
+    "e02_interrupted_receipt_manifest_sha256": "068eea24b27c7f6b124d89885995397c5db312460026e07fffb28321c48169ff",
+    "e03": "NOT_RUN",
+    "full_e05": "NOT_RUN"
+  },
+  "boot": {
+    "fsbl": "NOT_BUILT",
+    "pmufw": "NOT_BUILT",
+    "boot_receipt": "ABSENT",
+    "last_attempt_classification": "HOST_DISPLAY_SWT_FAILURE_NOT_RTL_OR_XSA_FAILURE",
+    "board_or_jtag_touched": false
+  },
+  "server_at_pause": {
+    "target_processes": 0,
+    "e03_processes": 0,
+    "e05_processes": 0,
+    "xsct_xvfb_processes": 0,
+    "mem_available_gib": 239,
+    "disk_free_gib": 33,
+    "swap_used": 0
+  },
+  "pending": [
+    "fresh exact-XSA Genesys FSBL and PMUFW receipt",
+    "physical board cold smoke and full output/counter capture",
+    "complete real E02/E03 numerical sequence if still required",
+    "complete continuous real E05 if still required",
+    "final M8_SAFE_NONBOARD metadata and promotion decision"
+  ]
+}

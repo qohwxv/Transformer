@@ -1,0 +1,15 @@
+--- observation_runner_a7c524a821d3.sh
++++ exact_repeat_runner_74d7b8e5c737.sh
+@@ -365,9 +365,9 @@
+ patterns = [
+     r"M7_MODE3_E04_OUTPUT_STRUCTURE final_ln_words=151296 final_ln_nonfinite=0 final_ln_sentinel=0 layout_mismatch=0 logits_words=1000 logits_nonfinite=0 logits_sentinel=0 probabilities_words=1000 probabilities_nonfinite=0 probabilities_sentinel=0",
+     r"M7_MODE3_E04_OUTPUT_DUMPS final_ln_words=151296 logits_words=1000 probabilities_words=1000 class_result_words=2 .+",
+-    r"M7_MODE3_E04_RESULT class=879 logit=[0-9a-fA-F]{8} logit_real=[-+]?[0-9]+\.[0-9]+ numerical_status=PENDING_EXTERNAL_BEHAVIORAL_AND_M6_ORACLES",
+-    r"M7_MODE3_E04_TRAFFIC cycles=[1-9][0-9]* logical_reads=[1-9][0-9]* cache_hits=[0-9]+ external_u32=[1-9][0-9]* ar=[1-9][0-9]* r_beats=[1-9][0-9]* full_r_beats=[1-9][0-9]* narrow_r_beats=[0-9]+ linefills=[1-9][0-9]* line_hits=[0-9]+ writes=154064",
+-    r"VIT_PHASE_E_AXI_E04_MODE3_REAL_RTL_STRUCTURAL_PASS checks=[1-9][0-9]* cycles=[1-9][0-9]* commands=5 external_u32=[1-9][0-9]* writes=154064 model_reads=[1-9][0-9]* scratch_reads=[1-9][0-9]* class=879 logit=[0-9a-fA-F]{8} numerical_status=PENDING_EXTERNAL_BEHAVIORAL_AND_M6_ORACLES",
++    r"M7_MODE3_E04_RESULT class=879 logit=414886a0 logit_real=[-+]?[0-9]+\.[0-9]+ numerical_status=PENDING_EXTERNAL_BEHAVIORAL_AND_M6_ORACLES",
++    r"M7_MODE3_E04_TRAFFIC cycles=9010564 logical_reads=1694368 cache_hits=767234 external_u32=927134 ar=207134 r_beats=351134 full_r_beats=192000 narrow_r_beats=159134 linefills=48000 line_hits=720000 writes=154064",
++    r"VIT_PHASE_E_AXI_E04_MODE3_REAL_RTL_STRUCTURAL_PASS checks=202 cycles=9010605 commands=5 external_u32=927134 writes=154064 model_reads=771534 scratch_reads=155600 class=879 logit=414886a0 numerical_status=PENDING_EXTERNAL_BEHAVIORAL_AND_M6_ORACLES",
+ ]
+ positions = []
+ for text in patterns:

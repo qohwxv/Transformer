@@ -1,0 +1,28 @@
+Expected historical harness-only failures retained by this receipt
+Date: 2026-08-08 UTC
+
+20260808T165200Z-m8-sim-observation
+- Stopped before RTL compilation because the server PATH had no `iverilog`.
+- Exact evidence: `iverilog: command not found` in vector_fastpath.log.
+
+20260808T165900Z-m8-sim-observation-portable-iverilog
+- Portable Icarus enabled the vector and router gates, which passed.
+- The linefill launcher then used a nonexistent sibling M7-S8 path and failed
+  its parent-router identity precheck. This was a path/harness failure, not a
+  DUT mismatch.
+
+20260808T170200Z-m8-sim-observation-selfcontained
+- Focused M8 gates, production Icarus elaboration, and Verilator lint had
+  already completed. XSim compilation completed.
+- The first xelab invocation rejected `--mt 1`; Vivado 2023.2 accepts `auto`,
+  `off`, or an integer greater than one. No XSim DUT case ran in this attempt.
+
+20260808T171100Z-m8-xsim-observation
+- The AXI adapter, AXI wrapper, and logical-memory DUT simulations passed.
+- The runner still expected the historical logical-memory count 1799 while
+  the current exact test emitted `checks=1671 transactions=66`, so the exact
+  marker count was zero and the remaining cases were not launched.
+- The DUT PASS line and the runner-oracle rejection are both retained.
+
+These four runs are expected failures and are not counted as XSim PASS runs.
+Their complete remote directories are preserved under raw_remote_runs/.

@@ -1,0 +1,2 @@
+rtl/axi/control/vit_phase_e_perf_counters.sv
+sim/control/tb_vit_phase_e_perf_counters.sv

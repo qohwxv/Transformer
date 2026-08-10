@@ -1,0 +1,10 @@
+VIT_PHASE_E_AXI_MEM_ADAPTER_TEST_PASS checks=173
+VIT_PHASE_E_AXI_WRAPPER_TEST_PASS checks=178
+PASS engine logical-memory test: checks=1671 transactions=66
+VIT_PHASE_E_ENGINE_AXI_TEST_PASS checks=34 reads=34 writes=17
+VIT_PHASE_E_PERF_COUNTERS_TEST_PASS checks=16
+VIT_PHASE_E_PROFILE_COUNTERS_TEST_PASS checks=170
+M7_OVERLAP_COUNTER_BANK_PASS checks=246
+VIT_PHASE_E_AXI_E05_COMPACT_RTL_MODE_REJECT_PASS mode=0 checks=36 error=80000003 info=00000000
+VIT_PHASE_E_AXI_E05_COMPACT_RTL_MODE_REJECT_PASS mode=1 checks=36 error=80000003 info=00000001
+VIT_PHASE_E_AXI_E05_COMPACT_RTL_E2E_PASS mode=3 rows=8 cols=2 checks=2081 cycles=444212 job_cycles=436680 commands=249 blocked_gemm=74 packed_gemm=74 fp16_gemm=98 row_major_gemm=24 packed_tiles=1175 nonpacked_tiles=264 reads=35139 writes=10646 axi_stalls=2886 model_reads=20829 input_reads=32 scratch_reads=14278 cmd_active=435703 logical_reads=91403 cache_hits=55080 valid_mac=59376 tail_mac=124816 class=3 logit=40e00000

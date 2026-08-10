@@ -1,0 +1,27 @@
+M8 XSim exact input identity
+Date: 2026-08-08 UTC
+
+Production closure:
+80/80 unique ordered sources SHA-256 db4e84bbe7b28dcccf4d5e574027be06b5162ae9789e0f2ef0ab2dcfb0fffb7e
+filelists/full_axi.f SHA-256 88166c76fac96e7f4b59f486a3d5867a94001e6d72014ad7187b5e4de40f3524
+
+Runner and every non-production source compiled by run/10_xsim_axi_smoke.sh:
+67c9201e9f868b41e4eabb15222ac61c29abce8186d8a31609c3811599c3ce74  run/10_xsim_axi_smoke.sh
+cd94b6492d823ca746e59fab8d94978768056c731b15358ad80e9ecec2203fa7  sim/axi/tb_vit_phase_e_axi_mem_adapter.sv
+f3ab758c1a95649d2a88ef029484a3a05c9d48f4b4a3aa3ca5e66a715931147a  sim/axi/tb_vit_phase_e_axi_wrapper.sv
+64f1fb357aa69a5b9968d3c389fb6624cbdfde3093db947a442f82ab003abff2  sim/axi/tb_vit_phase_e_engine_memory.sv
+87121eee7afaecc414e92fd16729852826594f09e380fe6ed23876fc83d292b2  sim/axi/tb_vit_phase_e_engine_axi.sv
+ca3aad4ecb55da26844a96d7605252a1ade8c255269a2098bdfabf8ce68b1968  sim/control/tb_vit_phase_e_perf_counters.sv
+e045cb7b5f0b4c9d8dec1d1a13f4de7d974bed0e76f810353d8ff8218d1045b4  sim/control/tb_vit_phase_e_profile_counters.sv
+a378df29c9b4aeff7694116c4f8bd99dd68400668f18834a59113adc23790e89  sim/m7/tb_vit_phase_e_m7_overlap_counters.sv
+40803b5e7e0407173859e4aad82f1563896fbe9c4f50c477e9607fe2f9f03613  sim/axi/vit_axi_ddr_model_128.sv
+513ca11c7ceda30dd83ee2c2d36feea568eaf21cb2fb70f4ae491a3eed6a2325  sim/end_to_end/tb_vit_phase_e_axi_e05_compact_rtl.sv
+
+The current runner hash above is directly pinned to the exact repeat. Its
+remote mtime is 2026-08-08T17:05:33.143932633Z, after the first PASS ended
+and before the repeat began. The first PASS raw log proves the same ten exact
+result signatures, but this receipt does not invent a retained byte hash for
+the runner copy used by that first observation.
+
+Portable-Icarus wrappers and focused parent-reference files are not inputs to
+these XSim runs. They remain scoped to the separate focused-gate evidence.

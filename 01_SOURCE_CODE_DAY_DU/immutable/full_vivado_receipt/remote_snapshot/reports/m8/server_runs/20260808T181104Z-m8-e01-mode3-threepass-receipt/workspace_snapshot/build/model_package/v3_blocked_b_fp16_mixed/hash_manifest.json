@@ -1,0 +1,36 @@
+{
+  "schema": "vit-model-package-hashes-v3-blocked-b-fp16-mixed",
+  "parent_v2_hash_manifest_sha256": "d5686ff0b19b9703817744affdb0ee89a1ca65dda8af64e68e7712fc83570d18",
+  "files": [
+    {
+      "path": "vit_model.bin",
+      "size_bytes": 173685760,
+      "crc32": "0xB4B92D00",
+      "sha256": "d29d85553b9ec339b27cdd3a3aecb45ffb6ea78a7d2449f51e97c14bd70e28b5"
+    },
+    {
+      "path": "vit_model_table.bin",
+      "size_bytes": 12928,
+      "crc32": "0xB08553CB",
+      "sha256": "10eaacba3be3f3ff18caa1e1612e25118a5730714fd3f7802c25849e2857ea0a"
+    },
+    {
+      "path": "prepared_input.bin",
+      "size_bytes": 602112,
+      "crc32": "0xA22E4176",
+      "sha256": "3e13bd9bf60b07eb967a0c67aff1087954a316a403f70d220a6713cf8999ec54"
+    },
+    {
+      "path": "vit_model_table.json",
+      "size_bytes": 236235,
+      "crc32": "0xC6EFD251",
+      "sha256": "22933d5b10e78253f45625384a1ad191051b8965d05ac09b84e23f4e2381b9bb"
+    },
+    {
+      "path": "vit_runtime_config.json",
+      "size_bytes": 7854,
+      "crc32": "0x650D8001",
+      "sha256": "20ee65ab28d8aa32cbd3a0f5f04f99975fe29aae2d4ae66d1c790e94b7ca704d"
+    }
+  ]
+}

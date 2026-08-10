@@ -1,0 +1,28 @@
+M7_RESULT_FIFO_PASS checks=28592 pushes=2122 pops=2106 full_exchanges=1070 stalled_head_cycles=706 flushes=9 entry_bits=692 depth=2
+sim/m7/tb_m7_result_fifo.sv:384: $finish called at 30270000 (1ps)
+M7_RESULT_FIFO_IVERILOG_PASS compile_log=/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/build/m7_result_fifo/iverilog_compile.log run_log=/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/build/m7_result_fifo/simulation.log
+M7.4_GATE1 seeds data=0x4d375047 ready=0x4d374250
+M7.4_GATE1_CASE K=17 req=4 commit=4 consume=4 max_ready_depth=1 req_compute_overlap=8 commit_compute_overlap=2 result_bp=9
+M7.4_GATE1_CASE K=31 req=4 commit=4 consume=4 max_ready_depth=1 req_compute_overlap=4 commit_compute_overlap=2 result_bp=9
+M7.4_GATE1_CASE K=33 req=6 commit=6 consume=6 max_ready_depth=2 req_compute_overlap=11 commit_compute_overlap=4 result_bp=7
+M7.4_GATE1_CASE K=48 req=6 commit=6 consume=6 max_ready_depth=2 req_compute_overlap=14 commit_compute_overlap=4 result_bp=10
+M7.4_INTEGRITY_ATOMIC commit_release_delay=6 count=2
+M7.4_INTEGRITY_MULTI results=12 chunks=3 req=36 max_depth=2 commit_claim=0 commit_release=0 last=12
+M7.4_GATE2_FIFO results=7 enq=7 deq=7 max=2 full_stall=8 full_pop_push=4 compute_fifo=282 dequeue_compute=1 final_drain2=3
+M7.4_GATE1_CASE K=17 req=4 commit=4 consume=4 max_ready_depth=1 req_compute_overlap=8 commit_compute_overlap=2 result_bp=9
+M7.4_GATE2_RESET_DEPTH2 fresh_enq=2 fresh_deq=2
+M7.4_GATE2_ERROR_DRAIN enq=2 deq=2 results=2 events=8
+M7.4_INTEGRITY_ERROR config_error=1 events=8 results=0
+M7.4_GATE1_CASE K=17 req=4 commit=4 consume=4 max_ready_depth=1 req_compute_overlap=8 commit_compute_overlap=2 result_bp=9
+PASS M7.4 scheduler ping-pong Gate-2 checks=66146 integrity=1
+/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/m7/tb_m7_fp16_pingpong_scheduler.sv:1811: $finish called at 35806000 (1ps)
+M7_FP16_PINGPONG_GATE2_INTEGRITY_PASS compile_log=/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/build/m7_fp16_pingpong_gate1/iverilog_compile.log run_log=/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/build/m7_fp16_pingpong_gate1/simulation.log
+M7_S8_DUAL_GATE2 results=7 enq=7 deq=7 max=2 full_stall=1 full_pop_push=1 compute_fifo=94 metadata_order=PASS
+PASS M7 dual-mode production GEMM checks=21199
+sim/m7/tb_vit_gemm_dual_mode_array.sv:885: $finish called at 152006000 (1ps)
+PASS M7 FP16-only GEMM checks=66
+/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/m7/tb_vit_gemm_dual_mode_array_fp16_only.sv:288: $finish called at 1566000 (1ps)
+M7_DUAL_MODE_IVERILOG_PASS legacy_compile=/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/build/m7_dual_mode/iverilog_compile.log legacy_run=/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/build/m7_dual_mode/simulation.log fp16_only_compile=/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/build/m7_dual_mode/fp16_only_iverilog_compile.log fp16_only_run=/home/s23520579/Vivado_project/vit_m8_db4e84bbe7b2_workspace/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/build/m7_dual_mode/fp16_only_simulation.log
+M7_RESULT_FIFO_GATE2_INTEGRATION_PASS
+scope=packed2-S8-two-pass-early-advance-depth2-final-drain legacy-and-nonpacked-direct
+leaf_full_push_pop=PASS scheduler_order_address_generation_backpressure=PASS dual_mode_isolation=PASS

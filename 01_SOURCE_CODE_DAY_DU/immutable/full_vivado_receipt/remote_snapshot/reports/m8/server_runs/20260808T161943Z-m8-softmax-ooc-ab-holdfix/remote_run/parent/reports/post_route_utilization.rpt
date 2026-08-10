@@ -1,0 +1,35 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Sat Aug  8 16:22:45 2026
+| Host         : ubuntu running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_utilization -hierarchical -file /home/s23520579/Vivado_project/vit_m8_softmax_leaf_9ddbb13b65f5/evidence/20260808T161943Z-m8-softmax-ooc-ab-holdfix/parent/reports/post_route_utilization.rpt
+| Design       : vit_softmax_engine_fp32
+| Device       : xczu5ev-sfvc784-1-e
+| Speed File   : -1
+| Design State : Routed
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------------+-------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+|           Instance          |             Module            | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++-----------------------------+-------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+| vit_softmax_engine_fp32     |                         (top) |       1748 |       1748 |       0 |    0 | 1064 |      0 |      0 |    0 |          0 |
+|   (vit_softmax_engine_fp32) |                         (top) |        924 |        924 |       0 |    0 |  896 |      0 |      0 |    0 |          0 |
+|   u_exp_from_integer        |        vit_fp32_from_u32_comb |        268 |        268 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|   u_exp_scale_down          | vit_fp32_scale_pow2_down_comb |         52 |         52 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|   u_exp_to_integer          |    vit_fp32_to_u32_floor_comb |        245 |        245 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|   u_row_maximum             |              vit_fp32_compare |        107 |        107 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|   u_total_words_multiplier  |   vit_u32_mul_iterative_nodsp |        153 |        153 |       0 |    0 |  168 |      0 |      0 |    0 |          0 |
++-----------------------------+-------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

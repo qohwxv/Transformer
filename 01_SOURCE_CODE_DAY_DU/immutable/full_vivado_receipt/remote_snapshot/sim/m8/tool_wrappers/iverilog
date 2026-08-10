@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+tool_root="${M8_IVERILOG_ROOT:?M8_IVERILOG_ROOT is required}"
+exec "${tool_root}/bin/iverilog.real" \
+    -B "${tool_root}/lib/ivl" "$@"

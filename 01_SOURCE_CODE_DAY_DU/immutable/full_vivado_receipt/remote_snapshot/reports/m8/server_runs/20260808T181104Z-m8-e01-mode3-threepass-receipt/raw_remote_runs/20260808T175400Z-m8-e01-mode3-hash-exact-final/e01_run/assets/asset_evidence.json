@@ -1,0 +1,154 @@
+{
+  "behavioral_goldens": {
+    "embedding": {
+      "relative_path": "results/embedding_step_06_hidden_states_f32.hex",
+      "sha256": "47255d48149ead6a0c74625475e5f3e931c25f1f4c3e41dcc4b2941077d16e18",
+      "size_bytes": 1361664,
+      "words": 151296
+    }
+  },
+  "execution_mode": 3,
+  "numerical_contract": {
+    "activation_conversion": "M6_FP32_TO_FP16_RNE_GRADUAL",
+    "bias_and_position_add": "CURRENT_VIT_FP32_ADD_COMB_FTZ_RNE",
+    "dot": "M6_EXACT_FP16_PRODUCTS_KULISCH_2^-48_ROUND_ONCE_FP32",
+    "fp32_add_rtl_path": "vivado_server_307_perf_v1_m7s8_fp16_parallel_overlap_2023_2/rtl/leaf/fp32/vit_fp32_add_comb.sv",
+    "fp32_add_rtl_sha256": "3721a6d130e655c524c642513bf5920d32c0a75a3abb88e0378ed7b5c2352141",
+    "m6_reference_path": "experimental/m6_fp16_nodsp_ooc/reference/m6_fp16_reference.py",
+    "m6_reference_sha256": "075d737a2ed94c17ecb37f7a507919d4be5c48c30de3a3c8403b72cd2550ad35"
+  },
+  "package": {
+    "files": {
+      "hash_manifest.json": {
+        "crc32": "0xD78E0CEA",
+        "sha256": "74cdd537ba765e1ce9f64f3afc6a5c037dce6d67e47c6b9587e6a8acd82b3324",
+        "size_bytes": 1136
+      },
+      "prepared_input.bin": {
+        "crc32": "0xA22E4176",
+        "sha256": "3e13bd9bf60b07eb967a0c67aff1087954a316a403f70d220a6713cf8999ec54",
+        "size_bytes": 602112
+      },
+      "verification_report.json": {
+        "crc32": "0x311F6748",
+        "sha256": "1654962e01b45e47939cc4b9144865c30de9a5adfd424993824941bf0ed178d7",
+        "size_bytes": 232013
+      },
+      "vit_model.bin": {
+        "crc32": "0xB4B92D00",
+        "sha256": "d29d85553b9ec339b27cdd3a3aecb45ffb6ea78a7d2449f51e97c14bd70e28b5",
+        "size_bytes": 173685760
+      },
+      "vit_model_table.bin": {
+        "crc32": "0xB08553CB",
+        "sha256": "10eaacba3be3f3ff18caa1e1612e25118a5730714fd3f7802c25849e2857ea0a",
+        "size_bytes": 12928
+      },
+      "vit_model_table.json": {
+        "crc32": "0xC6EFD251",
+        "sha256": "22933d5b10e78253f45625384a1ad191051b8965d05ac09b84e23f4e2381b9bb",
+        "size_bytes": 236235
+      },
+      "vit_runtime_config.json": {
+        "crc32": "0x650D8001",
+        "sha256": "20ee65ab28d8aa32cbd3a0f5f04f99975fe29aae2d4ae66d1c790e94b7ca704d",
+        "size_bytes": 7854
+      }
+    },
+    "relative_directory": "build/model_package/v3_blocked_b_fp16_mixed",
+    "table_header": {
+      "alignment_bytes": 128,
+      "dtype_code": 2,
+      "entries_crc32": "0xA85B8462",
+      "entry_bytes": 64,
+      "header_crc32": "0xF88FB4C4",
+      "layout5_tensors": 74,
+      "magic_ascii": "VITMTBL\\0",
+      "model_bytes": 173685760,
+      "model_crc32": "0xB4B92D00",
+      "model_sha256": "d29d85553b9ec339b27cdd3a3aecb45ffb6ea78a7d2449f51e97c14bd70e28b5",
+      "source_words": 86567656,
+      "storage_words": 43421440,
+      "tensor_count": 200,
+      "version": "3.0"
+    }
+  },
+  "phase": "e01",
+  "schema": "vit-m7-mode3-real-assets-v2",
+  "staged": [
+    {
+      "filename": "patch_weight_packed_fp16_u32.hex",
+      "format": "U32_HEX_LOWERCASE_8DIGIT_LF",
+      "role": "patch_weight_base",
+      "source_binary_sha256": "454c336c62f49c11ce3a4c228e78e66370f56072f52a13f7e54d061eee724b41",
+      "source_byte_offset": 0,
+      "source_tensor_id": 0,
+      "source_word_offset": 0,
+      "staged_sha256": "076feb08d4f3d25bd0b3675660c62931c526204eda67ee4fbd160bf2fda66d68",
+      "stored_bytes": 1179648,
+      "stored_words": 294912,
+      "text_bytes": 2654208
+    },
+    {
+      "filename": "patch_bias_f32.hex",
+      "format": "U32_HEX_LOWERCASE_8DIGIT_LF",
+      "role": "patch_bias_base",
+      "source_binary_sha256": "a3b45ba89fcd7fa11fbb3a98218e724be2a57394f05ae152c5ce1debc73b62a2",
+      "source_byte_offset": 1179648,
+      "source_tensor_id": 1,
+      "source_word_offset": 294912,
+      "staged_sha256": "08d02002ce78c2bb4695e12dc10f28c1694fe232773dfb6a840cff3ca1aecf02",
+      "stored_bytes": 3072,
+      "stored_words": 768,
+      "text_bytes": 6912
+    },
+    {
+      "filename": "cls_token_f32.hex",
+      "format": "U32_HEX_LOWERCASE_8DIGIT_LF",
+      "role": "cls_base",
+      "source_binary_sha256": "96b6f252d7bca3395972368350de454cf5157f0fdcff273f6316289772115a37",
+      "source_byte_offset": 1182720,
+      "source_tensor_id": 2,
+      "source_word_offset": 295680,
+      "staged_sha256": "5e5d5ffdc75ed6902dd65eb25377d5adcefa6f0ea8d0eaa3d5db0dcfe3398bdb",
+      "stored_bytes": 3072,
+      "stored_words": 768,
+      "text_bytes": 6912
+    },
+    {
+      "filename": "position_f32.hex",
+      "format": "U32_HEX_LOWERCASE_8DIGIT_LF",
+      "role": "position_base",
+      "source_binary_sha256": "f2a7d0839e31b5a5c2ec6aef8eb6899d7aff2da6875ae53eb20e3bd72f97ed1c",
+      "source_byte_offset": 1185792,
+      "source_tensor_id": 3,
+      "source_word_offset": 296448,
+      "staged_sha256": "02f20c5527ca78d01e4d7394784d204a9b940a69f8a24658e9e5885d9976d134",
+      "stored_bytes": 605184,
+      "stored_words": 151296,
+      "text_bytes": 1361664
+    },
+    {
+      "filename": "prepared_input_f32.hex",
+      "format": "U32_HEX_LOWERCASE_8DIGIT_LF",
+      "role": "prepared_input",
+      "source_binary_sha256": "3e13bd9bf60b07eb967a0c67aff1087954a316a403f70d220a6713cf8999ec54",
+      "source_relative_path": "build/model_package/v3_blocked_b_fp16_mixed/prepared_input.bin",
+      "staged_sha256": "64f529e00d0ed08b4808c582e27821a7c2e39ac44be8694b7613d5a033f23076",
+      "stored_bytes": 602112,
+      "stored_words": 150528,
+      "text_bytes": 1354752
+    },
+    {
+      "filename": "embedding_golden_f32.hex",
+      "format": "U32_HEX_LOWERCASE_8DIGIT_LF",
+      "role": "embedding_golden",
+      "source_readmemh_sha256": "47255d48149ead6a0c74625475e5f3e931c25f1f4c3e41dcc4b2941077d16e18",
+      "source_relative_path": "results/embedding_step_06_hidden_states_f32.hex",
+      "staged_sha256": "47255d48149ead6a0c74625475e5f3e931c25f1f4c3e41dcc4b2941077d16e18",
+      "stored_bytes": 605184,
+      "stored_words": 151296,
+      "text_bytes": 1361664
+    }
+  ]
+}

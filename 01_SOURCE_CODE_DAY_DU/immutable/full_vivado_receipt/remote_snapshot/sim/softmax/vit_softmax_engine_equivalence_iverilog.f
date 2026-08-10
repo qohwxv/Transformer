@@ -1,0 +1,12 @@
+rtl/leaf/common/vit_u32_mul_iterative_nodsp.sv
+rtl/leaf/fp32/vit_fp32_add_comb.sv
+rtl/leaf/fp32/vit_fp32_sub_comb.sv
+rtl/leaf/fp32/vit_fp32_compare.sv
+rtl/leaf/fp32/vit_fp32_mul_comb_nodsp.sv
+rtl/leaf/fp32/vit_fp32_from_u32_comb.sv
+rtl/leaf/fp32/vit_fp32_to_u32_floor_comb.sv
+rtl/leaf/fp32/vit_fp32_scale_pow2_down_comb.sv
+rtl/blocks/softmax/vit_softmax_engine_fp32.sv
+sim/softmax/vit_fp32_exp_neg_comb_reference.sv
+sim/softmax/vit_softmax_engine_fp32_reference.sv
+sim/softmax/tb_vit_softmax_engine_fp32_equivalence.sv

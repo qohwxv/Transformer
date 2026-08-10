@@ -1,0 +1,46 @@
+{
+  "comparison": {
+    "abs_tolerance": 0.0,
+    "actual_nonfinite": 0,
+    "actual_top1": 879,
+    "actual_top1_word": "0x414886A0",
+    "exact_mismatches": 0,
+    "finite_pairs": 1000,
+    "first_exact_mismatch": null,
+    "first_tolerance_failure": null,
+    "max_abs": 0.0,
+    "max_abs_index": 0,
+    "mean_abs": 0.0,
+    "oracle_nonfinite": 0,
+    "oracle_top1": 879,
+    "oracle_top1_word": "0x414886A0",
+    "rel_tolerance": 0.0,
+    "tolerance_failures": 0,
+    "words": 1000
+  },
+  "decision": "PASS",
+  "execution_mode": 3,
+  "inputs": {
+    "asset_evidence_sha256": "d629372977edcf7fa40f7dff5c53fccc46f256bc22e3ea1d1db6795b1f011e7f",
+    "final_ln_dump_sha256": "feb2c6ef3875d3ad9ed80bd9b7b0e562c21d70fc5af5d900ee5d436ea1e82987",
+    "final_ln_words": 151296,
+    "logits_dump_sha256": "df2782e9e35df6756b809385243f15fd18af0260d7c1bf842d6156852eebd37d",
+    "logits_words": 1000,
+    "staged_sha256_by_role": {
+      "classifier_bias_base": "6dc606157b660fd40a0d276a599fe132c1a1ba3b574c20d70eefc87a8ecc5f52",
+      "classifier_weight_base": "6a6b9947bd1864378a457f702ac0e2adfbd344290096f6fc6ed7d588d10e232b",
+      "final_ln_beta_base": "b610675e2677f09f19c021644e6e77353450a0a43c363aefddb8ea20ace59120",
+      "final_ln_gamma_base": "322dd25569a93fa05242a06998192cd4559051c0dc9489d0330aa947f5808b26"
+    }
+  },
+  "numerical_contract": {
+    "activation_conversion": "M6_FP32_TO_FP16_RNE_GRADUAL",
+    "activation_source": "RTL_FINAL_LN_DUMP_CLS_TOKEN_WORDS_0_TO_767",
+    "bias_add": "CURRENT_VIT_FP32_ADD_COMB_FTZ_RNE",
+    "dot": "M6_EXACT_FP16_PRODUCTS_KULISCH_2^-48_ROUND_ONCE_FP32",
+    "fp32_add_rtl_sha256": "3721a6d130e655c524c642513bf5920d32c0a75a3abb88e0378ed7b5c2352141",
+    "gate": "CLASSIFIER_ARITHMETIC_ONLY_NOT_MODEL_QUALITY",
+    "m6_reference_sha256": "075d737a2ed94c17ecb37f7a507919d4be5c48c30de3a3c8403b72cd2550ad35"
+  },
+  "schema": "vit-m7-mode3-e04-m6-classifier-oracle-comparison-v1"
+}

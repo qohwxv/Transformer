@@ -1,0 +1,11 @@
+receipt_date_utc=2026-08-08
+server_host=ubuntu
+server_account=s23520579
+initial_stage_root=/home/s23520579/Vivado_project/vit_m8_layernorm_leaf_c1f134272210
+initial_run=/home/s23520579/Vivado_project/vit_m8_layernorm_leaf_c1f134272210/evidence/20260808T162713Z-m8-layernorm-ooc-ab
+corrected_stage_root=/home/s23520579/Vivado_project/vit_m8_layernorm_leaf_f3a88811ee2f
+corrected_run=/home/s23520579/Vivado_project/vit_m8_layernorm_leaf_f3a88811ee2f/evidence/20260808T164100Z-m8-layernorm-ooc-ab-generate-fix
+transfer_method=scp_over_existing_ssh_controlmaster
+remote_access=read_only
+remote_mutation=false
+

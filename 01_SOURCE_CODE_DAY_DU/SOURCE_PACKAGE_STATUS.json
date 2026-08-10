@@ -1,0 +1,47 @@
+{
+  "schema": "vit_m8_offline_source_package_status_v1",
+  "date": "2026-08-09",
+  "status": "CONTENT_INTEGRITY_AND_WORKTREE_PREPARE_PASS",
+  "revision": "M8_IP_ABI_V1_13",
+  "ip_version_hex": "0x0001000D",
+  "source_identity": {
+    "unique_ordered_sources": 80,
+    "ordered_source_sha256": "db4e84bbe7b28dcccf4d5e574027be06b5162ae9789e0f2ef0ab2dcfb0fffb7e",
+    "filelist_sha256": "88166c76fac96e7f4b59f486a3d5867a94001e6d72014ad7187b5e4de40f3524",
+    "development_manifest_entries": 409,
+    "development_manifest_sha256": "67c18532e3bb16b24ec6983f99cc54a3ffafb05fe6c02cf0385465c316b31078"
+  },
+  "immutable_objects": {
+    "full_vivado_receipt": {
+      "files": 1212,
+      "bytes": 584513611,
+      "receipt_manifest_sha256": "060bea427080f8fb8cfb9321f2d95b39a9442de0256051869e33949b1468f437"
+    },
+    "board_candidate_pause_checkpoint": {
+      "files": 7,
+      "bytes": 222182702,
+      "sha256sums_sha256": "203ed8155541063a7b28b096067fd5936bfb342cb003d9c2eece49e08dda23f2",
+      "payload_tar_sha256": "898cfee0e08769f203dbb299b4d250eed0adfdb5afb3c60683d8cc5763fdf8c1"
+    }
+  },
+  "toolchain": {
+    "required_for_build": "Vivado 2023.2 external licensed installation",
+    "bundled": false,
+    "network_required_for_content_verification": false,
+    "host_contract": "64-bit Linux with GNU userland and /usr/bin/python3",
+    "digilent_embeddedsw_commit": "b218adf07bb98e57d8941b16cbe0eb3dadd0b1b2"
+  },
+  "verification": {
+    "full_receipt_replay": "PASS",
+    "pause_checkpoint_replay": "PASS",
+    "fresh_worktree_prepare": "PASS",
+    "fresh_worktree_strict_m8_verifier": "PASS",
+    "board_workspace_prepare_and_host_preflight": "PASS_JTAG_NOT_TOUCHED",
+    "full_vivado_rerun_from_package": "NOT_RUN",
+    "physical_board_run": "NOT_RUN"
+  },
+  "physical_board_tested": false,
+  "full_e05_pass": false,
+  "m8_safe_nonboard_complete": false,
+  "promotion_status": "DEVELOPMENT_UNSEALED_PENDING_M8_SEAL_NOT_PROMOTED"
+}
