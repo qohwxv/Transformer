@@ -1830,3 +1830,313 @@ các task hàm đặc biệt là phép toán trên host, các array cho phép tr
 không giới hạn và toàn bộ công việc trên một tensor diễn ra nguyên tử theo thời
 gian mô phỏng. Một datapath RTL thực vẫn là backend tương lai cần được thiết kế
 phía sau ranh giới command và handshake hiện có.
+
+Phần bên bạn đã xong. Mình đã kiểm tra:
+
+- `HEAD` và `origin/main` cùng commit `94990bf`
+- Working tree sạch
+- Git LFS không còn gì chờ push
+- Manifest mới: `9b1eed9c...eab5`
+- Guide, bootstrap, runner, FSBL/PMUFW đều đã có trên GitHub
+
+Chỉ còn chạy thực tế trên laptop bạn của bạn.
+
+## Các file bảo AI bên kia đọc
+
+Ưu tiên theo thứ tự:
+
+1. `01_SOURCE_CODE_DAY_DU/HUONG_DAN_CHAY_M8_LAPTOP_MOI.md`
+2. `01_SOURCE_CODE_DAY_DU/README_VI.md`
+3. `01_SOURCE_CODE_DAY_DU/SOURCE_PACKAGE_STATUS.json`
+4. `01_SOURCE_CODE_DAY_DU/board_runtime/README.md`
+5. `01_SOURCE_CODE_DAY_DU/scripts/setup_m8_laptop.sh`
+
+## Prompt gửi nguyên văn cho AI bên đó
+
+```text
+Tôi có repository https://github.com/qohwxv/Transformer.git và board
+Genesys ZU-5EV. Máy đã cài đầy đủ Vivado/Vitis/XSCT 2023.2.
+
+Trước khi làm gì, hãy đọc đầy đủ các file:
+
+1. 01_SOURCE_CODE_DAY_DU/HUONG_DAN_CHAY_M8_LAPTOP_MOI.md
+2. 01_SOURCE_CODE_DAY_DU/README_VI.md
+3. 01_SOURCE_CODE_DAY_DU/SOURCE_PACKAGE_STATUS.json
+4. 01_SOURCE_CODE_DAY_DU/board_runtime/README.md
+5. 01_SOURCE_CODE_DAY_DU/scripts/setup_m8_laptop.sh
+
+Mục tiêu là replay đúng BIT/XSA/FSBL/PMUFW/model M8 hiện có trên Genesys
+ZU-5EV và chạy ảnh inputs/test1.png.
+
+Không chạy lại synthesis/implementation vì artifact đã có.
+Không sửa immutable, BIT, XSA, identity, boot receipt hoặc model.
+Không bỏ qua checksum.
+Không dùng JTAG trước khi host preflight PASS.
+Không chạy hai XSCT/runner cùng điều khiển board.
+Không ghi QSPI/SD/flash; chỉ volatile JTAG boot.
+Dataset ILSVRC sẽ được tải riêng.
+
+Hãy hướng dẫn và thực hiện theo từng gate:
+Git LFS pull -> verify_content -> xác định toolchain 2023.2 ->
+setup_m8_laptop.sh -> đọc JTAG serial -> host preflight ->
+hw_server -> cold setup -> chạy ảnh umbrella.
+
+Sau mỗi bước, kiểm tra marker PASS rồi mới sang bước kế tiếp.
+Nếu một bước fail, dừng và phân tích log, không tự ý sửa hash hoặc rebuild RTL.
+```
+
+## Các bước đầu tiên bên laptop đó
+
+### 1. Clone và tải Git LFS
+
+```bash
+cd ~/Downloads
+
+git lfs install
+git clone https://github.com/qohwxv/Transformer.git
+cd Transformer
+git lfs pull
+```
+
+Nếu repository private, tài khoản bạn kia phải được cấp quyền. Có thể đăng nhập:
+
+```bash
+gh auth login
+gh auth setup-git
+```
+
+### 2. Verify package
+
+```bash
+cd 01_SOURCE_CODE_DAY_DU
+./scripts/verify_content.sh
+```
+
+Phải thấy:
+
+```text
+M8_OFFLINE_SOURCE_CONTENT_PASS
+digilent_git_metadata=ABSENT_PORTABLE_TREE_HASH_VERIFIED
+```
+
+Nếu không thấy marker này thì dừng.
+
+### 3. Chạy bootstrap tự động
+
+Giả sử máy có:
+
+```text
+/home/user/Xilinx/Vivado/2023.2
+/home/user/Xilinx/Vitis/2023.2
+```
+
+thì chạy:
+
+```bash
+./scripts/setup_m8_laptop.sh \
+  --workspace "$HOME/m8_board_work" \
+  --xilinx-root /home/user/Xilinx
+```
+
+Script sẽ:
+
+- kiểm tra Vivado 2023.2;
+- dựng workspace;
+- tạo Python venv;
+- cài PyTorch/Transformers;
+- kiểm tra BIT/XSA/model/boot;
+- in hướng dẫn lấy JTAG serial.
+
+### 4. Kết nối board và đọc serial
+
+Terminal A:
+
+```bash
+/path/Vivado/2023.2/bin/hw_server -s tcp::3121
+```
+
+Terminal B:
+
+```bash
+/path/Vitis/2023.2/bin/xsct
+```
+
+Trong XSCT:
+
+```tcl
+connect -url tcp:127.0.0.1:3121
+jtag targets
+disconnect
+exit
+```
+
+Dùng serial thật của board bên đó, không dùng serial board của bạn.
+
+Chạy lại bootstrap:
+
+```bash
+./scripts/setup_m8_laptop.sh \
+  --workspace "$HOME/m8_board_work" \
+  --xilinx-root /home/user/Xilinx \
+  --cable-serial SERIAL_BOARD_BEN_DO
+```
+
+Phải thấy:
+
+```text
+M8_LAPTOP_CONFIG_PASS ... jtag=NOT_TOUCHED
+```
+
+### 5. Cold setup và suy luận
+
+Giữ `hw_server` chạy ở Terminal A.
+
+Terminal B:
+
+```bash
+source "$HOME/m8_board_work/m8_env.sh"
+cd "$BOARD_WORK"
+
+tools/board/m8/dataset/setup_m8_session.sh
+```
+
+Sau khi cold setup PASS:
+
+```bash
+tools/board/m8/dataset/run_1.sh --images inputs/test1.png
+```
+
+Ảnh umbrella chuẩn dự kiến trả:
+
+```text
+class_index=879
+```
+
+Tóm lại: bên bạn đã hoàn tất upload. Bên kia chỉ cần clone đầy đủ LFS, đọc guide bằng AI, verify package, bootstrap toolchain, lấy JTAG serial, cold setup một lần và chạy `run_1.sh`. Dataset tải riêng sau.
+
+Được, mình đã hoàn thành mode 1000 theo kiểu chạy liên tục:
+
+- Có `run_1000.sh`
+- Model/weight chỉ nạp một lần trong cold setup
+- Chạy tuần tự ảnh 1 → 1000
+- Preprocess ảnh kế tiếp trong lúc ảnh hiện tại inference
+- Checkpoint kết quả sau từng ảnh
+- 12/12 unit tests PASS
+- Kế hoạch ảnh 1..1000 PASS, `jtag=NOT_TOUCHED`
+- Thời gian suy luận ước tính: khoảng 5,216 ngày, chưa tính overhead
+- Chưa có auto-resume theo đúng lựa chọn chạy liên tục của bạn
+
+## Cần push bản cập nhật nhỏ lần nữa
+
+Copy các file mode 1000 sang clone upload:
+
+```bash
+cd /home/qh/Downloads/Transformer_upload_0908
+
+source_pkg=/home/qh/Downloads/vit_modelsim_standalone/hoanthanh_0908/01_SOURCE_CODE_DAY_DU
+package_dest=/home/qh/Downloads/Transformer_upload_0908/01_SOURCE_CODE_DAY_DU
+
+chmod u+w \
+  "$package_dest/SOURCE_PACKAGE_MANIFEST.sha256" \
+  "$package_dest/SOURCE_PACKAGE_SHA256SUMS.txt"
+
+cp -a \
+  "$source_pkg/HUONG_DAN_CHAY_M8_LAPTOP_MOI.md" \
+  "$source_pkg/SOURCE_PACKAGE_MANIFEST.sha256" \
+  "$source_pkg/SOURCE_PACKAGE_SHA256SUMS.txt" \
+  "$source_pkg/SOURCE_PACKAGE_STATUS.json" \
+  "$package_dest/"
+
+cp -a \
+  "$source_pkg/board_runtime/M8_DATASET_RUNTIME.tar.gz" \
+  "$source_pkg/board_runtime/README.md" \
+  "$source_pkg/board_runtime/RUNTIME_ARTIFACTS.sha256" \
+  "$package_dest/board_runtime/"
+
+cp -a \
+  "$source_pkg/scripts/verify_content.sh" \
+  "$package_dest/scripts/"
+```
+
+Verify:
+
+```bash
+cd "$package_dest"
+./scripts/verify_content.sh
+```
+
+Phải thấy:
+
+```text
+M8_OFFLINE_SOURCE_CONTENT_PASS
+digilent_git_metadata=ABSENT_PORTABLE_TREE_HASH_VERIFIED
+dataset_runtime=e0268333e3efc35d55c3660494630b9b93e7b67fcdaf7b70405dbb10084cc76c
+package_manifest=e2133ebcb1cb14924380845ec859d8880d32b43c5886477408c974909d770d37
+```
+
+Commit và push:
+
+```bash
+cd /home/qh/Downloads/Transformer_upload_0908
+
+git add -A -- 01_SOURCE_CODE_DAY_DU
+git commit -m "Add continuous M8 mode-1000 dataset runner"
+git push origin main
+```
+
+## Lệnh bên laptop bạn của bạn
+
+Sau khi clone/pull bản mới, cold setup một lần:
+
+```bash
+source "$HOME/m8_board_work/m8_env.sh"
+cd "$BOARD_WORK"
+
+tools/board/m8/dataset/setup_m8_session.sh
+```
+
+Xem trước đúng 1.000 ảnh mà không chạm JTAG:
+
+```bash
+tools/board/m8/dataset/run_1000.sh \
+  --start-index 1 \
+  --plan-only
+```
+
+Chạy thật trong `tmux`:
+
+```bash
+tmux new -s m8_1000
+
+source "$HOME/m8_board_work/m8_env.sh"
+cd "$BOARD_WORK"
+
+tools/board/m8/dataset/run_1000.sh --start-index 1
+```
+
+Detach mà không dừng tiến trình:
+
+```text
+Ctrl-b rồi nhấn d
+```
+
+Quay lại xem:
+
+```bash
+tmux attach -t m8_1000
+```
+
+Kết quả cập nhật sau mỗi ảnh tại:
+
+```text
+$BOARD_WORK/build/m8_dataset_runs/<UTC>-m8-mode1000/
+```
+
+Theo dõi tiến độ:
+
+```bash
+cat build/m8_dataset_runs/*-m8-mode1000/progress.json
+tail -n 5 build/m8_dataset_runs/*-m8-mode1000/results.csv
+```
+
+Máy phải tắt sleep/suspend, board giữ nguồn, `hw_server` chạy liên tục và không mở runner/XSCT thứ hai. Mode này hiện thu được 1.000 class prediction; chưa tính accuracy vì mapping nhãn ImageNet chính xác vẫn chưa tích hợp.
