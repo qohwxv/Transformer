@@ -1,0 +1,193 @@
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source scripts/server/30_create_clean_project_and_bd.tcl -notrace
+INFO: require_bundle_manifest routes to M8 DEVELOPMENT_UNSEALED verification
+M8_RECEIPT_CLOSURE_PASS receipts=6 entries=658 sidecars=3 payload_replay=FULL
+M8_METADATA_PREFLIGHT_PASS sources=80 ordered=db4e84bbe7b28dcccf4d5e574027be06b5162ae9789e0f2ef0ab2dcfb0fffb7e filelist=88166c76fac96e7f4b59f486a3d5867a94001e6d72014ad7187b5e4de40f3524 ip=0x0001000D abi=v1.13 parent=M7S8 receipts=BOUND full_vivado=PENDING bit_xsa=NOT_GENERATED
+M8_DEVELOPMENT_MANIFEST_PASS entries=409
+M8_DEVELOPMENT_MANIFEST_SHA256=67c18532e3bb16b24ec6983f99cc54a3ffafb05fe6c02cf0385465c316b31078
+M8_DEVELOPMENT_PREFLIGHT_PASS status=DEVELOPMENT_UNSEALED seal=PENDING_M8_SEAL
+PASS: M8 DEVELOPMENT_UNSEALED source manifest is valid: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/M8_DEVELOPMENT_SHA256SUMS.txt
+PASS: Vivado version is 2023.2
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1331.539 ; gain = 0.027 ; free physical = 229349 ; free virtual = 246176
+INFO: opened temporary in-memory project for catalog checks
+INFO: closed temporary in-memory catalog project
+PASS: FPGA part, board part and required IP catalog are present
+PASS: Vivado general.maxThreads=4
+WARNING: [Board 49-151] The current board 'digilentinc.com::gzu_5ev:1.1' is from a local repo. The vivado install has a corresponding board with version greater than or equal to the local repo board. Please use boards from vivado install to avoid any upgrade/migrate issues
+PASS: synth_1 FLATTEN_HIERARCHY=none
+WARNING: generated vit_system_wrapper is unavailable; using standalone AXI shim
+PASS: ViT_googlebase project synchronized
+  TOP     : vit_phase_e_axi_bd_wrapper
+  MAX_DSP : 0
+  FLATTEN : none
+  RTL     : repository-relative sources from filelists/full_axi.f
+WARNING: [Board 49-151] The current board 'digilentinc.com::gzu_5ev:1.1' is from a local repo. The vivado install has a corresponding board with version greater than or equal to the local repo board. Please use boards from vivado install to avoid any upgrade/migrate issues
+Creating project-local block design vit_system
+Wrote  : </home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.srcs/sources_1/bd/vit_system/vit_system.bd> 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'irq_o' of definition 'xilinx.com:signal:interrupt:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'irq_o' of definition 'xilinx.com:signal:interrupt:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'FREQ_HZ' with value '50000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'PROTOCOL' with value 'AXI4LITE'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'DATA_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'ADDR_WIDTH' with value '12'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'ID_WIDTH' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_BURST' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_LOCK' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_PROT' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_CACHE' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_QOS' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_REGION' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_WSTRB' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_BRESP' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_RRESP' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'SUPPORTS_NARROW_BURST' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'MAX_BURST_LENGTH' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'PROTOCOL' with value 'AXI4'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'DATA_WIDTH' with value '128'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'ADDR_WIDTH' with value '40'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'ID_WIDTH' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'HAS_BURST' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'HAS_LOCK' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'HAS_PROT' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'HAS_CACHE' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'HAS_QOS' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'HAS_REGION' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'HAS_WSTRB' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'HAS_BRESP' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'HAS_RRESP' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'SUPPORTS_NARROW_BURST' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'MAX_BURST_LENGTH' with value '4'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'NUM_READ_OUTSTANDING' with value '2'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'irq_o': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 'aclk' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [BD 5-943] Reserving offset range <0xA000_0000 [ 4K ]> from slave interface '/smartconnect_control/S00_AXI' to master interface '/smartconnect_control/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] vit_system_smartconnect_control_0: SmartConnect vit_system_smartconnect_control_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] vit_system_smartconnect_control_0: IP vit_system_smartconnect_control_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] vit_system_smartconnect_control_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /vit_system_smartconnect_control_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/smartconnect_ddr/S00_AXI' to master interface '/smartconnect_ddr/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 2G ]> from slave interface '/smartconnect_ddr/S00_AXI' to master interface '/smartconnect_ddr/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] vit_system_smartconnect_ddr_0: SmartConnect vit_system_smartconnect_ddr_0 is in High-performance Mode.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /smartconnect_ddr/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /smartconnect_ddr/M00_AXI(0)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1621.559 ; gain = 34.656 ; free physical = 229125 ; free virtual = 245953
+Wrote  : </home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.srcs/sources_1/bd/vit_system/vit_system.bd> 
+INFO: [BD 5-943] Reserving offset range <0xA000_0000 [ 4K ]> from slave interface '/smartconnect_control/S00_AXI' to master interface '/smartconnect_control/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] vit_system_smartconnect_control_0: SmartConnect vit_system_smartconnect_control_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] vit_system_smartconnect_control_0: IP vit_system_smartconnect_control_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] vit_system_smartconnect_control_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /vit_system_smartconnect_control_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/smartconnect_ddr/S00_AXI' to master interface '/smartconnect_ddr/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 2G ]> from slave interface '/smartconnect_ddr/S00_AXI' to master interface '/smartconnect_ddr/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] vit_system_smartconnect_ddr_0: SmartConnect vit_system_smartconnect_ddr_0 is in High-performance Mode.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /smartconnect_ddr/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /smartconnect_ddr/M00_AXI(0)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1631.465 ; gain = 9.906 ; free physical = 229111 ; free virtual = 245944
+PASS: M5 native AXI-128 BD contract: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/vit_system_axi_contract.rpt
+Wrote  : </home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.srcs/sources_1/bd/vit_system/vit_system.bd> 
+INFO: [BD 41-1662] The design 'vit_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v
+Verilog Output written to : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/sim/vit_system.v
+Verilog Output written to : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/hdl/vit_system_wrapper.v
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.5-0] vit_system_zynq_ultra_ps_e_0_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0_FPD'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+Exporting to file /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_smartconnect_control_0/bd_0/hw_handoff/vit_system_smartconnect_control_0.hwh
+Generated Hardware Definition File /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_smartconnect_control_0/bd_0/synth/vit_system_smartconnect_control_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_control .
+Exporting to file /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_smartconnect_ddr_0/bd_0/hw_handoff/vit_system_smartconnect_ddr_0.hwh
+Generated Hardware Definition File /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_smartconnect_ddr_0/bd_0/synth/vit_system_smartconnect_ddr_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_ddr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block const_zero .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block const_one .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vit_phase_e_axi_0 .
+Exporting to file /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/hw_handoff/vit_system.hwh
+Generated Hardware Definition File /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.hwdef
+generate_target: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1907.996 ; gain = 276.531 ; free physical = 228747 ; free virtual = 245600
+update_compile_order: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2012.047 ; gain = 8.004 ; free physical = 228651 ; free virtual = 245508
+PASS: synth_1 FLATTEN_HIERARCHY=none
+PASS: ViT_googlebase project synchronized
+  TOP     : vit_system_wrapper
+  MAX_DSP : 0
+  FLATTEN : none
+  RTL     : repository-relative sources from filelists/full_axi.f
+PASS: Genesys ZU-5EV ViT block design created/verified
+  project       : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase
+  board         : digilentinc.com:gzu_5ev:part0:1.1
+  part          : xczu5ev-sfvc784-1-e
+  block design  : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.srcs/sources_1/bd/vit_system/vit_system.bd
+  wrapper       : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/hdl/vit_system_wrapper.v
+  top           : vit_system_wrapper
+  control       : 0xA0000000 / 0x00001000
+  DDR low       : 0x0000000000 / 0x80000000
+  DDR high      : 0x0800000000 / 0x80000000
+  PS master     : M_AXI_HPM0_FPD
+  PL DDR master : M_AXI (128-bit, max burst 4, read outstanding 2, write outstanding 1)
+  PS DDR slave  : S_AXI_HP0_FPD (128-bit)
+  PL clock      : pl_clk0 @ 50 MHz
+  IRQ           : irq_o -> pl_ps_irq0[0]
+  DSP cap       : 0
+PASS: vit_system_vit_phase_e_axi_0_0_synth_1 FLATTEN_HIERARCHY=none MAX_DSP=0
+PASS: hardware top is vit_system_wrapper
+PASS: retained native AXI-128 BD contract report is exact
+WARNING: [BD 41-2925] The design that will be created by this Tcl script contains the following module references: vit_phase_e_axi_bd_wrapper.
+Please add the sources of those modules before sourcing this Tcl script or use write_project_tcl.
+INFO: [BD 5-453] Writing out BD creation steps for vit_system as a TCL proc
+INFO: [Vivado-projutils-8] Tcl script 'recreate_project.tcl' generated in output directory '/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/artifacts/project_exports'
+
+INFO: [Vivado-projutils-15] Please note that by default, the file path for the project source files were set with respect to the 'origin_dir' variable in the
+ generated script. When this script is executed from the output directory, these source files will be referenced with respect to this 'origin_dir' path value.
+ In case this script was later moved to a different directory, the 'origin_dir' value must be set manually in the script with the path
+ relative to the new output directory to make sure that the source files are referenced correctly from the original project. You can also set the
+ 'origin_dir' automatically by setting the 'origin_dir_loc' variable in the tcl shell before sourcing this generated script. The 'origin_dir_loc'
+ variable should be set to the path relative to the new output directory. Alternatively, if you are sourcing the script from the Vivado command line,
+ then set the origin dir using '-tclargs --origin_dir <path>'. For example, 'vivado -mode tcl -source recreate_project.tcl -tclargs --origin_dir ".."
+
+WARNING: [Vivado-projutils-10] Found source(s) that were local or imported into the project. If this project is being source controlled, then
+ please ensure that the project source(s) are also part of this source controlled data. The list of these local source(s) can be found in the generated script
+ under the header section.
+
+write_project_tcl: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 2116.098 ; gain = 104.051 ; free physical = 228599 ; free virtual = 245456
+WARNING: [BD 41-2925] The design that will be created by this Tcl script contains the following module references: vit_phase_e_axi_bd_wrapper.
+Please add the sources of those modules before sourcing this Tcl script or use write_project_tcl.
+INFO: [BD 5-148] Tcl file written out </home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/artifacts/project_exports/vit_system_bd.tcl>.
+
+PASS: clean project and production Block Design are ready
+  project: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.xpr
+  top    : vit_system_wrapper
+  geometry: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/vit_system_geometry.rpt
+  AXI contract: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/vit_system_axi_contract.rpt
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  9 03:34:49 2026...

@@ -1,0 +1,187 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Sun Aug  9 03:49:22 2026
+| Host         : ubuntu running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_ip_status
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 33 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| Instance Name                     | Status     | Recommendation      | Change    | IP Name            | IP      | New Version   | New        | Original Part        |
+|                                   |            |                     | Log       |                    | Version |               | License    |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| vit_system_const_one_0            | Up-to-date | No changes required |  *(1)     | Constant           | 1.1     | 1.1 (Rev. 8)  | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 8)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| vit_system_const_zero_0           | Up-to-date | No changes required |  *(2)     | Constant           | 1.1     | 1.1 (Rev. 8)  | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 8)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| vit_system_proc_sys_reset_0_0     | Up-to-date | No changes required |  *(3)     | Processor System   | 5.0     | 5.0 (Rev. 14) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 14)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| vit_system_smartconnect_control_0 | Up-to-date | No changes required |  *(4)     | AXI SmartConnect   | 1.0     | 1.0 (Rev. 21) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 21)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| vit_system_smartconnect_ddr_0     | Up-to-date | No changes required |  *(5)     | AXI SmartConnect   | 1.0     | 1.0 (Rev. 21) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 21)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| vit_system_vit_phase_e_axi_0_0    | Up-to-date | No changes required | Change    | vit_phase_e_axi_bd | 1.0     | 1.0 (Rev. 1)  | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                   |            |                     | available |                    | 1)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| vit_system_zynq_ultra_ps_e_0_0    | Up-to-date | No changes required |  *(6)     | Zynq UltraScale+   | 3.5     | 3.5 (Rev. 1)  | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           | MPSoC              | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 1)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_m00e_0                    | Up-to-date | No changes required |  *(7)     | SC EXIT            | 1.0     | 1.0 (Rev. 14) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 14)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_m00s2a_0                  | Up-to-date | No changes required |  *(8)     | SmartConnect       | 1.0     | 1.0 (Rev. 9)  | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           | SC2AXI Bridge      | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 9)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_one_0                     | Up-to-date | No changes required |  *(9)     | Constant           | 1.1     | 1.1 (Rev. 8)  | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 8)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_psr_aclk_0                | Up-to-date | No changes required |  *(10)    | Processor System   | 5.0     | 5.0 (Rev. 14) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 14)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_s00a2s_0                  | Up-to-date | No changes required |  *(11)    | SmartConnect       | 1.0     | 1.0 (Rev. 9)  | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           | AXI2SC Bridge      | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 9)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_s00mmu_0                  | Up-to-date | No changes required |  *(12)    | SC MMU             | 1.0     | 1.0 (Rev. 12) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 12)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_s00sic_0                  | Up-to-date | No changes required |  *(13)    | SC SI_CONVERTER    | 1.0     | 1.0 (Rev. 12) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 12)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_s00tr_0                   | Up-to-date | No changes required |  *(14)    | SC                 | 1.0     | 1.0 (Rev. 10) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           | TRANSACTION_REGULA | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 10)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_sarn_0                    | Up-to-date | No changes required |  *(15)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 15) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 15)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_sawn_0                    | Up-to-date | No changes required |  *(16)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 15) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 15)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_sbn_0                     | Up-to-date | No changes required |  *(17)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 15) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 15)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_srn_0                     | Up-to-date | No changes required |  *(18)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 15) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 15)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_819f_swn_0                     | Up-to-date | No changes required |  *(19)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 15) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 15)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_m00e_0                    | Up-to-date | No changes required |  *(20)    | SC EXIT            | 1.0     | 1.0 (Rev. 14) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 14)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_m00s2a_0                  | Up-to-date | No changes required |  *(21)    | SmartConnect       | 1.0     | 1.0 (Rev. 9)  | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           | SC2AXI Bridge      | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 9)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_one_0                     | Up-to-date | No changes required |  *(22)    | Constant           | 1.1     | 1.1 (Rev. 8)  | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 8)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_psr_aclk_0                | Up-to-date | No changes required |  *(23)    | Processor System   | 5.0     | 5.0 (Rev. 14) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 14)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_s00a2s_0                  | Up-to-date | No changes required |  *(24)    | SmartConnect       | 1.0     | 1.0 (Rev. 9)  | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           | AXI2SC Bridge      | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 9)      |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_s00mmu_0                  | Up-to-date | No changes required |  *(25)    | SC MMU             | 1.0     | 1.0 (Rev. 12) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 12)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_s00sic_0                  | Up-to-date | No changes required |  *(26)    | SC SI_CONVERTER    | 1.0     | 1.0 (Rev. 12) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 12)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_s00tr_0                   | Up-to-date | No changes required |  *(27)    | SC                 | 1.0     | 1.0 (Rev. 10) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           | TRANSACTION_REGULA | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 10)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_sarn_0                    | Up-to-date | No changes required |  *(28)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 15) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 15)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_sawn_0                    | Up-to-date | No changes required |  *(29)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 15) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 15)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_sbn_0                     | Up-to-date | No changes required |  *(30)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 15) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 15)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_srn_0                     | Up-to-date | No changes required |  *(31)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 15) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 15)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_875e_swn_0                     | Up-to-date | No changes required |  *(32)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 15) | Included   | xczu5ev-sfvc784-1-e  |
+|                                   |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                   |            |                     |           |                    | 15)     |               |            |                      |
++-----------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+*(1) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(2) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(3) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(4) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/smartconnect_v1_0/doc/smartconnect_v1_0_changelog.txt
+*(5) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/smartconnect_v1_0/doc/smartconnect_v1_0_changelog.txt
+*(6) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/zynq_ultra_ps_e_v3_5/doc/zynq_ultra_ps_e_v3_5_changelog.txt
+*(7) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_exit_v1_0/doc/sc_exit_v1_0_changelog.txt
+*(8) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_sc2axi_v1_0/doc/sc_sc2axi_v1_0_changelog.txt
+*(9) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(10) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(11) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_axi2sc_v1_0/doc/sc_axi2sc_v1_0_changelog.txt
+*(12) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_mmu_v1_0/doc/sc_mmu_v1_0_changelog.txt
+*(13) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_si_converter_v1_0/doc/sc_si_converter_v1_0_changelog.txt
+*(14) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_transaction_regulator_v1_0/doc/sc_transaction_regulator_v1_0_changelog.txt
+*(15) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(16) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(17) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(18) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(19) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(20) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_exit_v1_0/doc/sc_exit_v1_0_changelog.txt
+*(21) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_sc2axi_v1_0/doc/sc_sc2axi_v1_0_changelog.txt
+*(22) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(23) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(24) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_axi2sc_v1_0/doc/sc_axi2sc_v1_0_changelog.txt
+*(25) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_mmu_v1_0/doc/sc_mmu_v1_0_changelog.txt
+*(26) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_si_converter_v1_0/doc/sc_si_converter_v1_0_changelog.txt
+*(27) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_transaction_regulator_v1_0/doc/sc_transaction_regulator_v1_0_changelog.txt
+*(28) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(29) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(30) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(31) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(32) /data/tools/Xilinx/Vivado/2023.2/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+
+

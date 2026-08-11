@@ -1,0 +1,2 @@
+M8_BLACKBOX_GATE PASS stage=board_post_route count=0
+all_blackboxes 0

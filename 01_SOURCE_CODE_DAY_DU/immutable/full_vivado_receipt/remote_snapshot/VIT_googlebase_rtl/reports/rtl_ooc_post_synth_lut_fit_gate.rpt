@@ -1,0 +1,2 @@
+M8_CLB_LUT_FIT PASS stage=rtl_ooc_post_synth used=101131 available=117120 headroom=15989
+SOURCE_REPORT /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_standalone_post_synth_utilization.rpt

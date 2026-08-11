@@ -1,0 +1,10 @@
+vit_phase_e_npu* 1
+  u_core/u_npu
+vit_phase_e_axi_wrapper* 1
+  u_core
+vit_phase_e_axi_mem_adapter* 1
+  u_core/u_mem_adapter
+vit_layer_param_table* 1
+  u_core/u_layer_param_table
+vit_fp32_mul_comb_nodsp* 1
+  u_core/u_npu/u_engine/u_engine_shared_multiplier

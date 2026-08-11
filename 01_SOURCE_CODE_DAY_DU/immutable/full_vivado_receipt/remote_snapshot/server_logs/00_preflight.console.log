@@ -1,0 +1,26 @@
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source scripts/server/00_preflight.tcl -notrace
+M8_RECEIPT_CLOSURE_PASS receipts=6 entries=658 sidecars=3 payload_replay=FULL
+M8_METADATA_PREFLIGHT_PASS sources=80 ordered=db4e84bbe7b28dcccf4d5e574027be06b5162ae9789e0f2ef0ab2dcfb0fffb7e filelist=88166c76fac96e7f4b59f486a3d5867a94001e6d72014ad7187b5e4de40f3524 ip=0x0001000D abi=v1.13 parent=M7S8 receipts=BOUND full_vivado=PENDING bit_xsa=NOT_GENERATED
+M8_DEVELOPMENT_MANIFEST_PASS entries=409
+M8_DEVELOPMENT_MANIFEST_SHA256=67c18532e3bb16b24ec6983f99cc54a3ffafb05fe6c02cf0385465c316b31078
+M8_DEVELOPMENT_PREFLIGHT_PASS status=DEVELOPMENT_UNSEALED seal=PENDING_M8_SEAL
+PASS: M8 DEVELOPMENT_UNSEALED source manifest is valid: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/M8_DEVELOPMENT_SHA256SUMS.txt
+PASS: Vivado version is 2023.2
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1330.156 ; gain = 0.027 ; free physical = 229667 ; free virtual = 246462
+INFO: opened temporary in-memory project for catalog checks
+INFO: closed temporary in-memory catalog project
+PASS: FPGA part, board part and required IP catalog are present
+PASS: M8 DEVELOPMENT_UNSEALED Vivado server preflight completed
+  bundle : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2
+  RTL    : 80 production files
+  part   : xczu5ev-sfvc784-1-e
+  board  : digilentinc.com:gzu_5ev:part0:1.1
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  9 03:22:10 2026...

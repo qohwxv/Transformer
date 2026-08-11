@@ -1,0 +1,63 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 2 tb_vit_phase_e_engine_axi -s tb_vit_phase_e_engine_axi_snapshot 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'profile_events' remains unconnected for this instance [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_engine_axi.sv:180]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.vit_phase_e_pkg
+Compiling package work.vit_fp32_pkg
+Compiling module work.vit_fp32_mul_comb_nodsp
+Compiling module work.vit_fp32_add_comb
+Compiling module work.vit_phase_e_command_controller
+Compiling module work.vit_phase_e_engine_dispatch_defa...
+Compiling module work.vit_gemm_activation_panel_cache_...
+Compiling module work.vit_gemm_bias_cache_default
+Compiling module work.vit_gemm_memory_address_context_...
+Compiling module work.vit_phase_e_read_address_router_...
+Compiling module work.vit_phase_e_write_address_router...
+Compiling module work.vit_phase_e_memory_frontend_defa...
+Compiling module work.vit_gemm_dual_mode_array(ARRAY_R...
+Compiling module work.vit_lane_mask
+Compiling module work.vit_vector_engine_fp32(USE_EXTER...
+Compiling module work.vit_u32_mul_iterative_nodsp
+Compiling module work.vit_layout_descriptor_validator
+Compiling module work.vit_layout_address_generator
+Compiling module work.vit_layout_engine
+Compiling module work.vit_fp32_recip_u32_serial
+Compiling module work.vit_layernorm_engine_fp32(USE_EX...
+Compiling module work.vit_fp32_compare
+Compiling module work.vit_fp32_to_u32_floor_comb
+Compiling module work.vit_fp32_from_u32_comb
+Compiling module work.vit_fp32_scale_pow2_down_comb
+Compiling module work.vit_softmax_engine_fp32(USE_EXTE...
+Compiling module work.vit_fp32_gelu_serial(USE_EXTERNA...
+Compiling module work.vit_gelu_engine_fp32(USE_EXTERNA...
+Compiling module work.vit_argmax_engine_fp32
+Compiling module work.vit_phase_e_engine_top(SCRATCH_W...
+Compiling module work.vit_phase_e_axi_mem_adapter_defa...
+Compiling module work.vit_axi_ddr_model_128(MODEL_WORD...
+Compiling module work.tb_vit_phase_e_engine_axi
+Built simulation snapshot tb_vit_phase_e_engine_axi_snapshot
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_vit_phase_e_engine_axi_snapshot/xsim_script.tcl
+# xsim {tb_vit_phase_e_engine_axi_snapshot} -autoloadwcfg -tclbatch {/tmp/vit_server_xsim.gY0E4B/run_all.tcl}
+Time resolution is 1 ps
+source /tmp/vit_server_xsim.gY0E4B/run_all.tcl
+## run all
+VIT_PHASE_E_ENGINE_AXI_TEST_PASS checks=34 reads=34 writes=17
+$finish called at time : 3736 ns : File "/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/axi/tb_vit_phase_e_engine_axi.sv" Line 508
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Aug  9 03:22:55 2026...

@@ -1,0 +1,1489 @@
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source scripts/server/20_run_ooc_synth.tcl -notrace
+INFO: require_bundle_manifest routes to M8 DEVELOPMENT_UNSEALED verification
+M8_RECEIPT_CLOSURE_PASS receipts=6 entries=658 sidecars=3 payload_replay=FULL
+M8_METADATA_PREFLIGHT_PASS sources=80 ordered=db4e84bbe7b28dcccf4d5e574027be06b5162ae9789e0f2ef0ab2dcfb0fffb7e filelist=88166c76fac96e7f4b59f486a3d5867a94001e6d72014ad7187b5e4de40f3524 ip=0x0001000D abi=v1.13 parent=M7S8 receipts=BOUND full_vivado=PENDING bit_xsa=NOT_GENERATED
+M8_DEVELOPMENT_MANIFEST_PASS entries=409
+M8_DEVELOPMENT_MANIFEST_SHA256=67c18532e3bb16b24ec6983f99cc54a3ffafb05fe6c02cf0385465c316b31078
+M8_DEVELOPMENT_PREFLIGHT_PASS status=DEVELOPMENT_UNSEALED seal=PENDING_M8_SEAL
+PASS: M8 DEVELOPMENT_UNSEALED source manifest is valid: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/M8_DEVELOPMENT_SHA256SUMS.txt
+PASS: Vivado version is 2023.2
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1318.117 ; gain = 38.840 ; free physical = 229668 ; free virtual = 246463
+INFO: opened temporary in-memory project for catalog checks
+INFO: closed temporary in-memory catalog project
+PASS: FPGA part, board part and required IP catalog are present
+Synthesizing vit_phase_e_axi_bd_wrapper with MAX_DSP=0 FLATTEN_HIERARCHY=none
+Command: synth_design -top vit_phase_e_axi_bd_wrapper -part xczu5ev-sfvc784-1-e -mode out_of_context -flatten_hierarchy none -max_dsp 0
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5ev'
+INFO: [Vivado_Tcl 4-287] User specified maximum number of block DSP allowed in design is 0
+INFO: [Device 21-403] Loading part xczu5ev-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1882236
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2576.340 ; gain = 285.777 ; free physical = 228112 ; free virtual = 244907
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_axi_bd_wrapper' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/top/vit_phase_e_axi_bd_wrapper.v:8]
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_axi_wrapper' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/vit_phase_e_axi_wrapper.sv:25]
+	Parameter AXI_ADDR_WIDTH bound to: 40 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter PE_LANES bound to: 16 - type: integer 
+	Parameter FP16_STREAMS bound to: 8 - type: integer 
+	Parameter VECTOR_LANES bound to: 16 - type: integer 
+	Parameter E05_PATCH_COUNT bound to: 196 - type: integer 
+	Parameter E05_TOKEN_COUNT bound to: 197 - type: integer 
+	Parameter E05_HIDDEN_SIZE bound to: 768 - type: integer 
+	Parameter E05_HEAD_COUNT bound to: 12 - type: integer 
+	Parameter E05_HEAD_SIZE bound to: 64 - type: integer 
+	Parameter E05_INTERMEDIATE_SIZE bound to: 3072 - type: integer 
+	Parameter E05_CLASS_COUNT bound to: 1000 - type: integer 
+	Parameter E05_ENCODER_LAYERS bound to: 4'b1100 
+	Parameter E05_ATTN_SCALE_FP32 bound to: 1040187392 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_perf_counters' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_perf_counters.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_perf_counters' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_perf_counters.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_profile_counters' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_profile_counters.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_profile_counters' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_profile_counters.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_m5_axi_counters' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_m5_axi_counters.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_m5_axi_counters' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_m5_axi_counters.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_m7_overlap_counters' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_m7_overlap_counters.sv:8]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter PE_LANES bound to: 16 - type: integer 
+	Parameter STREAMS bound to: 8 - type: integer 
+	Parameter OPERAND_BANKS bound to: 2 - type: integer 
+	Parameter RESULT_FIFO_DEPTH bound to: 2 - type: integer 
+	Parameter GENERATION_BITS bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_m7_overlap_counters' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_phase_e_m7_overlap_counters.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'vit_axi_lite_control_regs' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_axi_lite_control_regs.sv:9]
+	Parameter AXI_ADDR_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_axi_lite_control_regs' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_axi_lite_control_regs.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'vit_layer_param_table' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_layer_param_table.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'vit_layer_param_table' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_layer_param_table.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'vit_layer_param_loader' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_layer_param_loader.sv:10]
+INFO: [Synth 8-226] default block is never used [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_layer_param_loader.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'vit_layer_param_loader' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/control/vit_layer_param_loader.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_npu' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_npu.sv:6]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter PE_LANES bound to: 16 - type: integer 
+	Parameter FP16_STREAMS bound to: 8 - type: integer 
+	Parameter VECTOR_LANES bound to: 16 - type: integer 
+	Parameter E05_PATCH_COUNT bound to: 196 - type: integer 
+	Parameter E05_TOKEN_COUNT bound to: 197 - type: integer 
+	Parameter E05_HIDDEN_SIZE bound to: 768 - type: integer 
+	Parameter E05_HEAD_COUNT bound to: 12 - type: integer 
+	Parameter E05_HEAD_SIZE bound to: 64 - type: integer 
+	Parameter E05_INTERMEDIATE_SIZE bound to: 3072 - type: integer 
+	Parameter E05_CLASS_COUNT bound to: 1000 - type: integer 
+	Parameter E05_ENCODER_LAYERS bound to: 4'b1100 
+	Parameter E05_ATTN_SCALE_FP32 bound to: 1040187392 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_sequencer' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/control/vit_phase_e_sequencer.sv:16]
+	Parameter E04_TOKEN_COUNT bound to: 197 - type: integer 
+	Parameter E04_HIDDEN_SIZE bound to: 768 - type: integer 
+	Parameter E04_CLASS_COUNT bound to: 1000 - type: integer 
+	Parameter E05_PATCH_COUNT bound to: 196 - type: integer 
+	Parameter E05_TOKEN_COUNT bound to: 197 - type: integer 
+	Parameter E05_HIDDEN_SIZE bound to: 768 - type: integer 
+	Parameter E05_HEAD_COUNT bound to: 12 - type: integer 
+	Parameter E05_HEAD_SIZE bound to: 64 - type: integer 
+	Parameter E05_INTERMEDIATE_SIZE bound to: 3072 - type: integer 
+	Parameter E05_CLASS_COUNT bound to: 1000 - type: integer 
+	Parameter E05_ENCODER_LAYERS bound to: 4'b1100 
+	Parameter E05_ATTN_SCALE_FP32 bound to: 1040187392 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_sequencer' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/control/vit_phase_e_sequencer.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_engine_top' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_engine_top.sv:15]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter PE_LANES bound to: 16 - type: integer 
+	Parameter FP16_STREAMS bound to: 8 - type: integer 
+	Parameter VECTOR_LANES bound to: 16 - type: integer 
+	Parameter SCRATCH_WORDS bound to: 1990656 - type: integer 
+	Parameter INPUT_WORDS bound to: 150528 - type: integer 
+	Parameter PARAM_WORDS bound to: 2363392 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vit_fp32_mul_comb_nodsp' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_mul_comb_nodsp.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'vit_fp32_mul_comb_nodsp' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_mul_comb_nodsp.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'vit_fp32_add_comb' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_add_comb.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'vit_fp32_add_comb' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_add_comb.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_command_controller' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_command_controller.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_command_controller' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_command_controller.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_engine_dispatch' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_engine_dispatch.sv:8]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter PE_LANES bound to: 16 - type: integer 
+	Parameter VECTOR_LANES bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_engine_dispatch' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_engine_dispatch.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_memory_frontend' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_memory_frontend.sv:9]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter PE_LANES bound to: 16 - type: integer 
+	Parameter VECTOR_LANES bound to: 16 - type: integer 
+	Parameter GEMM_A_CACHE_DEPTH_WORDS bound to: 3072 - type: integer 
+	Parameter GEMM_BIAS_CACHE_DEPTH_WORDS bound to: 3072 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vit_gemm_activation_panel_cache' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_activation_panel_cache.sv:11]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter DEPTH_WORDS_PER_ROW bound to: 3072 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_gemm_activation_panel_cache' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_activation_panel_cache.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'vit_gemm_bias_cache' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_bias_cache.sv:8]
+	Parameter DEPTH_WORDS bound to: 3072 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_gemm_bias_cache' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_bias_cache.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'vit_gemm_memory_address_context' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_gemm_memory_address_context.sv:10]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter PE_LANES bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_gemm_memory_address_context' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_gemm_memory_address_context.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_read_address_router' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_read_address_router.sv:7]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter PE_LANES bound to: 16 - type: integer 
+	Parameter VECTOR_LANES bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_read_address_router' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_read_address_router.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_write_address_router' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_write_address_router.sv:6]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter VECTOR_LANES bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_write_address_router' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_write_address_router.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_memory_frontend' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_memory_frontend.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'vit_gemm_dual_mode_array' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_dual_mode_array.sv:11]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter PE_LANES bound to: 16 - type: integer 
+	Parameter FP16_STREAMS bound to: 8 - type: integer 
+	Parameter USE_EXTERNAL_MUL bound to: 1 - type: integer 
+	Parameter USE_EXTERNAL_ADD bound to: 1 - type: integer 
+	Parameter INCLUDE_LEGACY_GEMM bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vit_gemm_fp16_parallel_scheduler' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_fp16_parallel_scheduler.sv:14]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter PE_LANES bound to: 16 - type: integer 
+	Parameter FP16_STREAMS bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vit_gemm_result_fifo' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_result_fifo.sv:17]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter GENERATION_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_gemm_result_fifo' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_result_fifo.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'vit_gemm_operand_router' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_operand_router.sv:9]
+	Parameter ARRAY_ROWS bound to: 8 - type: integer 
+	Parameter ARRAY_COLS bound to: 2 - type: integer 
+	Parameter PE_LANES bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_gemm_operand_router' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_operand_router.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'vit_gemm_fp16_stream_array' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_fp16_stream_array.sv:19]
+	Parameter STREAMS bound to: 8 - type: integer 
+	Parameter FLUSH_SUBNORMALS bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vit_fp32_to_fp16_rne_gradual' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp32_to_fp16_rne_gradual.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'vit_fp32_to_fp16_rne_gradual' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp32_to_fp16_rne_gradual.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'vit_fp16_dot_stream_csa_nodsp' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp16_dot_stream_csa_nodsp.sv:14]
+	Parameter ACC_WIDTH bound to: 93 - type: integer 
+	Parameter ACC_LSB bound to: -48 - type: integer 
+	Parameter K_MAX_TERMS bound to: 3072 - type: integer 
+	Parameter FLUSH_SUBNORMALS bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vit_fp16_mul_to_fp32_comb_nodsp' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp16_mul_to_fp32_comb_nodsp.sv:17]
+	Parameter FLUSH_SUBNORMALS bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_fp16_mul_to_fp32_comb_nodsp' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp16_mul_to_fp32_comb_nodsp.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'vit_fp32_product_to_fixed_exact' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp32_product_to_fixed_exact.sv:10]
+	Parameter ACC_WIDTH bound to: 93 - type: integer 
+	Parameter ACC_LSB bound to: -48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_fp32_product_to_fixed_exact' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp32_product_to_fixed_exact.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'vit_fixed_analyze' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fixed_analyze.sv:6]
+	Parameter ACC_WIDTH bound to: 93 - type: integer 
+	Parameter INDEX_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_fixed_analyze' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fixed_analyze.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'vit_fixed_normalized_to_fp32_rne' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fixed_normalized_to_fp32_rne.sv:6]
+	Parameter ACC_WIDTH bound to: 93 - type: integer 
+	Parameter ACC_LSB bound to: -48 - type: integer 
+	Parameter INDEX_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_fixed_normalized_to_fp32_rne' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fixed_normalized_to_fp32_rne.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'vit_fp16_dot_stream_csa_nodsp' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp16/vit_fp16_dot_stream_csa_nodsp.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'vit_gemm_fp16_stream_array' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_fp16_stream_array.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'vit_gemm_fp16_parallel_scheduler' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_fp16_parallel_scheduler.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'vit_gemm_dual_mode_array' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gemm/vit_gemm_dual_mode_array.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'vit_vector_engine_fp32' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/vector/vit_vector_engine_fp32.sv:25]
+	Parameter LANES bound to: 16 - type: integer 
+	Parameter USE_EXTERNAL_MUL bound to: 1 - type: integer 
+	Parameter USE_EXTERNAL_ADD bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vit_lane_mask' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/common/vit_lane_mask.sv:4]
+	Parameter LANES bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_lane_mask' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/common/vit_lane_mask.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vit_vector_engine_fp32' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/vector/vit_vector_engine_fp32.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'vit_layout_engine' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layout/vit_layout_engine.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'vit_layout_descriptor_validator' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layout/vit_layout_descriptor_validator.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'vit_u32_mul_iterative_nodsp' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/common/vit_u32_mul_iterative_nodsp.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'vit_u32_mul_iterative_nodsp' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/common/vit_u32_mul_iterative_nodsp.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'vit_layout_descriptor_validator' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layout/vit_layout_descriptor_validator.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'vit_layout_address_generator' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layout/vit_layout_address_generator.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'vit_layout_address_generator' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layout/vit_layout_address_generator.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'vit_layout_engine' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layout/vit_layout_engine.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'vit_layernorm_engine_fp32' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layernorm/vit_layernorm_engine_fp32.sv:20]
+	Parameter USE_EXTERNAL_MUL bound to: 1 - type: integer 
+	Parameter USE_EXTERNAL_ADD bound to: 1 - type: integer 
+	Parameter ENABLE_ROW_AFFINE_BUFFER bound to: 1 - type: integer 
+	Parameter ROW_AFFINE_BUFFER_DEPTH bound to: 1024 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vit_fp32_recip_u32_serial' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_recip_u32_serial.sv:8]
+INFO: [Synth 8-226] default block is never used [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_recip_u32_serial.sv:94]
+INFO: [Synth 8-6155] done synthesizing module 'vit_fp32_recip_u32_serial' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_recip_u32_serial.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'vit_layernorm_engine_fp32' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/layernorm/vit_layernorm_engine_fp32.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'vit_softmax_engine_fp32' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/softmax/vit_softmax_engine_fp32.sv:21]
+	Parameter USE_EXTERNAL_MUL bound to: 1 - type: integer 
+	Parameter USE_EXTERNAL_ADD bound to: 1 - type: integer 
+	Parameter ENABLE_ROW_EXP_BUFFER bound to: 1 - type: integer 
+	Parameter ROW_EXP_BUFFER_DEPTH bound to: 1024 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vit_fp32_compare' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_compare.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'vit_fp32_compare' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_compare.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'vit_fp32_to_u32_floor_comb' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_to_u32_floor_comb.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'vit_fp32_to_u32_floor_comb' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_to_u32_floor_comb.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'vit_fp32_from_u32_comb' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_from_u32_comb.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vit_fp32_from_u32_comb' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_from_u32_comb.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vit_fp32_scale_pow2_down_comb' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_scale_pow2_down_comb.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vit_fp32_scale_pow2_down_comb' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_scale_pow2_down_comb.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vit_softmax_engine_fp32' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/softmax/vit_softmax_engine_fp32.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'vit_gelu_engine_fp32' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gelu/vit_gelu_engine_fp32.sv:8]
+	Parameter LANES bound to: 16 - type: integer 
+	Parameter USE_EXTERNAL_MUL bound to: 1 - type: integer 
+	Parameter USE_EXTERNAL_ADD bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vit_fp32_gelu_serial' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gelu/vit_fp32_gelu_serial.sv:9]
+	Parameter USE_EXTERNAL_MUL bound to: 1 - type: integer 
+	Parameter USE_EXTERNAL_ADD bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_fp32_gelu_serial' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gelu/vit_fp32_gelu_serial.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'vit_gelu_engine_fp32' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/gelu/vit_gelu_engine_fp32.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'vit_argmax_engine_fp32' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/argmax/vit_argmax_engine_fp32.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'vit_argmax_engine_fp32' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/blocks/argmax/vit_argmax_engine_fp32.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_engine_top' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_engine_top.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_npu' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_npu.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'vit_phase_e_axi_mem_adapter' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/memory/vit_phase_e_axi_mem_adapter.sv:15]
+	Parameter AXI_ADDR_WIDTH bound to: 40 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_axi_mem_adapter' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/memory/vit_phase_e_axi_mem_adapter.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_axi_wrapper' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/vit_phase_e_axi_wrapper.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'vit_phase_e_axi_bd_wrapper' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/top/vit_phase_e_axi_bd_wrapper.v:8]
+WARNING: [Synth 8-6014] Unused sequential element active_job_reg[first_layer] was removed.  [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/control/vit_phase_e_sequencer.sv:971]
+WARNING: [Synth 8-3936] Found unconnected internal register 'normalized_quotient_reg' and it is trimmed from '64' to '23' bits. [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/leaf/fp32/vit_fp32_recip_u32_serial.sv:73]
+WARNING: [Synth 8-3936] Found unconnected internal register 'profile_command_reg[route][reserved]' and it is trimmed from '8' to '5' bits. [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/core/vit_phase_e_engine_top.sv:339]
+WARNING: [Synth 8-6014] Unused sequential element adapter_sequential.line_word_reg was removed.  [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/memory/vit_phase_e_axi_mem_adapter.sv:660]
+WARNING: [Synth 8-6014] Unused sequential element adapter_sequential.request_lane_reg was removed.  [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/memory/vit_phase_e_axi_mem_adapter.sv:756]
+WARNING: [Synth 8-6014] Unused sequential element adapter_sequential.final_fill_error_reg was removed.  [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/memory/vit_phase_e_axi_mem_adapter.sv:869]
+WARNING: [Synth 8-3936] Found unconnected internal register 'planned_second_address_wide_reg' and it is trimmed from '65' to '40' bits. [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/memory/vit_phase_e_axi_mem_adapter.sv:384]
+WARNING: [Synth 8-3936] Found unconnected internal register 'line_hit_delta_reg' and it is trimmed from '32' to '5' bits. [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/rtl/axi/memory/vit_phase_e_axi_mem_adapter.sv:430]
+WARNING: [Synth 8-7129] Port external_mul_result[31] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[30] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[29] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[28] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[27] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[26] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[25] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[24] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[23] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[22] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[21] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[20] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[19] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[18] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[17] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[16] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[15] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[14] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[13] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[12] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[11] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[10] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[9] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[8] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[7] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[6] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[5] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[4] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[3] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[2] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[1] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_mul_result[0] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[31] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[30] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[29] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[28] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[27] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[26] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[25] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[24] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[23] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[22] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[21] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[20] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[19] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[18] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[17] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[16] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[15] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[14] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[13] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[12] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[11] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[10] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[9] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[8] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[7] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[6] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[5] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[4] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[3] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[2] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[1] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port external_add_result[0] in module vit_gemm_dual_mode_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][31] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][30] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][29] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][28] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][27] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][26] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][25] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][24] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][23] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][22] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][21] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][20] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][19] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][18] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][17] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][16] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][15] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][14] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][13] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][12] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][11] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][10] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][9] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][8] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][7] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][6] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][5] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][4] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][3] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][2] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][1] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride4][0] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride3][31] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride3][30] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride3][29] in module vit_phase_e_write_address_router is either unconnected or has no load
+WARNING: [Synth 8-7129] Port active_cmd[stride3][28] in module vit_phase_e_write_address_router is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2957.637 ; gain = 667.074 ; free physical = 227674 ; free virtual = 244476
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2957.637 ; gain = 667.074 ; free physical = 227674 ; free virtual = 244476
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2957.637 ; gain = 667.074 ; free physical = 227674 ; free virtual = 244476
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2969.637 ; gain = 0.000 ; free physical = 227668 ; free virtual = 244470
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/standalone_axi_50mhz.xdc]
+Finished Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/standalone_axi_50mhz.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/standalone_axi_50mhz.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vit_phase_e_axi_bd_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vit_phase_e_axi_bd_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc]
+Finished Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3582.652 ; gain = 0.000 ; free physical = 227189 ; free virtual = 243991
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.28 . Memory (MB): peak = 3582.688 ; gain = 0.000 ; free physical = 227189 ; free virtual = 243991
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:41 . Memory (MB): peak = 3582.688 ; gain = 1292.125 ; free physical = 227155 ; free virtual = 243957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vit_gemm_fp16_stream_array'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vit_gemm_fp16_parallel_scheduler'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vit_layout_descriptor_validator'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vit_layout_engine'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vit_fp32_recip_u32_serial'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vit_fp32_gelu_serial'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vit_argmax_engine_fp32'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               LOAD_IDLE |                               00 |                               00
+                LOAD_RUN |                               01 |                               01
+           LOAD_RESPONSE |                               10 |                               10
+       LOAD_WAIT_RELEASE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vit_layer_param_loader'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                SEQ_IDLE |                              001 |                              000
+          SEQ_LOAD_LAYER |                              100 |                              001
+               SEQ_ISSUE |                              011 |                              010
+        SEQ_WAIT_COMMAND |                              110 |                              011
+          SEQ_CHECKPOINT |                              101 |                              100
+             SEQ_ADVANCE |                              010 |                              101
+                SEQ_DONE |                              000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vit_phase_e_sequencer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                              001 |                              000
+    STATE_WAIT_PARAMETER |                              100 |                              001
+            STATE_LAUNCH |                              011 |                              010
+           STATE_EXECUTE |                              010 |                              011
+            STATE_REPORT |                              000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vit_phase_e_command_controller'
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[7].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[7].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[7].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[6].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[6].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[6].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[5].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[5].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[5].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[4].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[4].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[4].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[3].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[3].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[3].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[2].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[2].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[2].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[1].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[1].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[1].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[0].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[0].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "vit_gemm_activation_panel_cache:/gen_row_bank[0].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "vit_gemm_bias_cache:/bias_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "vit_gemm_bias_cache:/bias_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "vit_gemm_bias_cache:/bias_memory_reg"
+INFO: [Synth 8-6904] The RAM "vit_gemm_result_fifo:/entry_memory_reg" of size (depth=2 x width=692) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                           000001 |                              000
+        STATE_WAIT_CHUNK |                           100000 |                              001
+              STATE_FEED |                           010000 |                              010
+      STATE_WAIT_RESULTS |                           001000 |                              011
+              STATE_BIAS |                           000100 |                              100
+            STATE_OUTPUT |                           000010 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'vit_gemm_fp16_stream_array'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                     000000100000 |                             0000
+   STATE_PACK_WAIT_FIRST |                     000010000000 |                             0101
+   STATE_PACK_START_TILE |                     100000000000 |                             0110
+   STATE_PACK_SEND_CHUNK |                     001000000000 |                             1000
+  STATE_PACK_WAIT_RESULT |                     010000000000 |                             1001
+ STATE_PACK_DRAIN_RESULT |                     000001000000 |                             1010
+   STATE_PACK_WAIT_PANEL |                     000100000000 |                             0111
+     STATE_REQUEST_CHUNK |                     000000000100 |                             0001
+        STATE_START_TILE |                     000000010000 |                             0010
+        STATE_SEND_CHUNK |                     000000001000 |                             0011
+       STATE_WAIT_RESULT |                     000000000001 |                             0100
+              STATE_DONE |                     000000000010 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'vit_gemm_fp16_parallel_scheduler'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                             0000 |                             0000
+     STATE_TOTAL01_START |                             0001 |                             0001
+      STATE_TOTAL01_WAIT |                             0010 |                             0010
+      STATE_TOTAL2_START |                             0011 |                             0011
+       STATE_TOTAL2_WAIT |                             0100 |                             0100
+     STATE_STRIDE0_START |                             0101 |                             0101
+      STATE_STRIDE0_WAIT |                             0110 |                             0110
+     STATE_STRIDE1_START |                             0111 |                             0111
+      STATE_STRIDE1_WAIT |                             1000 |                             1000
+     STATE_STRIDE2_START |                             1001 |                             1001
+      STATE_STRIDE2_WAIT |                             1010 |                             1010
+       STATE_FINAL_CHECK |                             1011 |                             1011
+              STATE_DONE |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vit_layout_descriptor_validator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                            00001 |                              000
+          STATE_VALIDATE |                            10000 |                              001
+           STATE_REQUEST |                            01000 |                              010
+             STATE_WRITE |                            00100 |                              011
+              STATE_DONE |                            00010 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'vit_layout_engine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                               00
+            STATE_DIVIDE |                               01 |                               01
+             STATE_ROUND |                               10 |                               10
+              STATE_DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vit_fp32_recip_u32_serial'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                            00000 |                            00000
+       STATE_SCALE_VALUE |                            00001 |                            00001
+   STATE_DENOMINATOR_MUL |                            00010 |                            00010
+   STATE_DENOMINATOR_ADD |                            00011 |                            00011
+   STATE_RECIPROCAL_INIT |                            00100 |                            00100
+STATE_RECIPROCAL_PRODUCT |                            00101 |                            00101
+STATE_RECIPROCAL_CORRECTION |                            00110 |                            00110
+STATE_RECIPROCAL_ESTIMATE |                            00111 |                            00111
+     STATE_GELU_POLY_MUL |                            01000 |                            01000
+            STATE_SQUARE |                            01001 |                            01010
+         STATE_EXP_SCALE |                            01010 |                            01011
+STATE_EXP_INITIAL_PRODUCT |                            01011 |                            01100
+STATE_EXP_INITIAL_REMAINDER |                            01100 |                            01101
+STATE_EXP_CORRECTED_PRODUCT |                            01101 |                            01110
+STATE_EXP_NEGATIVE_REMAINDER |                            01110 |                            01111
+STATE_EXP_POSITIVE_REMAINDER |                            01111 |                            10000
+      STATE_EXP_POLY_MUL |                            10000 |                            10001
+      STATE_EXP_POLY_ADD |                            10001 |                            10010
+    STATE_EXP_SCALE_DOWN |                            10010 |                            10011
+    STATE_FINAL_POLY_EXP |                            10011 |                            10100
+     STATE_FINAL_ERF_SUB |                            10100 |                            10101
+    STATE_FINAL_ONE_PLUS |                            10101 |                            10110
+        STATE_FINAL_HALF |                            10110 |                            10111
+      STATE_FINAL_RESULT |                            10111 |                            11000
+              STATE_DONE |                            11000 |                            11001
+     STATE_GELU_POLY_ADD |                            11001 |                            01001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vit_fp32_gelu_serial'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                              000
+              STATE_SCAN |                               01 |                              001
+            STATE_RESULT |                               10 |                              010
+              STATE_DONE |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vit_argmax_engine_fp32'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:22 ; elapsed = 00:01:19 . Memory (MB): peak = 3586.570 ; gain = 1296.008 ; free physical = 219957 ; free virtual = 236769
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   97 Bit       Adders := 8     
+	   4 Input   96 Bit       Adders := 3     
+	   2 Input   96 Bit       Adders := 2     
+	   2 Input   93 Bit       Adders := 24    
+	   2 Input   66 Bit       Adders := 9     
+	   9 Input   66 Bit       Adders := 2     
+	  17 Input   66 Bit       Adders := 1     
+	   2 Input   65 Bit       Adders := 126   
+	   3 Input   65 Bit       Adders := 1     
+	   2 Input   64 Bit       Adders := 11    
+	   3 Input   64 Bit       Adders := 2     
+	   2 Input   40 Bit       Adders := 1     
+	   3 Input   34 Bit       Adders := 62    
+	   4 Input   34 Bit       Adders := 1     
+	   3 Input   33 Bit       Adders := 4     
+	   2 Input   33 Bit       Adders := 14    
+	   2 Input   32 Bit       Adders := 138   
+	   3 Input   32 Bit       Adders := 4     
+	   2 Input   28 Bit       Adders := 2     
+	   2 Input   27 Bit       Adders := 2     
+	   3 Input   27 Bit       Adders := 2     
+	   2 Input   25 Bit       Adders := 23    
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 18    
+	   2 Input    9 Bit       Adders := 14    
+	   3 Input    9 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 23    
+	   4 Input    8 Bit       Adders := 8     
+	 129 Input    8 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 10    
+	  65 Input    7 Bit       Adders := 1     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 26    
+	   3 Input    6 Bit       Adders := 1     
+	  33 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 35    
+	  17 Input    5 Bit       Adders := 2     
+	   9 Input    5 Bit       Adders := 4     
+	   3 Input    5 Bit       Adders := 2     
+	   3 Input    4 Bit       Adders := 2     
+	   9 Input    4 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 34    
+	   8 Input    4 Bit       Adders := 1     
+	   5 Input    3 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 18    
+	   3 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 22    
+	   3 Input    2 Bit       Adders := 4     
++---XORs : 
+	   3 Input     93 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	             4096 Bit    Registers := 3     
+	             1024 Bit    Registers := 4     
+	              512 Bit    Registers := 10    
+	              256 Bit    Registers := 3     
+	              192 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               93 Bit    Registers := 56    
+	               66 Bit    Registers := 12    
+	               64 Bit    Registers := 284   
+	               44 Bit    Registers := 2     
+	               40 Bit    Registers := 3     
+	               32 Bit    Registers := 293   
+	               23 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 30    
+	               12 Bit    Registers := 9     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 26    
+	                7 Bit    Registers := 10    
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 23    
+	                3 Bit    Registers := 12    
+	                2 Bit    Registers := 33    
+	                1 Bit    Registers := 528   
++---Multipliers : 
+	              24x24  Multipliers := 1     
+	              11x11  Multipliers := 8     
++---RAMs : 
+	              96K Bit	(3072 X 32 bit)          RAMs := 9     
+	              32K Bit	(1024 X 32 bit)          RAMs := 4     
+	              24K Bit	(256 X 96 bit)          RAMs := 1     
+	               6K Bit	(192 X 32 bit)          RAMs := 1     
+	               1K Bit	(2 X 692 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input 4096 Bit        Muxes := 24    
+	  14 Input 4096 Bit        Muxes := 2     
+	   8 Input 4096 Bit        Muxes := 1     
+	   2 Input 1024 Bit        Muxes := 10    
+	  14 Input 1024 Bit        Muxes := 2     
+	   8 Input 1024 Bit        Muxes := 1     
+	   2 Input  512 Bit        Muxes := 28    
+	  14 Input  512 Bit        Muxes := 5     
+	   8 Input  512 Bit        Muxes := 3     
+	   6 Input  512 Bit        Muxes := 2     
+	   7 Input  512 Bit        Muxes := 6     
+	   4 Input  512 Bit        Muxes := 1     
+	   2 Input  256 Bit        Muxes := 4     
+	  16 Input  256 Bit        Muxes := 1     
+	   6 Input  256 Bit        Muxes := 1     
+	   2 Input  192 Bit        Muxes := 2     
+	   2 Input   96 Bit        Muxes := 10    
+	   7 Input   96 Bit        Muxes := 4     
+	   8 Input   96 Bit        Muxes := 4     
+	   2 Input   93 Bit        Muxes := 56    
+	   4 Input   66 Bit        Muxes := 1     
+	   2 Input   66 Bit        Muxes := 20    
+	  13 Input   66 Bit        Muxes := 1     
+	   2 Input   65 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 61    
+	   3 Input   64 Bit        Muxes := 6     
+	   8 Input   64 Bit        Muxes := 1     
+	  14 Input   64 Bit        Muxes := 2     
+	   4 Input   64 Bit        Muxes := 6     
+	   2 Input   40 Bit        Muxes := 2     
+	   2 Input   35 Bit        Muxes := 1     
+	   2 Input   34 Bit        Muxes := 3     
+	   2 Input   33 Bit        Muxes := 7     
+	  63 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 397   
+	   4 Input   32 Bit        Muxes := 20    
+	  14 Input   32 Bit        Muxes := 1     
+	  12 Input   32 Bit        Muxes := 5     
+	  32 Input   32 Bit        Muxes := 2     
+	   8 Input   32 Bit        Muxes := 3     
+	  23 Input   32 Bit        Muxes := 5     
+	  26 Input   32 Bit        Muxes := 4     
+	   7 Input   32 Bit        Muxes := 20    
+	  13 Input   32 Bit        Muxes := 2     
+	   6 Input   32 Bit        Muxes := 5     
+	   5 Input   32 Bit        Muxes := 2     
+	  30 Input   32 Bit        Muxes := 7     
+	   9 Input   32 Bit        Muxes := 1     
+	  25 Input   32 Bit        Muxes := 4     
+	  21 Input   32 Bit        Muxes := 1     
+	  11 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 1     
+	   3 Input   31 Bit        Muxes := 2     
+	   2 Input   31 Bit        Muxes := 3     
+	   4 Input   30 Bit        Muxes := 1     
+	  21 Input   30 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 1     
+	   6 Input   30 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 6     
+	  22 Input   26 Bit        Muxes := 8     
+	   2 Input   25 Bit        Muxes := 4     
+	   2 Input   24 Bit        Muxes := 9     
+	   2 Input   23 Bit        Muxes := 18    
+	   2 Input   21 Bit        Muxes := 2     
+	   6 Input   21 Bit        Muxes := 2     
+	   8 Input   21 Bit        Muxes := 1     
+	   4 Input   21 Bit        Muxes := 1     
+	  21 Input   21 Bit        Muxes := 1     
+	   4 Input   20 Bit        Muxes := 3     
+	  21 Input   20 Bit        Muxes := 2     
+	   8 Input   20 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   4 Input   19 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 3     
+	   4 Input   18 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 79    
+	  14 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 10    
+	   6 Input   16 Bit        Muxes := 5     
+	   4 Input   16 Bit        Muxes := 1     
+	   7 Input   16 Bit        Muxes := 1     
+	   4 Input   14 Bit        Muxes := 2     
+	  21 Input   14 Bit        Muxes := 2     
+	   3 Input   13 Bit        Muxes := 1     
+	  21 Input   13 Bit        Muxes := 1     
+	   4 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	  27 Input   12 Bit        Muxes := 1     
+	   3 Input   12 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 2     
+	  21 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 17    
+	   8 Input   11 Bit        Muxes := 1     
+	   3 Input   11 Bit        Muxes := 1     
+	   4 Input   11 Bit        Muxes := 1     
+	   8 Input   10 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 12    
+	   4 Input   10 Bit        Muxes := 5     
+	   6 Input   10 Bit        Muxes := 7     
+	  21 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 7     
+	   2 Input    8 Bit        Muxes := 64    
+	   6 Input    8 Bit        Muxes := 4     
+	   3 Input    8 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	   7 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 3     
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 3     
+	  94 Input    7 Bit        Muxes := 8     
+	  63 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 38    
+	   8 Input    6 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 108   
+	  14 Input    5 Bit        Muxes := 2     
+	  27 Input    5 Bit        Muxes := 2     
+	   3 Input    5 Bit        Muxes := 36    
+	  26 Input    5 Bit        Muxes := 1     
+	   8 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 3     
+	   7 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 30    
+	   5 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 8     
+	   7 Input    4 Bit        Muxes := 4     
+	  13 Input    4 Bit        Muxes := 1     
+	  16 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 7     
+	   4 Input    3 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 19    
+	   6 Input    3 Bit        Muxes := 2     
+	  26 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 2     
+	  16 Input    3 Bit        Muxes := 3     
+	  25 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	  28 Input    3 Bit        Muxes := 1     
+	  21 Input    3 Bit        Muxes := 3     
+	  11 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 16    
+	   4 Input    2 Bit        Muxes := 15    
+	   2 Input    2 Bit        Muxes := 67    
+	  16 Input    2 Bit        Muxes := 3     
+	  12 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	  26 Input    2 Bit        Muxes := 1     
+	  30 Input    2 Bit        Muxes := 1     
+	  25 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 5     
+	   7 Input    2 Bit        Muxes := 3     
+	  21 Input    2 Bit        Muxes := 1     
+	  11 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 1799  
+	   4 Input    1 Bit        Muxes := 35    
+	   7 Input    1 Bit        Muxes := 27    
+	   8 Input    1 Bit        Muxes := 11    
+	  14 Input    1 Bit        Muxes := 20    
+	   9 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 15    
+	   3 Input    1 Bit        Muxes := 5     
+	  12 Input    1 Bit        Muxes := 23    
+	  26 Input    1 Bit        Muxes := 27    
+	   5 Input    1 Bit        Muxes := 15    
+	  13 Input    1 Bit        Muxes := 7     
+	  30 Input    1 Bit        Muxes := 27    
+	  25 Input    1 Bit        Muxes := 27    
+	  21 Input    1 Bit        Muxes := 2     
+	  11 Input    1 Bit        Muxes := 57    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "u_core/u_npu/u_engine/u_gemm/\gen_fp16.u_fp16 /i_1/u_result_fifo/entry_memory_reg" of size (depth=2 x width=692) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "u_core/u_npu/u_engine/u_gemm/\gen_fp16.u_fp16 /i_1/u_result_fifo/entry_memory_reg" of size (depth=2 x width=692) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "vit_phase_e_profile_counters__GB0/trace_memory_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "vit_phase_e_profile_counters__GB0/trace_memory_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "vit_phase_e_profile_counters__GB0/trace_memory_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "vit_phase_e_profile_counters__GB0/trace_memory_reg",trying to implement using LUTRAM
+INFO: [Synth 8-7067] Removed DRAM instance i_8/i_0/trace_memory_reg_0_63_91_95 from module extram__2 due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance i_8/i_0/trace_memory_reg_64_127_91_95 from module extram__2 due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance i_8/i_0/trace_memory_reg_128_191_91_95 from module extram__2 due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance i_8/i_0/trace_memory_reg_192_255_91_95 from module extram__2 due to constant propagation
+INFO: [Synth 8-3886] merging instance 'trace_read_address_reg_rep[0]' (FDRE) to 'trace_read_address_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trace_read_address_reg_rep[1]' (FDRE) to 'trace_read_address_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trace_read_address_reg_rep[2]' (FDRE) to 'trace_read_address_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trace_read_address_reg_rep[3]' (FDRE) to 'trace_read_address_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trace_read_address_reg_rep[4]' (FDRE) to 'trace_read_address_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trace_read_address_reg_rep[5]' (FDRE) to 'trace_read_address_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trace_read_address_reg_rep[6]' (FDRE) to 'trace_read_address_reg[6]'
+INFO: [Synth 8-3886] merging instance 'trace_read_address_reg_rep[7]' (FDRE) to 'trace_read_address_reg[7]'
+INFO: [Synth 8-3886] merging instance 'trace_selected_meta_o_reg[16]' (FDRE) to 'trace_selected_meta_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'trace_selected_meta_o_reg[26]' (FDRE) to 'trace_selected_meta_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'trace_selected_meta_o_reg[27]' (FDRE) to 'trace_selected_meta_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'trace_selected_meta_o_reg[28]' (FDRE) to 'trace_selected_meta_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'trace_selected_meta_o_reg[29]' (FDRE) to 'trace_selected_meta_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'trace_selected_meta_o_reg[30]' (FDRE) to 'trace_selected_meta_o_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\trace_selected_meta_o_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\error_status_live_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\error_status_live_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\error_status_live_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\error_status_live_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\error_status_live_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\error_status_live_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\error_status_live_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\error_status_live_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\error_status_live_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\error_status_live_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\error_status_live_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\error_status_live_reg[31] )
+INFO: [Synth 8-7067] Removed DRAM instance i_8/i_0/trace_memory_reg_0_63_91_95 from module extram__2 due to constant propagation
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_first_seen_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s_axi_rresp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s_axi_bresp_reg[0] )
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[95] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[94] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[93] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[92] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[91] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[90] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[89] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[88] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[87] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[86] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[85] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[84] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[83] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[82] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[81] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[80] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[79] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[78] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[77] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[76] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[75] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[74] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[73] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[72] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[71] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[70] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[69] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[68] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[67] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[66] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[65] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[64] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[63] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[62] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[61] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[60] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[59] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[58] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[57] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[56] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[55] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[54] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[53] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[52] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[51] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[50] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[49] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[48] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[47] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[46] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[45] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[44] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[43] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[42] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[41] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[40] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[39] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[38] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[37] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[36] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[35] driven by constant 0
+WARNING: [Synth 8-3917] design vit_phase_e_write_address_router__GB1 has port p_0_out[34] driven by constant 0
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "u_gemm_activation_panel_cache/gen_row_bank[7].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "u_gemm_activation_panel_cache/gen_row_bank[7].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "u_gemm_activation_panel_cache/gen_row_bank[7].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "u_gemm_activation_panel_cache/gen_row_bank[6].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "u_gemm_activation_panel_cache/gen_row_bank[6].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "u_gemm_activation_panel_cache/gen_row_bank[6].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "u_gemm_activation_panel_cache/gen_row_bank[5].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "u_gemm_activation_panel_cache/gen_row_bank[5].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "u_gemm_activation_panel_cache/gen_row_bank[5].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "u_gemm_activation_panel_cache/gen_row_bank[4].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "u_gemm_activation_panel_cache/gen_row_bank[4].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "u_gemm_activation_panel_cache/gen_row_bank[4].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "u_gemm_activation_panel_cache/gen_row_bank[3].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "u_gemm_activation_panel_cache/gen_row_bank[3].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "u_gemm_activation_panel_cache/gen_row_bank[3].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "u_gemm_activation_panel_cache/gen_row_bank[2].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "u_gemm_activation_panel_cache/gen_row_bank[2].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "u_gemm_activation_panel_cache/gen_row_bank[2].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "u_gemm_activation_panel_cache/gen_row_bank[1].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "u_gemm_activation_panel_cache/gen_row_bank[1].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "u_gemm_activation_panel_cache/gen_row_bank[1].row_memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "u_gemm_activation_panel_cache/gen_row_bank[0].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "u_gemm_activation_panel_cache/gen_row_bank[0].row_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "u_gemm_activation_panel_cache/gen_row_bank[0].row_memory_reg"
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "u_gemm_bias_cache/bias_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "u_gemm_bias_cache/bias_memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "u_gemm_bias_cache/bias_memory_reg"
+WARNING: [Synth 8-3917] design vit_fp16_dot_stream_csa_nodsp__xdcDup__3 has port m_axis_result_tlast driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (s1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\accumulator_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\f0_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (s2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (accumulator_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (out_subnormal_flushed_reg)
+INFO: [Synth 8-3886] merging instance 's1_product_reg[1]' (FDRE) to 's1_product_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s1_product_reg[0] )
+WARNING: [Synth 8-3917] design vit_fp16_dot_stream_csa_nodsp__xdcDup__4 has port m_axis_result_tlast driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (s1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\accumulator_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\f0_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (s2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (accumulator_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (out_subnormal_flushed_reg)
+INFO: [Synth 8-3886] merging instance 's1_product_reg[1]' (FDRE) to 's1_product_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s1_product_reg[0] )
+WARNING: [Synth 8-3917] design vit_fp16_dot_stream_csa_nodsp__xdcDup__5 has port m_axis_result_tlast driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (s1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\accumulator_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\f0_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (s2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (accumulator_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (out_subnormal_flushed_reg)
+INFO: [Synth 8-3886] merging instance 's1_product_reg[1]' (FDRE) to 's1_product_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s1_product_reg[0] )
+WARNING: [Synth 8-3917] design vit_fp16_dot_stream_csa_nodsp__xdcDup__6 has port m_axis_result_tlast driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (s1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\accumulator_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\f0_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (s2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (accumulator_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (out_subnormal_flushed_reg)
+INFO: [Synth 8-3886] merging instance 's1_product_reg[1]' (FDRE) to 's1_product_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s1_product_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[6].u_stream /s1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[6].u_stream /\accumulator_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[6].u_stream /\f0_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[6].u_stream /s2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[6].u_stream /accumulator_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[6].u_stream /f0_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[6].u_stream /f1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[6].u_stream /f2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[6].u_stream /out_subnormal_flushed_reg)
+INFO: [Synth 8-3886] merging instance 'gen_stream[6].u_stream/s1_product_reg[1]' (FDRE) to 'gen_stream[6].u_stream/s1_product_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[6].u_stream /\s1_product_reg[0] )
+WARNING: [Synth 8-3917] design vit_fp16_dot_stream_csa_nodsp has port m_axis_result_tlast driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (s1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\accumulator_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\f0_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (s2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (accumulator_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (out_subnormal_flushed_reg)
+INFO: [Synth 8-3886] merging instance 's1_product_reg[1]' (FDRE) to 's1_product_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s1_product_reg[0] )
+WARNING: [Synth 8-3917] design vit_fp16_dot_stream_csa_nodsp__xdcDup__1 has port m_axis_result_tlast driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (s1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\accumulator_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\f0_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (s2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (accumulator_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (out_subnormal_flushed_reg)
+INFO: [Synth 8-3886] merging instance 's1_product_reg[1]' (FDRE) to 's1_product_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s1_product_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[1].u_stream /s1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[1].u_stream /\accumulator_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[1].u_stream /\f0_carry_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[1].u_stream /s2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[1].u_stream /accumulator_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[1].u_stream /f0_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[1].u_stream /f1_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[1].u_stream /f2_subnormal_flushed_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[1].u_stream /out_subnormal_flushed_reg)
+INFO: [Synth 8-3886] merging instance 'gen_stream[1].u_stream/s1_product_reg[1]' (FDRE) to 'gen_stream[1].u_stream/s1_product_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_stream[1].u_stream /\s1_product_reg[0] )
+INFO: [Synth 8-5544] ROM "gelu_add_coefficient" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exp_add_coefficient" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'u_vector/result_base_reg_reg[0]' (FDRE) to 'u_vector/result_base_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_vector/result_base_reg_reg[1]' (FDRE) to 'u_vector/result_base_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_vector/result_base_reg_reg[2]' (FDRE) to 'u_vector/result_base_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_vector/\result_base_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'u_gelu/result_base_index_reg[0]' (FDRE) to 'u_gelu/result_base_index_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_gelu/result_base_index_reg[1]' (FDRE) to 'u_gelu/result_base_index_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_gelu/result_base_index_reg[2]' (FDRE) to 'u_gelu/result_base_index_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_gelu/\result_base_index_reg[3] )
+INFO: [Synth 8-3886] merging instance 'u_gelu/u_serial_core/erf_magnitude_reg[30]' (FDRE) to 'u_gelu/u_serial_core/erf_magnitude_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_gelu/u_serial_core/\erf_magnitude_reg[31] )
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "u_layernorm/gen_row_affine_buffers.gamma_buffer_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "u_layernorm/gen_row_affine_buffers.sample_buffer_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "u_layernorm/gen_row_affine_buffers.beta_buffer_reg"
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/unbiased_exponent_reg[5]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/unbiased_exponent_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/unbiased_exponent_reg[6]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/unbiased_exponent_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[63]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[60]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[61]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[62]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[57]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[58]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[59]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[54]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[55]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[56]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[51]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[52]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[53]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[48]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[49]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[50]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[45]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[46]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[47]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[42]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[43]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[44]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[39]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[40]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[41]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[36]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[37]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[38]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[33]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[34]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[35]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/denominator_reg[32]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_layernorm/u_reciprocal_hidden_size/\denominator_reg[32] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[59]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[58]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[57]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[56]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[63]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[62]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[62]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[61]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[61]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[60]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[60]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[15]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[14]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[13]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[12]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[11]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[10]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[9]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[8]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[7]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[6]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[5]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[4]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[3]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[2]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[1]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[0]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[19]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[18]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[17]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[16]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[22]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[21]' (FDRE) to 'u_layernorm/u_reciprocal_hidden_size/dividend_reg[20]'
+INFO: [Synth 8-5544] ROM "exp_add_coefficient" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "u_softmax/row_exp_buffer_reg"
+INFO: [Synth 8-3886] merging instance 'u_m7_overlap_counters/overflow_published_reg[19]' (FDRE) to 'u_m7_overlap_counters/overflow_published_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_m5_axi_counters/overflow_published_reg[5]' (FDRE) to 'u_m5_axi_counters/protocol_error_published_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_m5_axi_counters/protocol_error_published_reg[2]' (FDRE) to 'u_m5_axi_counters/protocol_error_published_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_m5_axi_counters/protocol_error_published_reg[3]' (FDRE) to 'u_m5_axi_counters/protocol_error_published_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_m5_axi_counters/protocol_error_published_reg[4]' (FDRE) to 'u_m5_axi_counters/protocol_error_published_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_m5_axi_counters/protocol_error_published_reg[5]' (FDRE) to 'u_m5_axi_counters/protocol_error_published_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_m5_axi_counters/protocol_error_published_reg[6]' (FDRE) to 'u_m5_axi_counters/protocol_error_published_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_mem_adapter/fill_base_reg[0]' (FDRE) to 'u_mem_adapter/fill_desc_addr_reg[1][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:16 ; elapsed = 00:03:15 . Memory (MB): peak = 3586.574 ; gain = 1296.012 ; free physical = 219515 ; free virtual = 236334
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------------+---------------+---------------+----------------+
+|Module Name           | RTL Object    | Depth x Width | Implemented As | 
++----------------------+---------------+---------------+----------------+
+|vit_phase_e_sequencer | generated_cmd | 32x2          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x4          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x1          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x4          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x4          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x2          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x3          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x2          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x4          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x1          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x4          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x4          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x2          | LUT            | 
+|vit_phase_e_sequencer | generated_cmd | 32x3          | LUT            | 
++----------------------+---------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                   | RTL Object                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|u_gemm_activation_panel_cache | gen_row_bank[7].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[6].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[5].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[4].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[3].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[2].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[1].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[0].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_bias_cache             | bias_memory_reg                          | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_layernorm                   | gen_row_affine_buffers.gamma_buffer_reg  | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|u_layernorm                   | gen_row_affine_buffers.sample_buffer_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|u_layernorm                   | gen_row_affine_buffers.beta_buffer_reg   | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|u_softmax                     | row_exp_buffer_reg                       | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|u_layer_param_table           | data_memory_reg                          | 192 x 32(READ_FIRST)   | W | R | 192 x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      |                 | 
++------------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------------------+------------------+-----------+----------------------+----------------+
+|Module Name                                                      | RTL Object       | Inference | Size (Depth x Width) | Primitives     | 
++-----------------------------------------------------------------+------------------+-----------+----------------------+----------------+
+|vit_phase_e_profile_counters__GB0                                | trace_memory_reg | Implied   | 256 x 96             | RAM64M8 x 56   | 
+|u_core/u_npu/u_engine/u_gemm/\gen_fp16.u_fp16 /i_1/u_result_fifo | entry_memory_reg | Implied   | 2 x 692              | RAM32M16 x 50  | 
++-----------------------------------------------------------------+------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:29 ; elapsed = 00:03:28 . Memory (MB): peak = 3706.355 ; gain = 1415.793 ; free physical = 219452 ; free virtual = 236271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:15 ; elapsed = 00:05:17 . Memory (MB): peak = 4167.762 ; gain = 1877.199 ; free physical = 218735 ; free virtual = 235594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                   | RTL Object                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|u_gemm_activation_panel_cache | gen_row_bank[7].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[6].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[5].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[4].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[3].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[2].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[1].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_activation_panel_cache | gen_row_bank[0].row_memory_reg           | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_gemm_bias_cache             | bias_memory_reg                          | 3 K x 32(READ_FIRST)   | W |   | 3 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 2,1,1           | 
+|u_layernorm                   | gen_row_affine_buffers.gamma_buffer_reg  | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|u_layernorm                   | gen_row_affine_buffers.sample_buffer_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|u_layernorm                   | gen_row_affine_buffers.beta_buffer_reg   | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|u_softmax                     | row_exp_buffer_reg                       | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|u_layer_param_table           | data_memory_reg                          | 192 x 32(READ_FIRST)   | W | R | 192 x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      |                 | 
++------------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++-----------------------------------------------------------------+------------------+-----------+----------------------+----------------+
+|Module Name                                                      | RTL Object       | Inference | Size (Depth x Width) | Primitives     | 
++-----------------------------------------------------------------+------------------+-----------+----------------------+----------------+
+|vit_phase_e_profile_counters__GB0                                | trace_memory_reg | Implied   | 256 x 96             | RAM64M8 x 56   | 
+|u_core/u_npu/u_engine/u_gemm/\gen_fp16.u_fp16 /i_1/u_result_fifo | entry_memory_reg | Implied   | 2 x 692              | RAM32M16 x 50  | 
++-----------------------------------------------------------------+------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_13/u_gemm_bias_cache/bias_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_13/u_gemm_bias_cache/bias_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_13/u_gemm_bias_cache/bias_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[7].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[7].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[7].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[6].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[6].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[6].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[5].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[5].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[5].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[4].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[4].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[4].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[3].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[3].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[3].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[2].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[2].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[2].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[1].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[1].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[1].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[0].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[0].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/i_9/u_gemm_activation_panel_cache/gen_row_bank[0].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/i_1/u_layer_param_table/data_memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/i_1/u_layer_param_table/data_memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/i_0/u_layernorm/gen_row_affine_buffers.gamma_buffer_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/i_0/u_layernorm/gen_row_affine_buffers.sample_buffer_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/i_0/u_layernorm/gen_row_affine_buffers.beta_buffer_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/i_0/u_softmax/row_exp_buffer_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:55 ; elapsed = 00:05:58 . Memory (MB): peak = 4211.070 ; gain = 1920.508 ; free physical = 215396 ; free virtual = 232267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[7].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[7].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[7].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[6].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[6].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[6].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[5].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[5].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[5].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[4].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[4].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[4].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[3].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[3].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[3].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[2].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[2].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[2].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[1].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[1].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[1].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[0].row_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[0].row_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_activation_panel_cache/gen_row_bank[0].row_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_bias_cache/bias_memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_bias_cache/bias_memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_memory_frontend/u_gemm_bias_cache/bias_memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_layernorm/gen_row_affine_buffers.gamma_buffer_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_layernorm/gen_row_affine_buffers.sample_buffer_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_layernorm/gen_row_affine_buffers.beta_buffer_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_npu/u_engine/u_softmax/row_exp_buffer_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_layer_param_table/data_memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_layer_param_table/data_memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:19 ; elapsed = 00:06:23 . Memory (MB): peak = 4211.070 ; gain = 1920.508 ; free physical = 215394 ; free virtual = 232265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:20 ; elapsed = 00:06:24 . Memory (MB): peak = 4211.070 ; gain = 1920.508 ; free physical = 215394 ; free virtual = 232265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:41 ; elapsed = 00:06:46 . Memory (MB): peak = 4211.070 ; gain = 1920.508 ; free physical = 215377 ; free virtual = 232248
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |  5527|
+|2     |LUT1     |  1541|
+|3     |LUT2     | 30424|
+|4     |LUT3     | 11065|
+|5     |LUT4     | 33561|
+|6     |LUT5     | 12036|
+|7     |LUT6     | 43544|
+|8     |MUXF7    |  2580|
+|9     |MUXF8    |   528|
+|10    |RAM32M   |     1|
+|11    |RAM32M16 |    49|
+|12    |RAM64M8  |    52|
+|13    |RAMB36E2 |    41|
+|17    |FDRE     | 61158|
+|18    |FDSE     |    48|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:42 ; elapsed = 00:06:46 . Memory (MB): peak = 4211.070 ; gain = 1920.508 ; free physical = 215373 ; free virtual = 232244
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1071 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:18 ; elapsed = 00:06:29 . Memory (MB): peak = 4211.070 ; gain = 1295.457 ; free physical = 226498 ; free virtual = 243369
+Synthesis Optimization Complete : Time (s): cpu = 00:06:45 ; elapsed = 00:06:51 . Memory (MB): peak = 4211.070 ; gain = 1920.508 ; free physical = 226562 ; free virtual = 243375
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4211.070 ; gain = 0.000 ; free physical = 226584 ; free virtual = 243397
+INFO: [Netlist 29-17] Analyzing 8737 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/standalone_axi_50mhz.xdc]
+Finished Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/standalone_axi_50mhz.xdc]
+Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc]
+Finished Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4243.938 ; gain = 0.000 ; free physical = 226575 ; free virtual = 243388
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 102 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 49 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 52 instances
+
+Synth Design complete | Checksum: 21e39f68
+INFO: [Common 17-83] Releasing license: Synthesis
+479 Infos, 180 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:07:24 ; elapsed = 00:07:30 . Memory (MB): peak = 4243.973 ; gain = 2911.980 ; free physical = 226575 ; free virtual = 243388
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 14702.517; main = 3372.200; forked = 11431.804
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 20087.332; main = 4243.941; forked = 15880.180
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "aclk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 4910.691 ; gain = 534.926 ; free physical = 226095 ; free virtual = 242908
+PASS: rtl_standalone_post_synth combinational-loop count is 0
+PASS: standalone NPU+AXI synthesis completed with DSP=0
+  utilization : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_standalone_post_synth_utilization.rpt
+  hierarchy   : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_standalone_post_synth_hierarchical.rpt
+  timing      : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_standalone_post_synth_timing.rpt
+  loop gate   : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_standalone_post_synth_combinational_loops.rpt
+  DSP check   : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_standalone_post_synth_dsp.rpt
+PASS: non-vacuous NPU subtree LUT=123482 FF=39647
+  reachability: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_ooc_post_synth_reachability.rpt
+  black boxes : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_ooc_post_synth_blackboxes.rpt
+PASS: rtl_ooc_post_synth blackbox count is 0
+PASS: rtl_ooc_post_synth inferred latch count is 0
+PASS: rtl_ooc_post_synth DSP48/DSP58 primitive count is 0
+PASS: rtl_ooc_post_synth M8 RAMB36 hierarchy is 32+4+3+1+1=41 with no RAMB18/URAM or hierarchy LUTRAM
+PASS: rtl_ooc_post_synth combinational-loop count is 0
+PASS: rtl_ooc_post_synth CLB-LUT fit used=101131 available=117120 headroom=15989
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.33 . Memory (MB): peak = 4942.707 ; gain = 0.000 ; free physical = 226058 ; free virtual = 242905
+INFO: [Common 17-1381] The checkpoint '/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/artifacts/rtl_ooc_post_synth.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4942.707 ; gain = 32.016 ; free physical = 226053 ; free virtual = 242899
+PASS: non-vacuous standalone RTL+AXI OOC synthesis
+  checkpoint: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/artifacts/rtl_ooc_post_synth.dcp
+  blackboxes: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_ooc_post_synth_blackboxes.rpt
+  latches   : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_ooc_post_synth_latches.rpt
+  RAM gate  : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_ooc_post_synth_m8_ram_mapping.rpt
+  loop gate : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_ooc_post_synth_combinational_loops.rpt
+  LUT fit   : /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/reports/rtl_ooc_post_synth_lut_fit_gate.rpt
+  note: OOC timing is an internal proxy; board timing is gated post-route
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  9 03:33:02 2026...

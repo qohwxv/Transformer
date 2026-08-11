@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Aug  9 03:34:51 2026
+# Process ID: 1890191
+# Current directory: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2
+# Command line: vivado -mode batch -notrace -log server_logs/40_board_synth.vivado.log -journal server_logs/40_board_synth.vivado.jou -source scripts/server/40_run_board_synth.tcl
+# Log file: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/server_logs/40_board_synth.vivado.log
+# Journal file: /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/server_logs/40_board_synth.vivado.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2095.078 MHz, CPU Physical cores: 8, Host memory: 270263 MB
+#-----------------------------------------------------------
+source scripts/server/40_run_board_synth.tcl -notrace

@@ -1,0 +1,33 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --debug off --mt 2 tb_vit_phase_e_m7_overlap_counters -s tb_vit_phase_e_m7_overlap_counters_snapshot 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.vit_phase_e_pkg
+Compiling module work.vit_phase_e_m7_overlap_counters(...
+Compiling module work.vit_axi_lite_control_regs
+Compiling module work.tb_vit_phase_e_m7_overlap_counte...
+Built simulation snapshot tb_vit_phase_e_m7_overlap_counters_snapshot
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_vit_phase_e_m7_overlap_counters_snapshot/xsim_script.tcl
+# xsim {tb_vit_phase_e_m7_overlap_counters_snapshot} -autoloadwcfg -tclbatch {/tmp/vit_server_xsim.gY0E4B/run_all.tcl}
+Time resolution is 1 ps
+source /tmp/vit_server_xsim.gY0E4B/run_all.tcl
+## run all
+M7_OVERLAP_COUNTER_BANK_PASS checks=246
+$finish called at time : 1536 ns : File "/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/sim/m7/tb_vit_phase_e_m7_overlap_counters.sv" Line 503
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Aug  9 03:23:18 2026...

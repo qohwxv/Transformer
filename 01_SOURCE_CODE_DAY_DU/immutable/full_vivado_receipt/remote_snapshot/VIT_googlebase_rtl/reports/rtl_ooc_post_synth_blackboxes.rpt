@@ -1,0 +1,2 @@
+M8_BLACKBOX_GATE PASS stage=rtl_ooc_post_synth count=0
+all_blackboxes 0

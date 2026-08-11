@@ -1,0 +1,7 @@
+bit_entries 1
+  vit_system_wrapper.bit
+hwh_entries 3
+  vit_system_smartconnect_control_0.hwh
+  vit_system.hwh
+  vit_system_smartconnect_ddr_0.hwh
+M8_XSA_CONTENT_GATE PASS stage=board_post_route bit_entries=1 hwh_entries=3 hwh_set_equal=1 hwh_set=vit_system.hwh,vit_system_smartconnect_control_0.hwh,vit_system_smartconnect_ddr_0.hwh embedded_bit_equal=1 bit_sha256=462d78a91d9fb35b2cb5832ab222c39952a1052d3ff6766d94e37405f887a275 embedded_bit_sha256=462d78a91d9fb35b2cb5832ab222c39952a1052d3ff6766d94e37405f887a275

@@ -1,0 +1,249 @@
+
+*** Running vivado
+    with args -log vit_system_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vit_system_wrapper.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source vit_system_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1317.055 ; gain = 37.840 ; free physical = 229765 ; free virtual = 246812
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/data/tools/Xilinx/Vivado/2023.2/data/ip'.
+Command: synth_design -top vit_system_wrapper -part xczu5ev-sfvc784-1-e -flatten_hierarchy none -max_dsp 0
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5ev'
+INFO: [Vivado_Tcl 4-287] User specified maximum number of block DSP allowed in design is 0
+INFO: [Device 21-403] Loading part xczu5ev-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1901103
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2607.824 ; gain = 285.777 ; free physical = 228196 ; free virtual = 245243
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vit_system_wrapper' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/hdl/vit_system_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'vit_system' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v:13]
+INFO: [Synth 8-6157] synthesizing module 'vit_system_const_one_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_const_one_0/synth/vit_system_const_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_8_xlconstant' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_8_xlconstant' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'vit_system_const_one_0' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_const_one_0/synth/vit_system_const_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'vit_system_const_zero_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_const_zero_0/synth/vit_system_const_zero_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_8_xlconstant__parameterized0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_8_xlconstant__parameterized0' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'vit_system_const_zero_0' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_const_zero_0/synth/vit_system_const_zero_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'vit_system_proc_sys_reset_0_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/.Xil/Vivado-1900895-ubuntu/realtime/vit_system_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vit_system_proc_sys_reset_0_0' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/.Xil/Vivado-1900895-ubuntu/realtime/vit_system_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'vit_system_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v:157]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'vit_system_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v:157]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'vit_system_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v:157]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'vit_system_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v:157]
+INFO: [Synth 8-6157] synthesizing module 'vit_system_smartconnect_control_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/.Xil/Vivado-1900895-ubuntu/realtime/vit_system_smartconnect_control_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vit_system_smartconnect_control_0' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/.Xil/Vivado-1900895-ubuntu/realtime/vit_system_smartconnect_control_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vit_system_smartconnect_ddr_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/.Xil/Vivado-1900895-ubuntu/realtime/vit_system_smartconnect_ddr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vit_system_smartconnect_ddr_0' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/.Xil/Vivado-1900895-ubuntu/realtime/vit_system_smartconnect_ddr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vit_system_vit_phase_e_axi_0_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/.Xil/Vivado-1900895-ubuntu/realtime/vit_system_vit_phase_e_axi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vit_system_vit_phase_e_axi_0_0' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/.Xil/Vivado-1900895-ubuntu/realtime/vit_system_vit_phase_e_axi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vit_system_zynq_ultra_ps_e_0_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/.Xil/Vivado-1900895-ubuntu/realtime/vit_system_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vit_system_zynq_ultra_ps_e_0_0' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/.Xil/Vivado-1900895-ubuntu/realtime/vit_system_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'vit_system_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v:359]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'vit_system_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v:359]
+WARNING: [Synth 8-7071] port 'emio_enet0_enet_tsu_timer_cnt' of module 'vit_system_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v:359]
+WARNING: [Synth 8-7071] port 'dp_aux_data_out' of module 'vit_system_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v:359]
+WARNING: [Synth 8-7071] port 'dp_aux_data_oe_n' of module 'vit_system_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v:359]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'vit_system_zynq_ultra_ps_e_0_0' has 88 connections declared, but only 83 given [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v:359]
+INFO: [Synth 8-6155] done synthesizing module 'vit_system' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/synth/vit_system.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'vit_system_wrapper' (0#1) [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/hdl/vit_system_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2688.793 ; gain = 366.746 ; free physical = 228092 ; free virtual = 245140
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2691.762 ; gain = 369.715 ; free physical = 228092 ; free virtual = 245140
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2691.762 ; gain = 369.715 ; free physical = 228092 ; free virtual = 245140
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2691.762 ; gain = 0.000 ; free physical = 228092 ; free virtual = 245140
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_zynq_ultra_ps_e_0_0/vit_system_zynq_ultra_ps_e_0_0/vit_system_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'vit_system_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_zynq_ultra_ps_e_0_0/vit_system_zynq_ultra_ps_e_0_0/vit_system_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'vit_system_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_smartconnect_control_0/vit_system_smartconnect_control_0/vit_system_smartconnect_control_0_in_context.xdc] for cell 'vit_system_i/smartconnect_control'
+Finished Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_smartconnect_control_0/vit_system_smartconnect_control_0/vit_system_smartconnect_control_0_in_context.xdc] for cell 'vit_system_i/smartconnect_control'
+Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_smartconnect_ddr_0/vit_system_smartconnect_ddr_0/vit_system_smartconnect_ddr_0_in_context.xdc] for cell 'vit_system_i/smartconnect_ddr'
+Finished Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_smartconnect_ddr_0/vit_system_smartconnect_ddr_0/vit_system_smartconnect_ddr_0_in_context.xdc] for cell 'vit_system_i/smartconnect_ddr'
+Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_proc_sys_reset_0_0/vit_system_proc_sys_reset_0_0/vit_system_proc_sys_reset_0_0_in_context.xdc] for cell 'vit_system_i/proc_sys_reset_0'
+Finished Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_proc_sys_reset_0_0/vit_system_proc_sys_reset_0_0/vit_system_proc_sys_reset_0_0_in_context.xdc] for cell 'vit_system_i/proc_sys_reset_0'
+Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_vit_phase_e_axi_0_0/vit_system_vit_phase_e_axi_0_0/vit_system_vit_phase_e_axi_0_0_in_context.xdc] for cell 'vit_system_i/vit_phase_e_axi_0'
+Finished Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.gen/sources_1/bd/vit_system/ip/vit_system_vit_phase_e_axi_0_0/vit_system_vit_phase_e_axi_0_0/vit_system_vit_phase_e_axi_0_0_in_context.xdc] for cell 'vit_system_i/vit_phase_e_axi_0'
+Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc]
+Finished Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc]
+Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2732.684 ; gain = 0.000 ; free physical = 228089 ; free virtual = 245137
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2732.719 ; gain = 0.000 ; free physical = 228089 ; free virtual = 245137
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2732.719 ; gain = 410.672 ; free physical = 228094 ; free virtual = 245142
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu5ev-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2732.719 ; gain = 410.672 ; free physical = 228094 ; free virtual = 245142
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property USE_DSP = NO for vit_system_i. (constraint file  /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc, line 5).
+Applied set_property USE_DSP = NO for vit_system_i/const_one. (constraint file  /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc, line 5).
+Applied set_property USE_DSP = NO for vit_system_i/const_zero. (constraint file  /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc, line 5).
+Applied set_property USE_DSP = NO for vit_system_i/proc_sys_reset_0. (constraint file  /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc, line 5).
+Applied set_property USE_DSP = NO for vit_system_i/smartconnect_control. (constraint file  /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc, line 5).
+Applied set_property USE_DSP = NO for vit_system_i/smartconnect_ddr. (constraint file  /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc, line 5).
+Applied set_property USE_DSP = NO for vit_system_i/vit_phase_e_axi_0. (constraint file  /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc, line 5).
+Applied set_property USE_DSP = NO for vit_system_i/zynq_ultra_ps_e_0. (constraint file  /home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/scripts/vivado/no_dsp.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for vit_system_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vit_system_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vit_system_i/smartconnect_control. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vit_system_i/smartconnect_ddr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vit_system_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vit_system_i/const_zero. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vit_system_i/const_one. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vit_system_i/vit_phase_e_axi_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2732.719 ; gain = 410.672 ; free physical = 228094 ; free virtual = 245142
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2732.719 ; gain = 410.672 ; free physical = 228093 ; free virtual = 245142
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2732.719 ; gain = 410.672 ; free physical = 228090 ; free virtual = 245143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3245.504 ; gain = 923.457 ; free physical = 227643 ; free virtual = 244696
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3245.504 ; gain = 923.457 ; free physical = 227643 ; free virtual = 244696
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3255.520 ; gain = 933.473 ; free physical = 227635 ; free virtual = 244688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 3269.395 ; gain = 947.348 ; free physical = 227652 ; free virtual = 244705
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 3269.395 ; gain = 947.348 ; free physical = 227652 ; free virtual = 244705
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 3269.395 ; gain = 947.348 ; free physical = 227651 ; free virtual = 244704
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |vit_system_proc_sys_reset_0_0     |         1|
+|2     |vit_system_smartconnect_control_0 |         1|
+|3     |vit_system_smartconnect_ddr_0     |         1|
+|4     |vit_system_vit_phase_e_axi_0_0    |         1|
+|5     |vit_system_zynq_ultra_ps_e_0_0    |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |vit_system_proc_sys_reset_0     |     1|
+|2     |vit_system_smartconnect_control |     1|
+|3     |vit_system_smartconnect_ddr     |     1|
+|4     |vit_system_vit_phase_e_axi_0    |     1|
+|5     |vit_system_zynq_ultra_ps_e_0    |     1|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 3269.395 ; gain = 947.348 ; free physical = 227651 ; free virtual = 244704
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3269.395 ; gain = 906.391 ; free physical = 227653 ; free virtual = 244706
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 3269.402 ; gain = 947.348 ; free physical = 227653 ; free virtual = 244706
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3269.402 ; gain = 0.000 ; free physical = 227653 ; free virtual = 244706
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3305.082 ; gain = 0.000 ; free physical = 227878 ; free virtual = 244931
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d0cc15d2
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:35 . Memory (MB): peak = 3319.055 ; gain = 1939.211 ; free physical = 227872 ; free virtual = 244925
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2422.272; main = 2422.272; forked = 331.235
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3768.383; main = 3319.023; forked = 982.805
+INFO: [Common 17-1381] The checkpoint '/home/s23520579/Vivado_project/vit_m8_board_candidate_67c18532_workspace_20260809/vivado_server_307_perf_v1_m8_nongemm_nodsp_2023_2/VIT_googlebase_rtl/ViT_googlebase/ViT_googlebase.runs/synth_1/vit_system_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vit_system_wrapper_utilization_synth.rpt -pb vit_system_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  9 03:47:42 2026...
