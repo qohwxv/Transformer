@@ -1,3 +1,23 @@
+audit_dir=$(mktemp -d /tmp/m8_manifest_compare.XXXXXX)
+
+cut -c67- SOURCE_PACKAGE_SHA256SUMS.txt \
+  | LC_ALL=C sort >"$audit_dir/declared.txt"
+
+find . -type f \
+  ! -path './board_support/third_party/digilent_embeddedsw_genesys_zu_22_1/.git/*' \
+  -printf '%P\n' \
+  | awk '$0 != "SOURCE_PACKAGE_SHA256SUMS.txt" &&
+         $0 != "SOURCE_PACKAGE_MANIFEST.sha256"' \
+  | LC_ALL=C sort >"$audit_dir/current.txt"
+
+echo "===== FILE THIEU ====="
+comm -23 "$audit_dir/declared.txt" "$audit_dir/current.txt"
+
+echo "===== FILE THUA ====="
+comm -13 "$audit_dir/declared.txt" "$audit_dir/current.txt"
+
+echo "===== SO LUONG ====="
+wc -l "$audit_dir/declared.txt" "$audit_dir/current.txt"
 # Báo cáo kiến trúc triển khai VIT_MODELSIM_STANDALONE
 
 ## Mục đích và phạm vi
