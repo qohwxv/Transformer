@@ -1,0 +1,5 @@
+# Versions used by the host-side bit-exact preprocessing regression.
+numpy==2.5.1
+Pillow==12.3.0
+torch==2.13.0
+transformers==5.14.1

@@ -37,7 +37,8 @@ Hai cây `immutable/` là bằng chứng chỉ đọc. **Không chạy Vivado tr
 
 `MEASURED` theo report Vivado: route 50 MHz hoàn chỉnh, WNS/WHS
 `+0.045/+0.010 ns`, DSP48/DSP58 bằng 0, đúng 41 RAMB36, DRC và methodology
-không có violation. BIT/XSA đã sinh nhưng **chưa được kiểm thử trên board**.
+không có violation. Exact BIT/XSA sau đó đã chạy full schedule trên board thật
+và chạy retained-DDR mode 5; xem phạm vi bằng chứng tại mục 5.
 
 ## 3. Có thật sự “không cần tải gì thêm” không?
 
@@ -50,8 +51,9 @@ không có violation. BIT/XSA đã sinh nhưng **chưa được kiểm thử tr�
 - Host mục tiêu là Linux 64-bit với GNU userland; script kiểm tra rõ các tiện
   ích `grep/cmp/sort/stat/timeout/sha256sum/tar/git` và `/usr/bin/python3` mà
   flow/verifier thực sự sử dụng.
-- Chạy synthesis/place/route cần tài nguyên máy và license Vivado; chạy board
-  còn cần cable/board và FSBL/PMUFW đúng XSA, hiện vẫn là bước pending.
+- Chạy synthesis/place/route cần tài nguyên máy và license Vivado. Để replay
+  board không cần build lại: add-on `board_runtime/` đã chứa exact FSBL/PMUFW,
+  processor và runner tương ứng với BIT/XSA/model đã khóa.
 
 Vì vậy tên chính xác của gói là **offline self-contained project payload**, không
 phải “standalone executable không phụ thuộc công cụ”.
@@ -67,9 +69,25 @@ Từ thư mục này:
 ./scripts/prepare_board_workspace.sh /duong/dan/m8_board_work
 ```
 
+Máy mới có thể dùng bootstrap tự động để tìm toolchain, dựng workspace, tạo
+Python venv và sinh config XSCT (host-only, chưa chạm JTAG):
+
+```bash
+./scripts/setup_m8_laptop.sh \
+  --workspace "$HOME/m8_board_work" \
+  --xilinx-root /duong/dan/Xilinx \
+  --cable-serial SERIAL_DOC_TU_JTAG_TARGETS
+```
+
 `SOURCE_PACKAGE_SHA256SUMS.txt` khóa exact set của riêng folder source;
 `SOURCE_PACKAGE_MANIFEST.sha256` là pointer tới hash của manifest đó. Verifier
 từ chối cả file thiếu, file thừa, symlink và content sai hash.
+
+Metadata `.git` lồng của Digilent không thể được GitHub lưu như file thường và
+được loại khỏi portable manifest. Commit upstream cùng 5.989 file source,
+88.482.412 byte và deterministic tree hash được khóa tại
+`board_support/DIGILENT_EMBEDDEDSW_PROVENANCE.txt`; verifier chấp nhận cả bản
+source có `.git` lồng và bản GitHub clone không có nó.
 
 Nếu Vivado 2023.2 đã được cài và muốn chạy lại toàn bộ XSim + OOC + synthesis +
 place/route + BIT/XSA:
@@ -82,8 +100,8 @@ VIVADO_BIN=/duong/dan/Vivado/2023.2/bin/vivado \
 Script từ chối dùng một thư mục đích đã tồn tại để tránh trộn kết quả cũ. Nó
 luôn đặt `VIT_REUSE_PROJECT=0` và chạy trên worktree, không sửa evidence.
 
-Hướng dẫn theo từng tình huống nằm ở
-[`../02_HUONG_DAN_CACH_CHAY/README_CHAY_M8_VI.md`](../02_HUONG_DAN_CACH_CHAY/README_CHAY_M8_VI.md).
+Hướng dẫn replay board đầy đủ nằm ngay trong package tại
+[`HUONG_DAN_CHAY_M8_LAPTOP_MOI.md`](HUONG_DAN_CHAY_M8_LAPTOP_MOI.md).
 
 ## 5. Trạng thái trung thực
 
@@ -91,10 +109,13 @@ Hướng dẫn theo từng tình huống nằm ở
   integrity, 50 MHz timing, DSP0, RAMB36 và DRC/methodology.
 - `SIM-MEASURED`: các regression phase E01/E04 và compact XSim đã được receipt
   khóa trong snapshot.
-- `PENDING/UNKNOWN`: full E02/E03/E05 được chấp nhận, board runtime/FPS,
-  full-model accuracy/power, FSBL/PMUFW và cold physical board test.
-- M8 vẫn là `M8_BOARD_CANDIDATE_PAUSE_SAFE_NOT_BOARD_TESTED`, không được đổi
-  nhãn thành `M8_SAFE`, `PROMOTED` hay “board proven”.
+- `MEASURED`: một cold physical E05 đạt DONE với 249 commands, zero hardware
+  error, 22,529,112,087 cycles và top-1 879; một retained-DDR mode 5 tiếp theo
+  PASS cả năm job với class `204/109/286/370/757`.
+- `FAIL/PENDING`: numerical-vector gate của ảnh chuẩn còn FAIL; accuracy toàn
+  dataset và power vẫn `UNKNOWN`; replay trên laptop thứ hai chưa chạy.
+- M8 vẫn `DEVELOPMENT_UNSEALED_NOT_PROMOTED`: chạy được board/class index không
+  đồng nghĩa đã đạt numerical sign-off hoặc accuracy.
 
 ## 6. Nén để chuyển máy
 

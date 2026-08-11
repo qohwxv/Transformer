@@ -38,7 +38,7 @@ test -x "$vivado_bin" || {
 }
 
 version=$($vivado_bin -version 2>&1 | head -n 4)
-grep -Fq 'Vivado v2023.2' <<<"$version" || {
+grep -Fiq 'vivado v2023.2' <<<"$version" || {
     printf 'VIVADO_VERSION_MISMATCH expected=2023.2 binary=%s\n%s\n' "$vivado_bin" "$version" >&2
     exit 1
 }

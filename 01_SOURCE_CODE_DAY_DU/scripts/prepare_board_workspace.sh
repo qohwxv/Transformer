@@ -6,6 +6,8 @@ package_root=$(CDPATH= cd -- "${script_dir}/.." && pwd -P)
 receipt="${package_root}/immutable/full_vivado_receipt"
 pause_tar="${package_root}/immutable/board_candidate_pause_checkpoint/M8_BOARD_CANDIDATE_PACKAGE.tar"
 digilent_src="${package_root}/board_support/third_party/digilent_embeddedsw_genesys_zu_22_1"
+runtime_dir="${package_root}/board_runtime"
+runtime_hashes="${runtime_dir}/RUNTIME_ARTIFACTS.sha256"
 run_name='20260809T032300Z-m8-board-candidate-67c18532-full-vivado-pass-receipt'
 
 if [[ $# -ne 1 ]]; then
@@ -20,6 +22,10 @@ fi
 
 "${script_dir}/verify_content.sh"
 "${script_dir}/check_environment.sh"
+(
+  cd "$runtime_dir"
+  sha256sum -c "$(basename "$runtime_hashes")"
+)
 
 mkdir -p -- "$destination"
 destination=$(CDPATH= cd -- "$destination" && pwd -P)
@@ -52,6 +58,14 @@ cp -a -- "$stage/model/post_encoder_step_33p_probabilities_f32.hex" \
 cp -a --reflink=auto -- "$digilent_src" \
   "${destination}/third_party/digilent_embeddedsw_genesys_zu_22_1"
 
+# Add the portable retained-DDR runner and exact boot ELF/receipt without
+# changing either immutable evidence tree.
+chmod -R u+w -- \
+  "${destination}/tools" "${destination}/build" "${destination}/results" \
+  "${destination}/third_party" "${destination}/.venv"
+tar -xzf "${runtime_dir}/M8_DATASET_RUNTIME.tar.gz" -C "$destination"
+tar -xzf "${runtime_dir}/M8_BOOT_RUNTIME.tar.gz" -C "$destination"
+
 printf '%s\n' '#!/usr/bin/env bash' 'exec /usr/bin/python3 "$@"' \
   >"${destination}/.venv/bin/python"
 chmod 0755 "${destination}/.venv/bin/python"
@@ -67,6 +81,12 @@ rm -rf -- "$stage"
 (
   cd "$destination"
   .venv/bin/python -m unittest tools.board.m8.test_m8_board_tools
+  .venv/bin/python -m py_compile \
+    tools/board/m8/dataset/m8_dataset_common.py \
+    tools/board/m8/dataset/configure_portable.py \
+    tools/board/m8/dataset/setup_m8_session.py \
+    tools/board/m8/dataset/run_m8_images.py
+  bash -n tools/board/m8/dataset/*.sh
   tools/board/m8/run_m8_board.sh \
     --identity build/board_identities/m8/m8_v3_mode3_50mhz.identity \
     --preflight-only
