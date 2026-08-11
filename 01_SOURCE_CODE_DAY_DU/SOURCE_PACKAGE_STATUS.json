@@ -25,7 +25,8 @@
     }
   },
   "portable_runtime": {
-    "dataset_runner_sha256": "d70087fdd59aaf520e76a56ebb1717268688b86a327119199b8de3097ab6139e",
+    "dataset_runner_sha256": "e0268333e3efc35d55c3660494630b9b93e7b67fcdaf7b70405dbb10084cc76c",
+    "supported_runner_modes": [1, 2, 5, 10, 1000],
     "boot_runtime_sha256": "9009798a7d22b87a622320af796def4b24d0ae9561ac2ad8233930330b05a8f7",
     "dataset_images_bundled": false,
     "exact_boot_elfs_bundled": true,
@@ -49,6 +50,8 @@
     "portable_exact_boot_identity_preflight": "PASS_JTAG_NOT_TOUCHED",
     "portable_custom_image_plan": "PASS_JTAG_NOT_TOUCHED",
     "github_clone_without_nested_git_metadata": "PASS_PORTABLE_TREE_HASH_VERIFIED",
+    "mode_1000_host_plan": "PASS_JTAG_NOT_TOUCHED",
+    "mode_1000_physical_run": "NOT_RUN",
     "full_vivado_rerun_from_package": "NOT_RUN",
     "second_laptop_physical_replay": "NOT_RUN"
   },

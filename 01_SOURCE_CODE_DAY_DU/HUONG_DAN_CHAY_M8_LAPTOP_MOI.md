@@ -82,7 +82,7 @@ cd "$BOARD_WORK"
 
 Script sẽ dựng layout cần thiết và tự giải nén thêm:
 
-- dataset runner mode 1/2/5/10;
+- dataset runner mode 1/2/5/10/1000;
 - processor config offline;
 - ảnh umbrella chuẩn `inputs/test1.png`;
 - exact FSBL/PMUFW cùng boot receipt đã chạy board;
@@ -251,7 +251,7 @@ VIT_PYTHON="$VIT_PYTHON" \
   --images /duong/dan/anh_cua_ban.jpg
 ```
 
-## 9. Dataset tải riêng và mode 2/5/10
+## 9. Dataset tải riêng và mode 2/5/10/1000
 
 Dataset không nằm trong GitHub package. Nếu dùng ILSVRC2012 validation, đặt
 50.000 ảnh vào layout mặc định:
@@ -285,6 +285,9 @@ VIT_PYTHON="$VIT_PYTHON" tools/board/m8/dataset/run_5.sh \
 
 # Mười ảnh liên tiếp từ ảnh 101
 VIT_PYTHON="$VIT_PYTHON" tools/board/m8/dataset/run_10.sh --start-index 101
+
+# Một nghìn ảnh liên tiếp từ ảnh 1
+VIT_PYTHON="$VIT_PYTHON" tools/board/m8/dataset/run_1000.sh --start-index 1
 ```
 
 Có thể xem kế hoạch mà không chạm JTAG:
@@ -292,7 +295,27 @@ Có thể xem kế hoạch mà không chạm JTAG:
 ```bash
 VIT_PYTHON="$VIT_PYTHON" \
   tools/board/m8/dataset/run_5.sh --start-index 10 --plan-only
+
+VIT_PYTHON="$VIT_PYTHON" \
+  tools/board/m8/dataset/run_1000.sh --start-index 1 --plan-only
 ```
+
+Mode 1000 cần khoảng `450,658 s/ảnh × 1000 = 450 658 s`, tức tối thiểu khoảng
+`5,22 ngày` inference liên tục theo lần board đã đo, chưa tính DOW input, xóa
+scratch, capture output và cold setup. Nên chạy trong `tmux`, tắt automatic
+sleep/suspend và giữ board có nguồn ổn định. Runner checkpoint atomically sau
+mỗi ảnh, nhưng bản hiện tại chưa tự resume một campaign bị gián đoạn.
+
+Ví dụ mở terminal bền vững trước khi chạy:
+
+```bash
+tmux new -s m8_1000
+source "$BOARD_WORK/m8_env.sh"
+cd "$BOARD_WORK"
+tools/board/m8/dataset/run_1000.sh --start-index 1
+```
+
+Detach bằng `Ctrl-b d`, quay lại bằng `tmux attach -t m8_1000`.
 
 ## 10. Đọc kết quả
 
@@ -324,7 +347,7 @@ Runner hiện in class index 0..999, chưa in tên class. Exact mapping
 
 ## 11. Khi nào phải cold setup lại?
 
-Không cần setup lại giữa mode 1/2/5/10 nếu board vẫn có nguồn và phiên DDR còn
+Không cần setup lại giữa mode 1/2/5/10/1000 nếu board vẫn có nguồn và phiên DDR còn
 hợp lệ. Phải chạy lại setup sau:
 
 - power-cycle hoặc mất điện;

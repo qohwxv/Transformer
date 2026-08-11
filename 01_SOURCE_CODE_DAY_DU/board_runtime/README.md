@@ -1,9 +1,10 @@
 # M8 portable board runtime add-on
 
-Thư mục này bổ sung runtime đã được dùng cho cold setup và batch inference
-mode 1/2/5/10 sau khi gói source bất biến được lập ngày 2026-08-09.
+Thư mục này bổ sung runtime đã được dùng cho cold setup và batch inference.
+Mode 1/2/5/10 đã có physical scope; mode 1000 là host-verified extension sau
+đó và chưa được chạy trọn vẹn trên board.
 
-- `M8_DATASET_RUNTIME.tar.gz`: dataset runner, processor offline, ảnh umbrella
+- `M8_DATASET_RUNTIME.tar.gz`: dataset runner mode 1/2/5/10/1000, processor offline, ảnh umbrella
   chuẩn và ground-truth ILSVRC (không chứa 50.000 ảnh validation).
 - `M8_BOOT_RUNTIME.tar.gz`: exact FSBL/PMUFW và boot receipt đã dùng trong lần
   cold physical PASS ngày 2026-08-10.
