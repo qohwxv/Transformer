@@ -79,3 +79,57 @@
 11. vit_gemm_activation_panel_cache.sv
               ↓
 12. vit_gemm_fp16_parallel_scheduler.sv
+
+                     full_axi.f
+                         │
+                         ▼
+                   80 RTL files
+                         │
+                         ▼
+          vit_phase_e_axi_bd_wrapper
+                         │
+                         ▼
+                 Module Reference
+                         │
+                         ▼
+              create_vit_system_bd
+                         │
+          ┌──────────────┼──────────────┐
+          ▼              ▼              ▼
+       Zynq PS       SmartConnect       NPU
+          │              │              │
+          └──────────────┴──────────────┘
+                         │
+                         ▼
+               vit_system_wrapper
+                         │
+                         ▼
+                      synth_1
+                         │
+             synthesis utilization
+             synthesis timing
+             synthesis DCP
+                         │
+                         ▼
+                      impl_1
+                         │
+                     opt_design
+                         │
+                    place_design
+                         │
+                    route_design
+                         │
+                post-route reports
+                         │
+                  post-route DCP
+                         │
+                         ▼
+                 write_bitstream
+                         │
+                         ├── .bit
+                         │
+                         ▼
+                write_hw_platform
+                         │
+                         ▼
+                        .xsa
