@@ -2028,4 +2028,47 @@ Tóm lại: bên bạn đã hoàn tất upload. Bên kia chỉ cần clone đầ
 
 ## Cần push bản cập nhật nhỏ lần nữa
 
+## just a update 
+1. RTL
+      ↓
+2. vit_phase_e accelerator
+      ↓
+3. AXI wrapper
+      │
+      ├── S_AXI 32-bit control
+      │
+      └── M_AXI 128-bit DDR
+      ↓
+4. Vivado Block Design
+      │
+      ├── Zynq PS
+      ├── SmartConnect control
+      ├── SmartConnect DDR
+      └── reset/clock
+      ↓
+5. Synthesis
+      ↓
+6. Implementation
+      ↓
+7. Generate .bit
+      ↓
+8. JTAG to Genesys ZU
+      ↓
+9. XSCT
+      │
+      ├── initialize PS
+      ├── initialize DDR
+      ├── configure PL
+      ├── download model → DDR
+      ├── download input → DDR
+      └── write START
+      ↓
+10. PL accelerator runs
+      │
+      ├── AXI reads DDR
+      ├── computes ViT
+      └── AXI writes DDR
+      ↓
+11. XSCT reads result from DDR/status
+
 
