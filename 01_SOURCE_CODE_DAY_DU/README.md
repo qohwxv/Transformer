@@ -54,3 +54,28 @@
                SmartConnect
                      │
                   PS DDR
+
+
+1. rtl/top/vit_phase_e_axi_bd_wrapper.v
+              ↓
+2. rtl/axi/vit_phase_e_axi_wrapper.sv
+              ↓
+3. rtl/axi/control/vit_axi_lite_control_regs.sv
+              ↓
+4. rtl/core/vit_phase_e_npu.sv
+              ↓
+5. rtl/core/vit_phase_e_engine_top.sv
+              ↓
+6. rtl/core/vit_phase_e_command_controller.sv
+              ↓
+7. rtl/control/vit_phase_e_sequencer.sv
+              ↓
+8. rtl/core/vit_phase_e_memory_frontend.sv
+              ↓
+9. rtl/axi/memory/vit_phase_e_axi_mem_adapter.sv
+              ↓
+10. rtl/blocks/gemm/vit_gemm_controller.sv
+              ↓
+11. vit_gemm_activation_panel_cache.sv
+              ↓
+12. vit_gemm_fp16_parallel_scheduler.sv
