@@ -1,6 +1,0 @@
-class_index=281
-class_label=tabby, tabby cat
-max_logit=11.432170868
-confidence=0.726533055
-confidence_percent=72.653306%
-confidence_fp32_word=3F39FE12
