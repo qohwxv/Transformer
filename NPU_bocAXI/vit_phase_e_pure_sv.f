@@ -1,6 +1,0 @@
-vit_phase_e_pkg.sv
-vit_fp32_math_ref_pkg.sv
-vit_phase_e_sequencer.sv
-vit_phase_e_behavioral_engine_top.sv
-vit_phase_e_npu.sv
-tb_vit_phase_e.sv
