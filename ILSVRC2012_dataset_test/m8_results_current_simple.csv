@@ -1,0 +1,1001 @@
+ordinal,dataset_index,source_image,expected_class_index,expected_class_label,predicted_class_index,predicted_class_label,top1_correct
+1,1,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000001.JPEG,65,sea snake,65,sea snake,PASS
+2,2,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000002.JPEG,970,alp,795,ski,FAIL
+3,3,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000003.JPEG,230,"Shetland sheepdog, Shetland sheep dog, Shetland",230,"Shetland sheepdog, Shetland sheep dog, Shetland",PASS
+4,4,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000004.JPEG,809,soup bowl,925,consomme,FAIL
+5,5,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000005.JPEG,516,cradle,516,cradle,PASS
+6,6,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000006.JPEG,57,"garter snake, grass snake",57,"garter snake, grass snake",PASS
+7,7,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000007.JPEG,334,"porcupine, hedgehog",334,"porcupine, hedgehog",PASS
+8,8,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000008.JPEG,415,"bakery, bakeshop, bakehouse",415,"bakery, bakeshop, bakehouse",PASS
+9,9,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000009.JPEG,674,mousetrap,674,mousetrap,PASS
+10,10,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000010.JPEG,332,"Angora, Angora rabbit",204,"Lhasa, Lhasa apso",FAIL
+11,11,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000011.JPEG,109,brain coral,109,brain coral,PASS
+12,12,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000012.JPEG,286,"cougar, puma, catamount, mountain lion, painter, panther, Felis concolor",286,"cougar, puma, catamount, mountain lion, painter, panther, Felis concolor",PASS
+13,13,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000013.JPEG,370,"guenon, guenon monkey",370,"guenon, guenon monkey",PASS
+14,14,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000014.JPEG,757,"recreational vehicle, RV, R.V.",757,"recreational vehicle, RV, R.V.",PASS
+15,15,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000015.JPEG,595,"harvester, reaper",595,"harvester, reaper",PASS
+16,16,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000016.JPEG,147,"grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus",147,"grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus",PASS
+17,17,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000017.JPEG,108,"sea anemone, anemone",327,"starfish, sea star",FAIL
+18,18,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000018.JPEG,23,vulture,23,vulture,PASS
+19,19,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000019.JPEG,478,carton,478,carton,PASS
+20,20,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000020.JPEG,517,crane,517,crane,PASS
+21,21,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000021.JPEG,334,"porcupine, hedgehog",334,"porcupine, hedgehog",PASS
+22,22,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000022.JPEG,173,"Ibizan hound, Ibizan Podenco",267,standard poodle,FAIL
+23,23,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000023.JPEG,948,Granny Smith,948,Granny Smith,PASS
+24,24,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000024.JPEG,727,planetarium,727,planetarium,PASS
+25,25,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000025.JPEG,23,vulture,23,vulture,PASS
+26,26,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000026.JPEG,846,table lamp,846,table lamp,PASS
+27,27,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000027.JPEG,270,"white wolf, Arctic wolf, Canis lupus tundrarum",270,"white wolf, Arctic wolf, Canis lupus tundrarum",PASS
+28,28,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000028.JPEG,167,English foxhound,166,"Walker hound, Walker foxhound",FAIL
+29,29,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000029.JPEG,55,"green snake, grass snake",64,green mamba,FAIL
+30,30,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000030.JPEG,858,tile roof,538,dome,FAIL
+31,31,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000031.JPEG,324,cabbage butterfly,324,cabbage butterfly,PASS
+32,32,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000032.JPEG,573,go-kart,573,go-kart,PASS
+33,33,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000033.JPEG,150,sea lion,150,sea lion,PASS
+34,34,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000034.JPEG,981,"ballplayer, baseball player",981,"ballplayer, baseball player",PASS
+35,35,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000035.JPEG,586,half track,586,half track,PASS
+36,36,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000036.JPEG,887,vestment,887,vestment,PASS
+37,37,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000037.JPEG,32,"tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui",26,"common newt, Triturus vulgaris",FAIL
+38,38,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000038.JPEG,398,abacus,398,abacus,PASS
+39,39,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000039.JPEG,777,scabbard,777,scabbard,PASS
+40,40,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000040.JPEG,74,"garden spider, Aranea diademata",73,"barn spider, Araneus cavaticus",FAIL
+41,41,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000041.JPEG,516,cradle,431,bassinet,FAIL
+42,42,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000042.JPEG,756,rain barrel,756,rain barrel,PASS
+43,43,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000043.JPEG,129,spoonbill,129,spoonbill,PASS
+44,44,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000044.JPEG,198,standard schnauzer,198,standard schnauzer,PASS
+45,45,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000045.JPEG,256,"Newfoundland, Newfoundland dog",256,"Newfoundland, Newfoundland dog",PASS
+46,46,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000046.JPEG,725,"pitcher, ewer",725,"pitcher, ewer",PASS
+47,47,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000047.JPEG,565,freight car,565,freight car,PASS
+48,48,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000048.JPEG,167,English foxhound,166,"Walker hound, Walker foxhound",FAIL
+49,49,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000049.JPEG,717,"pickup, pickup truck",717,"pickup, pickup truck",PASS
+50,50,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000050.JPEG,394,sturgeon,390,eel,FAIL
+51,51,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000051.JPEG,92,bee eater,92,bee eater,PASS
+52,52,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000052.JPEG,29,"axolotl, mud puppy, Ambystoma mexicanum",29,"axolotl, mud puppy, Ambystoma mexicanum",PASS
+53,53,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000053.JPEG,844,"switch, electric switch, electrical switch",844,"switch, electric switch, electrical switch",PASS
+54,54,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000054.JPEG,591,"handkerchief, hankie, hanky, hankey",591,"handkerchief, hankie, hanky, hankey",PASS
+55,55,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000055.JPEG,358,"polecat, fitch, foulmart, foumart, Mustela putorius",358,"polecat, fitch, foulmart, foumart, Mustela putorius",PASS
+56,56,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000056.JPEG,468,"cab, hack, taxi, taxicab",468,"cab, hack, taxi, taxicab",PASS
+57,57,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000057.JPEG,259,Pomeranian,154,"Pekinese, Pekingese, Peke",FAIL
+58,58,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000058.JPEG,994,"stinkhorn, carrion fungus",994,"stinkhorn, carrion fungus",PASS
+59,59,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000059.JPEG,872,tripod,872,tripod,PASS
+60,60,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000060.JPEG,588,hamper,588,hamper,PASS
+61,61,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000061.JPEG,474,cardigan,474,cardigan,PASS
+62,62,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000062.JPEG,183,Kerry blue terrier,206,curly-coated retriever,FAIL
+63,63,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000063.JPEG,107,jellyfish,107,jellyfish,PASS
+64,64,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000064.JPEG,46,"green lizard, Lacerta viridis",46,"green lizard, Lacerta viridis",PASS
+65,65,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000065.JPEG,842,"swimming trunks, bathing trunks",842,"swimming trunks, bathing trunks",PASS
+66,66,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000066.JPEG,390,eel,390,eel,PASS
+67,67,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000067.JPEG,101,tusker,101,tusker,PASS
+68,68,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000068.JPEG,887,vestment,887,vestment,PASS
+69,69,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000069.JPEG,870,"tricycle, trike, velocipede",870,"tricycle, trike, velocipede",PASS
+70,70,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000070.JPEG,841,sweatshirt,837,"sunglasses, dark glasses, shades",FAIL
+71,71,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000071.JPEG,467,"butcher shop, meat market",4,"hammerhead, hammerhead shark",FAIL
+72,72,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000072.JPEG,149,"dugong, Dugong dugon",149,"dugong, Dugong dugon",PASS
+73,73,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000073.JPEG,21,kite,21,kite,PASS
+74,74,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000074.JPEG,476,"carousel, carrousel, merry-go-round, roundabout, whirligig",476,"carousel, carrousel, merry-go-round, roundabout, whirligig",PASS
+75,75,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000075.JPEG,80,black grouse,80,black grouse,PASS
+76,76,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000076.JPEG,424,barbershop,424,barbershop,PASS
+77,77,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000077.JPEG,159,Rhodesian ridgeback,159,Rhodesian ridgeback,PASS
+78,78,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000078.JPEG,275,"African hunting dog, hyena dog, Cape hunting dog, Lycaon pictus",275,"African hunting dog, hyena dog, Cape hunting dog, Lycaon pictus",PASS
+79,79,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000079.JPEG,175,"otterhound, otter hound",207,golden retriever,FAIL
+80,80,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000080.JPEG,461,"breastplate, aegis, egis",461,"breastplate, aegis, egis",PASS
+81,81,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000081.JPEG,970,alp,970,alp,PASS
+82,82,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000082.JPEG,160,"Afghan hound, Afghan",160,"Afghan hound, Afghan",PASS
+83,83,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000083.JPEG,788,"shoe shop, shoe-shop, shoe store",788,"shoe shop, shoe-shop, shoe store",PASS
+84,84,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000084.JPEG,58,water snake,58,water snake,PASS
+85,85,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000085.JPEG,479,car wheel,627,"limousine, limo",FAIL
+86,86,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000086.JPEG,498,"cinema, movie theater, movie theatre, movie house, picture palace",498,"cinema, movie theater, movie theatre, movie house, picture palace",PASS
+87,87,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000087.JPEG,369,"siamang, Hylobates syndactylus, Symphalangus syndactylus",368,"gibbon, Hylobates lar",FAIL
+88,88,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000088.JPEG,28,"spotted salamander, Ambystoma maculatum",28,"spotted salamander, Ambystoma maculatum",PASS
+89,89,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000089.JPEG,487,"cellular telephone, cellular phone, cellphone, cell, mobile phone",487,"cellular telephone, cellular phone, cellphone, cell, mobile phone",PASS
+90,90,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000090.JPEG,50,"American alligator, Alligator mississipiensis",50,"American alligator, Alligator mississipiensis",PASS
+91,91,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000091.JPEG,270,"white wolf, Arctic wolf, Canis lupus tundrarum",270,"white wolf, Arctic wolf, Canis lupus tundrarum",PASS
+92,92,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000092.JPEG,383,"Madagascar cat, ring-tailed lemur, Lemur catta",383,"Madagascar cat, ring-tailed lemur, Lemur catta",PASS
+93,93,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000093.JPEG,366,"gorilla, Gorilla gorilla",366,"gorilla, Gorilla gorilla",PASS
+94,94,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000094.JPEG,780,schooner,484,catamaran,FAIL
+95,95,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000095.JPEG,373,macaque,373,macaque,PASS
+96,96,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000096.JPEG,705,"passenger car, coach, carriage",705,"passenger car, coach, carriage",PASS
+97,97,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000097.JPEG,330,"wood rabbit, cottontail, cottontail rabbit",330,"wood rabbit, cottontail, cottontail rabbit",PASS
+98,98,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000098.JPEG,142,dowitcher,142,dowitcher,PASS
+99,99,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000099.JPEG,949,strawberry,949,strawberry,PASS
+100,100,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000100.JPEG,349,"bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis",349,"bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis",PASS
+101,101,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000101.JPEG,473,"can opener, tin opener",473,"can opener, tin opener",PASS
+102,102,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000102.JPEG,159,Rhodesian ridgeback,159,Rhodesian ridgeback,PASS
+103,103,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000103.JPEG,872,tripod,872,tripod,PASS
+104,104,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000104.JPEG,878,typewriter keyboard,878,typewriter keyboard,PASS
+105,105,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000105.JPEG,201,"silky terrier, Sydney silky",187,Yorkshire terrier,FAIL
+106,106,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000106.JPEG,906,Windsor tie,906,Windsor tie,PASS
+107,107,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000107.JPEG,70,"harvestman, daddy longlegs, Phalangium opilio",70,"harvestman, daddy longlegs, Phalangium opilio",PASS
+108,108,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000108.JPEG,486,"cello, violoncello",486,"cello, violoncello",PASS
+109,109,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000109.JPEG,632,"loudspeaker, speaker, speaker unit, loudspeaker system, speaker system",632,"loudspeaker, speaker, speaker unit, loudspeaker system, speaker system",PASS
+110,110,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000110.JPEG,608,"jean, blue jean, denim",636,"mailbag, postbag",FAIL
+111,111,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000111.JPEG,122,"American lobster, Northern lobster, Maine lobster, Homarus americanus",122,"American lobster, Northern lobster, Maine lobster, Homarus americanus",PASS
+112,112,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000112.JPEG,720,pill bottle,720,pill bottle,PASS
+113,113,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000113.JPEG,227,kelpie,227,kelpie,PASS
+114,114,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000114.JPEG,686,oil filter,758,reel,FAIL
+115,115,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000115.JPEG,173,"Ibizan hound, Ibizan Podenco",180,"American Staffordshire terrier, Staffordshire terrier, American pit bull terrier, pit bull terrier",FAIL
+116,116,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000116.JPEG,959,carbonara,959,carbonara,PASS
+117,117,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000117.JPEG,638,maillot,638,maillot,PASS
+118,118,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000118.JPEG,646,"maze, labyrinth",545,"electric fan, blower",FAIL
+119,119,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000119.JPEG,664,monitor,851,"television, television system",FAIL
+120,120,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000120.JPEG,645,maypole,645,maypole,PASS
+121,121,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000121.JPEG,718,pier,718,pier,PASS
+122,122,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000122.JPEG,483,castle,483,castle,PASS
+123,123,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000123.JPEG,852,tennis ball,852,tennis ball,PASS
+124,124,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000124.JPEG,392,"rock beauty, Holocanthus tricolor",397,"puffer, pufferfish, blowfish, globefish",FAIL
+125,125,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000125.JPEG,311,"grasshopper, hopper",311,"grasshopper, hopper",PASS
+126,126,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000126.JPEG,457,"bow tie, bow-tie, bowtie",457,"bow tie, bow-tie, bowtie",PASS
+127,127,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000127.JPEG,352,"impala, Aepyceros melampus",352,"impala, Aepyceros melampus",PASS
+128,128,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000128.JPEG,22,"bald eagle, American eagle, Haliaeetus leucocephalus",80,black grouse,FAIL
+129,129,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000129.JPEG,934,"hotdog, hot dog, red hot",934,"hotdog, hot dog, red hot",PASS
+130,130,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000130.JPEG,283,Persian cat,283,Persian cat,PASS
+131,131,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000131.JPEG,802,snowmobile,802,snowmobile,PASS
+132,132,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000132.JPEG,553,"file, file cabinet, filing cabinet",553,"file, file cabinet, filing cabinet",PASS
+133,133,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000133.JPEG,276,"hyena, hyaena",276,"hyena, hyaena",PASS
+134,134,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000134.JPEG,236,"Doberman, Doberman pinscher",165,black-and-tan coonhound,FAIL
+135,135,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000135.JPEG,751,"racer, race car, racing car",751,"racer, race car, racing car",PASS
+136,136,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000136.JPEG,343,warthog,342,"wild boar, boar, Sus scrofa",FAIL
+137,137,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000137.JPEG,528,"dial telephone, dial phone",528,"dial telephone, dial phone",PASS
+138,138,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000138.JPEG,328,sea urchin,328,sea urchin,PASS
+139,139,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000139.JPEG,969,eggnog,969,eggnog,PASS
+140,140,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000140.JPEG,558,"flute, transverse flute",251,"dalmatian, coach dog, carriage dog",FAIL
+141,141,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000141.JPEG,163,"bloodhound, sleuthhound",163,"bloodhound, sleuthhound",PASS
+142,142,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000142.JPEG,328,sea urchin,328,sea urchin,PASS
+143,143,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000143.JPEG,771,safe,771,safe,PASS
+144,144,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000144.JPEG,726,"plane, carpenter's plane, woodworking plane",726,"plane, carpenter's plane, woodworking plane",PASS
+145,145,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000145.JPEG,977,"sandbar, sand bar",977,"sandbar, sand bar",PASS
+146,146,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000146.JPEG,875,trombone,513,"cornet, horn, trumpet, trump",FAIL
+147,147,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000147.JPEG,265,toy poodle,266,miniature poodle,FAIL
+148,148,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000148.JPEG,686,oil filter,686,oil filter,PASS
+149,149,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000149.JPEG,590,"hand-held computer, hand-held microcomputer",590,"hand-held computer, hand-held microcomputer",PASS
+150,150,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000150.JPEG,975,"lakeside, lakeshore",978,"seashore, coast, seacoast, sea-coast",FAIL
+151,151,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000151.JPEG,620,"laptop, laptop computer",681,"notebook, notebook computer",FAIL
+152,152,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000152.JPEG,637,"mailbox, letter box",637,"mailbox, letter box",PASS
+153,153,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000153.JPEG,39,"common iguana, iguana, Iguana iguana",39,"common iguana, iguana, Iguana iguana",PASS
+154,154,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000154.JPEG,115,"sea slug, nudibranch",115,"sea slug, nudibranch",PASS
+155,155,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000155.JPEG,937,broccoli,937,broccoli,PASS
+156,156,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000156.JPEG,272,"coyote, prairie wolf, brush wolf, Canis latrans",274,"dhole, Cuon alpinus",FAIL
+157,157,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000157.JPEG,277,"red fox, Vulpes vulpes",277,"red fox, Vulpes vulpes",PASS
+158,158,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000158.JPEG,763,"revolver, six-gun, six-shooter",763,"revolver, six-gun, six-shooter",PASS
+159,159,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000159.JPEG,789,shoji,532,"dining table, board",FAIL
+160,160,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000160.JPEG,646,"maze, labyrinth",646,"maze, labyrinth",PASS
+161,161,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000161.JPEG,213,"Irish setter, red setter",168,redbone,FAIL
+162,162,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000162.JPEG,493,"chiffonier, commode",894,"wardrobe, closet, press",FAIL
+163,163,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000163.JPEG,647,measuring cup,647,measuring cup,PASS
+164,164,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000164.JPEG,504,coffee mug,504,coffee mug,PASS
+165,165,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000165.JPEG,937,broccoli,937,broccoli,PASS
+166,166,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000166.JPEG,687,"organ, pipe organ",687,"organ, pipe organ",PASS
+167,167,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000167.JPEG,781,scoreboard,781,scoreboard,PASS
+168,168,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000168.JPEG,666,mortar,666,mortar,PASS
+169,169,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000169.JPEG,583,guillotine,583,guillotine,PASS
+170,170,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000170.JPEG,158,toy terrier,158,toy terrier,PASS
+171,171,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000171.JPEG,825,stone wall,825,stone wall,PASS
+172,172,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000172.JPEG,212,English setter,212,English setter,PASS
+173,173,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000173.JPEG,659,mixing bowl,659,mixing bowl,PASS
+174,174,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000174.JPEG,257,Great Pyrenees,257,Great Pyrenees,PASS
+175,175,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000175.JPEG,436,"beach wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon",436,"beach wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon",PASS
+176,176,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000176.JPEG,196,miniature schnauzer,199,"Scotch terrier, Scottish terrier, Scottie",FAIL
+177,177,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000177.JPEG,140,"red-backed sandpiper, dunlin, Erolia alpina",140,"red-backed sandpiper, dunlin, Erolia alpina",PASS
+178,178,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000178.JPEG,248,"Eskimo dog, husky",248,"Eskimo dog, husky",PASS
+179,179,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000179.JPEG,339,sorrel,676,muzzle,FAIL
+180,180,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000180.JPEG,230,"Shetland sheepdog, Shetland sheep dog, Shetland",230,"Shetland sheepdog, Shetland sheep dog, Shetland",PASS
+181,181,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000181.JPEG,361,"skunk, polecat, wood pussy",361,"skunk, polecat, wood pussy",PASS
+182,182,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000182.JPEG,544,Dutch oven,521,Crock Pot,FAIL
+183,183,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000183.JPEG,935,mashed potato,935,mashed potato,PASS
+184,184,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000184.JPEG,638,maillot,445,"bikini, two-piece",FAIL
+185,185,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000185.JPEG,627,"limousine, limo",627,"limousine, limo",PASS
+186,186,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000186.JPEG,289,"snow leopard, ounce, Panthera uncia",289,"snow leopard, ounce, Panthera uncia",PASS
+187,187,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000187.JPEG,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",PASS
+188,188,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000188.JPEG,272,"coyote, prairie wolf, brush wolf, Canis latrans",272,"coyote, prairie wolf, brush wolf, Canis latrans",PASS
+189,189,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000189.JPEG,103,"platypus, duckbill, duckbilled platypus, duck-billed platypus, Ornithorhynchus anatinus",103,"platypus, duckbill, duckbilled platypus, duck-billed platypus, Ornithorhynchus anatinus",PASS
+190,190,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000190.JPEG,584,hair slide,584,hair slide,PASS
+191,191,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000191.JPEG,180,"American Staffordshire terrier, Staffordshire terrier, American pit bull terrier, pit bull terrier",180,"American Staffordshire terrier, Staffordshire terrier, American pit bull terrier, pit bull terrier",PASS
+192,192,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000192.JPEG,703,park bench,703,park bench,PASS
+193,193,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000193.JPEG,449,boathouse,449,boathouse,PASS
+194,194,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000194.JPEG,771,safe,771,safe,PASS
+195,195,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000195.JPEG,118,"Dungeness crab, Cancer magister",118,"Dungeness crab, Cancer magister",PASS
+196,196,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000196.JPEG,396,lionfish,396,lionfish,PASS
+197,197,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000197.JPEG,934,"hotdog, hot dog, red hot",934,"hotdog, hot dog, red hot",PASS
+198,198,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000198.JPEG,16,bulbul,16,bulbul,PASS
+199,199,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000199.JPEG,548,entertainment center,548,entertainment center,PASS
+200,200,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000200.JPEG,993,gyromitra,993,gyromitra,PASS
+201,201,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000201.JPEG,704,parking meter,704,parking meter,PASS
+202,202,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000202.JPEG,457,"bow tie, bow-tie, bowtie",457,"bow tie, bow-tie, bowtie",PASS
+203,203,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000203.JPEG,233,"Bouvier des Flandres, Bouviers des Flandres",233,"Bouvier des Flandres, Bouviers des Flandres",PASS
+204,204,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000204.JPEG,401,"accordion, piano accordion, squeeze box",687,"organ, pipe organ",FAIL
+205,205,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000205.JPEG,827,stove,827,stove,PASS
+206,206,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000206.JPEG,376,"proboscis monkey, Nasalis larvatus",376,"proboscis monkey, Nasalis larvatus",PASS
+207,207,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000207.JPEG,146,"albatross, mollymawk",146,"albatross, mollymawk",PASS
+208,208,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000208.JPEG,606,"iron, smoothing iron",606,"iron, smoothing iron",PASS
+209,209,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000209.JPEG,922,menu,922,menu,PASS
+210,210,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000210.JPEG,516,cradle,431,bassinet,FAIL
+211,211,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000211.JPEG,284,"Siamese cat, Siamese",284,"Siamese cat, Siamese",PASS
+212,212,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000212.JPEG,889,"violin, fiddle",889,"violin, fiddle",PASS
+213,213,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000213.JPEG,475,car mirror,475,car mirror,PASS
+214,214,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000214.JPEG,978,"seashore, coast, seacoast, sea-coast",978,"seashore, coast, seacoast, sea-coast",PASS
+215,215,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000215.JPEG,475,car mirror,475,car mirror,PASS
+216,216,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000216.JPEG,984,rapeseed,984,rapeseed,PASS
+217,217,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000217.JPEG,16,bulbul,16,bulbul,PASS
+218,218,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000218.JPEG,77,"wolf spider, hunting spider",77,"wolf spider, hunting spider",PASS
+219,219,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000219.JPEG,610,"jersey, T-shirt, tee shirt",610,"jersey, T-shirt, tee shirt",PASS
+220,220,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000220.JPEG,254,"pug, pug-dog",254,"pug, pug-dog",PASS
+221,221,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000221.JPEG,636,"mailbag, postbag",636,"mailbag, postbag",PASS
+222,222,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000222.JPEG,662,modem,662,modem,PASS
+223,223,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000223.JPEG,473,"can opener, tin opener",473,"can opener, tin opener",PASS
+224,224,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000224.JPEG,213,"Irish setter, red setter",207,golden retriever,FAIL
+225,225,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000225.JPEG,25,"European fire salamander, Salamandra salamandra",25,"European fire salamander, Salamandra salamandra",PASS
+226,226,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000226.JPEG,463,"bucket, pail",427,"barrel, cask",FAIL
+227,227,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000227.JPEG,215,Brittany spaniel,215,Brittany spaniel,PASS
+228,228,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000228.JPEG,173,"Ibizan hound, Ibizan Podenco",173,"Ibizan hound, Ibizan Podenco",PASS
+229,229,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000229.JPEG,35,mud turtle,35,mud turtle,PASS
+230,230,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000230.JPEG,741,"prayer rug, prayer mat",741,"prayer rug, prayer mat",PASS
+231,231,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000231.JPEG,125,hermit crab,125,hermit crab,PASS
+232,232,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000232.JPEG,787,"shield, buckler",412,"ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin",FAIL
+233,233,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000233.JPEG,289,"snow leopard, ounce, Panthera uncia",289,"snow leopard, ounce, Panthera uncia",PASS
+234,234,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000234.JPEG,425,barn,425,barn,PASS
+235,235,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000235.JPEG,973,coral reef,973,coral reef,PASS
+236,236,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000236.JPEG,1,"goldfish, Carassius auratus",1,"goldfish, Carassius auratus",PASS
+237,237,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000237.JPEG,167,English foxhound,167,English foxhound,PASS
+238,238,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000238.JPEG,121,"king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica",121,"king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica",PASS
+239,239,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000239.JPEG,445,"bikini, two-piece",842,"swimming trunks, bathing trunks",FAIL
+240,240,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000240.JPEG,702,"parallel bars, bars",422,barbell,FAIL
+241,241,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000241.JPEG,532,"dining table, board",532,"dining table, board",PASS
+242,242,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000242.JPEG,366,"gorilla, Gorilla gorilla",366,"gorilla, Gorilla gorilla",PASS
+243,243,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000243.JPEG,678,neck brace,678,neck brace,PASS
+244,244,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000244.JPEG,764,rifle,764,rifle,PASS
+245,245,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000245.JPEG,125,hermit crab,125,hermit crab,PASS
+246,246,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000246.JPEG,349,"bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis",349,"bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis",PASS
+247,247,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000247.JPEG,13,"junco, snowbird",13,"junco, snowbird",PASS
+248,248,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000248.JPEG,179,"Staffordshire bullterrier, Staffordshire bull terrier",179,"Staffordshire bullterrier, Staffordshire bull terrier",PASS
+249,249,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000249.JPEG,522,croquet ball,522,croquet ball,PASS
+250,250,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000250.JPEG,493,"chiffonier, commode",894,"wardrobe, closet, press",FAIL
+251,251,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000251.JPEG,989,"hip, rose hip, rosehip",989,"hip, rose hip, rosehip",PASS
+252,252,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000252.JPEG,720,pill bottle,720,pill bottle,PASS
+253,253,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000253.JPEG,438,beaker,438,beaker,PASS
+254,254,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000254.JPEG,660,"mobile home, manufactured home",660,"mobile home, manufactured home",PASS
+255,255,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000255.JPEG,983,scuba diver,983,scuba diver,PASS
+256,256,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000256.JPEG,533,"dishrag, dishcloth",443,bib,FAIL
+257,257,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000257.JPEG,487,"cellular telephone, cellular phone, cellphone, cell, mobile phone",590,"hand-held computer, hand-held microcomputer",FAIL
+258,258,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000258.JPEG,27,eft,27,eft,PASS
+259,259,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000259.JPEG,644,matchstick,644,matchstick,PASS
+260,260,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000260.JPEG,750,"quilt, comforter, comfort, puff",207,golden retriever,FAIL
+261,261,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000261.JPEG,865,toyshop,865,toyshop,PASS
+262,262,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000262.JPEG,1,"goldfish, Carassius auratus",1,"goldfish, Carassius auratus",PASS
+263,263,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000263.JPEG,176,"Saluki, gazelle hound",176,"Saluki, gazelle hound",PASS
+264,264,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000264.JPEG,694,"paddlewheel, paddle wheel",694,"paddlewheel, paddle wheel",PASS
+265,265,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000265.JPEG,695,padlock,782,"screen, CRT screen",FAIL
+266,266,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000266.JPEG,798,"slide rule, slipstick",798,"slide rule, slipstick",PASS
+267,267,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000267.JPEG,925,consomme,925,consomme,PASS
+268,268,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000268.JPEG,413,"assault rifle, assault gun",413,"assault rifle, assault gun",PASS
+269,269,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000269.JPEG,250,Siberian husky,270,"white wolf, Arctic wolf, Canis lupus tundrarum",FAIL
+270,270,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000270.JPEG,970,alp,972,"cliff, drop, drop-off",FAIL
+271,271,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000271.JPEG,821,steel arch bridge,821,steel arch bridge,PASS
+272,272,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000272.JPEG,421,"bannister, banister, balustrade, balusters, handrail",421,"bannister, banister, balustrade, balusters, handrail",PASS
+273,273,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000273.JPEG,361,"skunk, polecat, wood pussy",361,"skunk, polecat, wood pussy",PASS
+274,274,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000274.JPEG,920,"traffic light, traffic signal, stoplight",920,"traffic light, traffic signal, stoplight",PASS
+275,275,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000275.JPEG,761,"remote control, remote",761,"remote control, remote",PASS
+276,276,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000276.JPEG,27,eft,27,eft,PASS
+277,277,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000277.JPEG,676,muzzle,676,muzzle,PASS
+278,278,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000278.JPEG,92,bee eater,92,bee eater,PASS
+279,279,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000279.JPEG,194,"Dandie Dinmont, Dandie Dinmont terrier",194,"Dandie Dinmont, Dandie Dinmont terrier",PASS
+280,280,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000280.JPEG,897,"washer, automatic washer, washing machine",897,"washer, automatic washer, washing machine",PASS
+281,281,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000281.JPEG,612,"jinrikisha, ricksha, rickshaw",612,"jinrikisha, ricksha, rickshaw",PASS
+282,282,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000282.JPEG,610,"jersey, T-shirt, tee shirt",918,"crossword puzzle, crossword",FAIL
+283,283,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000283.JPEG,283,Persian cat,283,Persian cat,PASS
+284,284,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000284.JPEG,881,"upright, upright piano",881,"upright, upright piano",PASS
+285,285,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000285.JPEG,906,Windsor tie,906,Windsor tie,PASS
+286,286,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000286.JPEG,899,water jug,470,"candle, taper, wax light",FAIL
+287,287,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000287.JPEG,426,barometer,426,barometer,PASS
+288,288,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000288.JPEG,554,fireboat,554,fireboat,PASS
+289,289,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000289.JPEG,403,"aircraft carrier, carrier, flattop, attack aircraft carrier",403,"aircraft carrier, carrier, flattop, attack aircraft carrier",PASS
+290,290,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000290.JPEG,826,"stopwatch, stop watch",826,"stopwatch, stop watch",PASS
+291,291,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000291.JPEG,869,trench coat,869,trench coat,PASS
+292,292,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000292.JPEG,730,"plow, plough",730,"plow, plough",PASS
+293,293,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000293.JPEG,0,"tench, Tinca tinca",0,"tench, Tinca tinca",PASS
+294,294,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000294.JPEG,866,tractor,866,tractor,PASS
+295,295,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000295.JPEG,580,"greenhouse, nursery, glasshouse",738,"pot, flowerpot",FAIL
+296,296,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000296.JPEG,888,viaduct,718,pier,FAIL
+297,297,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000297.JPEG,43,"frilled lizard, Chlamydosaurus kingi",43,"frilled lizard, Chlamydosaurus kingi",PASS
+298,298,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000298.JPEG,64,green mamba,64,green mamba,PASS
+299,299,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000299.JPEG,69,trilobite,69,trilobite,PASS
+300,300,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000300.JPEG,176,"Saluki, gazelle hound",176,"Saluki, gazelle hound",PASS
+301,301,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000301.JPEG,329,"sea cucumber, holothurian",329,"sea cucumber, holothurian",PASS
+302,302,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000302.JPEG,469,"caldron, cauldron",469,"caldron, cauldron",PASS
+303,303,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000303.JPEG,292,"tiger, Panthera tigris",288,"leopard, Panthera pardus",FAIL
+304,304,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000304.JPEG,991,coral fungus,991,coral fungus,PASS
+305,305,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000305.JPEG,591,"handkerchief, hankie, hanky, hankey",446,"binder, ring-binder",FAIL
+306,306,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000306.JPEG,346,"water buffalo, water ox, Asiatic buffalo, Bubalus bubalis",346,"water buffalo, water ox, Asiatic buffalo, Bubalus bubalis",PASS
+307,307,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000307.JPEG,1,"goldfish, Carassius auratus",1,"goldfish, Carassius auratus",PASS
+308,308,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000308.JPEG,607,jack-o'-lantern,607,jack-o'-lantern,PASS
+309,309,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000309.JPEG,934,"hotdog, hot dog, red hot",934,"hotdog, hot dog, red hot",PASS
+310,310,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000310.JPEG,784,screwdriver,550,espresso maker,FAIL
+311,311,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000311.JPEG,572,goblet,572,goblet,PASS
+312,312,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000312.JPEG,389,"barracouta, snoek",389,"barracouta, snoek",PASS
+313,313,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000313.JPEG,979,"valley, vale",888,viaduct,FAIL
+314,314,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000314.JPEG,654,minibus,654,minibus,PASS
+315,315,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000315.JPEG,420,banjo,420,banjo,PASS
+316,316,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000316.JPEG,390,eel,390,eel,PASS
+317,317,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000317.JPEG,702,"parallel bars, bars",602,"horizontal bar, high bar",FAIL
+318,318,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000318.JPEG,24,"great grey owl, great gray owl, Strix nebulosa",24,"great grey owl, great gray owl, Strix nebulosa",PASS
+319,319,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000319.JPEG,102,"echidna, spiny anteater, anteater",102,"echidna, spiny anteater, anteater",PASS
+320,320,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000320.JPEG,949,strawberry,954,banana,FAIL
+321,321,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000321.JPEG,508,"computer keyboard, keypad",810,space bar,FAIL
+322,322,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000322.JPEG,361,"skunk, polecat, wood pussy",361,"skunk, polecat, wood pussy",PASS
+323,323,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000323.JPEG,280,"grey fox, gray fox, Urocyon cinereoargenteus",280,"grey fox, gray fox, Urocyon cinereoargenteus",PASS
+324,324,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000324.JPEG,65,sea snake,65,sea snake,PASS
+325,325,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000325.JPEG,777,scabbard,777,scabbard,PASS
+326,326,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000326.JPEG,359,"black-footed ferret, ferret, Mustela nigripes",359,"black-footed ferret, ferret, Mustela nigripes",PASS
+327,327,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000327.JPEG,165,black-and-tan coonhound,236,"Doberman, Doberman pinscher",FAIL
+328,328,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000328.JPEG,21,kite,21,kite,PASS
+329,329,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000329.JPEG,7,cock,7,cock,PASS
+330,330,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000330.JPEG,525,"dam, dike, dyke",525,"dam, dike, dyke",PASS
+331,331,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000331.JPEG,760,"refrigerator, icebox",894,"wardrobe, closet, press",FAIL
+332,332,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000332.JPEG,938,cauliflower,938,cauliflower,PASS
+333,333,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000333.JPEG,254,"pug, pug-dog",254,"pug, pug-dog",PASS
+334,334,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000334.JPEG,733,pole,616,knot,FAIL
+335,335,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000335.JPEG,707,"pay-phone, pay-station",707,"pay-phone, pay-station",PASS
+336,336,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000336.JPEG,463,"bucket, pail",463,"bucket, pail",PASS
+337,337,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000337.JPEG,60,"night snake, Hypsiglena torquata",56,"king snake, kingsnake",FAIL
+338,338,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000338.JPEG,887,vestment,887,vestment,PASS
+339,339,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000339.JPEG,531,digital watch,477,"carpenter's kit, tool kit",FAIL
+340,340,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000340.JPEG,380,"titi, titi monkey",380,"titi, titi monkey",PASS
+341,341,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000341.JPEG,982,"groom, bridegroom",982,"groom, bridegroom",PASS
+342,342,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000342.JPEG,305,dung beetle,300,tiger beetle,FAIL
+343,343,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000343.JPEG,355,llama,355,llama,PASS
+344,344,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000344.JPEG,503,cocktail shaker,503,cocktail shaker,PASS
+345,345,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000345.JPEG,818,"spotlight, spot",878,typewriter keyboard,FAIL
+346,346,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000346.JPEG,495,"china cabinet, china closet",495,"china cabinet, china closet",PASS
+347,347,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000347.JPEG,472,canoe,472,canoe,PASS
+348,348,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000348.JPEG,293,"cheetah, chetah, Acinonyx jubatus",293,"cheetah, chetah, Acinonyx jubatus",PASS
+349,349,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000349.JPEG,816,spindle,816,spindle,PASS
+350,350,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000350.JPEG,195,"Boston bull, Boston terrier",151,Chihuahua,FAIL
+351,351,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000351.JPEG,904,window screen,738,"pot, flowerpot",FAIL
+352,352,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000352.JPEG,475,car mirror,475,car mirror,PASS
+353,353,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000353.JPEG,481,cassette,481,cassette,PASS
+354,354,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000354.JPEG,431,bassinet,431,bassinet,PASS
+355,355,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000355.JPEG,260,"chow, chow chow",260,"chow, chow chow",PASS
+356,356,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000356.JPEG,130,flamingo,128,"black stork, Ciconia nigra",FAIL
+357,357,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000357.JPEG,627,"limousine, limo",627,"limousine, limo",PASS
+358,358,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000358.JPEG,460,"breakwater, groin, groyne, mole, bulwark, seawall, jetty",978,"seashore, coast, seacoast, sea-coast",FAIL
+359,359,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000359.JPEG,622,"lens cap, lens cover",622,"lens cap, lens cover",PASS
+360,360,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000360.JPEG,696,paintbrush,696,paintbrush,PASS
+361,361,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000361.JPEG,300,tiger beetle,300,tiger beetle,PASS
+362,362,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000362.JPEG,37,"box turtle, box tortoise",37,"box turtle, box tortoise",PASS
+363,363,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000363.JPEG,133,bittern,133,bittern,PASS
+364,364,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000364.JPEG,637,"mailbox, letter box",637,"mailbox, letter box",PASS
+365,365,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000365.JPEG,675,moving van,675,moving van,PASS
+366,366,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000366.JPEG,465,bulletproof vest,465,bulletproof vest,PASS
+367,367,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000367.JPEG,592,"hard disc, hard disk, fixed disk",592,"hard disc, hard disk, fixed disk",PASS
+368,368,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000368.JPEG,741,"prayer rug, prayer mat",741,"prayer rug, prayer mat",PASS
+369,369,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000369.JPEG,895,"warplane, military plane",895,"warplane, military plane",PASS
+370,370,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000370.JPEG,91,coucal,91,coucal,PASS
+371,371,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000371.JPEG,109,brain coral,109,brain coral,PASS
+372,372,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000372.JPEG,582,"grocery store, grocery, food market, market",778,"scale, weighing machine",FAIL
+373,373,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000373.JPEG,694,"paddlewheel, paddle wheel",694,"paddlewheel, paddle wheel",PASS
+374,374,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000374.JPEG,546,electric guitar,546,electric guitar,PASS
+375,375,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000375.JPEG,208,Labrador retriever,208,Labrador retriever,PASS
+376,376,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000376.JPEG,488,chain,488,chain,PASS
+377,377,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000377.JPEG,786,sewing machine,786,sewing machine,PASS
+378,378,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000378.JPEG,959,carbonara,959,carbonara,PASS
+379,379,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000379.JPEG,192,"cairn, cairn terrier",192,"cairn, cairn terrier",PASS
+380,380,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000380.JPEG,834,"suit, suit of clothes",861,toilet seat,FAIL
+381,381,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000381.JPEG,879,umbrella,879,umbrella,PASS
+382,382,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000382.JPEG,649,"megalith, megalithic structure",649,"megalith, megalithic structure",PASS
+383,383,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000383.JPEG,228,komondor,228,komondor,PASS
+384,384,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000384.JPEG,621,"lawn mower, mower",621,"lawn mower, mower",PASS
+385,385,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000385.JPEG,630,Loafer,703,park bench,FAIL
+386,386,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000386.JPEG,107,jellyfish,107,jellyfish,PASS
+387,387,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000387.JPEG,598,"home theater, home theatre",598,"home theater, home theatre",PASS
+388,388,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000388.JPEG,420,banjo,420,banjo,PASS
+389,389,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000389.JPEG,134,crane,132,"American egret, great white heron, Egretta albus",FAIL
+390,390,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000390.JPEG,133,bittern,133,bittern,PASS
+391,391,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000391.JPEG,185,Norfolk terrier,185,Norfolk terrier,PASS
+392,392,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000392.JPEG,471,cannon,471,cannon,PASS
+393,393,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000393.JPEG,230,"Shetland sheepdog, Shetland sheep dog, Shetland",230,"Shetland sheepdog, Shetland sheep dog, Shetland",PASS
+394,394,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000394.JPEG,974,geyser,974,geyser,PASS
+395,395,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000395.JPEG,74,"garden spider, Aranea diademata",74,"garden spider, Aranea diademata",PASS
+396,396,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000396.JPEG,76,tarantula,76,tarantula,PASS
+397,397,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000397.JPEG,852,tennis ball,852,tennis ball,PASS
+398,398,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000398.JPEG,383,"Madagascar cat, ring-tailed lemur, Lemur catta",853,"thatch, thatched roof",FAIL
+399,399,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000399.JPEG,267,standard poodle,267,standard poodle,PASS
+400,400,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000400.JPEG,419,Band Aid,772,safety pin,FAIL
+401,401,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000401.JPEG,359,"black-footed ferret, ferret, Mustela nigripes",359,"black-footed ferret, ferret, Mustela nigripes",PASS
+402,402,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000402.JPEG,484,catamaran,484,catamaran,PASS
+403,403,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000403.JPEG,510,"container ship, containership, container vessel",510,"container ship, containership, container vessel",PASS
+404,404,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000404.JPEG,33,"loggerhead, loggerhead turtle, Caretta caretta",33,"loggerhead, loggerhead turtle, Caretta caretta",PASS
+405,405,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000405.JPEG,177,"Scottish deerhound, deerhound",177,"Scottish deerhound, deerhound",PASS
+406,406,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000406.JPEG,935,mashed potato,935,mashed potato,PASS
+407,407,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000407.JPEG,310,"ant, emmet, pismire",310,"ant, emmet, pismire",PASS
+408,408,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000408.JPEG,998,"ear, spike, capitulum",987,corn,FAIL
+409,409,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000409.JPEG,270,"white wolf, Arctic wolf, Canis lupus tundrarum",270,"white wolf, Arctic wolf, Canis lupus tundrarum",PASS
+410,410,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000410.JPEG,598,"home theater, home theatre",598,"home theater, home theatre",PASS
+411,411,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000411.JPEG,199,"Scotch terrier, Scottish terrier, Scottie",199,"Scotch terrier, Scottish terrier, Scottie",PASS
+412,412,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000412.JPEG,998,"ear, spike, capitulum",998,"ear, spike, capitulum",PASS
+413,413,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000413.JPEG,836,sunglass,880,"unicycle, monocycle",FAIL
+414,414,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000414.JPEG,14,"indigo bunting, indigo finch, indigo bird, Passerina cyanea",14,"indigo bunting, indigo finch, indigo bird, Passerina cyanea",PASS
+415,415,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000415.JPEG,97,drake,97,drake,PASS
+416,416,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000416.JPEG,856,"thresher, thrasher, threshing machine",856,"thresher, thrasher, threshing machine",PASS
+417,417,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000417.JPEG,398,abacus,398,abacus,PASS
+418,418,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000418.JPEG,319,"dragonfly, darning needle, devil's darning needle, sewing needle, snake feeder, snake doctor, mosquito hawk, skeeter hawk",320,damselfly,FAIL
+419,419,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000419.JPEG,549,envelope,446,"binder, ring-binder",FAIL
+420,420,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000420.JPEG,92,bee eater,92,bee eater,PASS
+421,421,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000421.JPEG,765,"rocking chair, rocker",765,"rocking chair, rocker",PASS
+422,422,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000422.JPEG,412,"ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin",412,"ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin",PASS
+423,423,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000423.JPEG,945,bell pepper,945,bell pepper,PASS
+424,424,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000424.JPEG,160,"Afghan hound, Afghan",160,"Afghan hound, Afghan",PASS
+425,425,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000425.JPEG,265,toy poodle,266,miniature poodle,FAIL
+426,426,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000426.JPEG,638,maillot,639,"maillot, tank suit",FAIL
+427,427,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000427.JPEG,619,"lampshade, lamp shade",846,table lamp,FAIL
+428,428,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000428.JPEG,722,ping-pong ball,722,ping-pong ball,PASS
+429,429,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000429.JPEG,183,Kerry blue terrier,183,Kerry blue terrier,PASS
+430,430,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000430.JPEG,674,mousetrap,674,mousetrap,PASS
+431,431,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000431.JPEG,468,"cab, hack, taxi, taxicab",468,"cab, hack, taxi, taxicab",PASS
+432,432,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000432.JPEG,468,"cab, hack, taxi, taxicab",468,"cab, hack, taxi, taxicab",PASS
+433,433,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000433.JPEG,885,velvet,748,purse,FAIL
+434,434,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000434.JPEG,675,moving van,675,moving van,PASS
+435,435,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000435.JPEG,636,"mailbag, postbag",636,"mailbag, postbag",PASS
+436,436,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000436.JPEG,196,miniature schnauzer,196,miniature schnauzer,PASS
+437,437,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000437.JPEG,912,"worm fence, snake fence, snake-rail fence, Virginia fence",912,"worm fence, snake fence, snake-rail fence, Virginia fence",PASS
+438,438,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000438.JPEG,721,pillow,721,pillow,PASS
+439,439,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000439.JPEG,16,bulbul,16,bulbul,PASS
+440,440,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000440.JPEG,199,"Scotch terrier, Scottish terrier, Scottie",199,"Scotch terrier, Scottish terrier, Scottie",PASS
+441,441,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000441.JPEG,175,"otterhound, otter hound",175,"otterhound, otter hound",PASS
+442,442,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000442.JPEG,775,sarong,775,sarong,PASS
+443,443,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000443.JPEG,944,"artichoke, globe artichoke",944,"artichoke, globe artichoke",PASS
+444,444,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000444.JPEG,350,"ibex, Capra ibex",350,"ibex, Capra ibex",PASS
+445,445,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000445.JPEG,557,"flagpole, flagstaff",557,"flagpole, flagstaff",PASS
+446,446,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000446.JPEG,361,"skunk, polecat, wood pussy",361,"skunk, polecat, wood pussy",PASS
+447,447,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000447.JPEG,361,"skunk, polecat, wood pussy",361,"skunk, polecat, wood pussy",PASS
+448,448,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000448.JPEG,594,harp,594,harp,PASS
+449,449,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000449.JPEG,861,toilet seat,861,toilet seat,PASS
+450,450,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000450.JPEG,257,Great Pyrenees,208,Labrador retriever,FAIL
+451,451,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000451.JPEG,606,"iron, smoothing iron",606,"iron, smoothing iron",PASS
+452,452,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000452.JPEG,734,"police van, police wagon, paddy wagon, patrol wagon, wagon, black Maria",734,"police van, police wagon, paddy wagon, patrol wagon, wagon, black Maria",PASS
+453,453,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000453.JPEG,767,"rubber eraser, rubber, pencil eraser",767,"rubber eraser, rubber, pencil eraser",PASS
+454,454,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000454.JPEG,746,"puck, hockey puck",746,"puck, hockey puck",PASS
+455,455,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000455.JPEG,788,"shoe shop, shoe-shop, shoe store",788,"shoe shop, shoe-shop, shoe store",PASS
+456,456,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000456.JPEG,346,"water buffalo, water ox, Asiatic buffalo, Bubalus bubalis",346,"water buffalo, water ox, Asiatic buffalo, Bubalus bubalis",PASS
+457,457,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000457.JPEG,153,"Maltese dog, Maltese terrier, Maltese",203,West Highland white terrier,FAIL
+458,458,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000458.JPEG,739,potter's wheel,739,potter's wheel,PASS
+459,459,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000459.JPEG,414,"backpack, back pack, knapsack, packsack, rucksack, haversack",414,"backpack, back pack, knapsack, packsack, rucksack, haversack",PASS
+460,460,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000460.JPEG,915,yurt,915,yurt,PASS
+461,461,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000461.JPEG,940,spaghetti squash,940,spaghetti squash,PASS
+462,462,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000462.JPEG,152,Japanese spaniel,152,Japanese spaniel,PASS
+463,463,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000463.JPEG,943,"cucumber, cuke",943,"cucumber, cuke",PASS
+464,464,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000464.JPEG,849,teapot,849,teapot,PASS
+465,465,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000465.JPEG,712,Petri dish,712,Petri dish,PASS
+466,466,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000466.JPEG,100,"black swan, Cygnus atratus",100,"black swan, Cygnus atratus",PASS
+467,467,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000467.JPEG,546,electric guitar,546,electric guitar,PASS
+468,468,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000468.JPEG,744,"projectile, missile",744,"projectile, missile",PASS
+469,469,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000469.JPEG,764,rifle,764,rifle,PASS
+470,470,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000470.JPEG,141,"redshank, Tringa totanus",141,"redshank, Tringa totanus",PASS
+471,471,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000471.JPEG,39,"common iguana, iguana, Iguana iguana",39,"common iguana, iguana, Iguana iguana",PASS
+472,472,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000472.JPEG,993,gyromitra,993,gyromitra,PASS
+473,473,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000473.JPEG,758,reel,758,reel,PASS
+474,474,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000474.JPEG,190,"Sealyham terrier, Sealyham",190,"Sealyham terrier, Sealyham",PASS
+475,475,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000475.JPEG,888,viaduct,888,viaduct,PASS
+476,476,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000476.JPEG,18,magpie,18,magpie,PASS
+477,477,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000477.JPEG,584,hair slide,584,hair slide,PASS
+478,478,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000478.JPEG,341,"hog, pig, grunter, squealer, Sus scrofa",341,"hog, pig, grunter, squealer, Sus scrofa",PASS
+479,479,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000479.JPEG,875,trombone,875,trombone,PASS
+480,480,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000480.JPEG,359,"black-footed ferret, ferret, Mustela nigripes",359,"black-footed ferret, ferret, Mustela nigripes",PASS
+481,481,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000481.JPEG,388,"giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca",388,"giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca",PASS
+482,482,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000482.JPEG,894,"wardrobe, closet, press",894,"wardrobe, closet, press",PASS
+483,483,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000483.JPEG,437,"beacon, lighthouse, beacon light, pharos",437,"beacon, lighthouse, beacon light, pharos",PASS
+484,484,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000484.JPEG,987,corn,987,corn,PASS
+485,485,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000485.JPEG,517,crane,517,crane,PASS
+486,486,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000486.JPEG,372,baboon,372,baboon,PASS
+487,487,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000487.JPEG,286,"cougar, puma, catamount, mountain lion, painter, panther, Felis concolor",286,"cougar, puma, catamount, mountain lion, painter, panther, Felis concolor",PASS
+488,488,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000488.JPEG,662,modem,662,modem,PASS
+489,489,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000489.JPEG,713,photocopier,713,photocopier,PASS
+490,490,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000490.JPEG,915,yurt,915,yurt,PASS
+491,491,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000491.JPEG,964,potpie,964,potpie,PASS
+492,492,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000492.JPEG,146,"albatross, mollymawk",146,"albatross, mollymawk",PASS
+493,493,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000493.JPEG,529,"diaper, nappy, napkin",529,"diaper, nappy, napkin",PASS
+494,494,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000494.JPEG,416,"balance beam, beam",416,"balance beam, beam",PASS
+495,495,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000495.JPEG,376,"proboscis monkey, Nasalis larvatus",376,"proboscis monkey, Nasalis larvatus",PASS
+496,496,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000496.JPEG,147,"grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus",147,"grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus",PASS
+497,497,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000497.JPEG,902,whistle,902,whistle,PASS
+498,498,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000498.JPEG,26,"common newt, Triturus vulgaris",26,"common newt, Triturus vulgaris",PASS
+499,499,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000499.JPEG,398,abacus,398,abacus,PASS
+500,500,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000500.JPEG,175,"otterhound, otter hound",175,"otterhound, otter hound",PASS
+501,501,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000501.JPEG,270,"white wolf, Arctic wolf, Canis lupus tundrarum",270,"white wolf, Arctic wolf, Canis lupus tundrarum",PASS
+502,502,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000502.JPEG,335,"fox squirrel, eastern fox squirrel, Sciurus niger",335,"fox squirrel, eastern fox squirrel, Sciurus niger",PASS
+503,503,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000503.JPEG,532,"dining table, board",532,"dining table, board",PASS
+504,504,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000504.JPEG,540,"drilling platform, offshore rig",540,"drilling platform, offshore rig",PASS
+505,505,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000505.JPEG,607,jack-o'-lantern,607,jack-o'-lantern,PASS
+506,506,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000506.JPEG,495,"china cabinet, china closet",495,"china cabinet, china closet",PASS
+507,507,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000507.JPEG,222,kuvasz,222,kuvasz,PASS
+508,508,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000508.JPEG,801,snorkel,801,snorkel,PASS
+509,509,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000509.JPEG,982,"groom, bridegroom",576,gondola,FAIL
+510,510,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000510.JPEG,304,"leaf beetle, chrysomelid",304,"leaf beetle, chrysomelid",PASS
+511,511,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000511.JPEG,166,"Walker hound, Walker foxhound",166,"Walker hound, Walker foxhound",PASS
+512,512,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000512.JPEG,56,"king snake, kingsnake",56,"king snake, kingsnake",PASS
+513,513,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000513.JPEG,868,tray,967,espresso,FAIL
+514,514,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000514.JPEG,448,birdhouse,448,birdhouse,PASS
+515,515,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000515.JPEG,744,"projectile, missile",657,missile,FAIL
+516,516,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000516.JPEG,567,"frying pan, frypan, skillet",750,"quilt, comforter, comfort, puff",FAIL
+517,517,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000517.JPEG,277,"red fox, Vulpes vulpes",278,"kit fox, Vulpes macrotis",FAIL
+518,518,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000518.JPEG,298,mongoose,298,mongoose,PASS
+519,519,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000519.JPEG,651,"microwave, microwave oven",897,"washer, automatic washer, washing machine",FAIL
+520,520,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000520.JPEG,377,marmoset,377,marmoset,PASS
+521,521,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000521.JPEG,684,"ocarina, sweet potato",684,"ocarina, sweet potato",PASS
+522,522,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000522.JPEG,832,"stupa, tope",832,"stupa, tope",PASS
+523,523,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000523.JPEG,39,"common iguana, iguana, Iguana iguana",39,"common iguana, iguana, Iguana iguana",PASS
+524,524,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000524.JPEG,219,"cocker spaniel, English cocker spaniel, cocker",219,"cocker spaniel, English cocker spaniel, cocker",PASS
+525,525,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000525.JPEG,863,totem pole,863,totem pole,PASS
+526,526,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000526.JPEG,868,tray,868,tray,PASS
+527,527,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000527.JPEG,794,shower curtain,794,shower curtain,PASS
+528,528,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000528.JPEG,80,black grouse,80,black grouse,PASS
+529,529,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000529.JPEG,983,scuba diver,983,scuba diver,PASS
+530,530,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000530.JPEG,269,"timber wolf, grey wolf, gray wolf, Canis lupus",347,bison,FAIL
+531,531,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000531.JPEG,238,Greater Swiss Mountain dog,238,Greater Swiss Mountain dog,PASS
+532,532,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000532.JPEG,498,"cinema, movie theater, movie theatre, movie house, picture palace",781,scoreboard,FAIL
+533,533,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000533.JPEG,223,schipperke,223,schipperke,PASS
+534,534,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000534.JPEG,521,Crock Pot,521,Crock Pot,PASS
+535,535,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000535.JPEG,830,stretcher,830,stretcher,PASS
+536,536,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000536.JPEG,260,"chow, chow chow",260,"chow, chow chow",PASS
+537,537,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000537.JPEG,491,"chain saw, chainsaw",491,"chain saw, chainsaw",PASS
+538,538,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000538.JPEG,896,"washbasin, handbasin, washbowl, lavabo, wash-hand basin",896,"washbasin, handbasin, washbowl, lavabo, wash-hand basin",PASS
+539,539,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000539.JPEG,220,Sussex spaniel,220,Sussex spaniel,PASS
+540,540,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000540.JPEG,680,nipple,680,nipple,PASS
+541,541,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000541.JPEG,48,"Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",48,"Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",PASS
+542,542,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000542.JPEG,542,drumstick,542,drumstick,PASS
+543,543,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000543.JPEG,961,dough,930,French loaf,FAIL
+544,544,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000544.JPEG,820,steam locomotive,820,steam locomotive,PASS
+545,545,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000545.JPEG,148,"killer whale, killer, orca, grampus, sea wolf, Orcinus orca",148,"killer whale, killer, orca, grampus, sea wolf, Orcinus orca",PASS
+546,546,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000546.JPEG,114,slug,113,snail,FAIL
+547,547,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000547.JPEG,99,goose,99,goose,PASS
+548,548,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000548.JPEG,143,"oystercatcher, oyster catcher",143,"oystercatcher, oyster catcher",PASS
+549,549,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000549.JPEG,691,oxygen mask,745,projector,FAIL
+550,550,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000550.JPEG,796,ski mask,796,ski mask,PASS
+551,551,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000551.JPEG,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",PASS
+552,552,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000552.JPEG,346,"water buffalo, water ox, Asiatic buffalo, Bubalus bubalis",346,"water buffalo, water ox, Asiatic buffalo, Bubalus bubalis",PASS
+553,553,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000553.JPEG,367,"chimpanzee, chimp, Pan troglodytes",367,"chimpanzee, chimp, Pan troglodytes",PASS
+554,554,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000554.JPEG,939,"zucchini, courgette",939,"zucchini, courgette",PASS
+555,555,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000555.JPEG,875,trombone,875,trombone,PASS
+556,556,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000556.JPEG,625,lifeboat,625,lifeboat,PASS
+557,557,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000557.JPEG,482,cassette player,848,tape player,FAIL
+558,558,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000558.JPEG,464,buckle,464,buckle,PASS
+559,559,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000559.JPEG,812,space shuttle,812,space shuttle,PASS
+560,560,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000560.JPEG,705,"passenger car, coach, carriage",705,"passenger car, coach, carriage",PASS
+561,561,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000561.JPEG,860,"tobacco shop, tobacconist shop, tobacconist",892,wall clock,FAIL
+562,562,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000562.JPEG,466,"bullet train, bullet",466,"bullet train, bullet",PASS
+563,563,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000563.JPEG,781,scoreboard,781,scoreboard,PASS
+564,564,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000564.JPEG,499,"cleaver, meat cleaver, chopper",477,"carpenter's kit, tool kit",FAIL
+565,565,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000565.JPEG,338,"guinea pig, Cavia cobaya",617,"lab coat, laboratory coat",FAIL
+566,566,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000566.JPEG,488,chain,679,necklace,FAIL
+567,567,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000567.JPEG,858,tile roof,858,tile roof,PASS
+568,568,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000568.JPEG,795,ski,970,alp,FAIL
+569,569,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000569.JPEG,437,"beacon, lighthouse, beacon light, pharos",437,"beacon, lighthouse, beacon light, pharos",PASS
+570,570,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000570.JPEG,11,"goldfinch, Carduelis carduelis",11,"goldfinch, Carduelis carduelis",PASS
+571,571,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000571.JPEG,625,lifeboat,625,lifeboat,PASS
+572,572,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000572.JPEG,965,burrito,965,burrito,PASS
+573,573,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000573.JPEG,874,"trolleybus, trolley coach, trackless trolley",874,"trolleybus, trolley coach, trackless trolley",PASS
+574,574,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000574.JPEG,928,"ice cream, icecream",954,banana,FAIL
+575,575,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000575.JPEG,600,"hook, claw",600,"hook, claw",PASS
+576,576,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000576.JPEG,86,partridge,86,partridge,PASS
+577,577,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000577.JPEG,133,bittern,133,bittern,PASS
+578,578,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000578.JPEG,149,"dugong, Dugong dugon",149,"dugong, Dugong dugon",PASS
+579,579,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000579.JPEG,865,toyshop,865,toyshop,PASS
+580,580,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000580.JPEG,480,"cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM",509,"confectionery, confectionary, candy store",FAIL
+581,581,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000581.JPEG,325,"sulphur butterfly, sulfur butterfly",325,"sulphur butterfly, sulfur butterfly",PASS
+582,582,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000582.JPEG,499,"cleaver, meat cleaver, chopper",499,"cleaver, meat cleaver, chopper",PASS
+583,583,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000583.JPEG,834,"suit, suit of clothes",834,"suit, suit of clothes",PASS
+584,584,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000584.JPEG,421,"bannister, banister, balustrade, balusters, handrail",506,"coil, spiral, volute, whorl, helix",FAIL
+585,585,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000585.JPEG,298,mongoose,298,mongoose,PASS
+586,586,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000586.JPEG,900,water tower,900,water tower,PASS
+587,587,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000587.JPEG,905,window shade,905,window shade,PASS
+588,588,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000588.JPEG,184,Irish terrier,184,Irish terrier,PASS
+589,589,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000589.JPEG,740,power drill,570,"gasmask, respirator, gas helmet",FAIL
+590,590,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000590.JPEG,258,"Samoyed, Samoyede",258,"Samoyed, Samoyede",PASS
+591,591,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000591.JPEG,762,"restaurant, eating house, eating place, eatery",860,"tobacco shop, tobacconist shop, tobacconist",FAIL
+592,592,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000592.JPEG,295,"American black bear, black bear, Ursus americanus, Euarctos americanus",295,"American black bear, black bear, Ursus americanus, Euarctos americanus",PASS
+593,593,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000593.JPEG,129,spoonbill,129,spoonbill,PASS
+594,594,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000594.JPEG,240,Appenzeller,238,Greater Swiss Mountain dog,FAIL
+595,595,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000595.JPEG,833,"submarine, pigboat, sub, U-boat",833,"submarine, pigboat, sub, U-boat",PASS
+596,596,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000596.JPEG,471,cannon,471,cannon,PASS
+597,597,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000597.JPEG,385,"Indian elephant, Elephas maximus",101,tusker,FAIL
+598,598,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000598.JPEG,899,water jug,898,water bottle,FAIL
+599,599,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000599.JPEG,162,beagle,162,beagle,PASS
+600,600,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000600.JPEG,288,"leopard, Panthera pardus",288,"leopard, Panthera pardus",PASS
+601,601,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000601.JPEG,450,"bobsled, bobsleigh, bob",450,"bobsled, bobsleigh, bob",PASS
+602,602,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000602.JPEG,850,"teddy, teddy bear",850,"teddy, teddy bear",PASS
+603,603,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000603.JPEG,227,kelpie,264,"Cardigan, Cardigan Welsh corgi",FAIL
+604,604,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000604.JPEG,273,"dingo, warrigal, warragal, Canis dingo",273,"dingo, warrigal, warragal, Canis dingo",PASS
+605,605,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000605.JPEG,954,banana,954,banana,PASS
+606,606,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000606.JPEG,965,burrito,965,burrito,PASS
+607,607,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000607.JPEG,611,jigsaw puzzle,611,jigsaw puzzle,PASS
+608,608,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000608.JPEG,643,mask,643,mask,PASS
+609,609,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000609.JPEG,147,"grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus",147,"grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus",PASS
+610,610,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000610.JPEG,290,"jaguar, panther, Panthera onca, Felis onca",290,"jaguar, panther, Panthera onca, Felis onca",PASS
+611,611,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000611.JPEG,866,tractor,866,tractor,PASS
+612,612,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000612.JPEG,186,Norwich terrier,192,"cairn, cairn terrier",FAIL
+613,613,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000613.JPEG,156,Blenheim spaniel,156,Blenheim spaniel,PASS
+614,614,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000614.JPEG,776,"sax, saxophone",683,"oboe, hautboy, hautbois",FAIL
+615,615,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000615.JPEG,775,sarong,775,sarong,PASS
+616,616,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000616.JPEG,998,"ear, spike, capitulum",998,"ear, spike, capitulum",PASS
+617,617,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000617.JPEG,333,hamster,333,hamster,PASS
+618,618,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000618.JPEG,325,"sulphur butterfly, sulfur butterfly",325,"sulphur butterfly, sulfur butterfly",PASS
+619,619,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000619.JPEG,572,goblet,572,goblet,PASS
+620,620,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000620.JPEG,927,trifle,927,trifle,PASS
+621,621,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000621.JPEG,744,"projectile, missile",744,"projectile, missile",PASS
+622,622,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000622.JPEG,777,scabbard,777,scabbard,PASS
+623,623,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000623.JPEG,833,"submarine, pigboat, sub, U-boat",833,"submarine, pigboat, sub, U-boat",PASS
+624,624,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000624.JPEG,551,face powder,551,face powder,PASS
+625,625,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000625.JPEG,301,"ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle",301,"ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle",PASS
+626,626,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000626.JPEG,716,"picket fence, paling",716,"picket fence, paling",PASS
+627,627,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000627.JPEG,848,tape player,482,cassette player,FAIL
+628,628,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000628.JPEG,102,"echidna, spiny anteater, anteater",102,"echidna, spiny anteater, anteater",PASS
+629,629,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000629.JPEG,790,shopping basket,791,shopping cart,FAIL
+630,630,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000630.JPEG,959,carbonara,959,carbonara,PASS
+631,631,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000631.JPEG,404,airliner,404,airliner,PASS
+632,632,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000632.JPEG,987,corn,998,"ear, spike, capitulum",FAIL
+633,633,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000633.JPEG,415,"bakery, bakeshop, bakehouse",860,"tobacco shop, tobacconist shop, tobacconist",FAIL
+634,634,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000634.JPEG,455,bottlecap,455,bottlecap,PASS
+635,635,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000635.JPEG,242,boxer,242,boxer,PASS
+636,636,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000636.JPEG,600,"hook, claw",421,"bannister, banister, balustrade, balusters, handrail",FAIL
+637,637,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000637.JPEG,517,crane,517,crane,PASS
+638,638,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000638.JPEG,16,bulbul,16,bulbul,PASS
+639,639,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000639.JPEG,320,damselfly,320,damselfly,PASS
+640,640,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000640.JPEG,632,"loudspeaker, speaker, speaker unit, loudspeaker system, speaker system",632,"loudspeaker, speaker, speaker unit, loudspeaker system, speaker system",PASS
+641,641,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000641.JPEG,568,fur coat,568,fur coat,PASS
+642,642,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000642.JPEG,338,"guinea pig, Cavia cobaya",104,"wallaby, brush kangaroo",FAIL
+643,643,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000643.JPEG,216,"clumber, clumber spaniel",216,"clumber, clumber spaniel",PASS
+644,644,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000644.JPEG,331,hare,331,hare,PASS
+645,645,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000645.JPEG,726,"plane, carpenter's plane, woodworking plane",726,"plane, carpenter's plane, woodworking plane",PASS
+646,646,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000646.JPEG,959,carbonara,959,carbonara,PASS
+647,647,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000647.JPEG,605,iPod,605,iPod,PASS
+648,648,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000648.JPEG,134,crane,134,crane,PASS
+649,649,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000649.JPEG,677,nail,677,nail,PASS
+650,650,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000650.JPEG,288,"leopard, Panthera pardus",288,"leopard, Panthera pardus",PASS
+651,651,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000651.JPEG,10,"brambling, Fringilla montifringilla",10,"brambling, Fringilla montifringilla",PASS
+652,652,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000652.JPEG,718,pier,919,street sign,FAIL
+653,653,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000653.JPEG,852,tennis ball,852,tennis ball,PASS
+654,654,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000654.JPEG,440,beer bottle,440,beer bottle,PASS
+655,655,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000655.JPEG,104,"wallaby, brush kangaroo",104,"wallaby, brush kangaroo",PASS
+656,656,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000656.JPEG,712,Petri dish,712,Petri dish,PASS
+657,657,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000657.JPEG,388,"giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca",388,"giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca",PASS
+658,658,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000658.JPEG,261,keeshond,261,keeshond,PASS
+659,659,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000659.JPEG,609,"jeep, landrover",803,"snowplow, snowplough",FAIL
+660,660,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000660.JPEG,620,"laptop, laptop computer",620,"laptop, laptop computer",PASS
+661,661,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000661.JPEG,341,"hog, pig, grunter, squealer, Sus scrofa",341,"hog, pig, grunter, squealer, Sus scrofa",PASS
+662,662,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000662.JPEG,579,"grand piano, grand",579,"grand piano, grand",PASS
+663,663,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000663.JPEG,450,"bobsled, bobsleigh, bob",450,"bobsled, bobsleigh, bob",PASS
+664,664,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000664.JPEG,628,"liner, ocean liner",628,"liner, ocean liner",PASS
+665,665,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000665.JPEG,217,"English springer, English springer spaniel",217,"English springer, English springer spaniel",PASS
+666,666,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000666.JPEG,878,typewriter keyboard,526,desk,FAIL
+667,667,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000667.JPEG,763,"revolver, six-gun, six-shooter",763,"revolver, six-gun, six-shooter",PASS
+668,668,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000668.JPEG,209,Chesapeake Bay retriever,209,Chesapeake Bay retriever,PASS
+669,669,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000669.JPEG,126,isopod,126,isopod,PASS
+670,670,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000670.JPEG,663,monastery,663,monastery,PASS
+671,671,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000671.JPEG,864,"tow truck, tow car, wrecker",864,"tow truck, tow car, wrecker",PASS
+672,672,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000672.JPEG,232,Border collie,232,Border collie,PASS
+673,673,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000673.JPEG,776,"sax, saxophone",776,"sax, saxophone",PASS
+674,674,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000674.JPEG,942,butternut squash,942,butternut squash,PASS
+675,675,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000675.JPEG,336,marmot,336,marmot,PASS
+676,676,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000676.JPEG,733,pole,733,pole,PASS
+677,677,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000677.JPEG,681,"notebook, notebook computer",681,"notebook, notebook computer",PASS
+678,678,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000678.JPEG,512,"corkscrew, bottle screw",477,"carpenter's kit, tool kit",FAIL
+679,679,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000679.JPEG,78,tick,78,tick,PASS
+680,680,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000680.JPEG,668,mosque,668,mosque,PASS
+681,681,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000681.JPEG,699,"panpipe, pandean pipe, syrinx",699,"panpipe, pandean pipe, syrinx",PASS
+682,682,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000682.JPEG,746,"puck, hockey puck",746,"puck, hockey puck",PASS
+683,683,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000683.JPEG,46,"green lizard, Lacerta viridis",46,"green lizard, Lacerta viridis",PASS
+684,684,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000684.JPEG,618,ladle,618,ladle,PASS
+685,685,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000685.JPEG,330,"wood rabbit, cottontail, cottontail rabbit",330,"wood rabbit, cottontail, cottontail rabbit",PASS
+686,686,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000686.JPEG,615,knee pad,615,knee pad,PASS
+687,687,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000687.JPEG,427,"barrel, cask",427,"barrel, cask",PASS
+688,688,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000688.JPEG,62,"rock python, rock snake, Python sebae",62,"rock python, rock snake, Python sebae",PASS
+689,689,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000689.JPEG,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",PASS
+690,690,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000690.JPEG,127,"white stork, Ciconia ciconia",127,"white stork, Ciconia ciconia",PASS
+691,691,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000691.JPEG,955,"jackfruit, jak, jack",955,"jackfruit, jak, jack",PASS
+692,692,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000692.JPEG,306,rhinoceros beetle,306,rhinoceros beetle,PASS
+693,693,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000693.JPEG,425,barn,425,barn,PASS
+694,694,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000694.JPEG,190,"Sealyham terrier, Sealyham",190,"Sealyham terrier, Sealyham",PASS
+695,695,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000695.JPEG,370,"guenon, guenon monkey",370,"guenon, guenon monkey",PASS
+696,696,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000696.JPEG,187,Yorkshire terrier,187,Yorkshire terrier,PASS
+697,697,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000697.JPEG,971,bubble,971,bubble,PASS
+698,698,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000698.JPEG,534,"dishwasher, dish washer, dishwashing machine",534,"dishwasher, dish washer, dishwashing machine",PASS
+699,699,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000699.JPEG,397,"puffer, pufferfish, blowfish, globefish",396,lionfish,FAIL
+700,700,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000700.JPEG,657,missile,657,missile,PASS
+701,701,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000701.JPEG,840,"swab, swob, mop",463,"bucket, pail",FAIL
+702,702,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000702.JPEG,718,pier,821,steel arch bridge,FAIL
+703,703,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000703.JPEG,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",PASS
+704,704,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000704.JPEG,836,sunglass,837,"sunglasses, dark glasses, shades",FAIL
+705,705,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000705.JPEG,994,"stinkhorn, carrion fungus",994,"stinkhorn, carrion fungus",PASS
+706,706,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000706.JPEG,419,Band Aid,419,Band Aid,PASS
+707,707,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000707.JPEG,764,rifle,764,rifle,PASS
+708,708,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000708.JPEG,214,Gordon setter,214,Gordon setter,PASS
+709,709,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000709.JPEG,285,Egyptian cat,285,Egyptian cat,PASS
+710,710,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000710.JPEG,641,maraca,641,maraca,PASS
+711,711,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000711.JPEG,951,lemon,951,lemon,PASS
+712,712,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000712.JPEG,882,"vacuum, vacuum cleaner",882,"vacuum, vacuum cleaner",PASS
+713,713,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000713.JPEG,13,"junco, snowbird",13,"junco, snowbird",PASS
+714,714,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000714.JPEG,829,"streetcar, tram, tramcar, trolley, trolley car",829,"streetcar, tram, tramcar, trolley, trolley car",PASS
+715,715,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000715.JPEG,624,library,624,library,PASS
+716,716,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000716.JPEG,216,"clumber, clumber spaniel",216,"clumber, clumber spaniel",PASS
+717,717,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000717.JPEG,665,moped,671,"mountain bike, all-terrain bike, off-roader",FAIL
+718,718,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000718.JPEG,521,Crock Pot,521,Crock Pot,PASS
+719,719,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000719.JPEG,268,Mexican hairless,268,Mexican hairless,PASS
+720,720,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000720.JPEG,468,"cab, hack, taxi, taxicab",468,"cab, hack, taxi, taxicab",PASS
+721,721,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000721.JPEG,418,"ballpoint, ballpoint pen, ballpen, Biro",418,"ballpoint, ballpoint pen, ballpen, Biro",PASS
+722,722,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000722.JPEG,728,plastic bag,728,plastic bag,PASS
+723,723,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000723.JPEG,356,weasel,357,mink,FAIL
+724,724,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000724.JPEG,449,boathouse,449,boathouse,PASS
+725,725,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000725.JPEG,194,"Dandie Dinmont, Dandie Dinmont terrier",194,"Dandie Dinmont, Dandie Dinmont terrier",PASS
+726,726,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000726.JPEG,362,badger,362,badger,PASS
+727,727,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000727.JPEG,948,Granny Smith,948,Granny Smith,PASS
+728,728,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000728.JPEG,924,guacamole,924,guacamole,PASS
+729,729,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000729.JPEG,249,"malamute, malemute, Alaskan malamute",249,"malamute, malemute, Alaskan malamute",PASS
+730,730,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000730.JPEG,524,cuirass,524,cuirass,PASS
+731,731,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000731.JPEG,992,agaric,992,agaric,PASS
+732,732,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000732.JPEG,571,"gas pump, gasoline pump, petrol pump, island dispenser",571,"gas pump, gasoline pump, petrol pump, island dispenser",PASS
+733,733,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000733.JPEG,283,Persian cat,283,Persian cat,PASS
+734,734,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000734.JPEG,608,"jean, blue jean, denim",608,"jean, blue jean, denim",PASS
+735,735,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000735.JPEG,129,spoonbill,129,spoonbill,PASS
+736,736,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000736.JPEG,486,"cello, violoncello",486,"cello, violoncello",PASS
+737,737,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000737.JPEG,859,toaster,859,toaster,PASS
+738,738,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000738.JPEG,498,"cinema, movie theater, movie theatre, movie house, picture palace",498,"cinema, movie theater, movie theatre, movie house, picture palace",PASS
+739,739,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000739.JPEG,21,kite,21,kite,PASS
+740,740,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000740.JPEG,467,"butcher shop, meat market",467,"butcher shop, meat market",PASS
+741,741,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000741.JPEG,591,"handkerchief, hankie, hanky, hankey",591,"handkerchief, hankie, hanky, hankey",PASS
+742,742,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000742.JPEG,924,guacamole,924,guacamole,PASS
+743,743,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000743.JPEG,556,"fire screen, fireguard",556,"fire screen, fireguard",PASS
+744,744,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000744.JPEG,97,drake,97,drake,PASS
+745,745,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000745.JPEG,898,water bottle,455,bottlecap,FAIL
+746,746,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000746.JPEG,586,half track,586,half track,PASS
+747,747,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000747.JPEG,10,"brambling, Fringilla montifringilla",10,"brambling, Fringilla montifringilla",PASS
+748,748,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000748.JPEG,202,soft-coated wheaten terrier,202,soft-coated wheaten terrier,PASS
+749,749,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000749.JPEG,67,"diamondback, diamondback rattlesnake, Crotalus adamanteus",68,"sidewinder, horned rattlesnake, Crotalus cerastes",FAIL
+750,750,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000750.JPEG,501,cloak,649,"megalith, megalithic structure",FAIL
+751,751,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000751.JPEG,141,"redshank, Tringa totanus",853,"thatch, thatched roof",FAIL
+752,752,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000752.JPEG,603,"horse cart, horse-cart",603,"horse cart, horse-cart",PASS
+753,753,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000753.JPEG,727,planetarium,727,planetarium,PASS
+754,754,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000754.JPEG,101,tusker,101,tusker,PASS
+755,755,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000755.JPEG,995,earthstar,995,earthstar,PASS
+756,756,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000756.JPEG,278,"kit fox, Vulpes macrotis",278,"kit fox, Vulpes macrotis",PASS
+757,757,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000757.JPEG,964,potpie,964,potpie,PASS
+758,758,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000758.JPEG,240,Appenzeller,238,Greater Swiss Mountain dog,FAIL
+759,759,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000759.JPEG,423,barber chair,423,barber chair,PASS
+760,760,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000760.JPEG,634,"lumbermill, sawmill",489,chainlink fence,FAIL
+761,761,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000761.JPEG,533,"dishrag, dishcloth",533,"dishrag, dishcloth",PASS
+762,762,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000762.JPEG,424,barbershop,424,barbershop,PASS
+763,763,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000763.JPEG,451,"bolo tie, bolo, bola tie, bola",451,"bolo tie, bolo, bola tie, bola",PASS
+764,764,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000764.JPEG,555,"fire engine, fire truck",555,"fire engine, fire truck",PASS
+765,765,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000765.JPEG,732,"Polaroid camera, Polaroid Land camera",732,"Polaroid camera, Polaroid Land camera",PASS
+766,766,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000766.JPEG,514,cowboy boot,514,cowboy boot,PASS
+767,767,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000767.JPEG,803,"snowplow, snowplough",864,"tow truck, tow car, wrecker",FAIL
+768,768,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000768.JPEG,300,tiger beetle,300,tiger beetle,PASS
+769,769,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000769.JPEG,551,face powder,551,face powder,PASS
+770,770,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000770.JPEG,753,radiator,753,radiator,PASS
+771,771,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000771.JPEG,411,apron,411,apron,PASS
+772,772,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000772.JPEG,315,"mantis, mantid",315,"mantis, mantid",PASS
+773,773,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000773.JPEG,963,"pizza, pizza pie",963,"pizza, pizza pie",PASS
+774,774,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000774.JPEG,129,spoonbill,129,spoonbill,PASS
+775,775,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000775.JPEG,389,"barracouta, snoek",389,"barracouta, snoek",PASS
+776,776,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000776.JPEG,601,"hoopskirt, crinoline",746,"puck, hockey puck",FAIL
+777,777,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000777.JPEG,526,desk,527,desktop computer,FAIL
+778,778,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000778.JPEG,839,suspension bridge,839,suspension bridge,PASS
+779,779,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000779.JPEG,299,"meerkat, mierkat",299,"meerkat, mierkat",PASS
+780,780,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000780.JPEG,578,gown,689,overskirt,FAIL
+781,781,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000781.JPEG,112,conch,112,conch,PASS
+782,782,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000782.JPEG,960,"chocolate sauce, chocolate syrup",960,"chocolate sauce, chocolate syrup",PASS
+783,783,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000783.JPEG,632,"loudspeaker, speaker, speaker unit, loudspeaker system, speaker system",632,"loudspeaker, speaker, speaker unit, loudspeaker system, speaker system",PASS
+784,784,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000784.JPEG,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",PASS
+785,785,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000785.JPEG,273,"dingo, warrigal, warragal, Canis dingo",227,kelpie,FAIL
+786,786,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000786.JPEG,61,"boa constrictor, Constrictor constrictor",61,"boa constrictor, Constrictor constrictor",PASS
+787,787,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000787.JPEG,427,"barrel, cask",427,"barrel, cask",PASS
+788,788,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000788.JPEG,367,"chimpanzee, chimp, Pan troglodytes",367,"chimpanzee, chimp, Pan troglodytes",PASS
+789,789,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000789.JPEG,924,guacamole,924,guacamole,PASS
+790,790,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000790.JPEG,413,"assault rifle, assault gun",413,"assault rifle, assault gun",PASS
+791,791,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000791.JPEG,34,"leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea",34,"leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea",PASS
+792,792,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000792.JPEG,773,"saltshaker, salt shaker",773,"saltshaker, salt shaker",PASS
+793,793,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000793.JPEG,654,minibus,654,minibus,PASS
+794,794,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000794.JPEG,131,"little blue heron, Egretta caerulea",131,"little blue heron, Egretta caerulea",PASS
+795,795,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000795.JPEG,874,"trolleybus, trolley coach, trackless trolley",874,"trolleybus, trolley coach, trackless trolley",PASS
+796,796,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000796.JPEG,282,tiger cat,282,tiger cat,PASS
+797,797,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000797.JPEG,891,waffle iron,891,waffle iron,PASS
+798,798,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000798.JPEG,956,custard apple,956,custard apple,PASS
+799,799,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000799.JPEG,201,"silky terrier, Sydney silky",187,Yorkshire terrier,FAIL
+800,800,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000800.JPEG,267,standard poodle,197,giant schnauzer,FAIL
+801,801,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000801.JPEG,969,eggnog,969,eggnog,PASS
+802,802,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000802.JPEG,200,"Tibetan terrier, chrysanthemum dog",200,"Tibetan terrier, chrysanthemum dog",PASS
+803,803,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000803.JPEG,673,"mouse, computer mouse",673,"mouse, computer mouse",PASS
+804,804,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000804.JPEG,423,barber chair,424,barbershop,FAIL
+805,805,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000805.JPEG,907,wine bottle,907,wine bottle,PASS
+806,806,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000806.JPEG,57,"garter snake, grass snake",57,"garter snake, grass snake",PASS
+807,807,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000807.JPEG,27,eft,27,eft,PASS
+808,808,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000808.JPEG,459,"brassiere, bra, bandeau",906,Windsor tie,FAIL
+809,809,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000809.JPEG,863,totem pole,863,totem pole,PASS
+810,810,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000810.JPEG,322,"ringlet, ringlet butterfly",322,"ringlet, ringlet butterfly",PASS
+811,811,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000811.JPEG,934,"hotdog, hot dog, red hot",934,"hotdog, hot dog, red hot",PASS
+812,812,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000812.JPEG,663,monastery,663,monastery,PASS
+813,813,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000813.JPEG,424,barbershop,851,"television, television system",FAIL
+814,814,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000814.JPEG,687,"organ, pipe organ",687,"organ, pipe organ",PASS
+815,815,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000815.JPEG,837,"sunglasses, dark glasses, shades",468,"cab, hack, taxi, taxicab",FAIL
+816,816,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000816.JPEG,958,hay,958,hay,PASS
+817,817,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000817.JPEG,645,maypole,645,maypole,PASS
+818,818,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000818.JPEG,120,fiddler crab,119,"rock crab, Cancer irroratus",FAIL
+819,819,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000819.JPEG,306,rhinoceros beetle,306,rhinoceros beetle,PASS
+820,820,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000820.JPEG,930,French loaf,930,French loaf,PASS
+821,821,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000821.JPEG,121,"king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica",121,"king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica",PASS
+822,822,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000822.JPEG,694,"paddlewheel, paddle wheel",694,"paddlewheel, paddle wheel",PASS
+823,823,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000823.JPEG,524,cuirass,524,cuirass,PASS
+824,824,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000824.JPEG,205,flat-coated retriever,205,flat-coated retriever,PASS
+825,825,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000825.JPEG,137,"American coot, marsh hen, mud hen, water hen, Fulica americana",137,"American coot, marsh hen, mud hen, water hen, Fulica americana",PASS
+826,826,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000826.JPEG,849,teapot,505,coffeepot,FAIL
+827,827,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000827.JPEG,681,"notebook, notebook computer",620,"laptop, laptop computer",FAIL
+828,828,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000828.JPEG,380,"titi, titi monkey",380,"titi, titi monkey",PASS
+829,829,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000829.JPEG,586,half track,586,half track,PASS
+830,830,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000830.JPEG,916,"web site, website, internet site, site",916,"web site, website, internet site, site",PASS
+831,831,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000831.JPEG,478,carton,478,carton,PASS
+832,832,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000832.JPEG,182,Border terrier,182,Border terrier,PASS
+833,833,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000833.JPEG,874,"trolleybus, trolley coach, trackless trolley",874,"trolleybus, trolley coach, trackless trolley",PASS
+834,834,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000834.JPEG,715,pickelhaube,715,pickelhaube,PASS
+835,835,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000835.JPEG,590,"hand-held computer, hand-held microcomputer",590,"hand-held computer, hand-held microcomputer",PASS
+836,836,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000836.JPEG,111,"nematode, nematode worm, roundworm",111,"nematode, nematode worm, roundworm",PASS
+837,837,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000837.JPEG,19,chickadee,19,chickadee,PASS
+838,838,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000838.JPEG,161,"basset, basset hound",166,"Walker hound, Walker foxhound",FAIL
+839,839,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000839.JPEG,915,yurt,915,yurt,PASS
+840,840,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000840.JPEG,730,"plow, plough",730,"plow, plough",PASS
+841,841,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000841.JPEG,678,neck brace,678,neck brace,PASS
+842,842,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000842.JPEG,822,steel drum,822,steel drum,PASS
+843,843,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000843.JPEG,818,"spotlight, spot",545,"electric fan, blower",FAIL
+844,844,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000844.JPEG,699,"panpipe, pandean pipe, syrinx",699,"panpipe, pandean pipe, syrinx",PASS
+845,845,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000845.JPEG,601,"hoopskirt, crinoline",578,gown,FAIL
+846,846,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000846.JPEG,673,"mouse, computer mouse",673,"mouse, computer mouse",PASS
+847,847,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000847.JPEG,233,"Bouvier des Flandres, Bouviers des Flandres",233,"Bouvier des Flandres, Bouviers des Flandres",PASS
+848,848,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000848.JPEG,501,cloak,406,altar,FAIL
+849,849,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000849.JPEG,624,library,624,library,PASS
+850,850,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000850.JPEG,679,necklace,679,necklace,PASS
+851,851,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000851.JPEG,400,"academic gown, academic robe, judge's robe",400,"academic gown, academic robe, judge's robe",PASS
+852,852,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000852.JPEG,581,"grille, radiator grille",581,"grille, radiator grille",PASS
+853,853,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000853.JPEG,665,moped,665,moped,PASS
+854,854,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000854.JPEG,903,wig,903,wig,PASS
+855,855,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000855.JPEG,622,"lens cap, lens cover",746,"puck, hockey puck",FAIL
+856,856,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000856.JPEG,585,hair spray,585,hair spray,PASS
+857,857,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000857.JPEG,800,"slot, one-armed bandit",800,"slot, one-armed bandit",PASS
+858,858,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000858.JPEG,899,water jug,899,water jug,PASS
+859,859,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000859.JPEG,669,mosquito net,669,mosquito net,PASS
+860,860,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000860.JPEG,81,ptarmigan,81,ptarmigan,PASS
+861,861,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000861.JPEG,746,"puck, hockey puck",746,"puck, hockey puck",PASS
+862,862,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000862.JPEG,595,"harvester, reaper",866,tractor,FAIL
+863,863,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000863.JPEG,935,mashed potato,935,mashed potato,PASS
+864,864,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000864.JPEG,668,mosque,668,mosque,PASS
+865,865,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000865.JPEG,295,"American black bear, black bear, Ursus americanus, Euarctos americanus",295,"American black bear, black bear, Ursus americanus, Euarctos americanus",PASS
+866,866,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000866.JPEG,893,"wallet, billfold, notecase, pocketbook",893,"wallet, billfold, notecase, pocketbook",PASS
+867,867,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000867.JPEG,266,miniature poodle,266,miniature poodle,PASS
+868,868,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000868.JPEG,628,"liner, ocean liner",628,"liner, ocean liner",PASS
+869,869,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000869.JPEG,987,corn,923,plate,FAIL
+870,870,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000870.JPEG,367,"chimpanzee, chimp, Pan troglodytes",367,"chimpanzee, chimp, Pan troglodytes",PASS
+871,871,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000871.JPEG,294,"brown bear, bruin, Ursus arctos",294,"brown bear, bruin, Ursus arctos",PASS
+872,872,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000872.JPEG,727,planetarium,727,planetarium,PASS
+873,873,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000873.JPEG,12,"house finch, linnet, Carpodacus mexicanus",12,"house finch, linnet, Carpodacus mexicanus",PASS
+874,874,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000874.JPEG,876,"tub, vat",876,"tub, vat",PASS
+875,875,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000875.JPEG,186,Norwich terrier,192,"cairn, cairn terrier",FAIL
+876,876,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000876.JPEG,589,"hand blower, blow dryer, blow drier, hair dryer, hair drier",589,"hand blower, blow dryer, blow drier, hair dryer, hair drier",PASS
+877,877,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000877.JPEG,70,"harvestman, daddy longlegs, Phalangium opilio",313,"walking stick, walkingstick, stick insect",FAIL
+878,878,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000878.JPEG,129,spoonbill,129,spoonbill,PASS
+879,879,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000879.JPEG,454,"bookshop, bookstore, bookstall",454,"bookshop, bookstore, bookstall",PASS
+880,880,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000880.JPEG,17,jay,17,jay,PASS
+881,881,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000881.JPEG,946,cardoon,946,cardoon,PASS
+882,882,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000882.JPEG,200,"Tibetan terrier, chrysanthemum dog",204,"Lhasa, Lhasa apso",FAIL
+883,883,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000883.JPEG,181,Bedlington terrier,181,Bedlington terrier,PASS
+884,884,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000884.JPEG,163,"bloodhound, sleuthhound",163,"bloodhound, sleuthhound",PASS
+885,885,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000885.JPEG,80,black grouse,80,black grouse,PASS
+886,886,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000886.JPEG,940,spaghetti squash,940,spaghetti squash,PASS
+887,887,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000887.JPEG,587,hammer,587,hammer,PASS
+888,888,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000888.JPEG,21,kite,21,kite,PASS
+889,889,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000889.JPEG,198,standard schnauzer,198,standard schnauzer,PASS
+890,890,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000890.JPEG,25,"European fire salamander, Salamandra salamandra",25,"European fire salamander, Salamandra salamandra",PASS
+891,891,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000891.JPEG,932,pretzel,932,pretzel,PASS
+892,892,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000892.JPEG,339,sorrel,339,sorrel,PASS
+893,893,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000893.JPEG,480,"cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM",480,"cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM",PASS
+894,894,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000894.JPEG,764,rifle,764,rifle,PASS
+895,895,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000895.JPEG,883,vase,883,vase,PASS
+896,896,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000896.JPEG,454,"bookshop, bookstore, bookstall",454,"bookshop, bookstore, bookstall",PASS
+897,897,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000897.JPEG,807,"solar dish, solar collector, solar furnace",807,"solar dish, solar collector, solar furnace",PASS
+898,898,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000898.JPEG,287,"lynx, catamount",287,"lynx, catamount",PASS
+899,899,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000899.JPEG,868,tray,464,buckle,FAIL
+900,900,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000900.JPEG,614,kimono,614,kimono,PASS
+901,901,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000901.JPEG,814,speedboat,814,speedboat,PASS
+902,902,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000902.JPEG,591,"handkerchief, hankie, hanky, hankey",452,"bonnet, poke bonnet",FAIL
+903,903,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000903.JPEG,919,street sign,919,street sign,PASS
+904,904,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000904.JPEG,508,"computer keyboard, keypad",508,"computer keyboard, keypad",PASS
+905,905,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000905.JPEG,479,car wheel,479,car wheel,PASS
+906,906,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000906.JPEG,452,"bonnet, poke bonnet",452,"bonnet, poke bonnet",PASS
+907,907,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000907.JPEG,155,Shih-Tzu,155,Shih-Tzu,PASS
+908,908,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000908.JPEG,41,"whiptail, whiptail lizard",41,"whiptail, whiptail lizard",PASS
+909,909,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000909.JPEG,163,"bloodhound, sleuthhound",163,"bloodhound, sleuthhound",PASS
+910,910,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000910.JPEG,606,"iron, smoothing iron",606,"iron, smoothing iron",PASS
+911,911,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000911.JPEG,7,cock,8,hen,FAIL
+912,912,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000912.JPEG,269,"timber wolf, grey wolf, gray wolf, Canis lupus",269,"timber wolf, grey wolf, gray wolf, Canis lupus",PASS
+913,913,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000913.JPEG,576,gondola,576,gondola,PASS
+914,914,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000914.JPEG,858,tile roof,706,"patio, terrace",FAIL
+915,915,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000915.JPEG,506,"coil, spiral, volute, whorl, helix",506,"coil, spiral, volute, whorl, helix",PASS
+916,916,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000916.JPEG,23,vulture,23,vulture,PASS
+917,917,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000917.JPEG,447,"binoculars, field glasses, opera glasses",447,"binoculars, field glasses, opera glasses",PASS
+918,918,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000918.JPEG,397,"puffer, pufferfish, blowfish, globefish",329,"sea cucumber, holothurian",FAIL
+919,919,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000919.JPEG,595,"harvester, reaper",595,"harvester, reaper",PASS
+920,920,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000920.JPEG,753,radiator,753,radiator,PASS
+921,921,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000921.JPEG,5,"electric ray, crampfish, numbfish, torpedo",5,"electric ray, crampfish, numbfish, torpedo",PASS
+922,922,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000922.JPEG,186,Norwich terrier,186,Norwich terrier,PASS
+923,923,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000923.JPEG,667,mortarboard,667,mortarboard,PASS
+924,924,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000924.JPEG,305,dung beetle,305,dung beetle,PASS
+925,925,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000925.JPEG,46,"green lizard, Lacerta viridis",39,"common iguana, iguana, Iguana iguana",FAIL
+926,926,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000926.JPEG,303,"long-horned beetle, longicorn, longicorn beetle",309,bee,FAIL
+927,927,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000927.JPEG,673,"mouse, computer mouse",673,"mouse, computer mouse",PASS
+928,928,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000928.JPEG,927,trifle,927,trifle,PASS
+929,929,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000929.JPEG,91,coucal,91,coucal,PASS
+930,930,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000930.JPEG,34,"leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea",34,"leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea",PASS
+931,931,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000931.JPEG,757,"recreational vehicle, RV, R.V.",654,minibus,FAIL
+932,932,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000932.JPEG,406,altar,406,altar,PASS
+933,933,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000933.JPEG,390,eel,65,sea snake,FAIL
+934,934,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000934.JPEG,76,tarantula,76,tarantula,PASS
+935,935,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000935.JPEG,517,crane,517,crane,PASS
+936,936,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000936.JPEG,806,sock,806,sock,PASS
+937,937,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000937.JPEG,330,"wood rabbit, cottontail, cottontail rabbit",331,hare,FAIL
+938,938,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000938.JPEG,34,"leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea",36,terrapin,FAIL
+939,939,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000939.JPEG,130,flamingo,130,flamingo,PASS
+940,940,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000940.JPEG,103,"platypus, duckbill, duckbilled platypus, duck-billed platypus, Ornithorhynchus anatinus",103,"platypus, duckbill, duckbilled platypus, duck-billed platypus, Ornithorhynchus anatinus",PASS
+941,941,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000941.JPEG,56,"king snake, kingsnake",56,"king snake, kingsnake",PASS
+942,942,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000942.JPEG,545,"electric fan, blower",545,"electric fan, blower",PASS
+943,943,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000943.JPEG,78,tick,78,tick,PASS
+944,944,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000944.JPEG,31,"tree frog, tree-frog",31,"tree frog, tree-frog",PASS
+945,945,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000945.JPEG,372,baboon,372,baboon,PASS
+946,946,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000946.JPEG,235,"German shepherd, German shepherd dog, German police dog, alsatian",235,"German shepherd, German shepherd dog, German police dog, alsatian",PASS
+947,947,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000947.JPEG,516,cradle,431,bassinet,FAIL
+948,948,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000948.JPEG,159,Rhodesian ridgeback,273,"dingo, warrigal, warragal, Canis dingo",FAIL
+949,949,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000949.JPEG,187,Yorkshire terrier,187,Yorkshire terrier,PASS
+950,950,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000950.JPEG,930,French loaf,930,French loaf,PASS
+951,951,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000951.JPEG,888,viaduct,888,viaduct,PASS
+952,952,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000952.JPEG,96,toucan,96,toucan,PASS
+953,953,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000953.JPEG,444,"bicycle-built-for-two, tandem bicycle, tandem",612,"jinrikisha, ricksha, rickshaw",FAIL
+954,954,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000954.JPEG,991,coral fungus,991,coral fungus,PASS
+955,955,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000955.JPEG,872,tripod,759,reflex camera,FAIL
+956,956,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000956.JPEG,302,"ground beetle, carabid beetle",302,"ground beetle, carabid beetle",PASS
+957,957,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000957.JPEG,566,"French horn, horn",566,"French horn, horn",PASS
+958,958,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000958.JPEG,33,"loggerhead, loggerhead turtle, Caretta caretta",33,"loggerhead, loggerhead turtle, Caretta caretta",PASS
+959,959,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000959.JPEG,818,"spotlight, spot",818,"spotlight, spot",PASS
+960,960,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000960.JPEG,694,"paddlewheel, paddle wheel",694,"paddlewheel, paddle wheel",PASS
+961,961,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000961.JPEG,406,altar,406,altar,PASS
+962,962,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000962.JPEG,20,"water ouzel, dipper",20,"water ouzel, dipper",PASS
+963,963,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000963.JPEG,18,magpie,18,magpie,PASS
+964,964,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000964.JPEG,371,"patas, hussar monkey, Erythrocebus patas",371,"patas, hussar monkey, Erythrocebus patas",PASS
+965,965,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000965.JPEG,320,damselfly,320,damselfly,PASS
+966,966,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000966.JPEG,724,"pirate, pirate ship",780,schooner,FAIL
+967,967,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000967.JPEG,994,"stinkhorn, carrion fungus",996,"hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa",FAIL
+968,968,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000968.JPEG,730,"plow, plough",730,"plow, plough",PASS
+969,969,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000969.JPEG,613,joystick,613,joystick,PASS
+970,970,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000970.JPEG,105,"koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus",105,"koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus",PASS
+971,971,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000971.JPEG,878,typewriter keyboard,810,space bar,FAIL
+972,972,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000972.JPEG,311,"grasshopper, hopper",311,"grasshopper, hopper",PASS
+973,973,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000973.JPEG,883,vase,883,vase,PASS
+974,974,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000974.JPEG,367,"chimpanzee, chimp, Pan troglodytes",367,"chimpanzee, chimp, Pan troglodytes",PASS
+975,975,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000975.JPEG,243,bull mastiff,243,bull mastiff,PASS
+976,976,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000976.JPEG,627,"limousine, limo",627,"limousine, limo",PASS
+977,977,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000977.JPEG,944,"artichoke, globe artichoke",944,"artichoke, globe artichoke",PASS
+978,978,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000978.JPEG,43,"frilled lizard, Chlamydosaurus kingi",47,"African chameleon, Chamaeleo chamaeleon",FAIL
+979,979,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000979.JPEG,412,"ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin",412,"ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin",PASS
+980,980,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000980.JPEG,921,"book jacket, dust cover, dust jacket, dust wrapper",921,"book jacket, dust cover, dust jacket, dust wrapper",PASS
+981,981,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000981.JPEG,332,"Angora, Angora rabbit",332,"Angora, Angora rabbit",PASS
+982,982,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000982.JPEG,474,cardigan,608,"jean, blue jean, denim",FAIL
+983,983,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000983.JPEG,276,"hyena, hyaena",276,"hyena, hyaena",PASS
+984,984,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000984.JPEG,629,"lipstick, lip rouge",629,"lipstick, lip rouge",PASS
+985,985,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000985.JPEG,917,comic book,917,comic book,PASS
+986,986,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000986.JPEG,77,"wolf spider, hunting spider",73,"barn spider, Araneus cavaticus",FAIL
+987,987,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000987.JPEG,643,mask,723,pinwheel,FAIL
+988,988,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000988.JPEG,556,"fire screen, fireguard",556,"fire screen, fireguard",PASS
+989,989,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000989.JPEG,998,"ear, spike, capitulum",998,"ear, spike, capitulum",PASS
+990,990,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000990.JPEG,328,sea urchin,328,sea urchin,PASS
+991,991,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000991.JPEG,723,pinwheel,723,pinwheel,PASS
+992,992,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000992.JPEG,161,"basset, basset hound",161,"basset, basset hound",PASS
+993,993,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000993.JPEG,250,Siberian husky,250,Siberian husky,PASS
+994,994,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000994.JPEG,1,"goldfish, Carassius auratus",1,"goldfish, Carassius auratus",PASS
+995,995,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000995.JPEG,919,street sign,920,"traffic light, traffic signal, stoplight",FAIL
+996,996,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000996.JPEG,392,"rock beauty, Holocanthus tricolor",392,"rock beauty, Holocanthus tricolor",PASS
+997,997,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000997.JPEG,264,"Cardigan, Cardigan Welsh corgi",264,"Cardigan, Cardigan Welsh corgi",PASS
+998,998,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000998.JPEG,408,"amphibian, amphibious vehicle",408,"amphibian, amphibious vehicle",PASS
+999,999,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00000999.JPEG,633,"loupe, jeweler's loupe",661,Model T,FAIL
+1000,1000,datasets/ILSVRC2012_img_val/ILSVRC2012_val_00001000.JPEG,495,"china cabinet, china closet",495,"china cabinet, china closet",PASS
