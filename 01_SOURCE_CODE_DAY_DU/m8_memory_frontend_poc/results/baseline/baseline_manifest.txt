@@ -1,0 +1,18 @@
+M8 MEMORY FRONTEND POC
+FROZEN BASELINE REGRESSION V3
+
+Generated: Wed Aug 26 08:56:14 UTC 2026
+POC root : /home/s23520579/Vivado_project/m8_memory_frontend_poc
+XSim     : /tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xsim
+
+01_layout_read = PASS | xsim_rc=0 | log=01_layout_read.log
+02_layout_write = PASS | xsim_rc=0 | log=02_layout_write.log
+03_vector_linefill = PASS | xsim_rc=0 | log=03_vector_linefill.log
+04_gemm_outstanding2 = PASS | xsim_rc=0 | log=04_gemm_outstanding2.log
+05_gemm_packed_cold = PASS | xsim_rc=0 | log=05_gemm_packed_cold.log
+06_gemm_a_cache_reuse = PASS | xsim_rc=0 | log=06_gemm_a_cache_reuse.log
+07_gemm_bias_cache_reuse = PASS | xsim_rc=0 | log=07_gemm_bias_cache_reuse.log
+
+TOTAL = 7
+PASS  = 7
+FAIL  = 0

@@ -1,0 +1,43 @@
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_m8_memory_subsystem_gemm_outstanding2_behav/xsim_script.tcl
+# xsim {tb_m8_memory_subsystem_gemm_outstanding2_behav} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+
+==============================================
+TEST: GEMM NON-PACKED B / OUTSTANDING=2
+B words        = 32
+B logical base = 64
+B physical base = 0x100
+Expected AXI:
+  2 AR bursts
+  4 beats/burst
+  8 total R beats
+  max outstanding = 2
+==============================================
+PASS: all 32 GEMM B words match
+
+---------- GEMM OUTSTANDING COUNTERS ----------
+logical reads        = 32
+AR handshakes        = 2
+R beat handshakes    = 8
+linefill starts      = 1
+linefill hits        = 31
+full R beats         = 8
+narrow R beats       = 0
+max outstanding seen = 2
+-----------------------------------------------
+
+==============================================
+GEMM OUTSTANDING=2 TEST PASS
+==============================================
+$finish called at time : 5610 ns : File "/home/s23520579/Vivado_project/m8_memory_frontend_poc/tb/tb_m8_memory_subsystem_gemm_outstanding2.sv" Line 775
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Aug 26 08:57:27 2026...

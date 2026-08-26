@@ -1,0 +1,37 @@
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_m8_memory_subsystem_vector_linefill_behav/xsim_script.tcl
+# xsim {tb_m8_memory_subsystem_vector_linefill_behav} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+
+==============================================
+TEST: VECTOR 16-WORD LINEFILL READ
+first logical = 16
+first physical = 0x40040
+==============================================
+PASS: all 16 vector words match
+
+------------ LINEFILL COUNTERS ------------
+logical reads        = 16
+AR handshakes        = 1
+R beat handshakes    = 4
+linefill starts      = 1
+linefill hits        = 15
+full R beats         = 4
+narrow R beats       = 0
+max outstanding seen = 1
+-------------------------------------------
+
+==============================================
+VECTOR LINEFILL TEST PASS
+==============================================
+$finish called at time : 2010 ns : File "/home/s23520579/Vivado_project/m8_memory_frontend_poc/tb/tb_m8_memory_subsystem_vector_linefill.sv" Line 680
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Aug 26 08:57:11 2026...

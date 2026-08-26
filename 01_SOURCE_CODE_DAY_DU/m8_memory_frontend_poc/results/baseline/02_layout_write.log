@@ -1,0 +1,36 @@
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_m8_memory_subsystem_layout_write_behav/xsim_script.tcl
+# xsim {tb_m8_memory_subsystem_layout_write_behav} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+
+==============================================
+M8 MEMORY SUBSYSTEM BASELINE TEST
+TEST: LAYOUT SINGLE-WORD WRITE
+logical addr  = 6
+physical addr = 0x40018
+write value   = 0xdeadbeef
+==============================================
+layout_result_ready asserted
+PASS: DDR data = 0xdeadbeef
+
+------------ WRITE COUNTERS -------------
+logical writes = 1
+AW handshakes  = 1
+W handshakes   = 1
+B handshakes   = 1
+-----------------------------------------
+
+==============================================
+BASELINE WRITE TEST PASS
+==============================================
+$finish called at time : 570 ns : File "/home/s23520579/Vivado_project/m8_memory_frontend_poc/tb/tb_m8_memory_subsystem_layout_write.sv" Line 642
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Aug 26 08:56:49 2026...

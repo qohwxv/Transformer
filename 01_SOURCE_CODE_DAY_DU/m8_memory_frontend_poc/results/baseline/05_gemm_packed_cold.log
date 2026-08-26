@@ -1,0 +1,48 @@
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_m8_memory_subsystem_gemm_packed_panel_behav/xsim_script.tcl
+# xsim {tb_m8_memory_subsystem_gemm_packed_panel_behav} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+
+================================================
+TEST 5A: GEMM PACKED COLD PANEL
+geometry       = R8 / C2 / K16
+A words        = 128
+packed B words = 16
+bias words     = 2
+total gather   = 146
+flags          = 0xf1
+================================================
+
+gemm_data_valid asserted
+PASS: A[0..127] correct
+PASS: packed B[0..15] correct
+PASS: bias[0..1] correct
+
+------------ PACKED COLD PROFILE ------------
+logical reads           = 146
+AR handshakes           = 131
+R beat handshakes       = 134
+linefill starts         = 1
+linefill hits           = 15
+full R beats            = 4
+narrow R beats          = 130
+max outstanding         = 1
+A cache lookup/hit/miss = 128/0/128
+bias lookup/hit/miss    = 2/0/2
+request->data cycles    = 2538
+---------------------------------------------
+
+================================================
+GEMM PACKED COLD PANEL TEST PASS
+================================================
+$finish called at time : 51090 ns : File "/home/s23520579/Vivado_project/m8_memory_frontend_poc/tb/tb_m8_memory_subsystem_gemm_packed_panel.sv" Line 949
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Aug 26 08:57:43 2026...
