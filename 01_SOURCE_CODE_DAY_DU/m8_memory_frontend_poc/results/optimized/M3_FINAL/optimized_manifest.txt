@@ -1,0 +1,17 @@
+M8 MEMORY FRONTEND POC
+M2.7 OPTIMIZED REGRESSION
+
+Generated: Thu Aug 27 07:01:11 UTC 2026
+XSim: /tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xsim
+
+01_layout_read = PASS
+02_layout_write = PASS
+03_vector_linefill = PASS
+04_gemm_outstanding2 = PASS
+05_gemm_packed_cold = PASS
+06_gemm_a_cache_reuse = PASS
+07_gemm_bias_cache_reuse = PASS
+
+TOTAL = 7
+PASS  = 7
+FAIL  = 0

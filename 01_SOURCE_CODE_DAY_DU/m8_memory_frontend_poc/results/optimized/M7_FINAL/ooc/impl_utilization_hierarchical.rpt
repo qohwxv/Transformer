@@ -1,0 +1,36 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Thu Aug 27 10:50:35 2026
+| Host         : ubuntu running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_utilization -hierarchical -file /home/s23520579/Vivado_project/m8_memory_frontend_poc/results/optimized/m7/M7_4B_OOC/impl_utilization_hierarchical.rpt
+| Design       : vit_m8_memory_subsystem_optimized
+| Device       : xczu5ev-sfvc784-1-e
+| Speed File   : -1
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------------------------+---------------------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+|                Instance               |                 Module                | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | URAM | DSP Blocks |
++---------------------------------------+---------------------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+| vit_m8_memory_subsystem_optimized     |                                 (top) |      42263 |      42263 |       0 |    0 | 10839 |     36 |      0 |    0 |          0 |
+|   (vit_m8_memory_subsystem_optimized) |                                 (top) |        291 |        291 |       0 |    0 |     0 |      0 |      0 |    0 |          0 |
+|   u_mem_adapter                       | vit_phase_e_axi_mem_adapter_optimized |       2657 |       2657 |       0 |    0 |  2407 |      0 |      0 |    0 |          0 |
+|   u_memory_frontend                   | vit_phase_e_memory_frontend_optimized |      39319 |      39319 |       0 |    0 |  8432 |     36 |      0 |    0 |          0 |
+|     (u_memory_frontend)               | vit_phase_e_memory_frontend_optimized |      13704 |      13704 |       0 |    0 |  7631 |      0 |      0 |    0 |          0 |
+|     u_gemm_activation_panel_cache     |       vit_gemm_activation_panel_cache |      23513 |      23513 |       0 |    0 |     5 |     32 |      0 |    0 |          0 |
+|     u_gemm_address_context            |       vit_gemm_memory_address_context |       1924 |       1924 |       0 |    0 |   795 |      0 |      0 |    0 |          0 |
+|     u_gemm_bias_cache                 |                   vit_gemm_bias_cache |        200 |        200 |       0 |    0 |     1 |      4 |      0 |    0 |          0 |
++---------------------------------------+---------------------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

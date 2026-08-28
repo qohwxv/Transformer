@@ -1,0 +1,88 @@
+M8 MEMORY FRONTEND OPTIMIZATION
+M7_FINAL
+
+TARGET
+------
+FPGA = xczu5ev-sfvc784-1-e
+Clock = 50 MHz
+Period = 20.000 ns
+AXI data width = 128 bit
+DSP policy = 0 DSP
+
+READ-SIDE
+---------
+M2_FINAL:
+baseline cold packed panel = 2538 cycles
+M2_FINAL = 2026 cycles
+improvement = 20.2%
+true scalar outstanding = 2
+
+M3_FINAL:
+cold packed panel = 638 cycles
+baseline -> M3 = 2538 -> 638 cycles
+local operand-fetch speedup ~= 3.98x
+full optimized regression = 7/7 PASS
+post-route WNS = +2.928 ns
+
+WRITE-SIDE M7
+-------------
+Aligned:
+logical writes = 16
+AW = 4
+W = 4
+B = 4
+P1 -> P2 = 151 cycles
+
+Logical unaligned:
+logical writes = 16
+AW/W/B = 7/7/7
+PASS
+
+Sparse output mask:
+logical writes = 8
+AW/W/B = 8/8/8
+PASS
+
+Non-contiguous stride:
+logical writes = 16
+AW/W/B = 16/16/16
+PASS
+
+Tail:
+logical writes = 14
+AW/W/B = 5/5/5
+PASS
+
+Physical base misaligned:
+logical writes = 16
+AW/W/B = 16/16/16
+adapter scalar fallback PASS
+
+M7.4B FULL REGRESSION
+---------------------
+TOTAL = 7
+PASS = 7
+FAIL = 0
+
+M7.4B OOC POST-ROUTE
+--------------------
+Target clock = 50 MHz
+Period = 20.000 ns
+WNS = +2.828 ns
+Timing = PASS
+
+CLB LUTs = 42263 / 117120 = 36.09%
+CLB Registers = 10839 / 234240 = 4.63%
+Block RAM Tile = 36 / 144 = 25.00%
+DSP = 0 / 1248 = 0.00%
+
+DECISION
+--------
+KEEP
+M7_FINAL = FROZEN
+
+NOTE
+----
+These timing/resource results are out-of-context results for the
+Memory Frontend + AXI Adapter subsystem. They do not replace full-board
+implementation/timing evidence.

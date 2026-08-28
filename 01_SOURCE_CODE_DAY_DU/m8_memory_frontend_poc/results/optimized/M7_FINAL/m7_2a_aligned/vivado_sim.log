@@ -1,0 +1,161 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Aug 27 10:01:35 2026
+# Process ID: 1417205
+# Current directory: /home/s23520579/Vivado_project/m8_memory_frontend_poc
+# Command line: vivado -mode batch -source scripts/run_m7_2a_sim.tcl -log results/optimized/m7/m7_4b/m7_2a_aligned/vivado_sim.log -journal results/optimized/m7/m7_4b/m7_2a_aligned/vivado_sim.jou
+# Log file: /home/s23520579/Vivado_project/m8_memory_frontend_poc/results/optimized/m7/m7_4b/m7_2a_aligned/vivado_sim.log
+# Journal file: /home/s23520579/Vivado_project/m8_memory_frontend_poc/results/optimized/m7/m7_4b/m7_2a_aligned/vivado_sim.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2095.077 MHz, CPU Physical cores: 16, Host memory: 270260 MB
+#-----------------------------------------------------------
+source scripts/run_m7_2a_sim.tcl
+# set XPR "/home/s23520579/Vivado_project/m8_memory_frontend_poc/m8_memory_frontend_poc.xpr"
+# set TB  "/home/s23520579/Vivado_project/m8_memory_frontend_poc/tb/tb_m8_memory_subsystem_gemm_wide_write.sv"
+# set TOP "tb_m8_memory_subsystem_gemm_wide_write"
+# open_project $XPR
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/s23520579/Vivado_project/m8_memory_frontend_poc/m8_memory_frontend_poc.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1317.645 ; gain = 39.840 ; free physical = 208303 ; free virtual = 244103
+# if {[llength [get_files -quiet $TB]] == 0} {
+#     add_files -fileset sim_1 $TB
+# }
+# set_property top $TOP [get_filesets sim_1]
+# update_compile_order -fileset sim_1
+# puts ""
+
+# puts "============================================================"
+============================================================
+# puts " M7.2A TARGETED SIMULATION"
+ M7.2A TARGETED SIMULATION
+# puts "============================================================"
+============================================================
+# launch_simulation -mode behavioral
+Command: launch_simulation  -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_m8_memory_subsystem_gemm_wide_write'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/s23520579/Vivado_project/m8_memory_frontend_poc/m8_memory_frontend_poc.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_m8_memory_subsystem_gemm_wide_write' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/s23520579/Vivado_project/m8_memory_frontend_poc/m8_memory_frontend_poc.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_m8_memory_subsystem_gemm_wide_write_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/m8_memory_frontend_poc/tb/axi_ddr_model.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ddr_model
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/m8_memory_frontend_poc/rtl/common/vit_phase_e_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/m8_memory_frontend_poc/rtl/common/vit_gemm_activation_panel_cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vit_gemm_activation_panel_cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/m8_memory_frontend_poc/rtl/common/vit_gemm_bias_cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vit_gemm_bias_cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/m8_memory_frontend_poc/rtl/common/vit_gemm_memory_address_context.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vit_gemm_memory_address_context
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/m8_memory_frontend_poc/rtl/optimized/vit_m8_memory_subsystem_optimized.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vit_m8_memory_subsystem_optimized
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/m8_memory_frontend_poc/rtl/optimized/vit_phase_e_axi_mem_adapter_optimized.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vit_phase_e_axi_mem_adapter_optimized
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/m8_memory_frontend_poc/rtl/optimized/vit_phase_e_memory_frontend_optimized.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vit_phase_e_memory_frontend_optimized
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/m8_memory_frontend_poc/rtl/optimized/vit_phase_e_read_address_router_optimized.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vit_phase_e_read_address_router_optimized
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/m8_memory_frontend_poc/rtl/common/vit_phase_e_write_address_router.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vit_phase_e_write_address_router
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/s23520579/Vivado_project/m8_memory_frontend_poc/tb/tb_m8_memory_subsystem_gemm_wide_write.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_m8_memory_subsystem_gemm_wide_write
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/s23520579/Vivado_project/m8_memory_frontend_poc/m8_memory_frontend_poc.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/s23520579/Vivado_project/m8_memory_frontend_poc/m8_memory_frontend_poc.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_m8_memory_subsystem_gemm_wide_write_behav xil_defaultlib.tb_m8_memory_subsystem_gemm_wide_write xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_m8_memory_subsystem_gemm_wide_write_behav xil_defaultlib.tb_m8_memory_subsystem_gemm_wide_write xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.vit_phase_e_pkg
+Compiling module xil_defaultlib.vit_gemm_activation_panel_cache(...
+Compiling module xil_defaultlib.vit_gemm_bias_cache_default
+Compiling module xil_defaultlib.vit_gemm_memory_address_context(...
+Compiling module xil_defaultlib.vit_phase_e_read_address_router_...
+Compiling module xil_defaultlib.vit_phase_e_write_address_router...
+Compiling module xil_defaultlib.vit_phase_e_memory_frontend_opti...
+Compiling module xil_defaultlib.vit_phase_e_axi_mem_adapter_opti...
+Compiling module xil_defaultlib.vit_m8_memory_subsystem_optimize...
+Compiling module xil_defaultlib.axi_ddr_model
+Compiling module xil_defaultlib.tb_m8_memory_subsystem_gemm_wide...
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_m8_memory_subsystem_gemm_wide_write_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/s23520579/Vivado_project/m8_memory_frontend_poc/m8_memory_frontend_poc.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_m8_memory_subsystem_gemm_wide_write_behav -key {Behavioral:sim_1:Functional:tb_m8_memory_subsystem_gemm_wide_write} -tclbatch {tb_m8_memory_subsystem_gemm_wide_write.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_m8_memory_subsystem_gemm_wide_write.tcl
+## current_wave_config
+
+================================================
+TEST 5B-2: GEMM BIAS CACHE COMMIT + REUSE
+P1    = cold panel
+STORE = 16 GEMM result words
+P2    = A-cache + bias-cache reuse
+================================================
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_m8_memory_subsystem_gemm_wide_write_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1401.598 ; gain = 83.922 ; free physical = 208276 ; free virtual = 244080
+# run all
+
+PANEL #1 gemm_data_valid
+PASS P1: A/B/bias correct
+
+gemm_result_ready asserted
+PASS: 16 GEMM result words committed
+
+------------ STORE PROFILE ------------
+logical writes = 16
+AW handshakes  = 4
+W handshakes   = 4
+B handshakes   = 4
+---------------------------------------
+
+PANEL #2 gemm_data_valid
+PASS P2: A/B/bias correct
+
+========== PANEL #2 CACHE DELTAS ==========
+logical read delta   = 18
+AR delta             = 1
+R beat delta         = 4
+narrow R delta       = 0
+full R delta         = 4
+linefill start delta = 1
+linefill hit delta   = 15
+A vector hit words   = 128
+bias lookup delta    = 2
+bias hit delta       = 2
+bias miss delta      = 0
+P1 -> P2 cycles      = 151
+===========================================
+
+================================================
+GEMM BIAS CACHE COMMIT/REUSE TEST PASS
+================================================
+$finish called at time : 16110 ns : File "/home/s23520579/Vivado_project/m8_memory_frontend_poc/tb/tb_m8_memory_subsystem_gemm_wide_write.sv" Line 1369
+# close_sim
+INFO: [Simtcl 6-16] Simulation closed
+# close_project
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 27 10:02:02 2026...

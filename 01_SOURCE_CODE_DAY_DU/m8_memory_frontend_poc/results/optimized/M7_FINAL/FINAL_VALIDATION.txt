@@ -1,0 +1,22 @@
+M7_FINAL VALIDATION
+RESULT=PASS
+
+Full optimized regression = 7/7 PASS
+
+Targeted M7 write tests = 6/6 PASS
+- M7.2A aligned             : 16 logical -> 4/4/4
+- M7.3A logical unaligned   : 16 logical -> 7/7/7
+- M7.3B sparse              : 8 logical -> 8/8/8
+- M7.3C stride              : 16 logical -> 16/16/16
+- M7.3D tail                : 14 logical -> 5/5/5
+- M7.3E physical misaligned : 16 logical -> 16/16/16
+
+OOC post-route @ 50 MHz = PASS
+WNS = +2.828 ns
+DSP = 0
+
+M2_FINAL = FROZEN
+M3_FINAL = FROZEN
+M7_FINAL = FROZEN
+
+MEMORY FRONTEND POC = DONE

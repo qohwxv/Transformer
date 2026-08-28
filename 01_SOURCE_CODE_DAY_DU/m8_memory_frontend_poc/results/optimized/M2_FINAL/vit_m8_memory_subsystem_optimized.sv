@@ -311,12 +311,6 @@ module vit_m8_memory_subsystem_optimized #(
     logic [31:0]                        mem_req_word_address;
     logic [31:0]                        mem_req_write_data;
     logic [3:0]                         mem_req_write_strobe;
-
-    // M7.2A internal wide-write sideband.
-    logic                               mem_req_write_wide;
-    logic [127:0]                       mem_req_write_data_wide;
-    logic [15:0]                        mem_req_write_strobe_wide;
-
     logic                               mem_req_read_ahead_safe;
     logic [5:0]                         mem_req_contiguous_words;
 
@@ -364,11 +358,6 @@ module vit_m8_memory_subsystem_optimized #(
         .req_word_address           (mem_req_word_address),
         .req_write_data             (mem_req_write_data),
         .req_write_strobe           (mem_req_write_strobe),
-
-        .req_write_wide             (mem_req_write_wide),
-        .req_write_data_wide        (mem_req_write_data_wide),
-        .req_write_strobe_wide      (mem_req_write_strobe_wide),
-
         .req_read_ahead_safe        (mem_req_read_ahead_safe),
         .req_contiguous_words       (mem_req_contiguous_words),
 

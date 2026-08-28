@@ -1,0 +1,60 @@
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_opt_07_gemm_bias_cache_reuse_behav/xsim_script.tcl
+# xsim {tb_opt_07_gemm_bias_cache_reuse_behav} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+
+================================================
+TEST 5B-2: GEMM BIAS CACHE COMMIT + REUSE
+P1    = cold panel
+STORE = 16 GEMM result words
+P2    = A-cache + bias-cache reuse
+================================================
+
+PANEL #1 gemm_data_valid
+PASS P1: A/B/bias correct
+
+gemm_result_ready asserted
+PASS: 16 GEMM result words committed
+
+------------ STORE PROFILE ------------
+logical writes = 16
+AW handshakes  = 4
+W handshakes   = 4
+B handshakes   = 4
+---------------------------------------
+FAIL: expected 16 AW
+FAIL: expected 16 W
+FAIL: expected 16 B responses
+
+PANEL #2 gemm_data_valid
+PASS P2: A/B/bias correct
+
+========== PANEL #2 CACHE DELTAS ==========
+logical read delta   = 18
+AR delta             = 1
+R beat delta         = 4
+narrow R delta       = 0
+full R delta         = 4
+linefill start delta = 1
+linefill hit delta   = 15
+A vector hit words   = 128
+bias lookup delta    = 2
+bias hit delta       = 2
+bias miss delta      = 0
+P1 -> P2 cycles      = 151
+===========================================
+
+================================================
+GEMM BIAS CACHE COMMIT/REUSE TEST PASS
+================================================
+$finish called at time : 16110 ns : File "/home/s23520579/Vivado_project/m8_memory_frontend_poc/tb/optimized_regression/tb_opt_07_gemm_bias_cache_reuse.sv" Line 1369
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Aug 27 10:30:06 2026...

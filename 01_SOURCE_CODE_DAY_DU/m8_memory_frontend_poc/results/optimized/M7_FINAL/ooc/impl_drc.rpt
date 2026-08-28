@@ -1,0 +1,54 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Thu Aug 27 10:50:41 2026
+| Host         : ubuntu running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_drc -file /home/s23520579/Vivado_project/m8_memory_frontend_poc/results/optimized/m7/M7_4B_OOC/impl_drc.rpt
+| Design       : vit_m8_memory_subsystem_optimized
+| Device       : xczu5ev-sfvc784-1-e
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: vit_m8_memory_subsystem_optimized
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++---------+------------------+--------------------------+------------+
+| Rule    | Severity         | Description              | Violations |
++---------+------------------+--------------------------+------------+
+| LUTLP-1 | Critical Warning | Combinatorial Loop Alert | 1          |
++---------+------------------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTLP-1#1 Critical Warning
+Combinatorial Loop Alert  
+61 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is u_mem_adapter/fill_base[63]_i_3_n_0. Please evaluate your design. The cells in the loop are: u_mem_adapter/fill_base[63]_i_3, u_mem_adapter/fill_desc_beats[0][0]_i_1,
+u_mem_adapter/fill_desc_beats[0][0]_i_2,
+u_mem_adapter/fill_desc_beats[0][0]_i_3,
+u_mem_adapter/fill_desc_beats[0][0]_i_4,
+u_mem_adapter/fill_desc_beats[0][1]_i_1,
+u_mem_adapter/fill_desc_beats[0][1]_i_2,
+u_mem_adapter/fill_desc_beats[0][2]_i_1,
+u_mem_adapter/fill_desc_beats[0][2]_i_14,
+u_mem_adapter/fill_desc_beats[0][2]_i_15,
+u_mem_adapter/fill_desc_beats[0][2]_i_2,
+u_mem_adapter/fill_desc_beats[0][2]_i_4,
+u_mem_adapter/fill_desc_beats[0][2]_i_5,
+u_mem_adapter/fill_desc_beats[0][2]_i_6,
+u_mem_adapter/fill_desc_beats[0][2]_i_7 (the first 15 of 61 listed).
+Related violations: <none>
+
+

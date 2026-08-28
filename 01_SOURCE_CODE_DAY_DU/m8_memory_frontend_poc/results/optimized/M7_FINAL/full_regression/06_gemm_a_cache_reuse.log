@@ -1,0 +1,55 @@
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_opt_06_gemm_a_cache_reuse_behav/xsim_script.tcl
+# xsim {tb_opt_06_gemm_a_cache_reuse_behav} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+
+================================================
+TEST 5B-1: GEMM PACKED A-CACHE VECTOR REUSE
+Panel 1 = cold fill
+Panel 2 = same A tile, vector-cache replay
+command_accept = ONE pulse only
+================================================
+
+PANEL #1 gemm_data_valid
+PASS P1: A correct
+PASS P1: packed B correct
+PASS P1: bias correct
+
+---------- PANEL #1 SNAPSHOT ----------
+logical reads   = 146
+AR              = 11
+R beats         = 38
+A vector words  = 0
+---------------------------------------
+
+PANEL #2 gemm_data_valid
+PASS P2: A correct
+PASS P2: packed B correct
+PASS P2: bias correct
+
+========== PANEL #2 REUSE DELTAS ==========
+logical read delta     = 18
+AR delta               = 2
+R beat delta           = 2
+linefill start delta   = 0
+linefill hit delta     = 16
+narrow R delta         = 2
+full R delta           = 0
+A vector hit words     = 128
+P1 -> P2 cycles        = 101
+============================================
+
+================================================
+GEMM PACKED A-CACHE REUSE TEST PASS
+================================================
+$finish called at time : 15110 ns : File "/home/s23520579/Vivado_project/m8_memory_frontend_poc/tb/optimized_regression/tb_opt_06_gemm_a_cache_reuse.sv" Line 1118
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Aug 27 10:29:50 2026...

@@ -53,13 +53,6 @@ module vit_phase_e_memory_frontend_optimized #(
     output logic [31:0]                       mem_req_word_address,
     output logic [31:0]                       mem_req_write_data,
     output logic [3:0]                        mem_req_write_strobe,
-
-    // M7.2A: optional one-beat AXI128 write.
-    // The existing 32-bit write path remains the fallback.
-    output logic                              mem_req_write_wide,
-    output logic [127:0]                      mem_req_write_data_wide,
-    output logic [15:0]                       mem_req_write_strobe_wide,
-
     output logic                              mem_req_read_ahead_safe,
     output logic [5:0]                        mem_req_contiguous_words,
     input  logic                              mem_rsp_valid,
@@ -176,12 +169,7 @@ module vit_phase_e_memory_frontend_optimized #(
         MEM_GEMM_A_VECTOR_DRAIN,
         // M2: scalar read issue/retire pipeline.
         // Appended to preserve existing debug state encodings.
-        MEM_READ_PIPE,
-
-        // M7.2A: gather four contiguous GEMM result words and
-        // issue one native 128-bit write request.
-        MEM_WRITE_PACK_GATHER,
-        MEM_WRITE_WIDE_REQUEST
+        MEM_READ_PIPE
     } mem_state_t;
 
     mem_state_t mem_state;
@@ -242,23 +230,6 @@ module vit_phase_e_memory_frontend_optimized #(
     logic [31:0] write_candidate_address;
     logic write_candidate_address_overflow;
     logic [31:0] write_candidate_data;
-
-    // ============================================================
-    // M7.2A GEMM wide-write packing
-    // ============================================================
-    logic        gemm_wide_group_safe;
-    logic        write_pack_gather_error;
-    logic [1:0]  write_pack_count_q;
-    logic [31:0] write_pack_address_q;
-    phase_e_mem_space_t write_pack_space_q;
-    logic [127:0] write_pack_data_q;
-    logic        write_wide_inflight_q;
-
-    integer wide_scan;
-    integer wide_scan_index;
-    integer wide_scan_row;
-    integer wide_scan_col;
-
     logic gemm_address_context_start;
     logic [65:0] gemm_activation_address_base;
     logic [65:0] gemm_weight_address_base;
@@ -411,11 +382,10 @@ module vit_phase_e_memory_frontend_optimized #(
          !read_pipe_candidate) ||
         read_pipe_req_fire;
     assign profile_logical_write_word_o =
-        (((mem_state == MEM_WRITE_SELECT) ||
-          (mem_state == MEM_WRITE_PACK_GATHER)) &&
-         write_candidate_needed &&
-         (write_candidate_space != PHASE_E_MEM_NONE) &&
-         !write_candidate_address_overflow);
+        (mem_state == MEM_WRITE_SELECT) &&
+        write_candidate_needed &&
+        (write_candidate_space != PHASE_E_MEM_NONE) &&
+        !write_candidate_address_overflow;
 
     assign profile_load_active_o =
         (mem_state == MEM_READ_SELECT) ||
@@ -429,9 +399,7 @@ module vit_phase_e_memory_frontend_optimized #(
         (mem_state == MEM_GEMM_A_VECTOR_DRAIN);
     assign profile_store_active_o =
         (mem_state == MEM_WRITE_SELECT) ||
-        (mem_state == MEM_WRITE_PACK_GATHER) ||
         (mem_state == MEM_WRITE_REQUEST) ||
-        (mem_state == MEM_WRITE_WIDE_REQUEST) ||
         (mem_state == MEM_WRITE_RESPONSE) ||
         (mem_state == MEM_WRITE_DELIVER);
 
@@ -477,7 +445,6 @@ module vit_phase_e_memory_frontend_optimized #(
           (mem_state == MEM_WRITE_RESPONSE)) &&
          mem_rsp_valid && mem_rsp_ready && mem_rsp_error) ||
         (read_pipe_rsp_fire && mem_rsp_error) ||
-        write_pack_gather_error ||
         gemm_a_vector_coordinate_error ||
         gemm_a_vector_response_error ||
         gemm_result_generation_error;
@@ -739,7 +706,7 @@ module vit_phase_e_memory_frontend_optimized #(
         .result_address_base     (gemm_result_address_base)
     );
 
-    vit_phase_e_read_address_router_optimized #(
+    vit_phase_e_read_address_router #(
         .ARRAY_ROWS   (ARRAY_ROWS),
         .ARRAY_COLS   (ARRAY_COLS),
         .PE_LANES     (PE_LANES),
@@ -802,116 +769,21 @@ module vit_phase_e_memory_frontend_optimized #(
         .candidate_data             (write_candidate_data)
     );
 
-    // ============================================================
-    // M7.2A WIDE WRITE QUALIFICATION
-    //
-    // Only GEMM is enabled in this revision.  Four consecutive
-    // logical results may be packed only when:
-    //   * all four are architecturally valid,
-    //   * GEMM row stride equals ARRAY_COLS (contiguous layout),
-    //   * the first logical destination is four-word aligned,
-    //   * no command/output tail is crossed.
-    //
-    // The adapter independently re-checks physical 16-byte
-    // alignment and the configured memory bounds.
-    // ============================================================
-    always_comb begin
-        gemm_wide_group_safe = 1'b0;
-
-        if (
-            (mem_state == MEM_WRITE_SELECT) &&
-            (active_cmd.header.opcode == PHASE_E_OP_GEMM) &&
-            write_candidate_needed &&
-            (write_candidate_space == PHASE_E_MEM_SCRATCH) &&
-            !write_candidate_address_overflow &&
-            (active_cmd.immediate == ARRAY_COLS_U32) &&
-            (write_candidate_address[1:0] == 2'b00) &&
-            (({1'b0, mem_word_index} + 17'd4) <=
-             {1'b0, write_word_count})
-        ) begin
-            gemm_wide_group_safe = 1'b1;
-
-            for (wide_scan = 0; wide_scan < 4;
-                 wide_scan = wide_scan + 1) begin
-
-                wide_scan_index =
-                    mem_word_index_u32 + wide_scan;
-
-                if (wide_scan_index >=
-                    (ARRAY_ROWS * ARRAY_COLS)) begin
-                    gemm_wide_group_safe = 1'b0;
-                end else begin
-                    wide_scan_row =
-                        wide_scan_index / ARRAY_COLS;
-                    wide_scan_col =
-                        wide_scan_index % ARRAY_COLS;
-
-                    if (
-                        !gemm_result_token_mask[wide_scan_row] ||
-                        !gemm_result_output_mask[wide_scan_col]
-                    )
-                        gemm_wide_group_safe = 1'b0;
-                end
-            end
-
-            // Prevent 32-bit logical-address wrap.
-            if ({1'b0, write_candidate_address} + 33'd3 >
-                33'h0_FFFF_FFFF)
-                gemm_wide_group_safe = 1'b0;
-        end
-    end
-
-    assign write_pack_gather_error =
-        (mem_state == MEM_WRITE_PACK_GATHER) &&
-        (
-            !write_candidate_needed ||
-            (write_candidate_space != write_pack_space_q) ||
-            write_candidate_address_overflow ||
-            (write_candidate_address !=
-             (write_pack_address_q +
-              {30'd0, write_pack_count_q}))
-        );
-
     assign mem_req_valid =
         (mem_state == MEM_READ_REQUEST) ||
         (mem_state == MEM_WRITE_REQUEST) ||
-        (mem_state == MEM_WRITE_WIDE_REQUEST) ||
         read_pipe_can_issue;
-    assign mem_req_write =
-        (mem_state == MEM_WRITE_REQUEST) ||
-        (mem_state == MEM_WRITE_WIDE_REQUEST);
-
-    assign mem_req_write_wide =
-        (mem_state == MEM_WRITE_WIDE_REQUEST);
-
+    assign mem_req_write = (mem_state == MEM_WRITE_REQUEST);
     always_comb begin
-        if (mem_req_write_wide)
-            mem_req_space = write_pack_space_q;
-        else if (mem_req_write)
+        if (mem_req_write)
             mem_req_space = write_candidate_space;
         else
             mem_req_space = read_candidate_space;
     end
-
     assign mem_req_word_address =
-        mem_req_write_wide ?
-        write_pack_address_q :
-        (mem_req_write ?
-         write_candidate_address :
-         read_candidate_address);
-
-    assign mem_req_write_data =
-        mem_req_write_wide ?
-        write_pack_data_q[31:0] :
-        write_candidate_data;
-
+        mem_req_write ? write_candidate_address : read_candidate_address;
+    assign mem_req_write_data = write_candidate_data;
     assign mem_req_write_strobe = 4'hf;
-
-    assign mem_req_write_data_wide =
-        write_pack_data_q;
-
-    assign mem_req_write_strobe_wide =
-        16'hffff;
     assign mem_req_read_ahead_safe =
         (mem_state == MEM_READ_REQUEST) &&
         read_candidate_read_ahead_safe;
@@ -980,13 +852,6 @@ module vit_phase_e_memory_frontend_optimized #(
             read_meta_count <= 2'd0;
             read_pipe_issue_done_q <= 1'b0;
             read_pipe_error_q <= 1'b0;
-
-            write_pack_count_q <= 2'd0;
-            write_pack_address_q <= 32'd0;
-            write_pack_space_q <= PHASE_E_MEM_NONE;
-            write_pack_data_q <= 128'd0;
-            write_wide_inflight_q <= 1'b0;
-
             memory_error_latched <= 1'b0;
             gemm_a_cache_valid <= 1'b0;
             gemm_a_cache_batch_tag <= 32'd0;
@@ -1068,10 +933,6 @@ module vit_phase_e_memory_frontend_optimized #(
                 case (mem_state)
                     MEM_IDLE: begin
                         mem_word_index <= 16'd0;
-
-                        // M7.2A transaction boundary.
-                        write_pack_count_q <= 2'd0;
-                        write_wide_inflight_q <= 1'b0;
 
                         // M2 pipeline transaction boundary.
                         read_meta_read_pointer <= 1'b0;
@@ -1620,96 +1481,31 @@ module vit_phase_e_memory_frontend_optimized #(
                             write_candidate_address_overflow) begin
                             memory_error_latched <= 1'b1;
                             mem_state <= MEM_IDLE;
-
                         end else if (!write_candidate_needed) begin
                             if ((mem_word_index + 1) >= write_word_count)
                                 mem_state <= MEM_WRITE_DELIVER;
                             else
                                 mem_word_index <= mem_word_index + 1'b1;
-
-                        end else if (gemm_wide_group_safe) begin
-                            // First word is captured here.  The next three
-                            // are consumed locally without AXI traffic.
-                            write_pack_address_q <=
-                                write_candidate_address;
-                            write_pack_space_q <=
-                                write_candidate_space;
-                            write_pack_data_q <=
-                                {96'd0, write_candidate_data};
-                            write_pack_count_q <= 2'd1;
-
-                            mem_word_index <=
-                                mem_word_index + 1'b1;
-                            mem_state <= MEM_WRITE_PACK_GATHER;
-
                         end else begin
                             mem_state <= MEM_WRITE_REQUEST;
                         end
                     end
 
-                    MEM_WRITE_PACK_GATHER: begin
-                        if (write_pack_gather_error) begin
-                            memory_error_latched <= 1'b1;
-                            write_pack_count_q <= 2'd0;
-                            mem_state <= MEM_IDLE;
-                        end else begin
-                            case (write_pack_count_q)
-                                2'd1:
-                                    write_pack_data_q[63:32] <=
-                                        write_candidate_data;
-                                2'd2:
-                                    write_pack_data_q[95:64] <=
-                                        write_candidate_data;
-                                2'd3:
-                                    write_pack_data_q[127:96] <=
-                                        write_candidate_data;
-                                default: begin
-                                end
-                            endcase
-
-                            if (write_pack_count_q == 2'd3) begin
-                                // Keep mem_word_index on the fourth word.
-                                // It advances only after BRESP commits.
-                                mem_state <=
-                                    MEM_WRITE_WIDE_REQUEST;
-                            end else begin
-                                write_pack_count_q <=
-                                    write_pack_count_q + 1'b1;
-                                mem_word_index <=
-                                    mem_word_index + 1'b1;
-                            end
-                        end
-                    end
-
                     MEM_WRITE_REQUEST: begin
-                        if (mem_req_valid && mem_req_ready) begin
-                            write_wide_inflight_q <= 1'b0;
+                        if (mem_req_valid && mem_req_ready)
                             mem_state <= MEM_WRITE_RESPONSE;
-                        end
-                    end
-
-                    MEM_WRITE_WIDE_REQUEST: begin
-                        if (mem_req_valid && mem_req_ready) begin
-                            write_wide_inflight_q <= 1'b1;
-                            mem_state <= MEM_WRITE_RESPONSE;
-                        end
                     end
 
                     MEM_WRITE_RESPONSE: begin
                         if (mem_rsp_valid && mem_rsp_ready) begin
                             if (mem_rsp_error) begin
                                 memory_error_latched <= 1'b1;
-                                write_wide_inflight_q <= 1'b0;
                                 mem_state <= MEM_IDLE;
                             end else begin
-                                if ((mem_word_index + 1) >=
-                                    write_word_count) begin
-                                    write_wide_inflight_q <= 1'b0;
+                                if ((mem_word_index + 1) >= write_word_count)
                                     mem_state <= MEM_WRITE_DELIVER;
-                                end else begin
-                                    mem_word_index <=
-                                        mem_word_index + 1'b1;
-                                    write_wide_inflight_q <= 1'b0;
+                                else begin
+                                    mem_word_index <= mem_word_index + 1'b1;
                                     mem_state <= MEM_WRITE_SELECT;
                                 end
                             end
